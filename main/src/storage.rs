@@ -7,17 +7,58 @@ use std::io::Write;
 const DATA_PATH: &str = "./data/data.json";
 const DATA_DIR_PATH: &str = "./data";
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Card {
     word: String,
     ans: String,
     remarks: String,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+impl Card {
+    pub fn new(word: String, ans: String, remark: String) -> Card {
+        Card {
+            word: word,
+            ans: ans,
+            remarks: remark,
+        }
+    }
+
+    pub fn get_word(&self) -> String {
+        self.word.clone()
+    }
+
+    pub fn get_ans(&self) -> String {
+        self.ans.clone()
+    }
+
+    pub fn get_remarks(&self) -> String {
+        self.remarks.clone()
+    }
+}
+
+#[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct StudySet {
     name: String,
     cards: Vec<Card>,
+    id: u16,
+}
+
+impl StudySet {
+    pub fn new(name: String, id: u16) {}
+
+    pub fn add_card(&self, card: Card) {}
+
+    pub fn get_card(&self) -> Card {
+        self.cards[0].clone()
+    }
+
+    pub fn get_desc(&self) -> String {
+        self.name.clone()
+    }
+    
+    pub fn get_all_cards(&self) -> Vec<Card> {
+        self.cards.clone()
+    }
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -40,6 +81,7 @@ impl Storage {
         let study_set_1 = StudySet {
             name: String::from("L1"),
             cards: vec![dummy_card_1, dummy_card_2],
+            id: 1,
         };
         let dummy_card_3 = Card {
             word: String::from("美しい"),
@@ -54,11 +96,29 @@ impl Storage {
         let study_set_2 = StudySet {
             name: String::from("L2"),
             cards: vec![dummy_card_3, dummy_card_4],
+            id: 2,
         };
         let data_sets = Storage::read();
         println!("read:[{}]", data_sets);
         Storage {
             sets: vec![study_set_1, study_set_2],
+        }
+    }
+
+    pub fn get_all(&self) -> Vec<StudySet> {
+        self.sets.clone()
+    }
+
+    pub fn get_study_set(&self, to_get: String) -> StudySet {
+        for set in &self.sets {
+            if to_get == set.name {
+                return set.clone();
+            }
+        }
+        StudySet {
+            name: "Empty".to_string(),
+            cards: vec![],
+            id: 0,
         }
     }
 
