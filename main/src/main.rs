@@ -42,7 +42,6 @@ impl AppState {
         }
     }
 }
-struct CardSetState {}
 
 fn is_correct_answer(answer: String, input: String) -> bool {
     answer == input
@@ -77,7 +76,7 @@ fn ui_builder(val: String) -> impl Widget<AppState> {
     );
 
     let res_label = Label::dynamic(|data: &AppState, _| data.res.clone()).with_text_size(24.0);
-    let index_label = Label::dynamic(|data: &AppState, _| "1".to_string()).with_text_size(24.0);
+    let index_label = Label::dynamic(|data: &AppState, _| data.curr_index.to_string()).with_text_size(24.0);
 
     let inputs = Flex::row().with_child(enter).with_child(clear);
 
@@ -101,7 +100,7 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
         let edit_button = Button::new("Edit"); //todo: functionality to edit items
 
         let view_button = Button::new("View"); //todo: functionality to view all items
-        let test_button = Button::new("Test").on_click(|ctx, _data: &mut AppState, _env| {
+        let test_button = Button::new("Test").on_click(|ctx, data: &mut AppState, _env| {
             let new_win = WindowDesc::new(ui_builder(String::from("楽しい")));
             ctx.new_window(new_win);
         });
