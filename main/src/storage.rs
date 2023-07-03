@@ -1,4 +1,5 @@
-use serde::{Deserialize, Serialize};
+use druid::Data;
+use serde::{ Deserialize, Serialize };
 use std::fs;
 use std::fs::File;
 use std::fs::OpenOptions;
@@ -12,6 +13,15 @@ pub struct Card {
     word: String,
     ans: String,
     remarks: String,
+}
+
+impl Data for Card {
+    fn same(&self, other: &Self) -> bool {
+        if self.word == other.word && self.ans == other.ans && self.remarks == other.remarks {
+            return true;
+        }
+        false
+    }
 }
 
 impl Card {
@@ -43,6 +53,22 @@ pub struct StudySet {
     id: u16,
 }
 
+impl Data for StudySet {
+    fn same(&self, other: &Self) -> bool {
+        // Implement comparison logic for MyObject
+        // Return true if the objects are considered the same, false otherwise
+        // ...
+        if self.name == other.name && self.id == other.id && self.cards.len() == other.cards.len() {
+            for i in 0..self.cards.len() {
+                if self.cards[i].same(&other.cards[i]) {
+                    return true;
+                }
+            }
+        }
+        false
+    }
+}
+
 impl StudySet {
     pub fn new(name: String, id: u16) {}
 
@@ -55,15 +81,26 @@ impl StudySet {
     pub fn get_desc(&self) -> String {
         self.name.clone()
     }
-    
+
     pub fn get_all_cards(&self) -> Vec<Card> {
         self.cards.clone()
     }
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Storage {
     sets: Vec<StudySet>,
+}
+
+impl Data for Storage {
+    fn same(&self, other: &Self) -> bool {
+        for i in 0..self.sets.len() {
+            if self.sets[i].same(&other.sets[i]) {
+                return true;
+            }
+        }
+        false
+    }
 }
 
 impl Storage {
@@ -129,8 +166,7 @@ impl Storage {
             .truncate(true)
             .open(DATA_PATH)
             .expect("Error opening data file");
-        file.write_all(data.as_bytes())
-            .expect("Error writing to file")
+        file.write_all(data.as_bytes()).expect("Error writing to file")
     }
 
     pub fn read() -> String {
