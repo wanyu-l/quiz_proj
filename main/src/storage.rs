@@ -50,7 +50,7 @@ impl Card {
 pub struct StudySet {
     name: String,
     cards: Vec<Card>,
-    id: u16,
+    id: usize,
 }
 
 impl Data for StudySet {
@@ -84,6 +84,14 @@ impl StudySet {
 
     pub fn get_all_cards(&self) -> Vec<Card> {
         self.cards.clone()
+    }
+
+    pub fn get_num_of_cards(&self) -> usize {
+        self.cards.len()
+    }
+    
+    pub fn get_id(&self) -> usize {
+        self.id
     }
 }
 
@@ -135,8 +143,8 @@ impl Storage {
             cards: vec![dummy_card_3, dummy_card_4],
             id: 2,
         };
-        let data_sets = Storage::read();
-        println!("read:[{}]", data_sets);
+        // let data_sets = Storage::read();
+        // println!("read:[{}]", data_sets);
         Storage {
             sets: vec![study_set_1, study_set_2],
         }
@@ -157,6 +165,10 @@ impl Storage {
             cards: vec![],
             id: 0,
         }
+    }
+
+    pub fn get_num_of_sets(&self) -> usize {
+        self.sets.len()
     }
 
     pub fn save(&self) -> () {
