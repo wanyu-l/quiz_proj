@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "L1",
     "cards": [
       { "word": "楽しい", "ans": "たのしい", "remarks": "" },
@@ -7,6 +8,7 @@
     ]
   },
   {
+    "id": 2,
     "name": "L2",
     "cards": [
       { "word": "美しい", "ans": "うつくしい", "remarks": "" },

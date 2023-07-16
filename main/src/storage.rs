@@ -48,9 +48,9 @@ impl Card {
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct StudySet {
+    id: usize,
     name: String,
     cards: Vec<Card>,
-    id: usize,
 }
 
 impl Data for StudySet {
@@ -89,7 +89,7 @@ impl StudySet {
     pub fn get_num_of_cards(&self) -> usize {
         self.cards.len()
     }
-    
+
     pub fn get_id(&self) -> usize {
         self.id
     }
@@ -113,40 +113,10 @@ impl Data for Storage {
 
 impl Storage {
     pub fn new() -> Storage {
-        let dummy_card_1 = Card {
-            word: String::from("楽しい"),
-            ans: String::from("たのしい"),
-            remarks: String::from(""),
-        };
-        let dummy_card_2 = Card {
-            word: String::from("難しい"),
-            ans: String::from("むずかしい"),
-            remarks: String::from(""),
-        };
-        let study_set_1 = StudySet {
-            name: String::from("L1"),
-            cards: vec![dummy_card_1, dummy_card_2],
-            id: 1,
-        };
-        let dummy_card_3 = Card {
-            word: String::from("美しい"),
-            ans: String::from("うつくしい"),
-            remarks: String::from(""),
-        };
-        let dummy_card_4 = Card {
-            word: String::from("愛してる"),
-            ans: String::from("あいしてる"),
-            remarks: String::from(""),
-        };
-        let study_set_2 = StudySet {
-            name: String::from("L2"),
-            cards: vec![dummy_card_3, dummy_card_4],
-            id: 2,
-        };
-        // let data_sets = Storage::read();
-        // println!("read:[{}]", data_sets);
+        let data_sets = Storage::read();
+        let read_data: Vec<StudySet> = serde_json::from_str(&data_sets).unwrap();
         Storage {
-            sets: vec![study_set_1, study_set_2],
+            sets: read_data,
         }
     }
 

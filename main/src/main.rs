@@ -27,30 +27,60 @@ struct AppState {
     display_word: Vec<Vec<String>>,
     res: Vec<Vec<String>>,
     curr_indexes: Vec<usize>,
-    // storage: Storage,
     str: String,
     is_sub_open: bool,
     label_text: i32,
 }
 
+fn is_same_vec_string(arr: Vec<String>, brr: Vec<String>) -> bool {
+    if arr.len() != brr.len() {
+        return false;
+    }
+    for i in 0..arr.len() {
+        if arr[i] != brr[i] {
+            return false;
+        }
+    }
+    true
+}
+
+fn is_same_2_d_vec_string(arr: Vec<Vec<String>>, brr: Vec<Vec<String>>) -> bool {
+    if arr.len() != brr.len() {
+        return false;
+    }
+    for i in 0..arr.len() {
+        if !is_same_vec_string(arr[i].clone(), brr[i].clone()) {
+            return false;
+        }
+    }
+    true
+}
+
 impl Data for AppState {
     fn same(&self, other: &Self) -> bool {
-        if self.input_str.len() != other.input_str.len() {
+        if !is_same_2_d_vec_string(self.input_str.clone(), other.input_str.clone()) {
             return false;
         }
-        if self.expected_input.len() != other.expected_input.len() {
+        if !is_same_2_d_vec_string(self.expected_input.clone(), other.expected_input.clone()) {
             return false;
         }
-        if self.display_word.len() != other.display_word.len() {
+        if !is_same_2_d_vec_string(self.display_word.clone(), other.display_word.clone()) {
             return false;
         }
-        if self.res.len() != other.res.len() {
+        if !is_same_2_d_vec_string(self.res.clone(), other.res.clone()) {
             return false;
         }
         if self.curr_indexes.len() != other.curr_indexes.len() {
             return false;
         }
-
+        for i in 0..self.curr_indexes.len() {
+            if self.curr_indexes[i] != other.curr_indexes[i] {
+                return false;
+            }
+        }
+        if self.str != other.str {
+            return false;
+        }
         return true;
     }
 }
@@ -95,25 +125,11 @@ impl AppState {
     }
 }
 
-fn test() -> impl Widget<AppState> {
-    let res_label = Label::dynamic(|data: &AppState, _| {
-        data.label_text.to_string()
-    }).with_text_size(24.0);
-    let test = Button::new("test").on_click(
-        |ctx, data: &mut AppState, _env| {
-            data.label_text += 1;
-            ctx.request_update();
-        }
-    );
-    Flex::column().with_child(res_label).with_child(test)
-}
-
 // index is the id of the study set
 fn ui_builder(id: usize) -> impl Widget<AppState> {
     let index = id - 1;
     let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
         let word_index = data.curr_indexes[index];
-        println!("{:#?}", data.display_word[index][word_index]);
         data.display_word[index][word_index].to_string()
     }).with_text_size(32.0);
 
@@ -124,7 +140,6 @@ fn ui_builder(id: usize) -> impl Widget<AppState> {
     let enter = Button::new("Confirm").on_click(
         move |ctx, data: &mut AppState, _env| -> () {
             let word_index = data.curr_indexes[index];
-            println!("{}", data.expected_input[index][word_index]);
             if data.str == data.expected_input[index][word_index] {
                 data.res[index][word_index] = String::from("Correct!");
             } else {
@@ -145,7 +160,6 @@ fn ui_builder(id: usize) -> impl Widget<AppState> {
     );
     let prev = Button::new("Prev").on_click(
         move |ctx, data: &mut AppState, _env| -> () {
-            println!("{:#?}", data.curr_indexes[index]);
             if data.curr_indexes[index] >= 1 {
                 data.curr_indexes[index] -= 1;
             }
@@ -154,7 +168,6 @@ fn ui_builder(id: usize) -> impl Widget<AppState> {
     );
     let next = Button::new("Next").on_click(
         move |ctx, data: &mut AppState, _env| -> () {
-            println!("{:#?}", data.curr_indexes[index]);
             if data.curr_indexes[index] < data.display_word[index].len() - 1 {
                 data.curr_indexes[index] += 1;
             }
@@ -167,48 +180,30 @@ fn ui_builder(id: usize) -> impl Widget<AppState> {
         data.res[index][word_index].clone()
     }).with_text_size(24.0);
     let index_label = Label::dynamic(move |data: &AppState, _|
-        (data.curr_indexes[index] + 1).to_string()
+        format!("{} / {}\n", data.curr_indexes[index] + 1, data.display_word.len())
     ).with_text_size(24.0);
 
     let inputs = Flex::row().with_child(prev).with_child(enter).with_child(clear).with_child(next);
-    // let inputs = inputs.with_child(test);
 
-    let temp = Flex::column().with_child(word_label);
-    let temp = temp
-        .with_child(text_box)
-        .with_spacer(20.0)
-        .with_child(inputs)
-        .with_child(res_label)
-        .with_child(index_label);
+    let temp = Flex::column().with_child(index_label).with_child(word_label);
+    let temp = temp.with_child(text_box).with_spacer(20.0).with_child(inputs).with_child(res_label);
     temp
 }
 
 fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
     let study_sets = storage.get_all();
     let mut list = Flex::column();
-    
-    let res_label = Label::dynamic(|data: &AppState, _| {
-        data.label_text.to_string()
-    }).with_text_size(24.0);
-    let test_button = Button::new("test").on_click(
-        |ctx, data: &mut AppState, _env| {
-            data.label_text += 1;
-            ctx.request_update();
-        }
-    );
     for set in study_sets {
         let mut section = Flex::column();
         let label = Label::new(format!("Item {}", set.get_desc())).with_text_size(24.0).center();
         let edit_button = Button::new("Edit"); //todo: functionality to edit items
         let view_button = Button::new("View"); //todo: functionality to view all items
-        let test_button = Button::new("Test").on_click(|ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
-            // if !data.is_sub_open {
-            // data.is_sub_open = true;
-            // let new_win = WindowDesc::new(ui_builder(set.get_id()));
-            let new_win = WindowDesc::new(test());
-            ctx.new_window(new_win);
-            // }
-        });
+        let test_button = Button::new("Test").on_click(
+            move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
+                let new_win = WindowDesc::new(ui_builder(set.get_id())).title(set.get_desc());
+                ctx.new_window(new_win);
+            }
+        );
         section.add_child(label.padding(5.0));
         let mut row = Flex::row();
         row.add_child(view_button);
@@ -217,9 +212,6 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
         section.add_child(row);
         list.add_child(section.center());
     }
-    list.add_child(res_label);
-    list.add_child(test_button);
-
     let scroll = Scroll::new(list).vertical();
     let aligned_widget = Align::right(scroll);
     aligned_widget
@@ -228,7 +220,8 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
 pub fn main() {
     // Window Descriptor
     // Launch to the stars
-    let storage = storage::Storage::new();
-    let main_window = WindowDesc::new(start_page_builder(storage)).title("Quiz_Late");
+    let storage_unit = storage::Storage::new();
+    // storage_unit.save();
+    let main_window = WindowDesc::new(start_page_builder(storage_unit)).title("Quiz_Late");
     AppLauncher::with_window(main_window).log_to_console().launch(AppState::default()).unwrap();
 }
