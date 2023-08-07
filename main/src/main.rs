@@ -25,7 +25,6 @@ struct AppState {
     res: Vec<Vec<String>>,
     curr_indexes: Vec<usize>,
     str: String,
-    strings: Vec<String>,
 }
 
 impl Data for AppState {
@@ -115,7 +114,6 @@ impl AppState {
             res: res_all,
             curr_indexes: indexes,
             str: String::new(),
-            strings: vec![],
         }
     }
 }
@@ -169,7 +167,14 @@ fn test_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             let ind = data.curr_indexes[index];
             data.input_str[index][ind] = data.str.clone();
-            let results_window = WindowDesc::new(result_page_builder(id, test_name.clone()))
+            let results_window = WindowDesc::new(
+                result_page_builder(
+                    test_name.clone(),
+                    data.input_str[index].clone(),
+                    data.expected_input[index].clone(),
+                    data.display_word[index].clone()
+                )
+            )
                 .title("Resuts")
                 .set_always_on_top(true);
             ctx.new_window(results_window);
@@ -256,7 +261,14 @@ fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             let ind = data.curr_indexes[index];
             data.input_str[index][ind] = data.str.clone();
-            let results_window = WindowDesc::new(result_page_builder(id, test_name.clone()))
+            let results_window = WindowDesc::new(
+                result_page_builder(
+                    test_name.clone(),
+                    data.input_str[index].clone(),
+                    data.expected_input[index].clone(),
+                    data.display_word[index].clone()
+                )
+            )
                 .title("Resuts")
                 .set_always_on_top(true);
             ctx.new_window(results_window);
@@ -284,37 +296,42 @@ fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
     card
 }
 
-fn get_string_rows(strings: Vec<String>) -> String {
-    let mut res = String::new();
-    for str in strings {
-        res.push_str("[");
-        res.push_str(&str);
-        res.push_str("]\n");
-    }
-    res
-}
-
-fn result_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
-    let index = id - 1;
-    let text = test_name.clone();
-    let lesson_label: Align<AppState> = Label::new(text)
+fn result_page_builder(
+    test_name: String,
+    user_answers: Vec<String>,
+    expected_answers: Vec<String>,
+    display_words: Vec<String>
+) -> impl Widget<AppState> {
+    let lesson_label: Align<AppState> = Label::new(test_name.clone())
         .with_text_size(32.0)
         .with_text_color(Color::TEAL)
         .center();
-    let counter_label = Label::new(|data: &AppState, _env: &_| format!("Counter: {}", data.str));
-    let user_answers_label = Label::dynamic(move |data: &AppState, _env| -> String {
-        get_string_rows(data.input_str[index].clone())
-    }).with_text_size(24.0);
-    let expected_answers_label = Label::dynamic(move |data: &AppState, _env| -> String {
-        get_string_rows(data.expected_input[index].clone())
-    }).with_text_size(24.0);
-    let name_row = Flex::row().with_child(lesson_label);
-    let user_answers_column = Flex::column().with_child(user_answers_label.center());
-    let expected_answers_column = Flex::column().with_child(expected_answers_label.center());
-    let results_row = Flex::row()
-        .with_child(user_answers_column)
-        .with_child(expected_answers_column);
-    Flex::column().with_child(name_row).with_child(results_row).with_child(counter_label)
+    let mut list: Flex<AppState> = Flex::column().with_child(lesson_label);
+    for i in 0..display_words.len() {
+        let word = format!("Word:\n[{}]", display_words[i]);
+        let word_label: Label<AppState> = Label::new(word).with_text_size(24.0).with_text_color(Color::FUCHSIA);
+        let mut word_row: Flex<AppState> = Flex::row().with_child(word_label.padding(25.0));
+        let user_ans = format!("Your Answer:\n[{}]", user_answers[i]);
+        if user_answers[i] == expected_answers[i] {
+            let correct_label: Label<AppState> = Label::new(user_ans)
+                .with_text_size(24.0)
+                .with_text_color(Color::LIME);
+            word_row = word_row.with_child(correct_label.padding(25.0));
+        } else {
+            let wrong_label: Label<AppState> = Label::new(user_ans)
+                .with_text_size(24.0)
+                .with_text_color(Color::MAROON);
+            word_row = word_row.with_child(wrong_label.padding(25.0));
+        }
+        let expected_ans = format!("Correct Answer:\n[{}]", expected_answers[i]);
+        let answer_label: Label<AppState> = Label::new(expected_ans)
+            .with_text_size(24.0)
+            .with_text_color(Color::SILVER);
+        word_row = word_row.with_child(answer_label);
+        list = list.with_child(word_row);
+    }
+    let scroll = Scroll::new(list.padding(20.0)).vertical();
+    scroll
 }
 
 fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
