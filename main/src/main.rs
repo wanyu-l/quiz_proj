@@ -1,15 +1,12 @@
 use druid::{
-    widget::{ Align, BackgroundBrush, Button, Flex, Label, Scroll, SizedBox, TextBox },
+    widget::{ Align, Button, Flex, Label, Scroll, TextBox },
     AppLauncher,
     Color,
-    Command,
     Data,
-    Env,
     Lens,
     Widget,
     WidgetExt,
     WindowDesc,
-    UnitPoint,
 };
 use storage::Storage;
 
@@ -28,32 +25,7 @@ struct AppState {
     res: Vec<Vec<String>>,
     curr_indexes: Vec<usize>,
     str: String,
-    is_sub_open: bool,
-    label_text: i32,
-}
-
-fn is_same_vec_string(arr: Vec<String>, brr: Vec<String>) -> bool {
-    if arr.len() != brr.len() {
-        return false;
-    }
-    for i in 0..arr.len() {
-        if arr[i] != brr[i] {
-            return false;
-        }
-    }
-    true
-}
-
-fn is_same_2_d_vec_string(arr: Vec<Vec<String>>, brr: Vec<Vec<String>>) -> bool {
-    if arr.len() != brr.len() {
-        return false;
-    }
-    for i in 0..arr.len() {
-        if !is_same_vec_string(arr[i].clone(), brr[i].clone()) {
-            return false;
-        }
-    }
-    true
+    strings: Vec<String>,
 }
 
 impl Data for AppState {
@@ -83,6 +55,30 @@ impl Data for AppState {
         }
         return true;
     }
+}
+
+fn is_same_vec_string(arr: Vec<String>, brr: Vec<String>) -> bool {
+    if arr.len() != brr.len() {
+        return false;
+    }
+    for i in 0..arr.len() {
+        if arr[i] != brr[i] {
+            return false;
+        }
+    }
+    true
+}
+
+fn is_same_2_d_vec_string(arr: Vec<Vec<String>>, brr: Vec<Vec<String>>) -> bool {
+    if arr.len() != brr.len() {
+        return false;
+    }
+    for i in 0..arr.len() {
+        if !is_same_vec_string(arr[i].clone(), brr[i].clone()) {
+            return false;
+        }
+    }
+    true
 }
 
 impl AppState {
@@ -119,14 +115,89 @@ impl AppState {
             res: res_all,
             curr_indexes: indexes,
             str: String::new(),
-            is_sub_open: false,
-            label_text: 1,
+            strings: vec![],
         }
     }
 }
 
 // index is the id of the study set
-fn ui_builder(id: usize) -> impl Widget<AppState> {
+fn test_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
+    let index = id - 1;
+    let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
+        let word_index = data.curr_indexes[index];
+        data.display_word[index][word_index].to_string()
+    }).with_text_size(32.0);
+
+    let text_box = TextBox::new()
+        .with_placeholder("Enter text here")
+        .fix_width(150.0)
+        .lens(AppState::str);
+
+    let clear = Button::new("Clear").on_click(
+        move |ctx, data: &mut AppState, _env| -> () {
+            let message = String::from("Input Cleared");
+            data.str.clear();
+            let word_index = data.curr_indexes[index];
+            data.res[index][word_index] = message;
+            ctx.request_update();
+        }
+    );
+    let prev = Button::new("Prev").on_click(
+        move |ctx, data: &mut AppState, _env| -> () {
+            let ind = data.curr_indexes[index];
+            data.input_str[index][ind] = data.str.clone();
+            if data.curr_indexes[index] >= 1 {
+                data.curr_indexes[index] -= 1;
+                data.str.clear();
+            }
+            ctx.request_update();
+        }
+    );
+    let next = Button::new("Next").on_click(
+        move |ctx, data: &mut AppState, _env| -> () {
+            let ind = data.curr_indexes[index];
+            data.input_str[index][ind] = data.str.clone();
+            if data.curr_indexes[index] < data.display_word[index].len() - 1 {
+                data.curr_indexes[index] += 1;
+                data.str.clear();
+            }
+            ctx.request_update();
+        }
+    );
+
+    let eval_results = Button::new("Submit Test").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            let ind = data.curr_indexes[index];
+            data.input_str[index][ind] = data.str.clone();
+            let results_window = WindowDesc::new(result_page_builder(id, test_name.clone()))
+                .title("Resuts")
+                .set_always_on_top(true);
+            ctx.new_window(results_window);
+        }
+    );
+
+    let res_label = Label::dynamic(move |data: &AppState, _| {
+        let word_index = data.curr_indexes[index];
+        data.res[index][word_index].clone()
+    }).with_text_size(24.0);
+    let index_label = Label::dynamic(move |data: &AppState, _|
+        format!("{} / {}\n", data.curr_indexes[index] + 1, data.display_word[index].len())
+    ).with_text_size(24.0);
+
+    let inputs = Flex::row().with_child(prev).with_child(clear).with_child(next);
+
+    let card = Flex::column().with_child(index_label).with_child(word_label);
+    let card = card
+        .with_child(text_box)
+        .with_spacer(20.0)
+        .with_child(inputs)
+        .with_child(res_label)
+        .with_child(eval_results);
+    card
+}
+
+// index is the id of the study set
+fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
     let index = id - 1;
     let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
         let word_index = data.curr_indexes[index];
@@ -160,18 +231,35 @@ fn ui_builder(id: usize) -> impl Widget<AppState> {
     );
     let prev = Button::new("Prev").on_click(
         move |ctx, data: &mut AppState, _env| -> () {
+            let ind = data.curr_indexes[index];
+            data.input_str[index][ind] = data.str.clone();
             if data.curr_indexes[index] >= 1 {
                 data.curr_indexes[index] -= 1;
+                data.str.clear();
             }
             ctx.request_update();
         }
     );
     let next = Button::new("Next").on_click(
         move |ctx, data: &mut AppState, _env| -> () {
+            let ind = data.curr_indexes[index];
+            data.input_str[index][ind] = data.str.clone();
             if data.curr_indexes[index] < data.display_word[index].len() - 1 {
                 data.curr_indexes[index] += 1;
+                data.str.clear();
             }
             ctx.request_update();
+        }
+    );
+
+    let eval_results = Button::new("Submit Test").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            let ind = data.curr_indexes[index];
+            data.input_str[index][ind] = data.str.clone();
+            let results_window = WindowDesc::new(result_page_builder(id, test_name.clone()))
+                .title("Resuts")
+                .set_always_on_top(true);
+            ctx.new_window(results_window);
         }
     );
 
@@ -179,28 +267,78 @@ fn ui_builder(id: usize) -> impl Widget<AppState> {
         let word_index = data.curr_indexes[index];
         data.res[index][word_index].clone()
     }).with_text_size(24.0);
+
     let index_label = Label::dynamic(move |data: &AppState, _|
-        format!("{} / {}\n", data.curr_indexes[index] + 1, data.display_word.len())
+        format!("{} / {}\n", data.curr_indexes[index] + 1, data.display_word[index].len())
     ).with_text_size(24.0);
 
     let inputs = Flex::row().with_child(prev).with_child(enter).with_child(clear).with_child(next);
 
-    let temp = Flex::column().with_child(index_label).with_child(word_label);
-    let temp = temp.with_child(text_box).with_spacer(20.0).with_child(inputs).with_child(res_label);
-    temp
+    let card = Flex::column().with_child(index_label).with_child(word_label);
+    let card = card
+        .with_child(text_box)
+        .with_spacer(20.0)
+        .with_child(inputs)
+        .with_child(res_label)
+        .with_child(eval_results);
+    card
+}
+
+fn get_string_rows(strings: Vec<String>) -> String {
+    let mut res = String::new();
+    for str in strings {
+        res.push_str("[");
+        res.push_str(&str);
+        res.push_str("]\n");
+    }
+    res
+}
+
+fn result_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
+    let index = id - 1;
+    let text = test_name.clone();
+    let lesson_label: Align<AppState> = Label::new(text)
+        .with_text_size(32.0)
+        .with_text_color(Color::TEAL)
+        .center();
+    let counter_label = Label::new(|data: &AppState, _env: &_| format!("Counter: {}", data.str));
+    let user_answers_label = Label::dynamic(move |data: &AppState, _env| -> String {
+        get_string_rows(data.input_str[index].clone())
+    }).with_text_size(24.0);
+    let expected_answers_label = Label::dynamic(move |data: &AppState, _env| -> String {
+        get_string_rows(data.expected_input[index].clone())
+    }).with_text_size(24.0);
+    let name_row = Flex::row().with_child(lesson_label);
+    let user_answers_column = Flex::column().with_child(user_answers_label.center());
+    let expected_answers_column = Flex::column().with_child(expected_answers_label.center());
+    let results_row = Flex::row()
+        .with_child(user_answers_column)
+        .with_child(expected_answers_column);
+    Flex::column().with_child(name_row).with_child(results_row).with_child(counter_label)
 }
 
 fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
     let study_sets = storage.get_all();
     let mut list = Flex::column();
     for set in study_sets {
+        let set_cloned = set.clone();
         let mut section = Flex::column();
-        let label = Label::new(format!("Item {}", set.get_desc())).with_text_size(24.0).center();
+        let label = Label::new(set.get_desc()).with_text_size(24.0).center();
         let edit_button = Button::new("Edit"); //todo: functionality to edit items
         let view_button = Button::new("View"); //todo: functionality to view all items
+        let learn_button = Button::new("Learn").on_click(
+            move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
+                let new_win = WindowDesc::new(
+                    learn_page_builder(set_cloned.get_id(), set_cloned.get_desc())
+                ).title(set_cloned.get_desc());
+                ctx.new_window(new_win);
+            }
+        );
         let test_button = Button::new("Test").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
-                let new_win = WindowDesc::new(ui_builder(set.get_id())).title(set.get_desc());
+                let new_win = WindowDesc::new(
+                    test_page_builder(set.get_id(), set.get_desc())
+                ).title(set.get_desc());
                 ctx.new_window(new_win);
             }
         );
@@ -208,6 +346,7 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
         let mut row = Flex::row();
         row.add_child(view_button);
         row.add_child(edit_button);
+        row.add_child(learn_button);
         row.add_child(test_button);
         section.add_child(row);
         list.add_child(section.center());
