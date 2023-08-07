@@ -208,7 +208,6 @@ fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
         let word_index = data.curr_indexes[index];
         data.display_word[index][word_index].to_string()
     }).with_text_size(32.0);
-
     let text_box = TextBox::new()
         .with_placeholder("Enter text here")
         .fix_width(150.0)
@@ -309,7 +308,9 @@ fn result_page_builder(
     let mut list: Flex<AppState> = Flex::column().with_child(lesson_label);
     for i in 0..display_words.len() {
         let word = format!("Word:\n[{}]", display_words[i]);
-        let word_label: Label<AppState> = Label::new(word).with_text_size(24.0).with_text_color(Color::FUCHSIA);
+        let word_label: Label<AppState> = Label::new(word)
+            .with_text_size(24.0)
+            .with_text_color(Color::FUCHSIA);
         let mut word_row: Flex<AppState> = Flex::row().with_child(word_label.padding(25.0));
         let user_ans = format!("Your Answer:\n[{}]", user_answers[i]);
         if user_answers[i] == expected_answers[i] {
