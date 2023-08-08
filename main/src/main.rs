@@ -1,5 +1,5 @@
 use druid::{
-    widget::{ Align, Button, Flex, Label, Scroll, TextBox },
+    widget::{ Align, Button, Flex, Label, Scroll, TextBox, Controller },
     AppLauncher,
     Color,
     Data,
@@ -7,6 +7,9 @@ use druid::{
     Widget,
     WidgetExt,
     WindowDesc,
+    EventCtx,
+    Event,
+    Env,
 };
 use storage::Storage;
 
@@ -22,6 +25,7 @@ struct AppState {
     input_str: Vec<Vec<String>>,
     expected_input: Vec<Vec<String>>,
     display_word: Vec<Vec<String>>,
+    display_word_remarks: Vec<Vec<String>>,
     res: Vec<Vec<String>>,
     curr_indexes: Vec<usize>,
     str: String,
@@ -36,6 +40,14 @@ impl Data for AppState {
             return false;
         }
         if !is_same_2_d_vec_string(self.display_word.clone(), other.display_word.clone()) {
+            return false;
+        }
+        if
+            !is_same_2_d_vec_string(
+                self.display_word_remarks.clone(),
+                other.display_word_remarks.clone()
+            )
+        {
             return false;
         }
         if !is_same_2_d_vec_string(self.res.clone(), other.res.clone()) {
@@ -85,6 +97,7 @@ impl AppState {
         let storage_unit = Storage::new();
         let all_sets = storage_unit.get_all();
         let mut display: Vec<Vec<String>> = Vec::new();
+        let mut remarks: Vec<Vec<String>> = Vec::new();
         let mut expected: Vec<Vec<String>> = Vec::new();
         let mut input_all: Vec<Vec<String>> = Vec::new();
         let mut res_all: Vec<Vec<String>> = Vec::new();
@@ -93,16 +106,19 @@ impl AppState {
             let cards = set.get_all_cards();
             let mut card_set_answers = Vec::new();
             let mut card_set_displays = Vec::new();
+            let mut card_set_word_remarks = Vec::new();
             let mut card_set_inputs = Vec::new();
             let mut card_set_res = Vec::new();
             for card in cards {
                 card_set_answers.push(card.get_ans());
                 card_set_displays.push(card.get_word());
+                card_set_word_remarks.push(card.get_remarks());
                 card_set_inputs.push("".to_string());
                 card_set_res.push("".to_string());
             }
             expected.push(card_set_answers);
             display.push(card_set_displays);
+            remarks.push(card_set_word_remarks);
             input_all.push(card_set_inputs);
             res_all.push(card_set_res);
             indexes.push(0);
@@ -111,6 +127,7 @@ impl AppState {
             input_str: input_all,
             expected_input: expected,
             display_word: display,
+            display_word_remarks: remarks,
             res: res_all,
             curr_indexes: indexes,
             str: String::new(),
@@ -125,10 +142,15 @@ fn test_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
         let word_index = data.curr_indexes[index];
         data.display_word[index][word_index].to_string()
     }).with_text_size(32.0);
+    let remarks_label = Label::dynamic(move |data: &AppState, _env| -> String {
+        let remark_index = data.curr_indexes[index];
+        data.display_word_remarks[index][remark_index].to_string()
+    }).with_text_size(32.0);
 
     let text_box = TextBox::new()
         .with_placeholder("Enter text here")
-        .fix_width(150.0)
+        .with_text_size(24.0)
+        .fix_width(300.0)
         .lens(AppState::str);
 
     let clear = Button::new("Clear").on_click(
@@ -191,12 +213,19 @@ fn test_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
 
     let inputs = Flex::row().with_child(prev).with_child(clear).with_child(next);
 
-    let card = Flex::column().with_child(index_label).with_child(word_label);
+    let card = Flex::column()
+        .with_child(index_label)
+        .with_spacer(20.0)
+        .with_child(word_label)
+        .with_spacer(20.0)
+        .with_child(remarks_label);
     let card = card
         .with_child(text_box)
         .with_spacer(20.0)
         .with_child(inputs)
+        .with_spacer(20.0)
         .with_child(res_label)
+        .with_spacer(20.0)
         .with_child(eval_results);
     card
 }
@@ -208,9 +237,14 @@ fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
         let word_index = data.curr_indexes[index];
         data.display_word[index][word_index].to_string()
     }).with_text_size(32.0);
+    let remarks_label = Label::dynamic(move |data: &AppState, _env| -> String {
+        let remark_index = data.curr_indexes[index];
+        data.display_word_remarks[index][remark_index].to_string()
+    }).with_text_size(32.0);
     let text_box = TextBox::new()
         .with_placeholder("Enter text here")
-        .fix_width(150.0)
+        .with_text_size(24.0)
+        .fix_width(300.0)
         .lens(AppState::str);
     let enter = Button::new("Confirm").on_click(
         move |ctx, data: &mut AppState, _env| -> () {
@@ -285,12 +319,19 @@ fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
 
     let inputs = Flex::row().with_child(prev).with_child(enter).with_child(clear).with_child(next);
 
-    let card = Flex::column().with_child(index_label).with_child(word_label);
+    let card = Flex::column()
+        .with_child(index_label)
+        .with_child(word_label)
+        .with_spacer(10.0)
+        .with_child(remarks_label)
+        .with_spacer(20.0);
     let card = card
         .with_child(text_box)
         .with_spacer(20.0)
         .with_child(inputs)
+        .with_spacer(20.0)
         .with_child(res_label)
+        .with_spacer(10.0)
         .with_child(eval_results);
     card
 }
@@ -350,8 +391,9 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
                     learn_page_builder(set_cloned.get_id(), set_cloned.get_desc())
                 ).title(set_cloned.get_desc());
                 ctx.new_window(new_win);
+                ctx.request_update();
             }
-        );
+        ); //.controller(NewWindowController);
         let test_button = Button::new("Test").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
                 let new_win = WindowDesc::new(
@@ -373,6 +415,19 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
     let aligned_widget = Align::right(scroll);
     aligned_widget
 }
+
+// struct NewWindowController;
+
+// impl<W: Widget<AppState>> Controller<AppState, W> for NewWindowController {
+//     fn event(&mut self, child: &mut W, ctx: &mut EventCtx, event: &Event, data: &mut AppState, env: &Env) {
+//         if let Event::WindowCloseRequested = event {
+//             println!("New window is closing");
+//         }
+//         ctx.request_update();
+//         child.event(ctx, event, data, env);
+//         // todo: save data
+//     }
+// }
 
 pub fn main() {
     // Window Descriptor

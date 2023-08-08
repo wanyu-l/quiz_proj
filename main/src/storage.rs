@@ -10,6 +10,7 @@ const DATA_DIR_PATH: &str = "./data";
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Card {
+    id: usize,
     word: String,
     ans: String,
     remarks: String,
@@ -25,8 +26,9 @@ impl Data for Card {
 }
 
 impl Card {
-    pub fn new(word: String, ans: String, remark: String) -> Card {
+    pub fn new(id: usize, word: String, ans: String, remark: String) -> Card {
         Card {
+            id: id,
             word: word,
             ans: ans,
             remarks: remark,
