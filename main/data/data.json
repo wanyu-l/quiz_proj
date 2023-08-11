@@ -67,5 +67,9 @@
       { "id": 0, "word": "恐龙抗浪", "ans": "我没k", "remarks": "我从小就没k" }
     ]
   },
-  { "id": 4, "name": "asd", "cards": [] }
+  {
+    "id": 4,
+    "name": "asd",
+    "cards": [{ "id": 0, "word": "", "ans": "", "remarks": "" }]
+  }
 ]

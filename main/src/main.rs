@@ -150,9 +150,7 @@ impl AppState {
     }
 }
 
-// index is the id of the study set
-fn test_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
-    let index = id - 1;
+fn test_page_builder(index: usize, test_name: String) -> impl Widget<AppState> {
     let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
         let word_index = data.curr_indexes[index];
         data.display_word[index][word_index].to_string()
@@ -257,8 +255,7 @@ fn test_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
 }
 
 // index is the id of the study set
-fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
-    let index = id - 1;
+fn learn_page_builder(index: usize, test_name: String) -> impl Widget<AppState> {
     let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
         let word_index = data.curr_indexes[index];
         data.display_word[index][word_index].to_string()
@@ -373,6 +370,16 @@ fn learn_page_builder(id: usize, test_name: String) -> impl Widget<AppState> {
     card.with_spacer(200.0).with_child(return_to_main)
 }
 
+fn get_scores(user_answers: Vec<String>, expected_answers: Vec<String>) -> usize {
+    let mut score = 0;
+    for i in 0..user_answers.len() {
+        if user_answers[i] == expected_answers[i] {
+            score += 1;
+        }
+    }
+    score
+}
+
 fn result_page_builder(
     test_name: String,
     user_answers: Vec<String>,
@@ -383,7 +390,14 @@ fn result_page_builder(
         .with_text_size(32.0)
         .with_text_color(Color::TEAL)
         .center();
-    let mut list: Flex<AppState> = Flex::column().with_child(lesson_label);
+    let score_label = Label::new(
+        format!(
+            "You Scored: {}/{}",
+            get_scores(user_answers.clone(), expected_answers.clone()),
+            user_answers.len()
+        )
+    ).with_text_size(32.0).with_text_color(Color::AQUA);
+    let mut list: Flex<AppState> = Flex::column().with_child(lesson_label).with_spacer(30.0).with_child(score_label);
     for i in 0..display_words.len() {
         let word = format!("Word:\n[{}]", display_words[i]);
         let word_label: Label<AppState> = Label::new(word)
@@ -602,9 +616,7 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
 
         let edit_setname_button = Button::new("Edit").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
-                let new_win = WindowDesc::new(
-                    edit_setname_page_builder(id)
-                ).title("Edit Set Name");
+                let new_win = WindowDesc::new(edit_setname_page_builder(id)).title("Edit Set Name");
                 ctx.new_window(new_win);
                 ctx.window().close();
             }
