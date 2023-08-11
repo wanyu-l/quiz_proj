@@ -89,11 +89,19 @@ impl StudySet {
         }
     }
 
+    pub fn rename_set(&mut self, new_name: String) {
+        self.name = new_name;
+    }
+
+    pub fn set_id(&mut self, new_id: usize) {
+        self.id = new_id;
+    }
+
     pub fn add_card(&mut self, card: Card) {
         self.cards.push(card);
     }
 
-    pub fn remove_card(&mut self, to_remove: usize) {
+    pub fn delete_card(&mut self, to_remove: usize) {
         self.cards.remove(to_remove);
     }
 
@@ -155,9 +163,40 @@ impl Storage {
         self.sets[set_id] = updated_set;
     }
 
+    pub fn add_set(&mut self, new_set: StudySet) {
+        self.sets.push(new_set);
+    }
+
+    pub fn delete_set(&mut self, set_id: usize) {
+        for i in 0..self.sets.len() {
+            if self.sets[i].get_id() == set_id {
+                self.sets.remove(i);
+                break;
+            }
+        }
+    }
+
     pub fn save(&self) -> () {
         // clean up various ids
-        let data = serde_json::to_string(&self.sets).expect("Error parsing data to json");
+        let mut set_arr: Vec<StudySet> = vec![];
+        let mut set_id = 0;
+        for set in &self.sets {
+            let mut temp_set: StudySet = StudySet::new(set.get_desc(), set_id);
+            let mut card_id = 0;
+            for card in &set.cards {
+                let temp_card = Card::new(
+                    card_id,
+                    card.get_word(),
+                    card.get_ans(),
+                    card.get_remarks()
+                );
+                temp_set.add_card(temp_card);
+                card_id += 1;
+            }
+            set_id += 1;
+            set_arr.push(temp_set);
+        }
+        let data = serde_json::to_string(&set_arr).expect("Error parsing data to json");
         let mut file = OpenOptions::new()
             .write(true)
             .truncate(true)
