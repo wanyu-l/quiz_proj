@@ -1,92 +1,60 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "name": "Lesson 1",
     "cards": [
-      { "id": 1, "word": "I", "ans": "わたし", "remarks": "" },
-      { "id": 2, "word": "We", "ans": "わたしたち", "remarks": "" },
+      { "id": 0, "word": "I", "ans": "わたし", "remarks": "" },
+      { "id": 1, "word": "We", "ans": "わたしたち", "remarks": "" },
       {
-        "id": 3,
+        "id": 2,
         "word": "You (DO NOT use in conversation/messages)",
         "ans": "あなた",
         "remarks": "can be used in announcements"
       },
-      { "id": 4, "word": "That person", "ans": "あのひと", "remarks": "" },
+      { "id": 3, "word": "That person", "ans": "あのひと", "remarks": "" },
       {
-        "id": 5,
+        "id": 4,
         "word": "That person (polite)",
         "ans": "あのかた",
         "remarks": ""
       },
       {
-        "id": 6,
+        "id": 5,
         "word": "All of you / Everyone",
         "ans": "みなさん",
         "remarks": ""
       },
       {
-        "id": 7,
+        "id": 6,
         "word": "Mr./Mrs. ~",
         "ans": "～さん",
         "remarks": "title of respect"
       },
       {
-        "id": 8,
+        "id": 7,
         "word": "Suffix of name (casual)",
         "ans": "ちゃん",
         "remarks": "often for girls or nicknames"
-      },
-      { "id": 9, "word": "", "ans": "", "remarks": "" },
-      { "id": 10, "word": "", "ans": "", "remarks": "" },
-      { "id": 11, "word": "", "ans": "", "remarks": "" },
-      { "id": 12, "word": "", "ans": "", "remarks": "" },
-      { "id": 13, "word": "", "ans": "", "remarks": "" },
-      { "id": 14, "word": "", "ans": "", "remarks": "" },
-      { "id": 15, "word": "", "ans": "", "remarks": "" },
-      { "id": 16, "word": "", "ans": "", "remarks": "" },
-      { "id": 17, "word": "", "ans": "", "remarks": "" },
-      { "id": 18, "word": "", "ans": "", "remarks": "" },
-      { "id": 19, "word": "", "ans": "", "remarks": "" },
-      { "id": 20, "word": "", "ans": "", "remarks": "" },
-      { "id": 21, "word": "", "ans": "", "remarks": "" },
-      { "id": 22, "word": "", "ans": "", "remarks": "" },
-      { "id": 23, "word": "", "ans": "", "remarks": "" },
-      { "id": 24, "word": "", "ans": "", "remarks": "" },
-      { "id": 25, "word": "", "ans": "", "remarks": "" },
-      { "id": 26, "word": "", "ans": "", "remarks": "" },
-      { "id": 27, "word": "", "ans": "", "remarks": "" },
-      { "id": 28, "word": "", "ans": "", "remarks": "" },
-      { "id": 29, "word": "", "ans": "", "remarks": "" },
-      { "id": 30, "word": "", "ans": "", "remarks": "" },
-      { "id": 31, "word": "", "ans": "", "remarks": "" },
-      { "id": 32, "word": "", "ans": "", "remarks": "" },
-      { "id": 33, "word": "", "ans": "", "remarks": "" },
-      { "id": 34, "word": "", "ans": "", "remarks": "" },
-      { "id": 35, "word": "", "ans": "", "remarks": "" },
-      { "id": 36, "word": "", "ans": "", "remarks": "" },
-      { "id": 37, "word": "", "ans": "", "remarks": "" },
-      { "id": 38, "word": "", "ans": "", "remarks": "" },
-      { "id": 39, "word": "", "ans": "", "remarks": "" },
-      { "id": 40, "word": "", "ans": "", "remarks": "" },
-      { "id": 41, "word": "", "ans": "", "remarks": "" },
-      { "id": 42, "word": "", "ans": "", "remarks": "" },
-      { "id": 43, "word": "", "ans": "", "remarks": "" }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Lesson 2",
+    "cards": [
+      { "id": 0, "word": "美しい", "ans": "うつくしい", "remarks": "" },
+      { "id": 1, "word": "愛してる", "ans": "あいしてる", "remarks": "" }
     ]
   },
   {
     "id": 2,
-    "name": "Lesson 2",
-    "cards": [
-      { "id": 1, "word": "美しい", "ans": "うつくしい", "remarks": "" },
-      { "id": 2, "word": "愛してる", "ans": "あいしてる", "remarks": "" }
-    ]
-  },
-  {
-    "id": 3,
     "name": "Lesson 3",
     "cards": [
-      { "id": 1, "word": "美しい", "ans": "うつくしい", "remarks": "" },
-      { "id": 2, "word": "愛してる", "ans": "あいしてる", "remarks": "" }
+      { "id": 0, "word": "美しい", "ans": "うつくしい", "remarks": "" },
+      { "id": 1, "word": "愛してる", "ans": "あいしてる", "remarks": "" },
+      { "id": 2, "word": "", "ans": "", "remarks": "" },
+      { "id": 3, "word": "", "ans": "", "remarks": "" },
+      { "id": 4, "word": "daw", "ans": "sd", "remarks": "s" }
     ]
   }
 ]

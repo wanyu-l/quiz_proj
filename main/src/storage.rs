@@ -26,13 +26,22 @@ impl Data for Card {
 }
 
 impl Card {
-    pub fn new(id: usize, word: String, ans: String, remark: String) -> Card {
+    pub fn new(
+        new_card_id: usize,
+        new_card_word: String,
+        new_card_ans: String,
+        new_card_remark: String
+    ) -> Card {
         Card {
-            id: id,
-            word: word,
-            ans: ans,
-            remarks: remark,
+            id: new_card_id,
+            word: new_card_word,
+            ans: new_card_ans,
+            remarks: new_card_remark,
         }
+    }
+
+    pub fn get_id(&self) -> usize {
+        self.id.clone()
     }
 
     pub fn get_word(&self) -> String {
@@ -72,12 +81,20 @@ impl Data for StudySet {
 }
 
 impl StudySet {
-    pub fn new(name: String, id: u16) {}
+    pub fn new(new_set_name: String, new_set_id: usize) -> StudySet {
+        StudySet {
+            id: new_set_id,
+            name: new_set_name,
+            cards: vec![],
+        }
+    }
 
-    pub fn add_card(&self, card: Card) {}
+    pub fn add_card(&mut self, card: Card) {
+        self.cards.push(card);
+    }
 
-    pub fn get_card(&self) -> Card {
-        self.cards[0].clone()
+    pub fn remove_card(&mut self, to_remove: usize) {
+        self.cards.remove(to_remove);
     }
 
     pub fn get_desc(&self) -> String {
@@ -126,24 +143,20 @@ impl Storage {
         self.sets.clone()
     }
 
-    pub fn get_study_set(&self, to_get: String) -> StudySet {
-        for set in &self.sets {
-            if to_get == set.name {
-                return set.clone();
-            }
-        }
-        StudySet {
-            name: "Empty".to_string(),
-            cards: vec![],
-            id: 0,
-        }
+    pub fn get_study_set(&self, to_get: usize) -> StudySet {
+        self.sets[to_get].clone()
     }
 
     pub fn get_num_of_sets(&self) -> usize {
         self.sets.len()
     }
 
+    pub fn update_set(&mut self, set_id: usize, updated_set: StudySet) {
+        self.sets[set_id] = updated_set;
+    }
+
     pub fn save(&self) -> () {
+        // clean up various ids
         let data = serde_json::to_string(&self.sets).expect("Error parsing data to json");
         let mut file = OpenOptions::new()
             .write(true)
