@@ -242,7 +242,8 @@ fn test_page_builder(index: usize, test_name: String) -> impl Widget<AppState> {
         .with_spacer(20.0)
         .with_child(word_label)
         .with_spacer(20.0)
-        .with_child(remarks_label);
+        .with_child(remarks_label)
+        .with_spacer(30.0);
     let card = card
         .with_child(text_box)
         .with_spacer(20.0)
@@ -540,12 +541,13 @@ fn view_page_builder(
         let remarks_label: Label<AppState> = Label::new(remarks)
             .with_text_size(24.0)
             .with_text_color(Color::OLIVE);
+        let buttons_row = Flex::row().with_child(edit_word_button).with_spacer(10.0).with_child(delete_word_button);
         word_row = word_row
             .with_child(word_label.align_left())
             .with_child(answer_label.align_left())
-            .with_child(remarks_label.align_left());
+            .with_child(remarks_label.align_left())
+            .with_child(buttons_row);
         list = list.with_child(word_row.padding(20.0).border(Color::YELLOW, 1.0).padding(5.0));
-        list = list.with_child(edit_word_button).with_spacer(10.0).with_child(delete_word_button);
     }
     let add_word_button = Button::new("Add Word").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
@@ -556,7 +558,7 @@ fn view_page_builder(
             ctx.window().close();
         }
     );
-    list = list.with_child(add_word_button);
+    list = list.with_spacer(30.0).with_child(add_word_button);
     let scroll = Scroll::new(list.padding(40.0)).vertical();
     scroll
 }

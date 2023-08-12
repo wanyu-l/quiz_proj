@@ -1,75 +1,578 @@
 [
-  {
-    "id": 0,
-    "name": "Lesson 1",
-    "cards": [
-      { "id": 0, "word": "I", "ans": "わたし", "remarks": "" },
-      { "id": 1, "word": "We", "ans": "わたしたち", "remarks": "" },
-      {
+    {
+        "id": 0,
+        "name": "Lesson 1",
+        "cards": [
+            {
+                "id": 0,
+                "word": "I",
+                "ans": "わたし",
+                "remarks": ""
+            },
+            {
+                "id": 1,
+                "word": "We",
+                "ans": "わたしたち",
+                "remarks": ""
+            },
+            {
+                "id": 2,
+                "word": "You (DO NOT use in conversation/messages)",
+                "ans": "あなた",
+                "remarks": "can be used in announcements"
+            },
+            {
+                "id": 3,
+                "word": "That person",
+                "ans": "あのひと",
+                "remarks": ""
+            },
+            {
+                "id": 4,
+                "word": "That person (polite)",
+                "ans": "あのかた",
+                "remarks": ""
+            },
+            {
+                "id": 5,
+                "word": "All of you / Everyone",
+                "ans": "みなさん",
+                "remarks": ""
+            },
+            {
+                "id": 6,
+                "word": "Mr./Mrs. ~",
+                "ans": "～さん",
+                "remarks": "title of respect"
+            },
+            {
+                "id": 7,
+                "word": "Suffix of name (casual)",
+                "ans": "ちゃん",
+                "remarks": "often for girls or nicknames"
+            },
+            {
+                "id": 8,
+                "word": "suffix meaning 'a national of --'",
+                "ans": "じん",
+                "remarks": "eg: nihon~, chuugoku~"
+            },
+            {
+                "id": 9,
+                "word": "teacher",
+                "ans": "せんせい",
+                "remarks": "honourable title, not only teachers"
+            },
+            {
+                "id": 10,
+                "word": "teacher (own or family member's job)",
+                "ans": "きょうし",
+                "remarks": "job title"
+            },
+            {
+                "id": 11,
+                "word": "student",
+                "ans": "がくせい",
+                "remarks": ""
+            },
+            {
+                "id": 12,
+                "word": "company employee",
+                "ans": "かいしゃいん",
+                "remarks": ""
+            },
+            {
+                "id": 13,
+                "word": "employee of - company",
+                "ans": "しゃいん",
+                "remarks": ""
+            },
+            {
+                "id": 14,
+                "word": "bank employee",
+                "ans": "ぎんこういん",
+                "remarks": ""
+            },
+            {
+                "id": 15,
+                "word": "medical doctor",
+                "ans": "いしゃ",
+                "remarks": "医者"
+            },
+            {
+                "id": 16,
+                "word": "researcher",
+                "ans": "けんきゅうしゃ",
+                "remarks": "研究者"
+            },
+            {
+                "id": 17,
+                "word": "university",
+                "ans": "だいがく",
+                "remarks": "大学"
+            },
+            {
+                "id": 18,
+                "word": "hospital",
+                "ans": "びょういん",
+                "remarks": "dont get confused with salon"
+            },
+            {
+                "id": 19,
+                "word": "who",
+                "ans": "だれ",
+                "remarks": ""
+            },
+            {
+                "id": 20,
+                "word": "who (polite)",
+                "ans": "どなた",
+                "remarks": ""
+            },
+            {
+                "id": 21,
+                "word": "-- years old",
+                "ans": "さい",
+                "remarks": ""
+            },
+            {
+                "id": 22,
+                "word": "how old",
+                "ans": "なんさい",
+                "remarks": "how (many years) old"
+            },
+            {
+                "id": 23,
+                "word": "how old (polite)",
+                "ans": "おいくつ",
+                "remarks": "remember DESU KA"
+            },
+            {
+                "id": 24,
+                "word": "Yes",
+                "ans": "はい",
+                "remarks": ""
+            },
+            {
+                "id": 25,
+                "word": "No",
+                "ans": "いいえ",
+                "remarks": ""
+            },
+            {
+                "id": 26,
+                "word": "National University of Singapore",
+                "ans": "シンガポールこくりつだいがく",
+                "remarks": ""
+            },
+            {
+                "id": 27,
+                "word": "major",
+                "ans": "せんこう",
+                "remarks": "专攻"
+            },
+            {
+                "id": 28,
+                "word": "major",
+                "ans": "せんもん",
+                "remarks": "专门"
+            },
+            {
+                "id": 29,
+                "word": "what year of study",
+                "ans": "なんねんせい",
+                "remarks": "何年生"
+            },
+            {
+                "id": 30,
+                "word": "1st year student",
+                "ans": "いちねんせい",
+                "remarks": "一年生"
+            },
+            {
+                "id": 31,
+                "word": "2nd year student",
+                "ans": "にねんせい",
+                "remarks": "二年生"
+            },
+            {
+                "id": 32,
+                "word": "3rd year student",
+                "ans": "さんねんせい",
+                "remarks": "三年生"
+            },
+            {
+                "id": 33,
+                "word": "4th year student",
+                "ans": "よねんせい",
+                "remarks": "四年生"
+            },
+            {
+                "id": 34,
+                "word": "20 years old",
+                "ans": "はたち",
+                "remarks": "irregular"
+            },
+            {
+                "id": 35,
+                "word": "How do you do?",
+                "ans": "はじめまして",
+                "remarks": "greeting used at first meet"
+            },
+            {
+                "id": 36,
+                "word": "I came from the US.",
+                "ans": "アメリカからきました",
+                "remarks": ""
+            },
+            {
+                "id": 37,
+                "word": "Pleased to meet you.",
+                "ans": "どうぞよろしくおねがいします",
+                "remarks": "Please take care of me 请多指教"
+            },
+            {
+                "id": 38,
+                "word": "Excuse me / I might be being rude, but ---",
+                "ans": "しつれいですが",
+                "remarks": ""
+            },
+            {
+                "id": 39,
+                "word": "Your name is?",
+                "ans": "おなまえは",
+                "remarks": ""
+            },
+            {
+                "id": 40,
+                "word": "This is Mr Miller (polite)",
+                "ans": "こちらはミラーさんです",
+                "remarks": ""
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Lesson 2",
+        "cards": [
+            {
+                "id": 0,
+                "word": "this one (close to speaker)",
+                "ans": "これ",
+                "remarks": ""
+            },
+            {
+                "id": 1,
+                "word": "that one (near listener)",
+                "ans": "それ",
+                "remarks": ""
+            },
+            {
+                "id": 2,
+                "word": "that one over there",
+                "ans": "あれ",
+                "remarks": "far from both"
+            },
+            {
+                "id": 3,
+                "word": "this [+ noun]",
+                "ans": "この",
+                "remarks": ""
+            },
+            {
+                "id": 4,
+                "word": "that [+ noun] near listener",
+                "ans": "その",
+                "remarks": ""
+            },
+            {
+                "id": 5,
+                "word": "that [+ noun] over there",
+                "ans": "あの",
+                "remarks": "far from both"
+            },
+            {
+                "id": 6,
+                "word": "book",
+                "ans": "ほん",
+                "remarks": ""
+            },
+            {
+                "id": 7,
+                "word": "dictionary",
+                "ans": "じしょ",
+                "remarks": "辞书"
+            },
+            {
+                "id": 8,
+                "word": "textbook",
+                "ans": "きょうかしょ",
+                "remarks": "教科书"
+            },
+            {
+                "id": 9,
+                "word": "magazine",
+                "ans": "ざっし",
+                "remarks": "杂志"
+            },
+            {
+                "id": 10,
+                "word": "newspaper",
+                "ans": "しんぶん",
+                "remarks": "新闻"
+            },
+            {
+                "id": 11,
+                "word": "notebook",
+                "ans": "ノート",
+                "remarks": ""
+            },
+            {
+                "id": 12,
+                "word": "pocket notebook",
+                "ans": "てちょう",
+                "remarks": "手账"
+            },
+            {
+                "id": 13,
+                "word": "business card",
+                "ans": "めいし",
+                "remarks": "名刺"
+            },
+            {
+                "id": 14,
+                "word": "card",
+                "ans": "カード",
+                "remarks": "credit card etc."
+            },
+            {
+                "id": 15,
+                "word": "pencil",
+                "ans": "えんぴつ",
+                "remarks": ""
+            },
+            {
+                "id": 16,
+                "word": "pen",
+                "ans": "ペン",
+                "remarks": ""
+            },
+            {
+                "id": 17,
+                "word": "ballpoint pen",
+                "ans": "ボールペン",
+                "remarks": ""
+            },
+            {
+                "id": 18,
+                "word": "mechanical pencil",
+                "ans": "シャープペンシル",
+                "remarks": ""
+            },
+            {
+                "id": 19,
+                "word": "key",
+                "ans": "かぎ",
+                "remarks": ""
+            },
+            {
+                "id": 20,
+                "word": "watch, clock",
+                "ans": "とけい",
+                "remarks": ""
+            },
+            {
+                "id": 21,
+                "word": "umbrella",
+                "ans": "かさ",
+                "remarks": ""
+            },
+            {
+                "id": 22,
+                "word": "bag",
+                "ans": "かばん",
+                "remarks": ""
+            },
+            {
+                "id": 23,
+                "word": "TV",
+                "ans": "テレビ",
+                "remarks": ""
+            },
+            {
+                "id": 24,
+                "word": "radio",
+                "ans": "ラジオ",
+                "remarks": ""
+            },
+            {
+                "id": 25,
+                "word": "camera",
+                "ans": "カメラ",
+                "remarks": ""
+            },
+            {
+                "id": 26,
+                "word": "computer / PC",
+                "ans": "コンピューター",
+                "remarks": "General computers"
+            },
+            {
+                "id": 27,
+                "word": "computer / PC",
+                "ans": "パソコン",
+                "remarks": "Personal device"
+            },
+            {
+                "id": 28,
+                "word": "car",
+                "ans": "くるま",
+                "remarks": ""
+            },
+            {
+                "id": 29,
+                "word": "mobile phone",
+                "ans": "けいたいでんわ",
+                "remarks": "携带电话"
+            },
+            {
+                "id": 30,
+                "word": "desk",
+                "ans": "つくえ",
+                "remarks": ""
+            },
+            {
+                "id": 31,
+                "word": "chair",
+                "ans": "いす",
+                "remarks": ""
+            },
+            {
+                "id": 32,
+                "word": "chocolate",
+                "ans": "チョコレート",
+                "remarks": ""
+            },
+            {
+                "id": 33,
+                "word": "coffee",
+                "ans": "コーヒー",
+                "remarks": ""
+            },
+            {
+                "id": 34,
+                "word": "souvenir",
+                "ans": "おみやげ",
+                "remarks": ""
+            },
+            {
+                "id": 35,
+                "word": "English (language)",
+                "ans": "えいご",
+                "remarks": "英语"
+            },
+            {
+                "id": 36,
+                "word": "Japanese language",
+                "ans": "にほんご",
+                "remarks": "日本语"
+            },
+            {
+                "id": 37,
+                "word": "-- language",
+                "ans": "ご",
+                "remarks": ""
+            },
+            {
+                "id": 38,
+                "word": "what",
+                "ans": "なん",
+                "remarks": ""
+            },
+            {
+                "id": 39,
+                "word": "That's right.",
+                "ans": "そうです",
+                "remarks": ""
+            },
+            {
+                "id": 40,
+                "word": "No, it isn't. / That's wrong",
+                "ans": "ちがいます",
+                "remarks": ""
+            },
+            {
+                "id": 41,
+                "word": "I see",
+                "ans": "そうですか",
+                "remarks": ""
+            },
+            {
+                "id": 42,
+                "word": "Well, -- (hesitating)",
+                "ans": "あのう",
+                "remarks": ""
+            },
+            {
+                "id": 43,
+                "word": "Oh? What!",
+                "ans": "えっ",
+                "remarks": "(reaction) something unexpected"
+            },
+            {
+                "id": 44,
+                "word": "Oh",
+                "ans": "あ",
+                "remarks": "when becoming aware of something"
+            },
+            {
+                "id": 45,
+                "word": "Please. (offering)",
+                "ans": "どうぞ",
+                "remarks": ""
+            },
+            {
+                "id": 46,
+                "word": "Thanks",
+                "ans": "どうも",
+                "remarks": "Casual response"
+            },
+            {
+                "id": 47,
+                "word": "Thank you very much",
+                "ans": "どうもありがとうございます",
+                "remarks": ""
+            },
+            {
+                "id": 48,
+                "word": "I hope for your kind assistance hereafter",
+                "ans": "これからおせわになります",
+                "remarks": ""
+            },
+            {
+                "id": 49,
+                "word": "I'm pleased to meet you, too",
+                "ans": "こちらこそよろしくおねがいします",
+                "remarks": "No me more"
+            }
+        ]
+    },
+    {
         "id": 2,
-        "word": "You (DO NOT use in conversation/messages)",
-        "ans": "あなた",
-        "remarks": "can be used in announcements"
-      },
-      { "id": 3, "word": "That person", "ans": "あのひと", "remarks": "" },
-      {
-        "id": 4,
-        "word": "That person (polite)",
-        "ans": "あのかた",
-        "remarks": ""
-      },
-      {
-        "id": 5,
-        "word": "All of you / Everyone",
-        "ans": "みなさん",
-        "remarks": ""
-      },
-      {
-        "id": 6,
-        "word": "Mr./Mrs. ~",
-        "ans": "～さん",
-        "remarks": "title of respect"
-      },
-      {
-        "id": 7,
-        "word": "Suffix of name (casual)",
-        "ans": "ちゃん",
-        "remarks": "often for girls or nicknames"
-      },
-      {
-        "id": 8,
-        "word": "suffix meaning 'a national of --'",
-        "ans": "じん",
-        "remarks": "eg: nihon~, chuugoku~"
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "name": "Lesson 2",
-    "cards": [
-      { "id": 0, "word": "美しい", "ans": "うつくしい", "remarks": "" },
-      { "id": 1, "word": "愛してる", "ans": "あいしてる", "remarks": "" }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Lesson 3",
-    "cards": [
-      { "id": 0, "word": "美しい", "ans": "うつくしい", "remarks": "" },
-      { "id": 1, "word": "愛してる", "ans": "あいしてる", "remarks": "" }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "布鲁biu",
-    "cards": [
-      { "id": 0, "word": "恐龙抗浪", "ans": "我没k", "remarks": "我从小就没k" }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "asd",
-    "cards": [{ "id": 0, "word": "", "ans": "", "remarks": "" }]
-  }
+        "name": "Lesson 3",
+        "cards": [
+            {
+                "id": 0,
+                "word": "美しい",
+                "ans": "うつくしい",
+                "remarks": ""
+            },
+            {
+                "id": 1,
+                "word": "愛してる",
+                "ans": "あいしてる",
+                "remarks": ""
+            }
+        ]
+    }
 ]
