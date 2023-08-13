@@ -29,11 +29,19 @@ struct AppState {
     word_remark_to_add: String,
     // for adding a studyset
     new_set_name: String,
+    new_set_tag: String,
+    // for learn function
+    answer_to_show: Vec<Vec<String>>,
 }
 
 fn is_valid(input_str: String) -> bool {
     input_str.replace(" ", "") != ""
 }
+// enum Module {}
+
+// fn get_color_code(tag: String) -> Color {
+//     Color::RED
+// }
 
 impl Data for AppState {
     fn same(&self, other: &Self) -> bool {
@@ -86,16 +94,20 @@ impl AppState {
     fn default(storage: Storage) -> AppState {
         let mut input_all: Vec<Vec<String>> = Vec::new();
         let mut res_all: Vec<Vec<String>> = Vec::new();
+        let mut ans_all: Vec<Vec<String>> = Vec::new();
         let mut indexes = Vec::new();
         for i in 0..storage.get_num_of_sets() {
             let mut card_set_inputs = Vec::new();
             let mut card_set_res = Vec::new();
+            let mut card_set_ans = Vec::new();
             (0..storage.get_study_set(i).get_num_of_cards()).for_each(|_i| {
                 card_set_inputs.push("".to_string());
                 card_set_res.push("".to_string());
+                card_set_ans.push("".to_string());
             });
             input_all.push(card_set_inputs);
             res_all.push(card_set_res);
+            ans_all.push(card_set_ans);
             indexes.push(0);
         }
         AppState {
@@ -108,6 +120,8 @@ impl AppState {
             word_ans_to_add: String::new(),
             word_remark_to_add: String::new(),
             new_set_name: String::new(),
+            new_set_tag: String::new(),
+            answer_to_show: ans_all,
         }
     }
 }
@@ -247,7 +261,7 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
         data.storage_unit
             .get_study_set(set_index)
             .get_card(remark_index)
-            .get_word()
+            .get_remarks()
     })
     .with_text_size(32.0);
     let text_box = TextBox::new()
@@ -303,6 +317,25 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
         ctx.request_update();
     });
 
+    let show_answer =
+        Button::new("Show Answer").on_click(move |ctx, data: &mut AppState, _env| -> () {
+            let word_index = data.curr_indexes[set_index];
+            let answer = data
+                .storage_unit
+                .get_study_set(set_index)
+                .get_card(word_index)
+                .get_ans();
+            data.answer_to_show[set_index][word_index] = answer;
+            ctx.request_update();
+        });
+
+    let hide_answer =
+        Button::new("Hide Answer").on_click(move |ctx, data: &mut AppState, _env| -> () {
+            let word_index = data.curr_indexes[set_index];
+            data.answer_to_show[set_index][word_index].clear();
+            ctx.request_update();
+        });
+
     let eval_results = Button::new("Submit Test").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             let ind = data.curr_indexes[set_index];
@@ -329,16 +362,26 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
         format!(
             "{} / {}\n",
             data.curr_indexes[set_index] + 1,
-            data.storage_unit.get_study_set(set_index).get_num_of_cards()
+            data.storage_unit
+                .get_study_set(set_index)
+                .get_num_of_cards()
         )
     })
     .with_text_size(24.0);
 
+    let show_answer_label = Label::dynamic(move |data: &AppState, _| {
+        let word_index = data.curr_indexes[set_index];
+        format!("[{}]", data.answer_to_show[set_index][word_index])
+    })
+    .with_text_size(24.0)
+    .with_text_color(Color::AQUA);
     let inputs = Flex::row()
         .with_child(prev)
         .with_child(enter)
         .with_child(clear)
         .with_child(next);
+
+    let answer_toggle = Flex::row().with_child(show_answer).with_child(hide_answer);
 
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
@@ -359,6 +402,10 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
         .with_child(text_box)
         .with_spacer(20.0)
         .with_child(inputs)
+        .with_spacer(20.0)
+        .with_child(answer_toggle)
+        .with_spacer(20.0)
+        .with_child(show_answer_label)
         .with_spacer(20.0)
         .with_child(res_label)
         .with_spacer(10.0)
@@ -464,7 +511,7 @@ fn add_word_page_builder(set_id: usize) -> impl Widget<AppState> {
                 data.word_remark_to_add.clone(),
             );
             target_set.add_card(new_card);
-            let window_title = target_set.get_desc();
+            let window_title = target_set.get_set_name();
             let lesson_name = window_title.clone();
             let new_win = WindowDesc::new(view_page_builder(
                 set_id,
@@ -478,6 +525,10 @@ fn add_word_page_builder(set_id: usize) -> impl Widget<AppState> {
             data.word_to_add.clear();
             data.storage_unit.update_set(set_id, target_set);
             data.storage_unit.save();
+            if set_id == data.res.len() {
+                data.res.push(Vec::new());
+                data.input_str.push(Vec::new());
+            }
             data.res[set_id].push(String::new());
             data.input_str[set_id].push(String::new());
             ctx.request_update();
@@ -540,7 +591,7 @@ fn view_page_builder(
             move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
                 let mut target_set = data.storage_unit.get_study_set(lesson_id);
                 target_set.delete_card(ind);
-                let window_title = target_set.get_desc();
+                let window_title = target_set.get_set_name();
                 let new_win = WindowDesc::new(view_page_builder(
                     lesson_id,
                     window_title.clone(),
@@ -600,15 +651,20 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
         let set_cloned_for_view = set.clone();
         let set_cloned = set.clone();
         let mut section = Flex::column();
-        let label = Label::new(set.get_desc()).with_text_size(24.0);
+        let set_name_label = Label::new(set.get_set_name()).with_text_size(24.0);
+        section.add_child(set_name_label);
+        for tag in set_cloned.get_all_tags() {
+            let tag_label = Label::new(tag).with_text_color(Color::LIME);
+            section = section.with_spacer(5.0).with_child(tag_label);
+        }
         let view_button = Button::new("View").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
                 let new_win = WindowDesc::new(view_page_builder(
                     set_cloned_for_view.get_id(),
-                    set_cloned_for_view.get_desc(),
+                    set_cloned_for_view.get_set_name(),
                     set_cloned_for_view.get_all_cards(),
                 ))
-                .title(set_cloned_for_view.get_desc());
+                .title(set_cloned_for_view.get_set_name());
                 ctx.new_window(new_win);
                 ctx.window().close();
             },
@@ -617,17 +673,17 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
                 let new_win = WindowDesc::new(learn_page_builder(
                     set_cloned.get_id(),
-                    set_cloned.get_desc(),
+                    set_cloned.get_set_name(),
                 ))
-                .title(set_cloned.get_desc());
+                .title(set_cloned.get_set_name());
                 ctx.new_window(new_win);
                 ctx.window().close();
             },
         );
         let test_button = Button::new("Test").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
-                let new_win = WindowDesc::new(test_page_builder(set.get_id(), set.get_desc()))
-                    .title(set.get_desc());
+                let new_win = WindowDesc::new(test_page_builder(set.get_id(), set.get_set_name()))
+                    .title(set.get_set_name());
                 ctx.new_window(new_win);
                 ctx.window().close();
             },
@@ -644,13 +700,16 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
         );
 
         let edit_setname_button = Button::new("Edit").on_click(
-            move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
-                let new_win = WindowDesc::new(edit_setname_page_builder(id)).title("Edit Set Name");
+            move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+                let new_win = WindowDesc::new(edit_set_page_builder(
+                    id,
+                    data.storage_unit.get_study_set(id).get_set_name(),
+                ))
+                .title("Edit Set Name & Tags");
                 ctx.new_window(new_win);
                 ctx.window().close();
             },
         );
-        section.add_child(label);
         let mut row = Flex::row();
         row.add_child(view_button);
         row.add_child(learn_button);
@@ -682,23 +741,30 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
 }
 
 fn add_set_page_builder() -> impl Widget<AppState> {
-    let error_label = Label::dynamic(|data: &AppState, _env| {
-        if is_valid(data.new_set_name.clone()) {
-            return String::from("Set Name Cannot Be Empty!");
-        } else {
-            return String::from("Enter Set Name");
-        }
-    })
-    .with_text_size(32.0)
-    .with_text_color(Color::YELLOW);
-    let input = TextBox::new()
+    let error_label = Label::new(String::from("Set Name Cannot Be Empty"))
+        .with_text_size(32.0)
+        .with_text_color(Color::YELLOW);
+    let set_name_input = TextBox::new()
+        .with_placeholder("Enter Set Name")
         .with_text_size(24.0)
         .fix_width(300.0)
         .lens(AppState::new_set_name);
+    let set_tag_input = TextBox::new()
+        .with_placeholder("Enter Tag")
+        .with_text_size(24.0)
+        .fix_width(300.0)
+        .lens(AppState::new_set_tag);
     let save_button = Button::new("Add Set").on_click(move |ctx, data: &mut AppState, _env| {
         let set_name = &data.new_set_name;
-        if is_valid(set_name.to_string()) {
-            let new_set = StudySet::new(set_name.clone(), data.storage_unit.get_num_of_sets());
+        let set_tag = &data.new_set_tag;
+        if is_valid(set_name.clone()) {
+            let mut new_set = StudySet::new(
+                set_name.trim().to_string(),
+                data.storage_unit.get_num_of_sets(),
+            );
+            if !set_tag.clone().is_empty() {
+                new_set.add_tag(set_tag.trim().to_string());
+            }
             data.storage_unit.add_set(new_set);
             data.storage_unit.save();
             let new_win =
@@ -711,31 +777,45 @@ fn add_set_page_builder() -> impl Widget<AppState> {
     Flex::column()
         .with_child(error_label)
         .with_spacer(50.0)
-        .with_child(input)
+        .with_child(set_name_input)
+        .with_spacer(50.0)
+        .with_child(set_tag_input)
         .with_spacer(50.0)
         .with_child(save_button)
         .center()
 }
 
-fn edit_setname_page_builder(set_id: usize) -> impl Widget<AppState> {
-    let error_label = Label::dynamic(|data: &AppState, _env| {
-        if is_valid(data.new_set_name.clone()) {
-            return String::from("Set Name Cannot Be Empty!");
-        } else {
-            return String::from("Enter Set Name");
-        }
-    })
-    .with_text_size(32.0)
-    .with_text_color(Color::YELLOW);
-    let input = TextBox::new()
+fn edit_set_page_builder(set_id: usize, curr_name: String) -> impl Widget<AppState> {
+    let return_to_main = Button::new("Return to Study Sets List").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            let new_win =
+                WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
+            ctx.new_window(new_win);
+            ctx.window().close();
+        },
+    );
+    let error_label = Label::new(String::from("Enter Set Name"))
+        .with_text_size(32.0)
+        .with_text_color(Color::YELLOW);
+    let set_name_input = TextBox::new()
+        .with_placeholder(curr_name)
         .with_text_size(24.0)
         .fix_width(300.0)
         .lens(AppState::new_set_name);
+    let set_tag_input = TextBox::new()
+        .with_placeholder("Enter Tag")
+        .with_text_size(24.0)
+        .fix_width(300.0)
+        .lens(AppState::new_set_tag);
     let save_button = Button::new("Add Set").on_click(move |ctx, data: &mut AppState, _env| {
         let set_name = &data.new_set_name;
+        let set_tag = &data.new_set_tag;
         if is_valid(set_name.to_string()) {
             let mut target_set = data.storage_unit.get_study_set(set_id);
-            target_set.rename_set(set_name.to_string());
+            target_set.rename_set(set_name.trim().to_string());
+            if is_valid(set_tag.clone()) {
+                target_set.add_tag(set_tag.trim().to_string());
+            }
             data.storage_unit.update_set(set_id, target_set);
             data.storage_unit.save();
             let new_win =
@@ -746,9 +826,13 @@ fn edit_setname_page_builder(set_id: usize) -> impl Widget<AppState> {
         }
     });
     Flex::column()
+        .with_child(return_to_main)
+        .with_spacer(50.0)
         .with_child(error_label)
         .with_spacer(50.0)
-        .with_child(input)
+        .with_child(set_name_input)
+        .with_spacer(50.0)
+        .with_child(set_tag_input)
         .with_spacer(50.0)
         .with_child(save_button)
         .center()

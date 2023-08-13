@@ -2,6 +2,9 @@
     {
         "id": 0,
         "name": "Lesson 1",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -254,6 +257,9 @@
     {
         "id": 1,
         "name": "Lesson 2",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -560,6 +566,9 @@
     {
         "id": 2,
         "name": "Lesson 3",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -842,6 +851,9 @@
     {
         "id": 3,
         "name": "Lesson 4",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -971,7 +983,7 @@
             },
             {
                 "id": 21,
-                "word": "night, evening ",
+                "word": "night, evening",
                 "ans": "ばん",
                 "remarks": "(usually used in compound words)"
             },
@@ -1172,6 +1184,9 @@
     {
         "id": 4,
         "name": "Lesson 5",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -1454,6 +1469,9 @@
     {
         "id": 5,
         "name": "Lesson 6",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -1754,6 +1772,9 @@
     {
         "id": 6,
         "name": "Lesson 7",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -1801,7 +1822,7 @@
                 "id": 7,
                 "word": "learn",
                 "ans": "ならいます",
-                "remarks": "verb "
+                "remarks": "verb"
             },
             {
                 "id": 8,
@@ -2030,6 +2051,9 @@
     {
         "id": 7,
         "name": "Lesson 8",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -2327,7 +2351,7 @@
             },
             {
                 "id": 49,
-                "word": "Well let me see. ",
+                "word": "Well let me see.",
                 "ans": "そうですね",
                 "remarks": ""
             },
@@ -2366,6 +2390,9 @@
     {
         "id": 8,
         "name": "Lesson 9",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -2714,6 +2741,9 @@
     {
         "id": 9,
         "name": "Lesson 10",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -2996,6 +3026,9 @@
     {
         "id": 10,
         "name": "Kanji Unit 1",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -3086,6 +3119,9 @@
     {
         "id": 11,
         "name": "Kanji Unit 2",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -3266,6 +3302,9 @@
     {
         "id": 12,
         "name": "Kanji Unit 3",
+        "tags": [
+            "LAJ 1"
+        ],
         "cards": [
             {
                 "id": 0,
@@ -3374,6 +3413,1491 @@
                 "word": "日本人",
                 "ans": "にほんじん",
                 "remarks": ""
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Kanji Unit 4",
+        "tags": [
+            "LAJ 1"
+        ],
+        "cards": [
+            {
+                "id": 0,
+                "word": "今",
+                "ans": "いま",
+                "remarks": ""
+            },
+            {
+                "id": 1,
+                "word": "今日",
+                "ans": "きょう",
+                "remarks": ""
+            },
+            {
+                "id": 2,
+                "word": "今月",
+                "ans": "こんげつ",
+                "remarks": ""
+            },
+            {
+                "id": 3,
+                "word": "朝",
+                "ans": "あさ",
+                "remarks": ""
+            },
+            {
+                "id": 4,
+                "word": "今朝",
+                "ans": "けさ",
+                "remarks": ""
+            },
+            {
+                "id": 5,
+                "word": "昼",
+                "ans": "ひる",
+                "remarks": ""
+            },
+            {
+                "id": 6,
+                "word": "晩",
+                "ans": "ばん",
+                "remarks": ""
+            },
+            {
+                "id": 7,
+                "word": "今晩",
+                "ans": "こんばん",
+                "remarks": ""
+            },
+            {
+                "id": 8,
+                "word": "四時",
+                "ans": "よじ",
+                "remarks": ""
+            },
+            {
+                "id": 9,
+                "word": "七時",
+                "ans": "しちじ",
+                "remarks": ""
+            },
+            {
+                "id": 10,
+                "word": "五分",
+                "ans": "ごふん",
+                "remarks": ""
+            },
+            {
+                "id": 11,
+                "word": "十分",
+                "ans": "じゅっぷん",
+                "remarks": ""
+            },
+            {
+                "id": 12,
+                "word": "九時半",
+                "ans": "くじはん",
+                "remarks": ""
+            },
+            {
+                "id": 13,
+                "word": "午前",
+                "ans": "ごぜん",
+                "remarks": ""
+            },
+            {
+                "id": 14,
+                "word": "午後",
+                "ans": "ごご",
+                "remarks": ""
+            },
+            {
+                "id": 15,
+                "word": "学校の前",
+                "ans": "がっこうのまえ",
+                "remarks": ""
+            },
+            {
+                "id": 16,
+                "word": "田中さんの後ろ",
+                "ans": "たなかさんのうしろ",
+                "remarks": ""
+            },
+            {
+                "id": 17,
+                "word": "休みます",
+                "ans": "やすみます",
+                "remarks": ""
+            },
+            {
+                "id": 18,
+                "word": "昼休み",
+                "ans": "ひるやすみ",
+                "remarks": ""
+            },
+            {
+                "id": 19,
+                "word": "毎日",
+                "ans": "まいにち",
+                "remarks": ""
+            },
+            {
+                "id": 20,
+                "word": "毎月",
+                "ans": "まいつき",
+                "remarks": ""
+            },
+            {
+                "id": 21,
+                "word": "何月何日",
+                "ans": "なんがつなんにち",
+                "remarks": ""
+            },
+            {
+                "id": 22,
+                "word": "何時",
+                "ans": "なんじ",
+                "remarks": ""
+            },
+            {
+                "id": 23,
+                "word": "何をしますか",
+                "ans": "なにをしますか",
+                "remarks": ""
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Kanji Unit 5",
+        "tags": [
+            "LAJ 1"
+        ],
+        "cards": [
+            {
+                "id": 0,
+                "word": "行きます",
+                "ans": "いきます",
+                "remarks": ""
+            },
+            {
+                "id": 1,
+                "word": "来ます",
+                "ans": "きます",
+                "remarks": ""
+            },
+            {
+                "id": 2,
+                "word": "来月",
+                "ans": "らいげつ",
+                "remarks": ""
+            },
+            {
+                "id": 3,
+                "word": "中学校",
+                "ans": "ちゅうがっこう",
+                "remarks": ""
+            },
+            {
+                "id": 4,
+                "word": "先週",
+                "ans": "せんしゅう",
+                "remarks": ""
+            },
+            {
+                "id": 5,
+                "word": "今週",
+                "ans": "こんしゅう",
+                "remarks": ""
+            },
+            {
+                "id": 6,
+                "word": "来週",
+                "ans": "らいしゅう",
+                "remarks": ""
+            },
+            {
+                "id": 7,
+                "word": "毎週",
+                "ans": "まいしゅう",
+                "remarks": ""
+            },
+            {
+                "id": 8,
+                "word": "去年",
+                "ans": "きょねん",
+                "remarks": ""
+            },
+            {
+                "id": 9,
+                "word": "今年",
+                "ans": "ことし",
+                "remarks": ""
+            },
+            {
+                "id": 10,
+                "word": "毎年",
+                "ans": "まいとし",
+                "remarks": ""
+            },
+            {
+                "id": 11,
+                "word": "駅の前",
+                "ans": "えきのまえ",
+                "remarks": ""
+            },
+            {
+                "id": 12,
+                "word": "車",
+                "ans": "くるま",
+                "remarks": ""
+            },
+            {
+                "id": 13,
+                "word": "電車",
+                "ans": "でんしゃ",
+                "remarks": ""
+            },
+            {
+                "id": 14,
+                "word": "自転車",
+                "ans": "じてんしゃ",
+                "remarks": ""
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Lesson 11",
+        "tags": [
+            "LAJ 2"
+        ],
+        "cards": [
+            {
+                "id": 0,
+                "word": "have",
+                "ans": "います",
+                "remarks": "animate, person/pet"
+            },
+            {
+                "id": 1,
+                "word": "have a child",
+                "ans": "こどもがいます",
+                "remarks": ""
+            },
+            {
+                "id": 2,
+                "word": "stay/be in Japan",
+                "ans": "にほんにいます",
+                "remarks": ""
+            },
+            {
+                "id": 3,
+                "word": "take, cost",
+                "ans": "かかります",
+                "remarks": "referring to time or money"
+            },
+            {
+                "id": 4,
+                "word": "take a day off / take a rest",
+                "ans": "やすみます",
+                "remarks": ""
+            },
+            {
+                "id": 5,
+                "word": "take a day off / absent from work",
+                "ans": "かいしゃをやすみます",
+                "remarks": ""
+            },
+            {
+                "id": 6,
+                "word": "apple",
+                "ans": "りんご",
+                "remarks": ""
+            },
+            {
+                "id": 7,
+                "word": "(Japanese) mandarin orange",
+                "ans": "みかん",
+                "remarks": ""
+            },
+            {
+                "id": 8,
+                "word": "sandwich",
+                "ans": "サンドイッチ",
+                "remarks": ""
+            },
+            {
+                "id": 9,
+                "word": "curry",
+                "ans": "カレー",
+                "remarks": ""
+            },
+            {
+                "id": 10,
+                "word": "ice cream",
+                "ans": "アイスクリーム",
+                "remarks": ""
+            },
+            {
+                "id": 11,
+                "word": "postage stamp",
+                "ans": "きって",
+                "remarks": "切手"
+            },
+            {
+                "id": 12,
+                "word": "postcard",
+                "ans": "はがき",
+                "remarks": "葉書"
+            },
+            {
+                "id": 13,
+                "word": "envelope",
+                "ans": "ふうとう",
+                "remarks": "封筒"
+            },
+            {
+                "id": 14,
+                "word": "parents",
+                "ans": "りょうしん",
+                "remarks": "両親"
+            },
+            {
+                "id": 15,
+                "word": "brothers and sisters, siblings",
+                "ans": "きょうだい",
+                "remarks": "兄弟"
+            },
+            {
+                "id": 16,
+                "word": "(my) elder brother",
+                "ans": "あに",
+                "remarks": "兄"
+            },
+            {
+                "id": 17,
+                "word": "(someone else's) elder brother",
+                "ans": "おにいさん",
+                "remarks": ""
+            },
+            {
+                "id": 18,
+                "word": "(my) elder sister",
+                "ans": "あね",
+                "remarks": "姉"
+            },
+            {
+                "id": 19,
+                "word": "(someone else's) elder sister",
+                "ans": "おねえさん",
+                "remarks": ""
+            },
+            {
+                "id": 20,
+                "word": "(my) younger brother",
+                "ans": "おとうと",
+                "remarks": "弟"
+            },
+            {
+                "id": 21,
+                "word": "(someone else's) younger brother",
+                "ans": "おとうとさん",
+                "remarks": ""
+            },
+            {
+                "id": 22,
+                "word": "(my) younger sister",
+                "ans": "いもうと",
+                "remarks": "妹"
+            },
+            {
+                "id": 23,
+                "word": "(someone else's) younger sister",
+                "ans": "いもうとさん",
+                "remarks": ""
+            },
+            {
+                "id": 24,
+                "word": "foreign country",
+                "ans": "がいこく",
+                "remarks": "外国"
+            },
+            {
+                "id": 25,
+                "word": "foreign student",
+                "ans": "りゅうがくせい",
+                "remarks": "留学生"
+            },
+            {
+                "id": 26,
+                "word": "class",
+                "ans": "クラス",
+                "remarks": ""
+            },
+            {
+                "id": 27,
+                "word": "about ~",
+                "ans": "ぐらい",
+                "remarks": "(used for amount/duration)"
+            },
+            {
+                "id": 28,
+                "word": "in total",
+                "ans": "ぜんぶで",
+                "remarks": "全部_"
+            },
+            {
+                "id": 29,
+                "word": "all, everything, everyone",
+                "ans": "みんな",
+                "remarks": ""
+            },
+            {
+                "id": 30,
+                "word": "only ~",
+                "ans": "だけ",
+                "remarks": ""
+            },
+            {
+                "id": 31,
+                "word": "Certainly./Sure.",
+                "ans": "かしこまりました",
+                "remarks": "formal, at restaurants etc"
+            },
+            {
+                "id": 32,
+                "word": "Nice weather, isn't it?",
+                "ans": "いいてんきですね",
+                "remarks": "can add お as honorific form"
+            },
+            {
+                "id": 33,
+                "word": "Are you going out?",
+                "ans": "おでかけですか",
+                "remarks": ""
+            },
+            {
+                "id": 34,
+                "word": "I'm just going to the post office.",
+                "ans": "ちょっとゆうびんきょくまで",
+                "remarks": ""
+            },
+            {
+                "id": 35,
+                "word": "See you later.",
+                "ans": "いってらっしゃい",
+                "remarks": "(when sending off)"
+            },
+            {
+                "id": 36,
+                "word": "See you later.",
+                "ans": "いってきます",
+                "remarks": "when going out"
+            },
+            {
+                "id": 37,
+                "word": "sea mail",
+                "ans": "ふなびん",
+                "remarks": "船便"
+            },
+            {
+                "id": 38,
+                "word": "airmail",
+                "ans": "こうくうびん",
+                "remarks": "航空便"
+            },
+            {
+                "id": 39,
+                "word": "airmail",
+                "ans": "エアメール",
+                "remarks": "Katakana"
+            },
+            {
+                "id": 40,
+                "word": "Please.",
+                "ans": "おねがいします",
+                "remarks": "拜托了"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Lesson 12",
+        "tags": [
+            "LAJ 2"
+        ],
+        "cards": [
+            {
+                "id": 0,
+                "word": "easy, simple",
+                "ans": "かんたん",
+                "remarks": "簡単［な］"
+            },
+            {
+                "id": 1,
+                "word": "near",
+                "ans": "ちかい",
+                "remarks": "近_"
+            },
+            {
+                "id": 2,
+                "word": "far",
+                "ans": "とおい",
+                "remarks": "遠_"
+            },
+            {
+                "id": 3,
+                "word": "fast",
+                "ans": "はやい",
+                "remarks": "速_"
+            },
+            {
+                "id": 4,
+                "word": "early",
+                "ans": "はやい",
+                "remarks": "早_"
+            },
+            {
+                "id": 5,
+                "word": "slow, late",
+                "ans": "おそい",
+                "remarks": "遅_"
+            },
+            {
+                "id": 6,
+                "word": "many, much",
+                "ans": "おおい",
+                "remarks": "多_"
+            },
+            {
+                "id": 7,
+                "word": "many people",
+                "ans": "ひとがおおい",
+                "remarks": "remember particle"
+            },
+            {
+                "id": 8,
+                "word": "few, little",
+                "ans": "すくない",
+                "remarks": "少__"
+            },
+            {
+                "id": 9,
+                "word": "few people",
+                "ans": "ひとがすくない",
+                "remarks": "remember particle"
+            },
+            {
+                "id": 10,
+                "word": "warm (weather)",
+                "ans": "あたたかい",
+                "remarks": "暖__"
+            },
+            {
+                "id": 11,
+                "word": "warm (to touch)",
+                "ans": "あたたかい",
+                "remarks": "温__"
+            },
+            {
+                "id": 12,
+                "word": "cool (weather)",
+                "ans": "すずしい",
+                "remarks": "涼__"
+            },
+            {
+                "id": 13,
+                "word": "sweet",
+                "ans": "あまい",
+                "remarks": "甘_"
+            },
+            {
+                "id": 14,
+                "word": "hot (taste), spicy",
+                "ans": "からい",
+                "remarks": "辛_"
+            },
+            {
+                "id": 15,
+                "word": "heavy",
+                "ans": "おもい",
+                "remarks": "重_"
+            },
+            {
+                "id": 16,
+                "word": "light",
+                "ans": "かるい",
+                "remarks": "軽_"
+            },
+            {
+                "id": 17,
+                "word": "prefer coffee",
+                "ans": "コーヒーがいい",
+                "remarks": "when ordering / offered drink"
+            },
+            {
+                "id": 18,
+                "word": "season",
+                "ans": "きせつ",
+                "remarks": "季節"
+            },
+            {
+                "id": 19,
+                "word": "spring",
+                "ans": "はる",
+                "remarks": "春"
+            },
+            {
+                "id": 20,
+                "word": "summer",
+                "ans": "なつ",
+                "remarks": "夏"
+            },
+            {
+                "id": 21,
+                "word": "autumn, fall",
+                "ans": "あき",
+                "remarks": "秋"
+            },
+            {
+                "id": 22,
+                "word": "winter",
+                "ans": "ふゆ",
+                "remarks": "冬"
+            },
+            {
+                "id": 23,
+                "word": "weather",
+                "ans": "てんき",
+                "remarks": "天気"
+            },
+            {
+                "id": 24,
+                "word": "rain",
+                "ans": "あめ",
+                "remarks": "雨"
+            },
+            {
+                "id": 25,
+                "word": "snow",
+                "ans": "ゆき",
+                "remarks": "雪"
+            },
+            {
+                "id": 26,
+                "word": "cloudy",
+                "ans": "くもり",
+                "remarks": "曇_"
+            },
+            {
+                "id": 27,
+                "word": "hotel",
+                "ans": "ホテル",
+                "remarks": ""
+            },
+            {
+                "id": 28,
+                "word": "airport",
+                "ans": "くうこう",
+                "remarks": "空港"
+            },
+            {
+                "id": 29,
+                "word": "sea, ocean",
+                "ans": "うみ",
+                "remarks": "海"
+            },
+            {
+                "id": 30,
+                "word": "world",
+                "ans": "せかい",
+                "remarks": "世界"
+            },
+            {
+                "id": 31,
+                "word": "party",
+                "ans": "パーティー",
+                "remarks": ""
+            },
+            {
+                "id": 32,
+                "word": "festival",
+                "ans": "まつり",
+                "remarks": "［お］祭_"
+            },
+            {
+                "id": 33,
+                "word": "beef and vegetable hot pot",
+                "ans": "すきやき",
+                "remarks": "__焼_"
+            },
+            {
+                "id": 34,
+                "word": "sashimi",
+                "ans": "さしみ",
+                "remarks": "刺身"
+            },
+            {
+                "id": 35,
+                "word": "sushi",
+                "ans": "すし",
+                "remarks": "［お］寿司"
+            },
+            {
+                "id": 36,
+                "word": "tempura",
+                "ans": "てんぷら",
+                "remarks": ""
+            },
+            {
+                "id": 37,
+                "word": "pork",
+                "ans": "ぶたにく",
+                "remarks": "豚肉"
+            },
+            {
+                "id": 38,
+                "word": "chicken",
+                "ans": "とりにく",
+                "remarks": "鶏肉"
+            },
+            {
+                "id": 39,
+                "word": "beef",
+                "ans": "ぎゅうにく",
+                "remarks": "牛肉"
+            },
+            {
+                "id": 40,
+                "word": "lemon",
+                "ans": "レモン",
+                "remarks": ""
+            },
+            {
+                "id": 41,
+                "word": "Japanese flower arrangement",
+                "ans": "いけばな",
+                "remarks": "生_花"
+            },
+            {
+                "id": 42,
+                "word": "maple, red leaves of autumn",
+                "ans": "もみじ",
+                "remarks": "紅葉"
+            },
+            {
+                "id": 43,
+                "word": "which one (of two things)",
+                "ans": "どちら",
+                "remarks": ""
+            },
+            {
+                "id": 44,
+                "word": "both",
+                "ans": "どちらも",
+                "remarks": ""
+            },
+            {
+                "id": 45,
+                "word": "the most",
+                "ans": "いちばん",
+                "remarks": "一番"
+            },
+            {
+                "id": 46,
+                "word": "by far, much (more)",
+                "ans": "ずっと",
+                "remarks": ""
+            },
+            {
+                "id": 47,
+                "word": "for the first time",
+                "ans": "はじめて",
+                "remarks": "初__"
+            },
+            {
+                "id": 48,
+                "word": "I'm home.",
+                "ans": "ただいま",
+                "remarks": "convo"
+            },
+            {
+                "id": 49,
+                "word": "Welcome home",
+                "ans": "おかえりなさい",
+                "remarks": "convo"
+            },
+            {
+                "id": 50,
+                "word": "Wow, look at all those people!",
+                "ans": "わあ、すごいひとですね",
+                "remarks": "there is a comma"
+            },
+            {
+                "id": 51,
+                "word": "I'm tired.",
+                "ans": "つかれました",
+                "remarks": ""
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Lesson 13",
+        "tags": [
+            "LAJ 2"
+        ],
+        "cards": [
+            {
+                "id": 0,
+                "word": "enjoy oneself, play",
+                "ans": "あそびます",
+                "remarks": "verb"
+            },
+            {
+                "id": 1,
+                "word": "go to play, go and enjoy",
+                "ans": "あそびにいきます",
+                "remarks": ""
+            },
+            {
+                "id": 2,
+                "word": "swim",
+                "ans": "およぎます",
+                "remarks": "verb"
+            },
+            {
+                "id": 3,
+                "word": "go to meet, welcome, fetch",
+                "ans": "むかえます",
+                "remarks": ""
+            },
+            {
+                "id": 4,
+                "word": "go to pick up someone",
+                "ans": "むかえにいきます",
+                "remarks": ""
+            },
+            {
+                "id": 5,
+                "word": "get tired",
+                "ans": "つかれます",
+                "remarks": ""
+            },
+            {
+                "id": 6,
+                "word": "get married",
+                "ans": "けっこんします",
+                "remarks": ""
+            },
+            {
+                "id": 7,
+                "word": "do shopping",
+                "ans": "かいものします",
+                "remarks": ""
+            },
+            {
+                "id": 8,
+                "word": "have a meal, dine",
+                "ans": "しょくじします",
+                "remarks": "食事"
+            },
+            {
+                "id": 9,
+                "word": "take a walk",
+                "ans": "さんぽします",
+                "remarks": ""
+            },
+            {
+                "id": 10,
+                "word": "take a walk in a park",
+                "ans": "こうえんをさんぽします",
+                "remarks": ""
+            },
+            {
+                "id": 11,
+                "word": "hard, tough",
+                "ans": "たいへん",
+                "remarks": "大変［な］"
+            },
+            {
+                "id": 12,
+                "word": "want (something)",
+                "ans": "ほしい",
+                "remarks": "欲＿＿"
+            },
+            {
+                "id": 13,
+                "word": "wide, spacious",
+                "ans": "ひろい",
+                "remarks": "広＿"
+            },
+            {
+                "id": 14,
+                "word": "narrow, small (room etc)",
+                "ans": "せまい",
+                "remarks": "狭_"
+            },
+            {
+                "id": 15,
+                "word": "swimming pool",
+                "ans": "プール",
+                "remarks": ""
+            },
+            {
+                "id": 16,
+                "word": "river",
+                "ans": "かわ",
+                "remarks": "川"
+            },
+            {
+                "id": 17,
+                "word": "fine arts",
+                "ans": "びじゅつ",
+                "remarks": "美術"
+            },
+            {
+                "id": 18,
+                "word": "fishing",
+                "ans": "つり",
+                "remarks": "釣_"
+            },
+            {
+                "id": 19,
+                "word": "skiing",
+                "ans": "スキー",
+                "remarks": ""
+            },
+            {
+                "id": 20,
+                "word": "weekend",
+                "ans": "しゅうまつ",
+                "remarks": "週末"
+            },
+            {
+                "id": 21,
+                "word": "New Year's Day",
+                "ans": "しょうがつ",
+                "remarks": "［お］正月"
+            },
+            {
+                "id": 22,
+                "word": "about ~ (time)",
+                "ans": "ごろ",
+                "remarks": "~ 頃"
+            },
+            {
+                "id": 23,
+                "word": "something",
+                "ans": "なにか",
+                "remarks": "何_"
+            },
+            {
+                "id": 24,
+                "word": "somewhere",
+                "ans": "どこか",
+                "remarks": ""
+            },
+            {
+                "id": 25,
+                "word": "get thirsty",
+                "ans": "のどがかわきます",
+                "remarks": ""
+            },
+            {
+                "id": 26,
+                "word": "I'm thirsty",
+                "ans": "のどがかわきました",
+                "remarks": ""
+            },
+            {
+                "id": 27,
+                "word": "get hungry",
+                "ans": "おなかがすきます",
+                "remarks": ""
+            },
+            {
+                "id": 28,
+                "word": "I'm hungry",
+                "ans": "おなかがすきました",
+                "remarks": ""
+            },
+            {
+                "id": 29,
+                "word": "Let's do that",
+                "ans": "そうしましょう",
+                "remarks": ""
+            },
+            {
+                "id": 30,
+                "word": "May I take your order?May I take your order?",
+                "ans": "ごちゅうもんは",
+                "remarks": ""
+            },
+            {
+                "id": 31,
+                "word": "set meal",
+                "ans": "ていしょく",
+                "remarks": "定食"
+            },
+            {
+                "id": 32,
+                "word": "bowl of rice topped with beef",
+                "ans": "ぎゅうどん",
+                "remarks": "牛丼"
+            },
+            {
+                "id": 33,
+                "word": "Please wait a moment.",
+                "ans": "しょうしょうおまちください",
+                "remarks": "少々_____"
+            },
+            {
+                "id": 34,
+                "word": "1,000円",
+                "ans": "1000えんでございます",
+                "remarks": "polite response"
+            },
+            {
+                "id": 35,
+                "word": "separately",
+                "ans": "べつべつに",
+                "remarks": "別々_"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Lesson 14",
+        "tags": [
+            "LAJ 2"
+        ],
+        "cards": [
+            {
+                "id": 0,
+                "word": "turn on",
+                "ans": "つけます",
+                "remarks": "appliances"
+            },
+            {
+                "id": 1,
+                "word": "turn off",
+                "ans": "けします",
+                "remarks": "消__"
+            },
+            {
+                "id": 2,
+                "word": "open",
+                "ans": "あけます",
+                "remarks": "開____"
+            },
+            {
+                "id": 3,
+                "word": "close",
+                "ans": "しめます",
+                "remarks": "閉___"
+            },
+            {
+                "id": 4,
+                "word": "hurry",
+                "ans": "いそぎます",
+                "remarks": "急___"
+            },
+            {
+                "id": 5,
+                "word": "wait",
+                "ans": "まちます",
+                "remarks": "待___"
+            },
+            {
+                "id": 6,
+                "word": "hold",
+                "ans": "もちます",
+                "remarks": "持___"
+            },
+            {
+                "id": 7,
+                "word": "take, pass",
+                "ans": "とります",
+                "remarks": "取___"
+            },
+            {
+                "id": 8,
+                "word": "help (with a task)",
+                "ans": "てつだいます",
+                "remarks": "手伝_____"
+            },
+            {
+                "id": 9,
+                "word": "call",
+                "ans": "よびます",
+                "remarks": "呼___"
+            },
+            {
+                "id": 10,
+                "word": "speak, talk",
+                "ans": "はなします",
+                "remarks": "話___"
+            },
+            {
+                "id": 11,
+                "word": "use",
+                "ans": "つかいます",
+                "remarks": "使___"
+            },
+            {
+                "id": 12,
+                "word": "とめます",
+                "ans": "とめます",
+                "remarks": "止___"
+            },
+            {
+                "id": 13,
+                "word": "show",
+                "ans": "みせます",
+                "remarks": "見___"
+            },
+            {
+                "id": 14,
+                "word": "tell an address",
+                "ans": "じゅうしょをおしえます",
+                "remarks": "住所_教___"
+            },
+            {
+                "id": 15,
+                "word": "sit down",
+                "ans": "すわります",
+                "remarks": "座___"
+            },
+            {
+                "id": 16,
+                "word": "stand up",
+                "ans": "たちます",
+                "remarks": "立___"
+            },
+            {
+                "id": 17,
+                "word": "enter a cafe",
+                "ans": "きっさてんにはいります",
+                "remarks": "喫茶店__入___"
+            },
+            {
+                "id": 18,
+                "word": "go out of a cafe",
+                "ans": "きっさてんをでます",
+                "remarks": "喫茶店_出__"
+            },
+            {
+                "id": 19,
+                "word": "rain",
+                "ans": "あめがふります",
+                "remarks": "雨_降___"
+            },
+            {
+                "id": 20,
+                "word": "copy",
+                "ans": "コピーします",
+                "remarks": ""
+            },
+            {
+                "id": 21,
+                "word": "electricity, light",
+                "ans": "でんき",
+                "remarks": "電気"
+            },
+            {
+                "id": 22,
+                "word": "air conditioner",
+                "ans": "エアコン",
+                "remarks": ""
+            },
+            {
+                "id": 23,
+                "word": "passport",
+                "ans": "パスポート",
+                "remarks": ""
+            },
+            {
+                "id": 24,
+                "word": "name",
+                "ans": "なまえ",
+                "remarks": "名前"
+            },
+            {
+                "id": 25,
+                "word": "address",
+                "ans": "じゅうしょ",
+                "remarks": "住所"
+            },
+            {
+                "id": 26,
+                "word": "map",
+                "ans": "ちず",
+                "remarks": "地図"
+            },
+            {
+                "id": 27,
+                "word": "salt",
+                "ans": "しお",
+                "remarks": "塩"
+            },
+            {
+                "id": 28,
+                "word": "sugar",
+                "ans": "さとう",
+                "remarks": "砂糖"
+            },
+            {
+                "id": 29,
+                "word": "question, problem, trouble",
+                "ans": "もんだい",
+                "remarks": "問題"
+            },
+            {
+                "id": 30,
+                "word": "answer",
+                "ans": "こたえ",
+                "remarks": "答え"
+            },
+            {
+                "id": 31,
+                "word": "how to read",
+                "ans": "よみかた",
+                "remarks": "読_方"
+            },
+            {
+                "id": 32,
+                "word": "how to ~",
+                "ans": "かた",
+                "remarks": "method, 方"
+            },
+            {
+                "id": 33,
+                "word": "straight",
+                "ans": "まっすぐ",
+                "remarks": ""
+            },
+            {
+                "id": 34,
+                "word": "slowly",
+                "ans": "ゆっくり",
+                "remarks": ""
+            },
+            {
+                "id": 35,
+                "word": "immediately",
+                "ans": "すぐ",
+                "remarks": ""
+            },
+            {
+                "id": 36,
+                "word": "again",
+                "ans": "また",
+                "remarks": ""
+            },
+            {
+                "id": 37,
+                "word": "later",
+                "ans": "あとで",
+                "remarks": "後_"
+            },
+            {
+                "id": 38,
+                "word": "a little more",
+                "ans": "もうすこし",
+                "remarks": ""
+            },
+            {
+                "id": 39,
+                "word": "~ more, another ~",
+                "ans": "もう",
+                "remarks": ""
+            },
+            {
+                "id": 40,
+                "word": "used when encouraging some course of action",
+                "ans": "さあ",
+                "remarks": ""
+            },
+            {
+                "id": 41,
+                "word": "Oh! Eh?",
+                "ans": "あれ",
+                "remarks": "(in surprise or wonder)"
+            },
+            {
+                "id": 42,
+                "word": "Please turn right at the traffic light.",
+                "ans": "しんごうをみぎへまがってください",
+                "remarks": ""
+            },
+            {
+                "id": 43,
+                "word": "I'd like to pay with this.",
+                "ans": "これでおねがいします",
+                "remarks": ""
+            },
+            {
+                "id": 44,
+                "word": "change",
+                "ans": "おつり",
+                "remarks": "dont get confused with 細___"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Lesson 15",
+        "tags": [
+            "LAJ 2"
+        ],
+        "cards": [
+            {
+                "id": 0,
+                "word": "put",
+                "ans": "おきます",
+                "remarks": "置___"
+            },
+            {
+                "id": 1,
+                "word": "make, produce",
+                "ans": "つくります",
+                "remarks": "作___"
+            },
+            {
+                "id": 2,
+                "word": "sell",
+                "ans": "うります",
+                "remarks": "売___"
+            },
+            {
+                "id": 3,
+                "word": "get to know",
+                "ans": "しります",
+                "remarks": "知____"
+            },
+            {
+                "id": 4,
+                "word": "know",
+                "ans": "しっています",
+                "remarks": "state of being"
+            },
+            {
+                "id": 5,
+                "word": "going to live",
+                "ans": "すみます",
+                "remarks": "住___"
+            },
+            {
+                "id": 6,
+                "word": "live",
+                "ans": "すんでいます",
+                "remarks": "state of being"
+            },
+            {
+                "id": 7,
+                "word": "do research",
+                "ans": "けんきゅうします",
+                "remarks": "研究___"
+            },
+            {
+                "id": 8,
+                "word": "material, data",
+                "ans": "しりょう",
+                "remarks": "資料"
+            },
+            {
+                "id": 9,
+                "word": "catalogue",
+                "ans": "カタログ",
+                "remarks": ""
+            },
+            {
+                "id": 10,
+                "word": "timetable",
+                "ans": "じこくひょう",
+                "remarks": "時刻表"
+            },
+            {
+                "id": 11,
+                "word": "clothes",
+                "ans": "ふく",
+                "remarks": "服"
+            },
+            {
+                "id": 12,
+                "word": "products",
+                "ans": "せいひん",
+                "remarks": "製品"
+            },
+            {
+                "id": 13,
+                "word": "software",
+                "ans": "ソフト",
+                "remarks": ""
+            },
+            {
+                "id": 14,
+                "word": "electronic dictionary",
+                "ans": "でんしじしょ",
+                "remarks": "電子辞書"
+            },
+            {
+                "id": 15,
+                "word": "economy",
+                "ans": "けいざい",
+                "remarks": "経済"
+            },
+            {
+                "id": 16,
+                "word": "municipal office, city hall",
+                "ans": "しやくしょ",
+                "remarks": "市役所"
+            },
+            {
+                "id": 17,
+                "word": "(senior) high school",
+                "ans": "こうこう",
+                "remarks": "高校"
+            },
+            {
+                "id": 18,
+                "word": "dentist",
+                "ans": "はいしゃ",
+                "remarks": "歯医者"
+            },
+            {
+                "id": 19,
+                "word": "single, unmarried",
+                "ans": "どくしん",
+                "remarks": "独身"
+            },
+            {
+                "id": 20,
+                "word": "I'm sorry",
+                "ans": "すみません",
+                "remarks": "apology"
+            },
+            {
+                "id": 21,
+                "word": "everyboby",
+                "ans": "みなさん",
+                "remarks": "皆__"
+            },
+            {
+                "id": 22,
+                "word": "remember, recollect",
+                "ans": "おもいだします",
+                "remarks": "思_出___"
+            },
+            {
+                "id": 23,
+                "word": "state of being",
+                "ans": "いらっしゃいます",
+                "remarks": "honorific equivalent of います"
             }
         ]
     }
