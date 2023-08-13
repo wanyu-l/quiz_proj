@@ -1,5 +1,5 @@
 use druid::Data;
-use serde::{ Deserialize, Serialize };
+use serde::{Deserialize, Serialize};
 use std::fs;
 use std::fs::File;
 use std::fs::OpenOptions;
@@ -30,7 +30,7 @@ impl Card {
         new_card_id: usize,
         new_card_word: String,
         new_card_ans: String,
-        new_card_remark: String
+        new_card_remark: String,
     ) -> Card {
         Card {
             id: new_card_id,
@@ -61,6 +61,7 @@ impl Card {
 pub struct StudySet {
     id: usize,
     name: String,
+    tags: Vec<String>,
     cards: Vec<Card>,
 }
 
@@ -75,6 +76,11 @@ impl Data for StudySet {
                     return true;
                 }
             }
+            for i in 0..self.tags.len() {
+                if self.tags[i].same(&other.tags[i]) {
+                    return true;
+                }
+            }
         }
         false
     }
@@ -85,12 +91,17 @@ impl StudySet {
         StudySet {
             id: new_set_id,
             name: new_set_name,
+            tags: vec![],
             cards: vec![],
         }
     }
 
     pub fn rename_set(&mut self, new_name: String) {
         self.name = new_name;
+    }
+
+    pub fn add_tag(&mut self, tag: String) {
+        self.tags.push(tag);
     }
 
     pub fn set_id(&mut self, new_id: usize) {
@@ -105,7 +116,7 @@ impl StudySet {
         self.cards.remove(to_remove);
     }
 
-    pub fn get_desc(&self) -> String {
+    pub fn get_set_name(&self) -> String {
         self.name.clone()
     }
 
@@ -117,8 +128,12 @@ impl StudySet {
         self.cards.len()
     }
 
-    pub fn get_card(&self, to_get:usize) -> Card {
+    pub fn get_card(&self, to_get: usize) -> Card {
         self.cards[to_get].clone()
+    }
+
+    pub fn get_all_tags(&self) -> Vec<String> {
+        self.tags.clone()
     }
 
     pub fn get_id(&self) -> usize {
@@ -146,9 +161,7 @@ impl Storage {
     pub fn new() -> Storage {
         let data_sets = Storage::read();
         let read_data: Vec<StudySet> = serde_json::from_str(&data_sets).unwrap();
-        Storage {
-            sets: read_data,
-        }
+        Storage { sets: read_data }
     }
 
     pub fn get_all_study_sets(&self) -> Vec<StudySet> {
@@ -185,17 +198,20 @@ impl Storage {
         let mut set_arr: Vec<StudySet> = vec![];
         let mut set_id = 0;
         for set in &self.sets {
-            let mut temp_set: StudySet = StudySet::new(set.get_desc(), set_id);
+            let mut temp_set: StudySet = StudySet::new(set.get_set_name(), set_id);
             let mut card_id = 0;
             for card in &set.cards {
                 let temp_card = Card::new(
                     card_id,
-                    card.get_word(),
-                    card.get_ans(),
-                    card.get_remarks()
+                    card.get_word().trim().to_string(),
+                    card.get_ans().trim().to_string(),
+                    card.get_remarks().trim().to_string(),
                 );
                 temp_set.add_card(temp_card);
                 card_id += 1;
+            }
+            for tag in set.get_all_tags() {
+                temp_set.add_tag(tag);
             }
             set_id += 1;
             set_arr.push(temp_set);
@@ -206,7 +222,8 @@ impl Storage {
             .truncate(true)
             .open(DATA_PATH)
             .expect("Error opening data file");
-        file.write_all(data.as_bytes()).expect("Error writing to file")
+        file.write_all(data.as_bytes())
+            .expect("Error writing to file")
     }
 
     pub fn read() -> String {
