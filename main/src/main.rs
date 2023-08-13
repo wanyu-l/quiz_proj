@@ -51,6 +51,9 @@ impl Data for AppState {
         if !is_same_2_d_vec_string(self.res.clone(), other.res.clone()) {
             return false;
         }
+        if !is_same_2_d_vec_string(self.answer_to_show.clone(), other.answer_to_show.clone()) {
+            return false;
+        }
         if self.curr_indexes.len() != other.curr_indexes.len() {
             return false;
         }
