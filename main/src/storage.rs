@@ -117,6 +117,10 @@ impl StudySet {
         self.cards.len()
     }
 
+    pub fn get_card(&self, to_get:usize) -> Card {
+        self.cards[to_get].clone()
+    }
+
     pub fn get_id(&self) -> usize {
         self.id
     }
@@ -147,7 +151,7 @@ impl Storage {
         }
     }
 
-    pub fn get_all(&self) -> Vec<StudySet> {
+    pub fn get_all_study_sets(&self) -> Vec<StudySet> {
         self.sets.clone()
     }
 

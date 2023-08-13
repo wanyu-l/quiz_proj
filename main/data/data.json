@@ -2992,5 +2992,389 @@
                 "remarks": ""
             }
         ]
+    },
+    {
+        "id": 10,
+        "name": "Kanji Unit 1",
+        "cards": [
+            {
+                "id": 0,
+                "word": "日曜日",
+                "ans": "にちようび",
+                "remarks": "Sunday"
+            },
+            {
+                "id": 1,
+                "word": "月曜日",
+                "ans": "げつようび",
+                "remarks": "Monday"
+            },
+            {
+                "id": 2,
+                "word": "火曜日",
+                "ans": "かようび",
+                "remarks": "Tuesday"
+            },
+            {
+                "id": 3,
+                "word": "水曜日",
+                "ans": "すいようび",
+                "remarks": "Wednesday"
+            },
+            {
+                "id": 4,
+                "word": "木曜日",
+                "ans": "もくようび",
+                "remarks": "Thursday"
+            },
+            {
+                "id": 5,
+                "word": "金曜日",
+                "ans": "きんようび",
+                "remarks": "Friday"
+            },
+            {
+                "id": 6,
+                "word": "土曜日",
+                "ans": "どようび",
+                "remarks": "Saturday"
+            },
+            {
+                "id": 7,
+                "word": "水",
+                "ans": "みず",
+                "remarks": ""
+            },
+            {
+                "id": 8,
+                "word": "木",
+                "ans": "き",
+                "remarks": ""
+            },
+            {
+                "id": 9,
+                "word": "お金",
+                "ans": "おかね",
+                "remarks": "Money"
+            },
+            {
+                "id": 10,
+                "word": "山",
+                "ans": "やま",
+                "remarks": ""
+            },
+            {
+                "id": 11,
+                "word": "川",
+                "ans": "かわ",
+                "remarks": ""
+            },
+            {
+                "id": 12,
+                "word": "山田さん",
+                "ans": "やまださん",
+                "remarks": ""
+            },
+            {
+                "id": 13,
+                "word": "山川さん",
+                "ans": "やまかわさん",
+                "remarks": "No 連濁"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Kanji Unit 2",
+        "cards": [
+            {
+                "id": 0,
+                "word": "一月",
+                "ans": "いちがつ",
+                "remarks": "January"
+            },
+            {
+                "id": 1,
+                "word": "四月",
+                "ans": "しがつ",
+                "remarks": "April"
+            },
+            {
+                "id": 2,
+                "word": "七月",
+                "ans": "しちがつ",
+                "remarks": "July"
+            },
+            {
+                "id": 3,
+                "word": "九月",
+                "ans": "くがつ",
+                "remarks": "September"
+            },
+            {
+                "id": 4,
+                "word": "十一月",
+                "ans": "じゅういちがつ",
+                "remarks": "November"
+            },
+            {
+                "id": 5,
+                "word": "一日",
+                "ans": "ついたち",
+                "remarks": "1st Day of the Month"
+            },
+            {
+                "id": 6,
+                "word": "二日",
+                "ans": "ふつか",
+                "remarks": "2nd Day of the Month"
+            },
+            {
+                "id": 7,
+                "word": "三日",
+                "ans": "みっか",
+                "remarks": "3rd Day of the Month"
+            },
+            {
+                "id": 8,
+                "word": "四日",
+                "ans": "よっか",
+                "remarks": "4th Day of the Month"
+            },
+            {
+                "id": 9,
+                "word": "五日",
+                "ans": "いつか",
+                "remarks": "5th Day of the Month"
+            },
+            {
+                "id": 10,
+                "word": "六日",
+                "ans": "むいか",
+                "remarks": "6th Day of the Month"
+            },
+            {
+                "id": 11,
+                "word": "七日",
+                "ans": "なのか",
+                "remarks": "7th Day of the Month"
+            },
+            {
+                "id": 12,
+                "word": "八日",
+                "ans": "ようか",
+                "remarks": "8th Day of the Month"
+            },
+            {
+                "id": 13,
+                "word": "九日",
+                "ans": "ここのか",
+                "remarks": "9th Day of the Month"
+            },
+            {
+                "id": 14,
+                "word": "十日",
+                "ans": "とおか",
+                "remarks": "10th Day of the Month"
+            },
+            {
+                "id": 15,
+                "word": "十四日",
+                "ans": "じゅうよっか",
+                "remarks": "14th Day of the Month"
+            },
+            {
+                "id": 16,
+                "word": "二十日",
+                "ans": "はつか",
+                "remarks": "20th Day of the Month, irregular"
+            },
+            {
+                "id": 17,
+                "word": "百",
+                "ans": "ひゃく",
+                "remarks": ""
+            },
+            {
+                "id": 18,
+                "word": "三百",
+                "ans": "さんびゃく",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 19,
+                "word": "六百",
+                "ans": "ろっぴゃく",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 20,
+                "word": "八百",
+                "ans": "はっぴゃく",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 21,
+                "word": "千",
+                "ans": "せん",
+                "remarks": "Root form for counter"
+            },
+            {
+                "id": 22,
+                "word": "三千",
+                "ans": "さんぜん",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 23,
+                "word": "八千",
+                "ans": "はっせん",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 24,
+                "word": "一万",
+                "ans": "いちまん",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 25,
+                "word": "十万",
+                "ans": "じゅうまん",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 26,
+                "word": "一千万",
+                "ans": "いっせんまん",
+                "remarks": "Form change for counter"
+            },
+            {
+                "id": 27,
+                "word": "一万円",
+                "ans": "いちまんえん",
+                "remarks": ""
+            },
+            {
+                "id": 28,
+                "word": "二千五百円",
+                "ans": "にせんごひゃくえん",
+                "remarks": ""
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Kanji Unit 3",
+        "cards": [
+            {
+                "id": 0,
+                "word": "学校",
+                "ans": "がっこう",
+                "remarks": ""
+            },
+            {
+                "id": 1,
+                "word": "学生",
+                "ans": "がくせい",
+                "remarks": ""
+            },
+            {
+                "id": 2,
+                "word": "先生",
+                "ans": "せんせい",
+                "remarks": ""
+            },
+            {
+                "id": 3,
+                "word": "会います",
+                "ans": "あいます",
+                "remarks": ""
+            },
+            {
+                "id": 4,
+                "word": "先月",
+                "ans": "せんげつ",
+                "remarks": ""
+            },
+            {
+                "id": 5,
+                "word": "会社",
+                "ans": "かいしゃ",
+                "remarks": ""
+            },
+            {
+                "id": 6,
+                "word": "社員",
+                "ans": "しゃいん",
+                "remarks": ""
+            },
+            {
+                "id": 7,
+                "word": "医者",
+                "ans": "いしゃ",
+                "remarks": ""
+            },
+            {
+                "id": 8,
+                "word": "本",
+                "ans": "ほん",
+                "remarks": ""
+            },
+            {
+                "id": 9,
+                "word": "日本",
+                "ans": "にほん",
+                "remarks": ""
+            },
+            {
+                "id": 10,
+                "word": "本田さん",
+                "ans": "ほんださん",
+                "remarks": ""
+            },
+            {
+                "id": 11,
+                "word": "中川さん",
+                "ans": "なかがわさん",
+                "remarks": "Remember 連濁"
+            },
+            {
+                "id": 12,
+                "word": "田中さん",
+                "ans": "たなかさん",
+                "remarks": ""
+            },
+            {
+                "id": 13,
+                "word": "国",
+                "ans": "くに",
+                "remarks": ""
+            },
+            {
+                "id": 14,
+                "word": "中国",
+                "ans": "ちゅうごく",
+                "remarks": ""
+            },
+            {
+                "id": 15,
+                "word": "あの人",
+                "ans": "あのひと",
+                "remarks": ""
+            },
+            {
+                "id": 16,
+                "word": "一人で",
+                "ans": "ひとりで",
+                "remarks": ""
+            },
+            {
+                "id": 17,
+                "word": "日本人",
+                "ans": "にほんじん",
+                "remarks": ""
+            }
+        ]
     }
 ]

@@ -15,11 +15,11 @@ mod storage;
 
 #[derive(Clone, Lens, Debug)]
 struct AppState {
+    // store inputs by user
     input_str: Vec<Vec<String>>,
-    expected_input: Vec<Vec<String>>,
-    display_word: Vec<Vec<String>>,
-    display_word_remarks: Vec<Vec<String>>,
+    // message to show on clicking submit
     res: Vec<Vec<String>>,
+    // indexes for all studysets
     curr_indexes: Vec<usize>,
     str: String,
     storage_unit: Storage,
@@ -32,25 +32,12 @@ struct AppState {
 }
 
 fn is_valid(input_str: String) -> bool {
-    println!("{}", input_str.replace(" ", "") == "");
     input_str.replace(" ", "") != ""
 }
 
 impl Data for AppState {
     fn same(&self, other: &Self) -> bool {
         if !is_same_2_d_vec_string(self.input_str.clone(), other.input_str.clone()) {
-            return false;
-        }
-        if !is_same_2_d_vec_string(self.expected_input.clone(), other.expected_input.clone()) {
-            return false;
-        }
-        if !is_same_2_d_vec_string(self.display_word.clone(), other.display_word.clone()) {
-            return false;
-        }
-        if !is_same_2_d_vec_string(
-            self.display_word_remarks.clone(),
-            other.display_word_remarks.clone(),
-        ) {
             return false;
         }
         if !is_same_2_d_vec_string(self.res.clone(), other.res.clone()) {
@@ -97,39 +84,22 @@ fn is_same_2_d_vec_string(arr: Vec<Vec<String>>, brr: Vec<Vec<String>>) -> bool 
 
 impl AppState {
     fn default(storage: Storage) -> AppState {
-        let all_sets = storage.get_all();
-        let mut display: Vec<Vec<String>> = Vec::new();
-        let mut remarks: Vec<Vec<String>> = Vec::new();
-        let mut expected: Vec<Vec<String>> = Vec::new();
         let mut input_all: Vec<Vec<String>> = Vec::new();
         let mut res_all: Vec<Vec<String>> = Vec::new();
         let mut indexes = Vec::new();
-        for set in all_sets {
-            let cards = set.get_all_cards();
-            let mut card_set_answers = Vec::new();
-            let mut card_set_displays = Vec::new();
-            let mut card_set_word_remarks = Vec::new();
+        for i in 0..storage.get_num_of_sets() {
             let mut card_set_inputs = Vec::new();
             let mut card_set_res = Vec::new();
-            for card in cards {
-                card_set_answers.push(card.get_ans());
-                card_set_displays.push(card.get_word());
-                card_set_word_remarks.push(card.get_remarks());
+            (0..storage.get_study_set(i).get_num_of_cards()).for_each(|_i| {
                 card_set_inputs.push("".to_string());
                 card_set_res.push("".to_string());
-            }
-            expected.push(card_set_answers);
-            display.push(card_set_displays);
-            remarks.push(card_set_word_remarks);
+            });
             input_all.push(card_set_inputs);
             res_all.push(card_set_res);
             indexes.push(0);
         }
         AppState {
             input_str: input_all,
-            expected_input: expected,
-            display_word: display,
-            display_word_remarks: remarks,
             res: res_all,
             curr_indexes: indexes,
             str: String::new(),
@@ -145,12 +115,18 @@ impl AppState {
 fn test_page_builder(set_index: usize, test_name: String) -> impl Widget<AppState> {
     let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
         let word_index = data.curr_indexes[set_index];
-        data.display_word[set_index][word_index].to_string()
+        data.storage_unit
+            .get_study_set(set_index)
+            .get_card(word_index)
+            .get_word()
     })
     .with_text_size(32.0);
     let remarks_label = Label::dynamic(move |data: &AppState, _env| -> String {
         let remark_index = data.curr_indexes[set_index];
-        data.display_word_remarks[set_index][remark_index].to_string()
+        data.storage_unit
+            .get_study_set(set_index)
+            .get_card(remark_index)
+            .get_remarks()
     })
     .with_text_size(32.0);
 
@@ -179,7 +155,13 @@ fn test_page_builder(set_index: usize, test_name: String) -> impl Widget<AppStat
     let next = Button::new("Next").on_click(move |ctx, data: &mut AppState, _env| -> () {
         let ind = data.curr_indexes[set_index];
         data.input_str[set_index][ind] = data.str.clone();
-        if data.curr_indexes[set_index] < data.display_word[set_index].len() - 1 {
+        if data.curr_indexes[set_index]
+            < data
+                .storage_unit
+                .get_study_set(set_index)
+                .get_num_of_cards()
+                - 1
+        {
             data.curr_indexes[set_index] += 1;
             data.str.clear();
         }
@@ -193,8 +175,7 @@ fn test_page_builder(set_index: usize, test_name: String) -> impl Widget<AppStat
             let results_window = WindowDesc::new(result_page_builder(
                 test_name.clone(),
                 data.input_str[set_index].clone(),
-                data.expected_input[set_index].clone(),
-                data.display_word[set_index].clone(),
+                data.storage_unit.get_study_set(set_index).clone(),
             ))
             .title("Resuts")
             .set_always_on_top(true);
@@ -212,7 +193,9 @@ fn test_page_builder(set_index: usize, test_name: String) -> impl Widget<AppStat
         format!(
             "{} / {}\n",
             data.curr_indexes[set_index] + 1,
-            data.display_word[set_index].len()
+            data.storage_unit
+                .get_study_set(set_index)
+                .get_num_of_cards()
         )
     })
     .with_text_size(24.0);
@@ -250,15 +233,21 @@ fn test_page_builder(set_index: usize, test_name: String) -> impl Widget<AppStat
 }
 
 // index is the id of the study set
-fn learn_page_builder(index: usize, test_name: String) -> impl Widget<AppState> {
+fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppState> {
     let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
-        let word_index = data.curr_indexes[index];
-        data.display_word[index][word_index].to_string()
+        let word_index = data.curr_indexes[set_index];
+        data.storage_unit
+            .get_study_set(set_index)
+            .get_card(word_index)
+            .get_word()
     })
     .with_text_size(32.0);
     let remarks_label = Label::dynamic(move |data: &AppState, _env| -> String {
-        let remark_index = data.curr_indexes[index];
-        data.display_word_remarks[index][remark_index].to_string()
+        let remark_index = data.curr_indexes[set_index];
+        data.storage_unit
+            .get_study_set(set_index)
+            .get_card(remark_index)
+            .get_word()
     })
     .with_text_size(32.0);
     let text_box = TextBox::new()
@@ -267,11 +256,17 @@ fn learn_page_builder(index: usize, test_name: String) -> impl Widget<AppState> 
         .fix_width(300.0)
         .lens(AppState::str);
     let enter = Button::new("Confirm").on_click(move |ctx, data: &mut AppState, _env| -> () {
-        let word_index = data.curr_indexes[index];
-        if data.str == data.expected_input[index][word_index] {
-            data.res[index][word_index] = String::from("Correct!");
+        let word_index = data.curr_indexes[set_index];
+        if data.str
+            == data
+                .storage_unit
+                .get_study_set(set_index)
+                .get_card(word_index)
+                .get_ans()
+        {
+            data.res[set_index][word_index] = String::from("Correct!");
         } else {
-            data.res[index][word_index] = String::from("Try Again!");
+            data.res[set_index][word_index] = String::from("Try Again!");
         }
         ctx.request_update();
     });
@@ -279,24 +274,30 @@ fn learn_page_builder(index: usize, test_name: String) -> impl Widget<AppState> 
     let clear = Button::new("Clear").on_click(move |ctx, data: &mut AppState, _env| -> () {
         let message = String::from("Input Cleared");
         data.str.clear();
-        let word_index = data.curr_indexes[index];
-        data.res[index][word_index] = message;
+        let word_index = data.curr_indexes[set_index];
+        data.res[set_index][word_index] = message;
         ctx.request_update();
     });
     let prev = Button::new("Prev").on_click(move |ctx, data: &mut AppState, _env| -> () {
-        let ind = data.curr_indexes[index];
-        data.input_str[index][ind] = data.str.clone();
-        if data.curr_indexes[index] >= 1 {
-            data.curr_indexes[index] -= 1;
+        let ind = data.curr_indexes[set_index];
+        data.input_str[set_index][ind] = data.str.clone();
+        if data.curr_indexes[set_index] >= 1 {
+            data.curr_indexes[set_index] -= 1;
             data.str.clear();
         }
         ctx.request_update();
     });
     let next = Button::new("Next").on_click(move |ctx, data: &mut AppState, _env| -> () {
-        let ind = data.curr_indexes[index];
-        data.input_str[index][ind] = data.str.clone();
-        if data.curr_indexes[index] < data.display_word[index].len() - 1 {
-            data.curr_indexes[index] += 1;
+        let ind = data.curr_indexes[set_index];
+        data.input_str[set_index][ind] = data.str.clone();
+        if data.curr_indexes[set_index]
+            < data
+                .storage_unit
+                .get_study_set(set_index)
+                .get_num_of_cards()
+                - 1
+        {
+            data.curr_indexes[set_index] += 1;
             data.str.clear();
         }
         ctx.request_update();
@@ -304,13 +305,12 @@ fn learn_page_builder(index: usize, test_name: String) -> impl Widget<AppState> 
 
     let eval_results = Button::new("Submit Test").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-            let ind = data.curr_indexes[index];
-            data.input_str[index][ind] = data.str.clone();
+            let ind = data.curr_indexes[set_index];
+            data.input_str[set_index][ind] = data.str.clone();
             let results_window = WindowDesc::new(result_page_builder(
                 test_name.clone(),
-                data.input_str[index].clone(),
-                data.expected_input[index].clone(),
-                data.display_word[index].clone(),
+                data.input_str[set_index].clone(),
+                data.storage_unit.get_study_set(set_index),
             ))
             .title("Resuts")
             .set_always_on_top(true);
@@ -320,16 +320,16 @@ fn learn_page_builder(index: usize, test_name: String) -> impl Widget<AppState> 
     );
 
     let res_label = Label::dynamic(move |data: &AppState, _| {
-        let word_index = data.curr_indexes[index];
-        data.res[index][word_index].clone()
+        let word_index = data.curr_indexes[set_index];
+        data.res[set_index][word_index].clone()
     })
     .with_text_size(24.0);
 
     let index_label = Label::dynamic(move |data: &AppState, _| {
         format!(
             "{} / {}\n",
-            data.curr_indexes[index] + 1,
-            data.display_word[index].len()
+            data.curr_indexes[set_index] + 1,
+            data.storage_unit.get_study_set(set_index).get_num_of_cards()
         )
     })
     .with_text_size(24.0);
@@ -366,10 +366,10 @@ fn learn_page_builder(index: usize, test_name: String) -> impl Widget<AppState> 
     card.with_spacer(20.0).with_child(return_to_main)
 }
 
-fn get_scores(user_answers: Vec<String>, expected_answers: Vec<String>) -> usize {
+fn get_scores(user_answers: Vec<String>, study_set: StudySet) -> usize {
     let mut score = 0;
     for i in 0..user_answers.len() {
-        if user_answers[i] == expected_answers[i] {
+        if user_answers[i] == study_set.get_card(i).get_ans() {
             score += 1;
         }
     }
@@ -379,8 +379,7 @@ fn get_scores(user_answers: Vec<String>, expected_answers: Vec<String>) -> usize
 fn result_page_builder(
     test_name: String,
     user_answers: Vec<String>,
-    expected_answers: Vec<String>,
-    display_words: Vec<String>,
+    study_set: StudySet,
 ) -> impl Widget<AppState> {
     let lesson_label: Align<AppState> = Label::new(test_name.clone())
         .with_text_size(32.0)
@@ -388,7 +387,7 @@ fn result_page_builder(
         .center();
     let score_label = Label::new(format!(
         "You Scored: {}/{}",
-        get_scores(user_answers.clone(), expected_answers.clone()),
+        get_scores(user_answers.clone(), study_set.clone()),
         user_answers.len()
     ))
     .with_text_size(32.0)
@@ -397,14 +396,14 @@ fn result_page_builder(
         .with_child(lesson_label)
         .with_spacer(30.0)
         .with_child(score_label);
-    for i in 0..display_words.len() {
-        let word = format!("Word:\n[{}]", display_words[i]);
+    for i in 0..user_answers.len() {
+        let word = format!("Word:\n[{}]", study_set.get_card(i).get_word());
         let word_label: Label<AppState> = Label::new(word)
             .with_text_size(24.0)
             .with_text_color(Color::FUCHSIA);
         let mut word_row: Flex<AppState> = Flex::row().with_child(word_label.padding(25.0));
         let user_ans = format!("Your Answer:\n[{}]", user_answers[i]);
-        if user_answers[i] == expected_answers[i] {
+        if user_answers[i] == study_set.get_card(i).get_ans() {
             let correct_label: Label<AppState> = Label::new(user_ans)
                 .with_text_size(24.0)
                 .with_text_color(Color::LIME);
@@ -415,7 +414,7 @@ fn result_page_builder(
                 .with_text_color(Color::MAROON);
             word_row = word_row.with_child(wrong_label.padding(25.0));
         }
-        let expected_ans = format!("Correct Answer:\n[{}]", expected_answers[i]);
+        let expected_ans = format!("Correct Answer:\n[{}]", study_set.get_card(i).get_ans());
         let answer_label: Label<AppState> = Label::new(expected_ans)
             .with_text_size(24.0)
             .with_text_color(Color::SILVER);
@@ -479,6 +478,8 @@ fn add_word_page_builder(set_id: usize) -> impl Widget<AppState> {
             data.word_to_add.clear();
             data.storage_unit.update_set(set_id, target_set);
             data.storage_unit.save();
+            data.res[set_id].push(String::new());
+            data.input_str[set_id].push(String::new());
             ctx.request_update();
             ctx.window().close();
             ctx.new_window(new_win);
@@ -508,8 +509,7 @@ fn view_page_builder(
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             let new_storage = data.storage_unit.clone();
-            let new_win =
-                WindowDesc::new(start_page_builder(new_storage)).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(new_storage)).title(MAIN_TITLE);
             ctx.new_window(new_win);
             ctx.window().close();
         },
@@ -532,7 +532,6 @@ fn view_page_builder(
             ctx.window().close();
         },
     );
-    
     list = list.with_spacer(30.0).with_child(add_word_button);
 
     for i in 0..cards.len() {
@@ -593,7 +592,7 @@ fn view_page_builder(
 }
 
 fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
-    let study_sets = storage.get_all();
+    let study_sets = storage.get_all_study_sets();
     let mut list = Flex::column();
     for set in study_sets {
         let id = set.get_id();
@@ -673,7 +672,10 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
             ctx.window().close();
         },
     );
-    list = list.with_spacer(10.0).with_child(add_set_button.center()).with_spacer(30.0);
+    list = list
+        .with_spacer(10.0)
+        .with_child(add_set_button.center())
+        .with_spacer(30.0);
     let scroll = Scroll::new(list).vertical();
     let aligned_widget = Align::right(scroll);
     aligned_widget
