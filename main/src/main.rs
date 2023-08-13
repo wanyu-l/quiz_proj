@@ -31,7 +31,7 @@ struct AppState {
     new_set_name: String,
     new_set_tag: String,
     // for learn function
-    answer_to_show: Vec<Vec<String>>,
+    answer_to_show: String,
 }
 
 fn is_valid(input_str: String) -> bool {
@@ -51,9 +51,6 @@ impl Data for AppState {
         if !is_same_2_d_vec_string(self.res.clone(), other.res.clone()) {
             return false;
         }
-        if !is_same_2_d_vec_string(self.answer_to_show.clone(), other.answer_to_show.clone()) {
-            return false;
-        }
         if self.curr_indexes.len() != other.curr_indexes.len() {
             return false;
         }
@@ -63,6 +60,9 @@ impl Data for AppState {
             }
         }
         if self.str != other.str {
+            return false;
+        }
+        if self.answer_to_show != other.answer_to_show {
             return false;
         }
         return true;
@@ -97,20 +97,16 @@ impl AppState {
     fn default(storage: Storage) -> AppState {
         let mut input_all: Vec<Vec<String>> = Vec::new();
         let mut res_all: Vec<Vec<String>> = Vec::new();
-        let mut ans_all: Vec<Vec<String>> = Vec::new();
         let mut indexes = Vec::new();
         for i in 0..storage.get_num_of_sets() {
             let mut card_set_inputs = Vec::new();
             let mut card_set_res = Vec::new();
-            let mut card_set_ans = Vec::new();
             (0..storage.get_study_set(i).get_num_of_cards()).for_each(|_i| {
                 card_set_inputs.push("".to_string());
                 card_set_res.push("".to_string());
-                card_set_ans.push("".to_string());
             });
             input_all.push(card_set_inputs);
             res_all.push(card_set_res);
-            ans_all.push(card_set_ans);
             indexes.push(0);
         }
         AppState {
@@ -124,7 +120,7 @@ impl AppState {
             word_remark_to_add: String::new(),
             new_set_name: String::new(),
             new_set_tag: String::new(),
-            answer_to_show: ans_all,
+            answer_to_show: String::new(),
         }
     }
 }
@@ -296,6 +292,7 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
         ctx.request_update();
     });
     let prev = Button::new("Prev").on_click(move |ctx, data: &mut AppState, _env| -> () {
+        data.answer_to_show.clear();
         let ind = data.curr_indexes[set_index];
         data.input_str[set_index][ind] = data.str.clone();
         if data.curr_indexes[set_index] >= 1 {
@@ -305,6 +302,7 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
         ctx.request_update();
     });
     let next = Button::new("Next").on_click(move |ctx, data: &mut AppState, _env| -> () {
+        data.answer_to_show.clear();
         let ind = data.curr_indexes[set_index];
         data.input_str[set_index][ind] = data.str.clone();
         if data.curr_indexes[set_index]
@@ -323,24 +321,23 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
     let show_answer =
         Button::new("Show Answer").on_click(move |ctx, data: &mut AppState, _env| -> () {
             let word_index = data.curr_indexes[set_index];
-            let answer = data
+            data.answer_to_show = data
                 .storage_unit
                 .get_study_set(set_index)
                 .get_card(word_index)
                 .get_ans();
-            data.answer_to_show[set_index][word_index] = answer;
             ctx.request_update();
         });
 
     let hide_answer =
         Button::new("Hide Answer").on_click(move |ctx, data: &mut AppState, _env| -> () {
-            let word_index = data.curr_indexes[set_index];
-            data.answer_to_show[set_index][word_index].clear();
+            data.answer_to_show.clear();
             ctx.request_update();
         });
 
     let eval_results = Button::new("Submit Test").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            data.answer_to_show.clear();
             let ind = data.curr_indexes[set_index];
             data.input_str[set_index][ind] = data.str.clone();
             let results_window = WindowDesc::new(result_page_builder(
@@ -361,6 +358,10 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
     })
     .with_text_size(24.0);
 
+    let show_answer_label = Label::dynamic(|data: &AppState, _| data.answer_to_show.clone())
+        .with_text_size(24.0)
+        .with_text_color(Color::AQUA);
+
     let index_label = Label::dynamic(move |data: &AppState, _| {
         format!(
             "{} / {}\n",
@@ -372,12 +373,6 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
     })
     .with_text_size(24.0);
 
-    let show_answer_label = Label::dynamic(move |data: &AppState, _| {
-        let word_index = data.curr_indexes[set_index];
-        format!("[{}]", data.answer_to_show[set_index][word_index])
-    })
-    .with_text_size(24.0)
-    .with_text_color(Color::AQUA);
     let inputs = Flex::row()
         .with_child(prev)
         .with_child(enter)
@@ -388,6 +383,7 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
 
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            data.answer_to_show.clear();
             let new_win =
                 WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
             ctx.new_window(new_win);
