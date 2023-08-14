@@ -112,6 +112,10 @@ impl StudySet {
         self.cards.push(card);
     }
 
+    pub fn replace_card(&mut self, index: usize, card: Card) {
+        self.cards[index] = card;
+    }
+
     pub fn delete_card(&mut self, to_remove: usize) {
         self.cards.remove(to_remove);
     }

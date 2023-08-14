@@ -549,6 +549,90 @@ fn add_word_page_builder(set_id: usize) -> impl Widget<AppState> {
         .center()
 }
 
+fn place_holder_helper(prev: String, input: String) -> String {
+    if is_valid(input.clone()) {
+        let temp = &input;
+        return temp.trim().to_string();
+    }
+    return prev;
+}
+
+fn edit_word_page_builder(
+    set_id: usize,
+    word_id: usize,
+    curr_word: String,
+    curr_ans: String,
+    curr_remarks: String,
+) -> impl Widget<AppState> {
+    let word_label = Label::new(String::from(format!("Word {}", word_id + 1))).with_text_size(32.0);
+    let word = TextBox::new()
+        .with_placeholder(curr_word.clone())
+        .with_text_size(24.0)
+        .fix_width(300.0)
+        .lens(AppState::word_to_add);
+    let word_ans_label = Label::new(String::from("Answer for Word")).with_text_size(32.0);
+    let word_ans = TextBox::new()
+        .with_placeholder(curr_ans.clone())
+        .with_text_size(24.0)
+        .fix_width(300.0)
+        .lens(AppState::word_ans_to_add);
+    let word_remark_label = Label::new(String::from("Remarks for Word")).with_text_size(32.0);
+    let word_remark = TextBox::new()
+        .with_placeholder(curr_remarks.clone())
+        .with_text_size(24.0)
+        .fix_width(300.0)
+        .lens(AppState::word_remark_to_add);
+    let save_button =
+        Button::new("Save Changes").on_click(move |ctx, data: &mut AppState, _env| -> () {
+            let mut target_set = data.storage_unit.get_study_set(set_id);
+            let new_card = Card::new(
+                word_id,
+                place_holder_helper(curr_word.clone(), data.word_to_add.clone()),
+                place_holder_helper(curr_word.clone(), data.word_ans_to_add.clone()),
+                place_holder_helper(curr_word.clone(), data.word_remark_to_add.clone()),
+            );
+            target_set.replace_card(word_id, new_card);
+            let window_title = target_set.get_set_name();
+            let lesson_name = window_title.clone();
+            let new_win = WindowDesc::new(view_page_builder(
+                set_id,
+                lesson_name,
+                target_set.get_all_cards(),
+            ))
+            .title(window_title);
+            // clear data
+            data.word_remark_to_add.clear();
+            data.word_ans_to_add.clear();
+            data.word_to_add.clear();
+            data.storage_unit.update_set(set_id, target_set);
+            data.storage_unit.save();
+            if set_id == data.res.len() {
+                data.res.push(Vec::new());
+                data.input_str.push(Vec::new());
+            }
+            data.res[set_id].push(String::new());
+            data.input_str[set_id].push(String::new());
+            ctx.request_update();
+            ctx.window().close();
+            ctx.new_window(new_win);
+        });
+    Flex::column()
+        .with_child(word_label)
+        .with_spacer(10.0)
+        .with_child(word)
+        .with_spacer(50.0)
+        .with_child(word_ans_label)
+        .with_spacer(10.0)
+        .with_child(word_ans)
+        .with_spacer(50.0)
+        .with_child(word_remark_label)
+        .with_spacer(10.0)
+        .with_child(word_remark)
+        .with_spacer(50.0)
+        .with_child(save_button)
+        .center()
+}
+
 fn view_page_builder(
     lesson_id: usize,
     lesson_name: String,
@@ -646,7 +730,21 @@ fn view_page_builder(
                 ctx.new_window(new_win);
             },
         );
-        let edit_word_button = Button::new("Edit");
+        let edit_word_button = Button::new("Edit").on_click(
+            move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+                let curr_card = data.storage_unit.get_study_set(lesson_id).get_card(ind);
+                let new_win = WindowDesc::new(edit_word_page_builder(
+                    lesson_id,
+                    ind,
+                    curr_card.get_word(),
+                    curr_card.get_ans(),
+                    curr_card.get_remarks(),
+                ))
+                .title("Edit Word");
+                ctx.window().close();
+                ctx.new_window(new_win);
+            },
+        );
         let word = format!(
             "Word {}:\n[{}]",
             cards[ind].get_id() + 1,
@@ -840,7 +938,7 @@ fn edit_set_page_builder(set_id: usize, curr_name: String) -> impl Widget<AppSta
         .with_text_size(32.0)
         .with_text_color(Color::YELLOW);
     let set_name_input = TextBox::new()
-        .with_placeholder(curr_name)
+        .with_placeholder(curr_name.clone())
         .with_text_size(24.0)
         .fix_width(300.0)
         .lens(AppState::new_set_name);
@@ -849,12 +947,12 @@ fn edit_set_page_builder(set_id: usize, curr_name: String) -> impl Widget<AppSta
         .with_text_size(24.0)
         .fix_width(300.0)
         .lens(AppState::new_set_tag);
-    let save_button = Button::new("Add Set").on_click(move |ctx, data: &mut AppState, _env| {
-        let set_name = &data.new_set_name;
-        let set_tag = &data.new_set_tag;
-        if is_valid(set_name.to_string()) {
+    let save_button =
+        Button::new("Save Changes").on_click(move |ctx, data: &mut AppState, _env| {
+            let new_set_name = place_holder_helper(curr_name.clone(), data.new_set_name.clone());
+            let set_tag = &data.new_set_tag;
             let mut target_set = data.storage_unit.get_study_set(set_id);
-            target_set.rename_set(set_name.trim().to_string());
+            target_set.rename_set(new_set_name);
             if is_valid(set_tag.clone()) {
                 target_set.add_tag(set_tag.trim().to_string());
             }
@@ -865,8 +963,7 @@ fn edit_set_page_builder(set_id: usize, curr_name: String) -> impl Widget<AppSta
             data.new_set_name.clear();
             ctx.window().close();
             ctx.new_window(new_win);
-        }
-    });
+        });
     Flex::column()
         .with_child(return_to_main)
         .with_spacer(50.0)
