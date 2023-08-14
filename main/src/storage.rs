@@ -191,7 +191,9 @@ impl Storage {
     }
 
     pub fn get_all_study_sets(&self) -> Vec<StudySet> {
-        self.sets.clone()
+        let mut temp = self.sets.clone();
+        temp.reverse();
+        temp
     }
 
     pub fn get_study_set(&self, to_get: usize) -> StudySet {
