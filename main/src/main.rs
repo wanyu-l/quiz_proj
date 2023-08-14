@@ -37,6 +37,8 @@ struct AppState {
 fn is_valid(input_str: String) -> bool {
     input_str.replace(" ", "") != ""
 }
+
+// todo: color coding of tags
 // enum Module {}
 
 // fn get_color_code(tag: String) -> Color {
@@ -588,8 +590,8 @@ fn edit_word_page_builder(
             let new_card = Card::new(
                 word_id,
                 place_holder_helper(curr_word.clone(), data.word_to_add.clone()),
-                place_holder_helper(curr_word.clone(), data.word_ans_to_add.clone()),
-                place_holder_helper(curr_word.clone(), data.word_remark_to_add.clone()),
+                place_holder_helper(curr_ans.clone(), data.word_ans_to_add.clone()),
+                place_holder_helper(curr_remarks.clone(), data.word_remark_to_add.clone()),
             );
             target_set.replace_card(word_id, new_card);
             let window_title = target_set.get_set_name();
@@ -844,6 +846,7 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
                 let new_win = WindowDesc::new(edit_set_page_builder(
                     id,
                     data.storage_unit.get_study_set(id).get_set_name(),
+                    data.storage_unit.get_study_set(id).get_all_tags(),
                 ))
                 .title("Edit Set Name & Tags");
                 ctx.window().close();
@@ -925,7 +928,11 @@ fn add_set_page_builder() -> impl Widget<AppState> {
         .center()
 }
 
-fn edit_set_page_builder(set_id: usize, curr_name: String) -> impl Widget<AppState> {
+fn edit_set_page_builder(
+    set_id: usize,
+    curr_name: String,
+    curr_tags: Vec<String>,
+) -> impl Widget<AppState> {
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             let new_win =
@@ -943,10 +950,23 @@ fn edit_set_page_builder(set_id: usize, curr_name: String) -> impl Widget<AppSta
         .fix_width(300.0)
         .lens(AppState::new_set_name);
     let set_tag_input = TextBox::new()
-        .with_placeholder("Enter Tag")
+        .with_placeholder("Add Tag")
         .with_text_size(24.0)
         .fix_width(300.0)
         .lens(AppState::new_set_tag);
+
+    let curr_tag_label = Label::new("Tags:")
+        .with_text_size(32.0)
+        .with_text_color(Color::YELLOW);
+    let mut tag_row = Flex::row();
+    for tag in curr_tags {
+        let tag_label = Label::new(tag)
+            .with_text_size(20.0)
+            .with_text_color(Color::rgba(0.5, 0.3, 0.7, 1.0))
+            .border(Color::YELLOW, 1.0);
+        tag_row = tag_row.with_child(tag_label).with_spacer(5.0);
+    }
+
     let save_button =
         Button::new("Save Changes").on_click(move |ctx, data: &mut AppState, _env| {
             let new_set_name = place_holder_helper(curr_name.clone(), data.new_set_name.clone());
@@ -972,6 +992,10 @@ fn edit_set_page_builder(set_id: usize, curr_name: String) -> impl Widget<AppSta
         .with_child(set_name_input)
         .with_spacer(50.0)
         .with_child(set_tag_input)
+        .with_spacer(50.0)
+        .with_child(curr_tag_label)
+        .with_spacer(10.0)
+        .with_child(tag_row)
         .with_spacer(50.0)
         .with_child(save_button)
         .center()

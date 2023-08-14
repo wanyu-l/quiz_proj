@@ -140,6 +140,22 @@ impl StudySet {
         self.tags.clone()
     }
 
+    pub fn get_tag_index(&self, tag: String) -> i8 {
+        for i in 0..self.tags.len() {
+            if self.tags[i] == tag {
+                return i as i8;
+            }
+        }
+        return -1;
+    }
+
+    pub fn delete_tag(&mut self, tag: String) {
+        if self.tags.contains(&tag) {
+            let tag_ind = self.get_tag_index(tag);
+            self.tags.remove(tag_ind as usize);
+        }
+    }
+
     pub fn get_id(&self) -> usize {
         self.id
     }
@@ -163,9 +179,15 @@ impl Data for Storage {
 
 impl Storage {
     pub fn new() -> Storage {
-        let data_sets = Storage::read();
-        let read_data: Vec<StudySet> = serde_json::from_str(&data_sets).unwrap();
-        Storage { sets: read_data }
+        let data_sets_json = Storage::read();
+        let read_data = serde_json::from_str(&data_sets_json);
+        match read_data {
+            Ok(data) => Storage { sets: data },
+            Err(_) => {
+                println!("Error Reading Data");
+                Storage { sets: vec![] }
+            }
+        }
     }
 
     pub fn get_all_study_sets(&self) -> Vec<StudySet> {
