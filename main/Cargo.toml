@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-druid = { git = "https://github.com/linebender/druid.git" }
+druid ="0.8.3"

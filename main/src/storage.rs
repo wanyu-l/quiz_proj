@@ -190,6 +190,18 @@ impl Storage {
         }
     }
 
+    pub fn get_all_tags(&self) -> Vec<String> {
+        let mut res: Vec<String> = Vec::new();
+        for set in &self.sets {
+            for tag in set.get_all_tags() {
+                if !res.contains(&tag) {
+                    res.push(tag);
+                }
+            }
+        }
+        res
+    }
+
     pub fn get_all_study_sets(&self) -> Vec<StudySet> {
         self.sets.clone()
     }

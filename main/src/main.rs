@@ -221,8 +221,11 @@ fn test_page_builder(set_index: usize, test_name: String) -> impl Widget<AppStat
 
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-            let new_win =
-                WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(
+                data.storage_unit.get_all_study_sets(),
+                data.storage_unit.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
             ctx.window().close();
             ctx.new_window(new_win);
         },
@@ -384,8 +387,11 @@ fn learn_page_builder(set_index: usize, test_name: String) -> impl Widget<AppSta
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             data.answer_to_show.clear();
-            let new_win =
-                WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(
+                data.storage_unit.get_all_study_sets(),
+                data.storage_unit.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
             ctx.window().close();
             ctx.new_window(new_win);
         },
@@ -469,8 +475,11 @@ fn result_page_builder(
     }
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-            let new_win =
-                WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(
+                data.storage_unit.get_all_study_sets(),
+                data.storage_unit.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
             ctx.request_update();
             ctx.window().close();
             ctx.new_window(new_win);
@@ -643,7 +652,11 @@ fn view_page_builder(
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             let new_storage = data.storage_unit.clone();
-            let new_win = WindowDesc::new(start_page_builder(new_storage)).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(
+                new_storage.get_all_study_sets(),
+                new_storage.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
             ctx.window().close();
             ctx.new_window(new_win);
         },
@@ -784,9 +797,17 @@ fn view_page_builder(
     scroll
 }
 
-fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
-    let study_sets = storage.get_all_study_sets();
-    let mut list = Flex::column();
+fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widget<AppState> {
+    let mut list: Flex<AppState> = Flex::column();
+    let filter_label = Label::new("Filter by tags").with_text_size(32.0).with_text_color(Color::PURPLE);
+    let mut tags_list: Flex<AppState> = Flex::row().with_spacer(10.0);
+    for i in 0..tags.len() {
+        let filter_button = Button::new(tags[i].clone());
+        tags_list = tags_list.with_child(filter_button).with_spacer(10.0);
+    }
+    let inner = Scroll::new(tags_list.padding(20.0).center()).horizontal();
+    list.add_child(filter_label);
+    list.add_child(inner);
     for set in study_sets {
         let id = set.get_id();
         let id_clone = id.clone();
@@ -834,8 +855,11 @@ fn start_page_builder(storage: Storage) -> impl Widget<AppState> {
             move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
                 data.storage_unit.delete_set(id_clone);
                 data.storage_unit.save();
-                let new_win = WindowDesc::new(start_page_builder(data.storage_unit.clone()))
-                    .title(MAIN_TITLE);
+                let new_win = WindowDesc::new(start_page_builder(
+                    data.storage_unit.get_all_study_sets(),
+                    data.storage_unit.get_all_tags(),
+                ))
+                .title(MAIN_TITLE);
                 ctx.window().close();
                 ctx.new_window(new_win);
             },
@@ -910,8 +934,11 @@ fn add_set_page_builder() -> impl Widget<AppState> {
             }
             data.storage_unit.add_set(new_set);
             data.storage_unit.save();
-            let new_win =
-                WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(
+                data.storage_unit.get_all_study_sets(),
+                data.storage_unit.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
             data.new_set_name.clear();
             ctx.window().close();
             ctx.new_window(new_win);
@@ -935,8 +962,11 @@ fn edit_set_page_builder(
 ) -> impl Widget<AppState> {
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-            let new_win =
-                WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(
+                data.storage_unit.get_all_study_sets(),
+                data.storage_unit.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
             ctx.window().close();
             ctx.new_window(new_win);
         },
@@ -978,8 +1008,11 @@ fn edit_set_page_builder(
             }
             data.storage_unit.update_set(set_id, target_set);
             data.storage_unit.save();
-            let new_win =
-                WindowDesc::new(start_page_builder(data.storage_unit.clone())).title(MAIN_TITLE);
+            let new_win = WindowDesc::new(start_page_builder(
+                data.storage_unit.get_all_study_sets(),
+                data.storage_unit.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
             data.new_set_name.clear();
             ctx.window().close();
             ctx.new_window(new_win);
@@ -1003,7 +1036,11 @@ fn edit_set_page_builder(
 
 pub fn main() {
     let storage_unit = storage::Storage::new();
-    let main_window = WindowDesc::new(start_page_builder(storage_unit.clone())).title(MAIN_TITLE);
+    let main_window = WindowDesc::new(start_page_builder(
+        storage_unit.get_all_study_sets(),
+        storage_unit.get_all_tags(),
+    ))
+    .title(MAIN_TITLE);
     AppLauncher::with_window(main_window)
         .log_to_console()
         .launch(AppState::default(storage_unit))

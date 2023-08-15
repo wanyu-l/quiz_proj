@@ -217,7 +217,8 @@ dependencies = [
 [[package]]
 name = "druid"
 version = "0.8.3"
-source = "git+https://github.com/linebender/druid.git#af94bdd02798c84f7927e898b1ed28ebcec16b30"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5ece41814b410c87e6379441caa7316539500b2e387b8d691f2ba5c0f4aff631"
 dependencies = [
  "console_error_panic_hook",
  "druid-derive",
@@ -237,8 +238,9 @@ dependencies = [
 
 [[package]]
 name = "druid-derive"
-version = "0.5.0"
-source = "git+https://github.com/linebender/druid.git#af94bdd02798c84f7927e898b1ed28ebcec16b30"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "808d664482b1888a2ccb7f4dc9fa24165174d65ba96726315964064bdbc7d6cb"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -248,7 +250,8 @@ dependencies = [
 [[package]]
 name = "druid-shell"
 version = "0.8.3"
-source = "git+https://github.com/linebender/druid.git#af94bdd02798c84f7927e898b1ed28ebcec16b30"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7682d9c8fbf934504c30970775bfcfba7858a600f2f6e56bed331989958350fc"
 dependencies = [
  "anyhow",
  "bitflags",
