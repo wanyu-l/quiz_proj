@@ -140,6 +140,10 @@ impl StudySet {
         self.tags.clone()
     }
 
+    pub fn has_tag(&self, tag: String) -> bool {
+        self.tags.contains(&tag)
+    }
+
     pub fn get_tag_index(&self, tag: String) -> i8 {
         for i in 0..self.tags.len() {
             if self.tags[i] == tag {
@@ -208,6 +212,16 @@ impl Storage {
 
     pub fn get_study_set(&self, to_get: usize) -> StudySet {
         self.sets[to_get].clone()
+    }
+
+    pub fn get_study_set_by_tag(&self, tag: String) -> Vec<StudySet> {
+        let mut sets = Vec::new();
+        for set in &self.sets {
+            if set.has_tag(tag.clone()) {
+                sets.push(set.clone());
+            }
+        }
+        sets
     }
 
     pub fn get_num_of_sets(&self) -> usize {

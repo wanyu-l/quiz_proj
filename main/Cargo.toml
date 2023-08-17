@@ -2,10 +2,14 @@
 name = "quiz_late"
 version = "0.1.0"
 edition = "2021"
+build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-druid ="0.8.3"
+druid = "0.8.3"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.11"

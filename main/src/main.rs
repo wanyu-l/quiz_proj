@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use druid::{
     widget::{Align, Button, Flex, Label, Scroll, TextBox},
     AppLauncher, Color, Data, Lens, Widget, WidgetExt, WindowDesc,
@@ -32,6 +34,7 @@ struct AppState {
     new_set_tag: String,
     // for learn function
     answer_to_show: String,
+    current_filter: Vec<String>,
 }
 
 fn is_valid(input_str: String) -> bool {
@@ -123,6 +126,7 @@ impl AppState {
             new_set_name: String::new(),
             new_set_tag: String::new(),
             answer_to_show: String::new(),
+            current_filter: Vec::new(),
         }
     }
 }
@@ -799,15 +803,44 @@ fn view_page_builder(
 
 fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widget<AppState> {
     let mut list: Flex<AppState> = Flex::column();
-    let filter_label = Label::new("Filter by tags").with_text_size(32.0).with_text_color(Color::PURPLE);
+    let filter_label = Label::new("Filter by tags")
+        .with_text_size(32.0)
+        .with_text_color(Color::PURPLE);
     let mut tags_list: Flex<AppState> = Flex::row().with_spacer(10.0);
     for i in 0..tags.len() {
-        let filter_button = Button::new(tags[i].clone());
+        let curr_tag = tags[i].clone();
+        let filter_button = Button::new(curr_tag.clone()).on_click(
+            move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+                let new_win = WindowDesc::new(start_page_builder(
+                    data.storage_unit.get_study_set_by_tag(curr_tag.clone()),
+                    data.storage_unit.get_all_tags(),
+                ))
+                .title(MAIN_TITLE);
+                data.current_filter.push(curr_tag.clone());
+                ctx.window().close();
+                ctx.new_window(new_win);
+            },
+        );
         tags_list = tags_list.with_child(filter_button).with_spacer(10.0);
     }
-    let inner = Scroll::new(tags_list.padding(20.0).center()).horizontal();
+    let inner_tags_list = Scroll::new(tags_list.padding(20.0).center()).horizontal();
     list.add_child(filter_label);
-    list.add_child(inner);
+    list.add_child(inner_tags_list);
+    let reset_filter = Button::new("Reset Filter").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            if !data.current_filter.is_empty() {
+                let new_win = WindowDesc::new(start_page_builder(
+                    data.storage_unit.get_all_study_sets(),
+                    data.storage_unit.get_all_tags(),
+                ))
+                .title(MAIN_TITLE);
+                data.current_filter.clear();
+                ctx.window().close();
+                ctx.new_window(new_win);
+            }
+        },
+    );
+    list.add_child(reset_filter);
     for set in study_sets {
         let id = set.get_id();
         let id_clone = id.clone();
@@ -1042,7 +1075,7 @@ pub fn main() {
     ))
     .title(MAIN_TITLE);
     AppLauncher::with_window(main_window)
-        .log_to_console()
+        // .log_to_console()
         .launch(AppState::default(storage_unit))
         .unwrap();
 }
