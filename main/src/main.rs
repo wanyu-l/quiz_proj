@@ -1,12 +1,17 @@
 #![windows_subsystem = "windows"]
 
+use std::collections::HashSet;
+
 use druid::{
-    widget::{Align, Button, Flex, Label, Scroll, TextBox},
-    AppLauncher, Color, Data, Lens, Widget, WidgetExt, WindowDesc,
+    theme,
+    widget::{Align, Button, Flex, Label, Painter, Scroll, TextBox},
+    AppLauncher, Color, Data, Lens, RenderContext, Widget, WidgetExt, WindowDesc,
 };
 use storage::{Card, Storage, StudySet};
 
 const MAIN_TITLE: &str = "Quiz Late";
+const SELECTED_TAG_COLOR: druid::Color = Color::rgba8(52, 222, 235, 1);
+const UNSELECTED_TAG_COLOR: druid::Color = Color::rgba8(52, 222, 235, 0);
 
 mod storage;
 /*
@@ -34,7 +39,7 @@ struct AppState {
     new_set_tag: String,
     // for learn function
     answer_to_show: String,
-    current_filter: Vec<String>,
+    current_filter: HashSet<String>,
 }
 
 fn is_valid(input_str: String) -> bool {
@@ -69,6 +74,11 @@ impl Data for AppState {
         }
         if self.answer_to_show != other.answer_to_show {
             return false;
+        }
+        for elem in &self.current_filter {
+            if !other.current_filter.contains(elem) {
+                return false;
+            }
         }
         return true;
     }
@@ -126,7 +136,7 @@ impl AppState {
             new_set_name: String::new(),
             new_set_tag: String::new(),
             answer_to_show: String::new(),
-            current_filter: Vec::new(),
+            current_filter: HashSet::new(),
         }
     }
 }
@@ -802,6 +812,7 @@ fn view_page_builder(
 }
 
 fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widget<AppState> {
+    let num_of_sets = study_sets.len();
     let mut list: Flex<AppState> = Flex::column();
     let filter_label = Label::new("Filter by tags")
         .with_text_size(32.0)
@@ -809,18 +820,32 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
     let mut tags_list: Flex<AppState> = Flex::row().with_spacer(10.0);
     for i in 0..tags.len() {
         let curr_tag = tags[i].clone();
-        let filter_button = Button::new(curr_tag.clone()).on_click(
-            move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-                let new_win = WindowDesc::new(start_page_builder(
-                    data.storage_unit.get_study_set_by_tag(curr_tag.clone()),
-                    data.storage_unit.get_all_tags(),
-                ))
-                .title(MAIN_TITLE);
-                data.current_filter.push(curr_tag.clone());
-                ctx.window().close();
-                ctx.new_window(new_win);
-            },
-        );
+        let curr_tag_for_filter = curr_tag.clone();
+        let filter_button = Button::new(curr_tag.clone())
+            .background(Painter::new(move |ctx, data: &AppState, _env| {
+                let bounds = ctx.size().to_rect();
+                if data.current_filter.contains(&curr_tag_for_filter) {
+                    ctx.fill(bounds, &SELECTED_TAG_COLOR);
+                } else {
+                    ctx.fill(bounds, &UNSELECTED_TAG_COLOR);
+                }
+            }))
+            .on_click(
+                move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+                    // let new_win = WindowDesc::new(start_page_builder(
+                    //     data.storage_unit.get_study_set_by_tag(curr_tag.clone()),
+                    //     data.storage_unit.get_all_tags(),
+                    // ))
+                    // .title(MAIN_TITLE);
+                    if data.current_filter.contains(&curr_tag) {
+                        data.current_filter.remove(&curr_tag);
+                    } else {
+                        data.current_filter.insert(curr_tag.clone());
+                    }
+                    // ctx.window().close();
+                    // ctx.new_window(new_win);
+                },
+            );
         tags_list = tags_list.with_child(filter_button).with_spacer(10.0);
     }
     let inner_tags_list = Scroll::new(tags_list.padding(20.0).center()).horizontal();
@@ -828,7 +853,7 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
     list.add_child(inner_tags_list);
     let reset_filter = Button::new("Reset Filter").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-            if !data.current_filter.is_empty() {
+            if data.storage_unit.get_num_of_sets() != num_of_sets {
                 let new_win = WindowDesc::new(start_page_builder(
                     data.storage_unit.get_all_study_sets(),
                     data.storage_unit.get_all_tags(),
@@ -1076,6 +1101,10 @@ pub fn main() {
     .title(MAIN_TITLE);
     AppLauncher::with_window(main_window)
         // .log_to_console()
+        .configure_env(|env, _state| {
+            env.set(theme::BUTTON_DARK, Color::rgba8(100, 100, 120, 0));
+            env.set(theme::BUTTON_LIGHT, Color::rgba8(100, 100, 100, 100));
+        })
         .launch(AppState::default(storage_unit))
         .unwrap();
 }
