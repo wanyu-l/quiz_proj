@@ -10,7 +10,7 @@ use druid::{
 use storage::{Card, Storage, StudySet};
 
 const MAIN_TITLE: &str = "Quiz Late";
-const SELECTED_TAG_COLOR: druid::Color = Color::rgba8(52, 222, 235, 1);
+const SELECTED_TAG_COLOR: druid::Color = Color::rgba8(52, 222, 235, 255);
 const UNSELECTED_TAG_COLOR: druid::Color = Color::rgba8(52, 222, 235, 0);
 
 mod storage;
@@ -831,19 +831,12 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
                 }
             }))
             .on_click(
-                move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-                    // let new_win = WindowDesc::new(start_page_builder(
-                    //     data.storage_unit.get_study_set_by_tag(curr_tag.clone()),
-                    //     data.storage_unit.get_all_tags(),
-                    // ))
-                    // .title(MAIN_TITLE);
+                move |_ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
                     if data.current_filter.contains(&curr_tag) {
                         data.current_filter.remove(&curr_tag);
                     } else {
                         data.current_filter.insert(curr_tag.clone());
                     }
-                    // ctx.window().close();
-                    // ctx.new_window(new_win);
                 },
             );
         tags_list = tags_list.with_child(filter_button).with_spacer(10.0);
@@ -851,7 +844,39 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
     let inner_tags_list = Scroll::new(tags_list.padding(20.0).center()).horizontal();
     list.add_child(filter_label);
     list.add_child(inner_tags_list);
-    let reset_filter = Button::new("Reset Filter").on_click(
+
+    let match_all = Button::new("Match All").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            if !data.current_filter.is_empty() {
+                let new_win = WindowDesc::new(start_page_builder(
+                    data.storage_unit
+                        .get_study_set_by_tags(data.current_filter.clone(), false),
+                    data.storage_unit.get_all_tags(),
+                ))
+                .title(MAIN_TITLE);
+                data.current_filter.clear();
+                ctx.window().close();
+                ctx.new_window(new_win);
+            }
+        },
+    );
+    let match_any = Button::new("Match Any").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            if !data.current_filter.is_empty() {
+                let new_win = WindowDesc::new(start_page_builder(
+                    data.storage_unit
+                        .get_study_set_by_tags(data.current_filter.clone(), true),
+                    data.storage_unit.get_all_tags(),
+                ))
+                .title(MAIN_TITLE);
+                data.current_filter.clear();
+                ctx.window().close();
+                ctx.new_window(new_win);
+            }
+        },
+    );
+
+    let all_sets = Button::new("See All Sets").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
             if data.storage_unit.get_num_of_sets() != num_of_sets {
                 let new_win = WindowDesc::new(start_page_builder(
@@ -865,7 +890,16 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
             }
         },
     );
-    list.add_child(reset_filter);
+
+    let mut filter_buttons = Flex::row();
+    filter_buttons = filter_buttons
+        .with_child(match_all)
+        .with_spacer(10.0)
+        .with_child(match_any)
+        .with_spacer(10.0)
+        .with_child(all_sets);
+
+    list.add_child(filter_buttons);
     for set in study_sets {
         let id = set.get_id();
         let id_clone = id.clone();

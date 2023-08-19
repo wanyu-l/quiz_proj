@@ -1,5 +1,6 @@
 use druid::Data;
 use serde::{Deserialize, Serialize};
+use std::collections::HashSet;
 use std::fs;
 use std::fs::File;
 use std::fs::OpenOptions;
@@ -144,6 +145,24 @@ impl StudySet {
         self.tags.contains(&tag)
     }
 
+    pub fn has_any_tags(&self, tags: HashSet<String>) -> bool {
+        for tag in tags {
+            if self.has_tag(tag) {
+                return true;
+            }
+        }
+        false
+    }
+
+    pub fn has_all_tags(&self, tags: HashSet<String>) -> bool {
+        for tag in tags {
+            if !self.has_tag(tag) {
+                return false;
+            }
+        }
+        true
+    }
+
     pub fn get_tag_index(&self, tag: String) -> i8 {
         for i in 0..self.tags.len() {
             if self.tags[i] == tag {
@@ -219,6 +238,24 @@ impl Storage {
         for set in &self.sets {
             if set.has_tag(tag.clone()) {
                 sets.push(set.clone());
+            }
+        }
+        sets
+    }
+
+    pub fn get_study_set_by_tags(&self, tags: HashSet<String>, is_match_any: bool) -> Vec<StudySet> {
+        let mut sets = Vec::new();
+        if is_match_any {
+            for set in &self.sets {
+                if set.has_any_tags(tags.clone()) {
+                    sets.push(set.clone());
+                }
+            }
+        } else {
+            for set in &self.sets {
+                if set.has_all_tags(tags.clone()) {
+                    sets.push(set.clone());
+                }
             }
         }
         sets
