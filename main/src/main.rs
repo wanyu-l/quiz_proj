@@ -442,6 +442,18 @@ fn get_scores(user_answers: Vec<String>, study_set: StudySet) -> usize {
     score
 }
 
+fn get_ind(ans: String, input: String) -> usize {
+    let ans_arr = ans.chars().collect::<Vec<_>>();
+    let input_arr = input.chars().collect::<Vec<_>>();
+    let min_len = ans_arr.len().min(input_arr.len());
+    for i in 0..min_len {
+        if ans_arr[i] != input_arr[i] {
+            return i;
+        }
+    }
+    min_len
+}
+
 fn result_page_builder(
     test_name: String,
     user_answers: Vec<String>,
@@ -547,10 +559,6 @@ fn add_word_page_builder(set_id: usize) -> impl Widget<AppState> {
             data.word_ans_to_add.clear();
             data.word_to_add.clear();
             data.storage_unit.update_set(set_id, target_set);
-            if set_id == data.res.len() {
-                data.res.push(Vec::new());
-                data.input_str.push(Vec::new());
-            }
             data.res[set_id].push(String::new());
             data.input_str[set_id].push(String::new());
             ctx.request_update();
@@ -746,9 +754,7 @@ fn view_page_builder(
             .border(Color::YELLOW, 1.0);
         tag_row = tag_row.with_child(tag_label).with_spacer(5.0);
     }
-    list = list
-        .with_spacer(20.0)
-        .with_child(tag_row);
+    list = list.with_spacer(20.0).with_child(tag_row);
 
     let add_word_button = Button::new("Add Word").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
@@ -1050,6 +1056,9 @@ fn add_set_page_builder() -> impl Widget<AppState> {
                 new_set.add_tag(set_tag.trim().to_string());
             }
             data.storage_unit.add_set(new_set);
+            data.input_str.push(Vec::new());
+            data.res.push(Vec::new());
+            data.curr_indexes.push(0);
             let new_win = WindowDesc::new(start_page_builder(
                 data.storage_unit.get_all_study_sets(),
                 data.storage_unit.get_all_tags(),

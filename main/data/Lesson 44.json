@@ -1,0 +1,237 @@
+{
+  "id": 68,
+  "name": "Lesson 44",
+  "tags": [
+    "LAJ 4"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "cry",
+      "ans": "なきます",
+      "remarks": "泣＿＿"
+    },
+    {
+      "id": 1,
+      "word": "laugh, smile",
+      "ans": "わらいます",
+      "remarks": "笑＿＿"
+    },
+    {
+      "id": 2,
+      "word": "sleep; intransitive",
+      "ans": "ねむります",
+      "remarks": "眠＿＿"
+    },
+    {
+      "id": 3,
+      "word": "dry; intransitive",
+      "ans": "かわきます",
+      "remarks": "乾＿＿"
+    },
+    {
+      "id": 4,
+      "word": "a shirt dry; intransitive",
+      "ans": "シャツがかわきます",
+      "remarks": "＿＿乾＿＿"
+    },
+    {
+      "id": 5,
+      "word": "get wet",
+      "ans": "ぬれます",
+      "remarks": "濡＿＿"
+    },
+    {
+      "id": 6,
+      "word": "a shirt get wet",
+      "ans": "シャツがぬれます",
+      "remarks": "＿＿濡＿＿"
+    },
+    {
+      "id": 7,
+      "word": "slip (hand); fell",
+      "ans": "すべります",
+      "remarks": "滑＿＿"
+    },
+    {
+      "id": 8,
+      "word": "happen",
+      "ans": "おきます",
+      "remarks": "起＿＿"
+    },
+    {
+      "id": 9,
+      "word": "an accident happens",
+      "ans": "じこがおきます",
+      "remarks": "事故＿起＿＿"
+    },
+    {
+      "id": 10,
+      "word": "adjust",
+      "ans": "ちょうせつします",
+      "remarks": "調整＿＿"
+    },
+    {
+      "id": 11,
+      "word": "safe",
+      "ans": "あんぜん",
+      "remarks": "安全（な）"
+    },
+    {
+      "id": 12,
+      "word": "dangerous",
+      "ans": "きけん",
+      "remarks": "危険（な）"
+    },
+    {
+      "id": 13,
+      "word": "strong (taste), dark (colour), thick (liquid)",
+      "ans": "こい",
+      "remarks": "濃＿"
+    },
+    {
+      "id": 14,
+      "word": "weak (taste), light (colour), thin",
+      "ans": "うすい",
+      "remarks": "薄＿"
+    },
+    {
+      "id": 15,
+      "word": "thick",
+      "ans": "あつい",
+      "remarks": "厚＿"
+    },
+    {
+      "id": 16,
+      "word": "thick (of large diameter)",
+      "ans": "ふとい",
+      "remarks": "太＿"
+    },
+    {
+      "id": 17,
+      "word": "thin (of small diameter)",
+      "ans": "ほそい",
+      "remarks": "細＿"
+    },
+    {
+      "id": 18,
+      "word": "air",
+      "ans": "くうき",
+      "remarks": "空気"
+    },
+    {
+      "id": 19,
+      "word": "tear",
+      "ans": "なみだ",
+      "remarks": "涙"
+    },
+    {
+      "id": 20,
+      "word": "Japanese dish",
+      "ans": "わしょく",
+      "remarks": "和食"
+    },
+    {
+      "id": 21,
+      "word": "Western dish",
+      "ans": "ようしょく",
+      "remarks": "洋食"
+    },
+    {
+      "id": 22,
+      "word": "side dish",
+      "ans": "おかず",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "quantity",
+      "ans": "りょう",
+      "remarks": "量"
+    },
+    {
+      "id": 24,
+      "word": "times",
+      "ans": "ばい",
+      "remarks": "倍"
+    },
+    {
+      "id": 25,
+      "word": "single room",
+      "ans": "シングル",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "twin-bedded room",
+      "ans": "ツイン",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "washing, laundry room",
+      "ans": "せんたくもの",
+      "remarks": "洗濯物"
+    },
+    {
+      "id": 28,
+      "word": "DVD",
+      "ans": "DVD",
+      "remarks": "？？？"
+    },
+    {
+      "id": 29,
+      "word": "What can I do for you?",
+      "ans": "どうなさいますか",
+      "remarks": "respectful"
+    },
+    {
+      "id": 30,
+      "word": "haircut",
+      "ans": "カット",
+      "remarks": ""
+    },
+    {
+      "id": 31,
+      "word": "shampoo (Noun)",
+      "ans": "シャンプー",
+      "remarks": ""
+    },
+    {
+      "id": 32,
+      "word": "Shampoo (Verb)",
+      "ans": "シャンプーをします",
+      "remarks": ""
+    },
+    {
+      "id": 33,
+      "word": "How would you like it done?",
+      "ans": "どういうふうになさいますか",
+      "remarks": "respectful"
+    },
+    {
+      "id": 34,
+      "word": "short",
+      "ans": "ショート",
+      "remarks": "haircut"
+    },
+    {
+      "id": 35,
+      "word": "Do it like~",
+      "ans": "みたいにおねがいします",
+      "remarks": "haircut; like [someone]"
+    },
+    {
+      "id": 36,
+      "word": "Would this be all right?",
+      "ans": "こでれよろしいでしょうか",
+      "remarks": "respectful; formal"
+    },
+    {
+      "id": 37,
+      "word": "Thank you for your patience",
+      "ans": "おつかれさまでした",
+      "remarks": "店員 to customer; （どうも）"
+    }
+  ]
+}

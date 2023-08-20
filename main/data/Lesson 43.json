@@ -1,0 +1,165 @@
+{
+  "id": 67,
+  "name": "Lesson 43",
+  "tags": [
+    "LAJ 4"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "exports increase",
+      "ans": "ゆしゅつがふえます",
+      "remarks": "輸出＿増＿＿"
+    },
+    {
+      "id": 1,
+      "word": "decrease",
+      "ans": "へります",
+      "remarks": "減＿＿"
+    },
+    {
+      "id": 2,
+      "word": "exports decrease",
+      "ans": "ゆしゅつがへります",
+      "remarks": "輸出＿減＿＿"
+    },
+    {
+      "id": 3,
+      "word": "rise",
+      "ans": "あがります",
+      "remarks": "上＿＿"
+    },
+    {
+      "id": 4,
+      "word": "the price rise",
+      "ans": "ねだんがあがります",
+      "remarks": "値段＿上＿＿"
+    },
+    {
+      "id": 5,
+      "word": "increase",
+      "ans": "ふえます",
+      "remarks": "増＿＿"
+    },
+    {
+      "id": 6,
+      "word": "fall, drop",
+      "ans": "さがります",
+      "remarks": "下＿＿＿"
+    },
+    {
+      "id": 7,
+      "word": "the price fall, drop",
+      "ans": "ねだんがさがります",
+      "remarks": "値段＿下＿＿"
+    },
+    {
+      "id": 8,
+      "word": "break, snap",
+      "ans": "きれます",
+      "remarks": "切＿＿"
+    },
+    {
+      "id": 9,
+      "word": "a string break, snap",
+      "ans": "ひもがきれます",
+      "remarks": "紐＿切＿"
+    },
+    {
+      "id": 10,
+      "word": "fall down",
+      "ans": "おちます",
+      "remarks": "落＿＿"
+    },
+    {
+      "id": 11,
+      "word": "baggage fall down",
+      "ans": "にもつがおちます",
+      "remarks": "荷物＿＿落＿＿"
+    },
+    {
+      "id": 12,
+      "word": "run out, be lost",
+      "ans": "なくなります",
+      "remarks": "無＿＿＿"
+    },
+    {
+      "id": 13,
+      "word": "petrol, gasoline run out, be lost",
+      "ans": "ガソリンがなくなります",
+      "remarks": "＿＿無＿＿＿"
+    },
+    {
+      "id": 14,
+      "word": "strange, peculiar",
+      "ans": "へん",
+      "remarks": "変（な）"
+    },
+    {
+      "id": 15,
+      "word": "happy",
+      "ans": "しあわせ",
+      "remarks": "幸＿（な）"
+    },
+    {
+      "id": 16,
+      "word": "easy",
+      "ans": "らく",
+      "remarks": "楽（な）"
+    },
+    {
+      "id": 17,
+      "word": "tasty",
+      "ans": "うまい",
+      "remarks": "good at something"
+    },
+    {
+      "id": 18,
+      "word": "not tasty",
+      "ans": "まずい",
+      "remarks": "bad at something"
+    },
+    {
+      "id": 19,
+      "word": "boring, uninteresting, trivial",
+      "ans": "つまらない",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "kind, gentle, tender-hearted",
+      "ans": "やさしい",
+      "remarks": "優＿＿"
+    },
+    {
+      "id": 21,
+      "word": "petrol, gasoline",
+      "ans": "ガソリン",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "fire",
+      "ans": "ひ",
+      "remarks": "🔥；火"
+    },
+    {
+      "id": 23,
+      "word": "pamphlet",
+      "ans": "パンフレット",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "at any moment",
+      "ans": "いまにも",
+      "remarks": "describe a situation just before it change"
+    },
+    {
+      "id": 25,
+      "word": "Oh!/Wow!",
+      "ans": "わあ",
+      "remarks": "哇"
+    }
+  ]
+}
