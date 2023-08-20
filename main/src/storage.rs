@@ -6,7 +6,6 @@ use std::fs::File;
 use std::fs::OpenOptions;
 use std::io::Write;
 
-const DATA_PATH: &str = "./data/data.json";
 const DATA_DIR_PATH: &str = "./data";
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
@@ -263,94 +262,75 @@ impl Storage {
     }
 
     pub fn update_set(&mut self, set_id: usize, updated_set: StudySet) {
-        self.sets[set_id] = updated_set;
+        if self.sets[set_id].get_set_name() != updated_set.get_set_name() {
+            self.rename_set_file(self.sets[set_id].get_set_name(), updated_set.get_set_name());
+        }
+        self.sets[set_id] = updated_set.clone();
+        self.update_set_file(updated_set);
     }
 
     pub fn add_set(&mut self, new_set: StudySet) {
-        self.sets.push(new_set);
+        self.sets.push(new_set.clone());
+        self.create_set_file(new_set);
     }
 
     pub fn delete_set(&mut self, set_id: usize) {
         for i in 0..self.sets.len() {
             if self.sets[i].get_id() == set_id {
+                let set_name = self.sets[i].get_set_name();
+                self.delete_set_file(set_name);
                 self.sets.remove(i);
                 break;
             }
         }
     }
 
-    // todo: change saving to be individual sets if necessary
-    pub fn save(&self) -> () {
-        // clean up various ids
-        let mut set_arr: Vec<StudySet> = vec![];
-        let mut set_id = 0;
-        for set in &self.sets {
-            let mut temp_set: StudySet = StudySet::new(set.get_set_name(), set_id);
-            let mut card_id = 0;
-            for card in &set.cards {
-                let temp_card = Card::new(
-                    card_id,
-                    card.get_word().trim().to_string(),
-                    card.get_ans().trim().to_string(),
-                    card.get_remarks().trim().to_string(),
-                );
-                temp_set.add_card(temp_card);
-                card_id += 1;
-            }
-            for tag in set.get_all_tags() {
-                temp_set.add_tag(tag);
-            }
-            set_id += 1;
-            set_arr.push(temp_set);
-        }
-        // let data = serde_json::to_string(&set_arr).expect("Error parsing data to json");
-        // let mut file = OpenOptions::new()
-        //     .write(true)
-        //     .truncate(true)
-        //     .open(DATA_PATH)
-        //     .expect("Error opening data file");
-        // file.write_all(data.as_bytes())
-        //     .expect("Error writing to file")
+    pub fn create_set_file(&self, set: StudySet) {
+        let file_name = set.get_set_name();
+        let set_data = serde_json::to_string_pretty(&set).expect("Error parsing data to json");
+        let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
+        let err_msg_create = format!("Failed to create set data file {}.json", file_name);
+        File::create(set_data_path.clone()).expect(&err_msg_create);
+        let err_msg_open = format!("Failed to open set data file {}.json", file_name);
+        let mut file = OpenOptions::new()
+            .write(true)
+            .truncate(true)
+            .open(set_data_path)
+            .expect(&err_msg_open);
+        let _ = file.write_all(set_data.as_bytes());
+    }
 
-        for set in set_arr {
-            let file_name = set.get_set_name();
-            let set_data = serde_json::to_string(&set).expect("Error parsing data to json");
+    pub fn rename_set_file(&self, prev_set_name: String, new_set_name: String) {
+        let prev_set_file_name = format!("{}/{}.json", DATA_DIR_PATH, prev_set_name);
+        let new_set_file_name = format!("{}/{}.json", DATA_DIR_PATH, new_set_name);
+        let err_msg = format!(
+            "Failed to change name from [{}] to [{}]",
+            prev_set_file_name, new_set_file_name
+        );
+        fs::rename(prev_set_file_name, new_set_file_name).expect(&err_msg);
+    }
 
-            let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
-            let open_res = OpenOptions::new()
-                .write(true)
-                .truncate(true)
-                .open(set_data_path.clone());
-            match open_res {
-                Ok(mut file) => {
-                    let _ = file.write_all(set_data.as_bytes());
-                }
-                Err(_) => {
-                    // file does not yet exist, create a file first
-                    File::create(set_data_path.clone()).expect("Failed to create data file");
-                    let mut file = OpenOptions::new()
-                        .write(true)
-                        .truncate(true)
-                        .open(set_data_path)
-                        .expect("Failed to open set data file");
-                    let _ = file.write_all(set_data.as_bytes());
-                }
-            }
-        }
+    pub fn update_set_file(&self, set: StudySet) {
+        let file_name = set.get_set_name();
+        let set_data = serde_json::to_string_pretty(&set).expect("Error parsing data to json");
+        let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
+        let err_msg_open = format!("Failed to open set data file {}.json", file_name);
+        let err_msg_write = format!("Failed to write to set data file {}.json", file_name);
+        let mut file = OpenOptions::new()
+            .write(true)
+            .truncate(true)
+            .open(set_data_path)
+            .expect(&err_msg_open);
+        file.write_all(set_data.as_bytes()).expect(&err_msg_write);
+    }
+
+    pub fn delete_set_file(&self, set_name: String) {
+        let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, set_name);
+        let err_msg_delete = format!("Failed to delete set data file {}.json", set_name);
+        fs::remove_file(set_data_path).expect(&err_msg_delete);
     }
 
     pub fn read() -> Vec<StudySet> {
-        // let data = match fs::read_to_string(DATA_PATH) {
-        //     Ok(content) => content,
-        //     Err(_) => {
-        //         println!("No data found, creating data file....");
-        //         fs::create_dir(DATA_DIR_PATH).expect("Failed to create directory for data");
-        //         File::create(DATA_PATH).expect("Failed to create data file");
-        //         fs::read_to_string(DATA_PATH).expect("Failed to read created data file")
-        //     }
-        // };
-        // let read_data = serde_json::from_str(&data).expect("Error parsing data sets");
-        // read_data
         let mut sets: Vec<StudySet> = Vec::new();
         match fs::read_dir(DATA_DIR_PATH) {
             Ok(dir_entries) => {

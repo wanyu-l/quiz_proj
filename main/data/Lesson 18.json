@@ -1,0 +1,171 @@
+{
+    "id": 22,
+    "name": "Lesson 18",
+    "tags": [
+        "LAJ 2"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "to be able, can",
+            "ans": "できます",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "wash",
+            "ans": "あらいます",
+            "remarks": "洗___"
+        },
+        {
+            "id": 2,
+            "word": "ひきます",
+            "ans": "ひきます",
+            "remarks": "弾___"
+        },
+        {
+            "id": 3,
+            "word": "sing",
+            "ans": "うたいます",
+            "remarks": "歌___"
+        },
+        {
+            "id": 4,
+            "word": "collect",
+            "ans": "あつめます",
+            "remarks": "集___"
+        },
+        {
+            "id": 5,
+            "word": "throw away",
+            "ans": "すてます",
+            "remarks": "捨___"
+        },
+        {
+            "id": 6,
+            "word": "exchange",
+            "ans": "かえます",
+            "remarks": "換___"
+        },
+        {
+            "id": 7,
+            "word": "drive",
+            "ans": "うんてんします",
+            "remarks": "運転___"
+        },
+        {
+            "id": 8,
+            "word": "reserve",
+            "ans": "よやくします",
+            "remarks": "予約___"
+        },
+        {
+            "id": 9,
+            "word": "piano",
+            "ans": "ピアノ",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "meter",
+            "ans": "メートル",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "cash",
+            "ans": "げんきん",
+            "remarks": "現金"
+        },
+        {
+            "id": 12,
+            "word": "hobby",
+            "ans": "しゅみ",
+            "remarks": "趣味"
+        },
+        {
+            "id": 13,
+            "word": "diary",
+            "ans": "にっき",
+            "remarks": "日記"
+        },
+        {
+            "id": 14,
+            "word": "prayer",
+            "ans": "おいのり",
+            "remarks": "_祈_"
+        },
+        {
+            "id": 15,
+            "word": "section head",
+            "ans": "かちょう",
+            "remarks": "課長"
+        },
+        {
+            "id": 16,
+            "word": "department head",
+            "ans": "ぶちょう",
+            "remarks": "部長"
+        },
+        {
+            "id": 17,
+            "word": "company president",
+            "ans": "しゃちょう",
+            "remarks": "社長"
+        },
+        {
+            "id": 18,
+            "word": "animal",
+            "ans": "どうぶつ",
+            "remarks": "動物"
+        },
+        {
+            "id": 19,
+            "word": "horse",
+            "ans": "うま",
+            "remarks": "馬"
+        },
+        {
+            "id": 20,
+            "word": "Internet",
+            "ans": "インターネット",
+            "remarks": ""
+        },
+        {
+            "id": 21,
+            "word": "especially",
+            "ans": "とくに",
+            "remarks": "特_"
+        },
+        {
+            "id": 22,
+            "word": "What! Really!",
+            "ans": "へえ",
+            "remarks": "used when expressing surprise"
+        },
+        {
+            "id": 23,
+            "word": "That's interesting, isn't it?",
+            "ans": "それはおもしろいですね",
+            "remarks": ""
+        },
+        {
+            "id": 24,
+            "word": "not easily",
+            "ans": "なかなか",
+            "remarks": "used with negatives"
+        },
+        {
+            "id": 25,
+            "word": "Really?",
+            "ans": "ほんとうですか",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "by all means, really",
+            "ans": "ぜひ",
+            "remarks": "是非"
+        }
+    ]
+}

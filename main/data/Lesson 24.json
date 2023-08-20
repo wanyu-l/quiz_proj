@@ -1,0 +1,135 @@
+{
+    "id": 38,
+    "name": "Lesson 24",
+    "tags": [
+        "LAJ 3"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "give (me/my group)",
+            "ans": "くれます",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "repair, correct",
+            "ans": "なおします",
+            "remarks": "直____, e.g. homework, bike"
+        },
+        {
+            "id": 2,
+            "word": "take (someone)",
+            "ans": "つれていきます",
+            "remarks": "連__行___"
+        },
+        {
+            "id": 3,
+            "word": "bring (someone) [here]",
+            "ans": "つれてきます",
+            "remarks": "連__来__"
+        },
+        {
+            "id": 4,
+            "word": "send/escort (someone to somewhere)",
+            "ans": "をおくります",
+            "remarks": "~ _送___"
+        },
+        {
+            "id": 5,
+            "word": "introduce",
+            "ans": "しょうかいします",
+            "remarks": "紹介___"
+        },
+        {
+            "id": 6,
+            "word": "show around, show the way",
+            "ans": "あんないします",
+            "remarks": "案内___"
+        },
+        {
+            "id": 7,
+            "word": "explain",
+            "ans": "せつめいします",
+            "remarks": "説明___"
+        },
+        {
+            "id": 8,
+            "word": "grandfather, old man",
+            "ans": "おじいさん",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "grandfather, old man",
+            "ans": "おじいちゃん",
+            "remarks": "casual"
+        },
+        {
+            "id": 10,
+            "word": "grandmother, old woman",
+            "ans": "おばあさん",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "grandmother, old woman",
+            "ans": "おばあちゃん",
+            "remarks": "casual"
+        },
+        {
+            "id": 12,
+            "word": "preparation",
+            "ans": "じゅんび",
+            "remarks": "準備"
+        },
+        {
+            "id": 13,
+            "word": "prepare",
+            "ans": "じゅんびをします",
+            "remarks": "準備___"
+        },
+        {
+            "id": 14,
+            "word": "moving house",
+            "ans": "ひっこし",
+            "remarks": "noun"
+        },
+        {
+            "id": 15,
+            "word": "move house",
+            "ans": "ひっこしをします",
+            "remarks": "引_越_____"
+        },
+        {
+            "id": 16,
+            "word": "sweets, snacks",
+            "ans": "かし",
+            "remarks": "［お］菓子"
+        },
+        {
+            "id": 17,
+            "word": "homestay",
+            "ans": "ホームステイ",
+            "remarks": ""
+        },
+        {
+            "id": 18,
+            "word": "all",
+            "ans": "ぜんぶ",
+            "remarks": "全部"
+        },
+        {
+            "id": 19,
+            "word": "by oneself",
+            "ans": "じぶんで",
+            "remarks": "自分_"
+        },
+        {
+            "id": 20,
+            "word": "besides",
+            "ans": "ほかに",
+            "remarks": "他_"
+        }
+    ]
+}

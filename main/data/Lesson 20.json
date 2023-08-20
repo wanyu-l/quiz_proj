@@ -1,0 +1,147 @@
+{
+    "id": 24,
+    "name": "Lesson 20",
+    "tags": [
+        "LAJ 2"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "need",
+            "ans": "いります",
+            "remarks": "要___"
+        },
+        {
+            "id": 1,
+            "word": "need a visa",
+            "ans": "ビザがいります",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "check, investigate",
+            "ans": "しらべます",
+            "remarks": "調___"
+        },
+        {
+            "id": 3,
+            "word": "repair",
+            "ans": "しゅうりします",
+            "remarks": "修理___"
+        },
+        {
+            "id": 4,
+            "word": "I",
+            "ans": "ぼく",
+            "remarks": "僕, informal; usually used by men"
+        },
+        {
+            "id": 5,
+            "word": "you",
+            "ans": "きみ",
+            "remarks": "君; informal; towards equal or lower status"
+        },
+        {
+            "id": 6,
+            "word": "Mr.",
+            "ans": "くん",
+            "remarks": "casual, equal/lower status, to boys"
+        },
+        {
+            "id": 7,
+            "word": "yes",
+            "ans": "うん",
+            "remarks": "informal"
+        },
+        {
+            "id": 8,
+            "word": "no",
+            "ans": "ううん",
+            "remarks": "informal"
+        },
+        {
+            "id": 9,
+            "word": "language, word",
+            "ans": "ことば",
+            "remarks": "言葉"
+        },
+        {
+            "id": 10,
+            "word": "kimono",
+            "ans": "きもの",
+            "remarks": "着物"
+        },
+        {
+            "id": 11,
+            "word": "visa",
+            "ans": "ビザ",
+            "remarks": ""
+        },
+        {
+            "id": 12,
+            "word": "the beginning",
+            "ans": "はじめ",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "the end of ～, The End",
+            "ans": "おわり",
+            "remarks": "終__"
+        },
+        {
+            "id": 14,
+            "word": "this way, this place",
+            "ans": "こっち",
+            "remarks": "casual"
+        },
+        {
+            "id": 15,
+            "word": "that way, that place near the listener",
+            "ans": "そっち",
+            "remarks": "casual"
+        },
+        {
+            "id": 16,
+            "word": "that way, that place over there",
+            "ans": "あっち",
+            "remarks": "casual"
+        },
+        {
+            "id": 17,
+            "word": "which ~",
+            "ans": "どっち",
+            "remarks": "casual"
+        },
+        {
+            "id": 18,
+            "word": "all together",
+            "ans": "みんなで",
+            "remarks": "means"
+        },
+        {
+            "id": 19,
+            "word": "but",
+            "ans": "けど",
+            "remarks": "casual"
+        },
+        {
+            "id": 20,
+            "word": "(I'm) full",
+            "ans": "おなかがいっぱいです",
+            "remarks": ""
+        },
+        {
+            "id": 21,
+            "word": "if you like",
+            "ans": "よかったら",
+            "remarks": "if -- is good"
+        },
+        {
+            "id": 22,
+            "word": "various",
+            "ans": "いろいろ",
+            "remarks": "色々"
+        }
+    ]
+}

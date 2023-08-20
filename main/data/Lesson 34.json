@@ -1,0 +1,213 @@
+{
+    "id": 56,
+    "name": "Lesson 34",
+    "tags": [
+        "LAJ 4"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "notice, become aware of",
+            "ans": "きがつきます",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "brush (one's teeth), polish",
+            "ans": "みがきます",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "bend, fold, break, snap",
+            "ans": "おります",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "sports club",
+            "ans": "スポーツクラブ",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "castle",
+            "ans": "しろ",
+            "remarks": "（お）__"
+        },
+        {
+            "id": 5,
+            "word": "visitor, guest, customer, client",
+            "ans": "おきゃく",
+            "remarks": "_客（さん）"
+        },
+        {
+            "id": 6,
+            "word": "red (noun)",
+            "ans": "あか",
+            "remarks": "赤"
+        },
+        {
+            "id": 7,
+            "word": "make (green) tea (at a tea ceremony)",
+            "ans": "おちゃをたてます",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "explanatory pamphlet, instruction book",
+            "ans": "せつめいしょ",
+            "remarks": "説明書"
+        },
+        {
+            "id": 9,
+            "word": "tea ceremony",
+            "ans": "さどう",
+            "remarks": "茶道"
+        },
+        {
+            "id": 10,
+            "word": "yellow (noun)",
+            "ans": "きいろ",
+            "remarks": "黄色"
+        },
+        {
+            "id": 11,
+            "word": "ask a question",
+            "ans": "しつもんしまし",
+            "remarks": "質問___"
+        },
+        {
+            "id": 12,
+            "word": "put up (an umbrella)",
+            "ans": "かさをさします",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "bitter",
+            "ans": "にがい",
+            "remarks": "苦_"
+        },
+        {
+            "id": 14,
+            "word": "assemble",
+            "ans": "くみたてます",
+            "remarks": ""
+        },
+        {
+            "id": 15,
+            "word": "line",
+            "ans": "せん",
+            "remarks": "線"
+        },
+        {
+            "id": 16,
+            "word": "navy blue, dark blue",
+            "ans": "こん",
+            "remarks": "紺"
+        },
+        {
+            "id": 17,
+            "word": "first, ahead",
+            "ans": "さきに",
+            "remarks": "先_"
+        },
+        {
+            "id": 18,
+            "word": "figure, drawing",
+            "ans": "ず",
+            "remarks": "図"
+        },
+        {
+            "id": 19,
+            "word": "a short while ago",
+            "ans": "さっき",
+            "remarks": ""
+        },
+        {
+            "id": 20,
+            "word": "place on, load onto",
+            "ans": "のせます",
+            "remarks": "載___"
+        },
+        {
+            "id": 21,
+            "word": "blue (noun)",
+            "ans": "あお",
+            "remarks": "青"
+        },
+        {
+            "id": 22,
+            "word": "(a key) be found",
+            "ans": "みつかります",
+            "remarks": ""
+        },
+        {
+            "id": 23,
+            "word": "Is this all right?",
+            "ans": "これでいいですか",
+            "remarks": ""
+        },
+        {
+            "id": 24,
+            "word": "How is it?",
+            "ans": "いかかですか",
+            "remarks": ""
+        },
+        {
+            "id": 25,
+            "word": "sauce, Worcestershire sauce",
+            "ans": "ソース",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "black (noun)",
+            "ans": "くろ",
+            "remarks": "黒"
+        },
+        {
+            "id": 27,
+            "word": "arrow (sign)",
+            "ans": "やじるし",
+            "remarks": "矢印"
+        },
+        {
+            "id": 28,
+            "word": "~ or ~",
+            "ans": "か",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "put (in soy sauce)",
+            "ans": "つけます",
+            "remarks": "漬__"
+        },
+        {
+            "id": 30,
+            "word": "soya, soy sauce",
+            "ans": "しょうゆ",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "brown (noun)",
+            "ans": "ちゃいろ",
+            "remarks": "茶色"
+        },
+        {
+            "id": 32,
+            "word": "white (noun)",
+            "ans": "しろ",
+            "remarks": "白"
+        },
+        {
+            "id": 33,
+            "word": "last night",
+            "ans": "ゆうべ",
+            "remarks": ""
+        }
+    ]
+}

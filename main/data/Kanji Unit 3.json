@@ -1,0 +1,117 @@
+{
+    "id": 12,
+    "name": "Kanji Unit 3",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "学校",
+            "ans": "がっこう",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "学生",
+            "ans": "がくせい",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "先生",
+            "ans": "せんせい",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "会います",
+            "ans": "あいます",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "先月",
+            "ans": "せんげつ",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "会社",
+            "ans": "かいしゃ",
+            "remarks": ""
+        },
+        {
+            "id": 6,
+            "word": "社員",
+            "ans": "しゃいん",
+            "remarks": ""
+        },
+        {
+            "id": 7,
+            "word": "医者",
+            "ans": "いしゃ",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "本",
+            "ans": "ほん",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "日本",
+            "ans": "にほん",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "本田さん",
+            "ans": "ほんださん",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "中川さん",
+            "ans": "なかがわさん",
+            "remarks": "Remember 連濁"
+        },
+        {
+            "id": 12,
+            "word": "田中さん",
+            "ans": "たなかさん",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "国",
+            "ans": "くに",
+            "remarks": ""
+        },
+        {
+            "id": 14,
+            "word": "中国",
+            "ans": "ちゅうごく",
+            "remarks": ""
+        },
+        {
+            "id": 15,
+            "word": "あの人",
+            "ans": "あのひと",
+            "remarks": ""
+        },
+        {
+            "id": 16,
+            "word": "一人で",
+            "ans": "ひとりで",
+            "remarks": ""
+        },
+        {
+            "id": 17,
+            "word": "日本人",
+            "ans": "にほんじん",
+            "remarks": ""
+        }
+    ]
+}

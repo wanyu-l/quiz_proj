@@ -1,0 +1,309 @@
+{
+    "id": 42,
+    "name": "Lesson 28",
+    "tags": [
+        "LAJ 3"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "sell, be sold",
+            "ans": "うれます",
+            "remarks": "able"
+        },
+        {
+            "id": 1,
+            "word": "bread sells, bread can sell",
+            "ans": "パンがうれます",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "dance",
+            "ans": "おどります",
+            "remarks": "踊___"
+        },
+        {
+            "id": 3,
+            "word": "chew, bite",
+            "ans": "かみます",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "choose",
+            "ans": "えらびます",
+            "remarks": "選___"
+        },
+        {
+            "id": 5,
+            "word": "go to and from",
+            "ans": "かよいます",
+            "remarks": "通____; transport"
+        },
+        {
+            "id": 6,
+            "word": "go to university",
+            "ans": "だいがくにかよいます",
+            "remarks": "大学__通___"
+        },
+        {
+            "id": 7,
+            "word": "take a memo",
+            "ans": "メモします",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "serious",
+            "ans": "まじめ",
+            "remarks": "真面目［な］"
+        },
+        {
+            "id": 9,
+            "word": "earnest",
+            "ans": "ねっしん",
+            "remarks": "熱心［な］"
+        },
+        {
+            "id": 10,
+            "word": "great, admirable",
+            "ans": "えらい",
+            "remarks": "偉_"
+        },
+        {
+            "id": 11,
+            "word": "proper, just right",
+            "ans": "ちょうどいい",
+            "remarks": "e.g. clothes/shoes/timing"
+        },
+        {
+            "id": 12,
+            "word": "scenery",
+            "ans": "けしき",
+            "remarks": "景色"
+        },
+        {
+            "id": 13,
+            "word": "hair salon",
+            "ans": "びよういん",
+            "remarks": "美容院"
+        },
+        {
+            "id": 14,
+            "word": "kitchen",
+            "ans": "だいどころ",
+            "remarks": "台所"
+        },
+        {
+            "id": 15,
+            "word": "experience",
+            "ans": "けいけん",
+            "remarks": "経験"
+        },
+        {
+            "id": 16,
+            "word": "be experienced, have experience",
+            "ans": "けいけんがあります",
+            "remarks": "経験_____"
+        },
+        {
+            "id": 17,
+            "word": "experience",
+            "ans": "けいけんをします",
+            "remarks": "経験____"
+        },
+        {
+            "id": 18,
+            "word": "power",
+            "ans": "ちから",
+            "remarks": "力"
+        },
+        {
+            "id": 19,
+            "word": "popularity; popular",
+            "ans": "にんき",
+            "remarks": "人気"
+        },
+        {
+            "id": 20,
+            "word": "be popular among students",
+            "ans": "がくせいににんきがあります",
+            "remarks": "学生__人気____"
+        },
+        {
+            "id": 21,
+            "word": "form, shape",
+            "ans": "かたち",
+            "remarks": "形"
+        },
+        {
+            "id": 22,
+            "word": "color",
+            "ans": "いろ",
+            "remarks": "色"
+        },
+        {
+            "id": 23,
+            "word": "taste",
+            "ans": "あじ",
+            "remarks": "味"
+        },
+        {
+            "id": 24,
+            "word": "chewing gum",
+            "ans": "ガム",
+            "remarks": ""
+        },
+        {
+            "id": 25,
+            "word": "goods",
+            "ans": "しなもの",
+            "remarks": "品物"
+        },
+        {
+            "id": 26,
+            "word": "price",
+            "ans": "ねだん",
+            "remarks": "値段"
+        },
+        {
+            "id": 27,
+            "word": "salary",
+            "ans": "きゅうりょう",
+            "remarks": "給料"
+        },
+        {
+            "id": 28,
+            "word": "bonus",
+            "ans": "ボーナス",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "game",
+            "ans": "ゲーム",
+            "remarks": ""
+        },
+        {
+            "id": 30,
+            "word": "programme (TV)",
+            "ans": "ばんぐみ",
+            "remarks": "番組"
+        },
+        {
+            "id": 31,
+            "word": "drama",
+            "ans": "ドラマ",
+            "remarks": ""
+        },
+        {
+            "id": 32,
+            "word": "singer",
+            "ans": "かしゅ",
+            "remarks": "歌手"
+        },
+        {
+            "id": 33,
+            "word": "novel",
+            "ans": "しょうせつ",
+            "remarks": "小説"
+        },
+        {
+            "id": 34,
+            "word": "novelist",
+            "ans": "しょうせつか",
+            "remarks": "小説家"
+        },
+        {
+            "id": 35,
+            "word": "machine",
+            "ans": "き",
+            "remarks": "～機"
+        },
+        {
+            "id": 36,
+            "word": "(my) son",
+            "ans": "むすこ",
+            "remarks": "息子"
+        },
+        {
+            "id": 37,
+            "word": "(someone else's) son",
+            "ans": "むすこさん",
+            "remarks": "息子__"
+        },
+        {
+            "id": 38,
+            "word": "(my) daughter",
+            "ans": "むすめ",
+            "remarks": "娘"
+        },
+        {
+            "id": 39,
+            "word": "(someone else's) daughter",
+            "ans": "むすめさん",
+            "remarks": "娘__"
+        },
+        {
+            "id": 40,
+            "word": "oneself",
+            "ans": "じぶん",
+            "remarks": "自分"
+        },
+        {
+            "id": 41,
+            "word": "future",
+            "ans": "しょうらい",
+            "remarks": "将来"
+        },
+        {
+            "id": 42,
+            "word": "a little while",
+            "ans": "しばらく",
+            "remarks": ""
+        },
+        {
+            "id": 43,
+            "word": "usually, mostly",
+            "ans": "たいてい",
+            "remarks": ""
+        },
+        {
+            "id": 44,
+            "word": "in addition",
+            "ans": "それに",
+            "remarks": ""
+        },
+        {
+            "id": 45,
+            "word": "and so; hence; as such",
+            "ans": "それで",
+            "remarks": ""
+        },
+        {
+            "id": 46,
+            "word": "I have a small favor to ask.",
+            "ans": "おねがいがあるんですが",
+            "remarks": "［ちょっと］_願______"
+        },
+        {
+            "id": 47,
+            "word": "as a matter of fact, actually, to tell the truth",
+            "ans": "じつは",
+            "remarks": "実_"
+        },
+        {
+            "id": 48,
+            "word": "conversation",
+            "ans": "かいわ",
+            "remarks": "会話"
+        },
+        {
+            "id": 49,
+            "word": "well, let me see, hmm...",
+            "ans": "うーん",
+            "remarks": "convo"
+        }
+    ]
+}

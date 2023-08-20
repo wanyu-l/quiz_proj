@@ -1,0 +1,99 @@
+{
+    "id": 14,
+    "name": "Kanji Unit 5",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "行きます",
+            "ans": "いきます",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "来ます",
+            "ans": "きます",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "来月",
+            "ans": "らいげつ",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "中学校",
+            "ans": "ちゅうがっこう",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "先週",
+            "ans": "せんしゅう",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "今週",
+            "ans": "こんしゅう",
+            "remarks": ""
+        },
+        {
+            "id": 6,
+            "word": "来週",
+            "ans": "らいしゅう",
+            "remarks": ""
+        },
+        {
+            "id": 7,
+            "word": "毎週",
+            "ans": "まいしゅう",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "去年",
+            "ans": "きょねん",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "今年",
+            "ans": "ことし",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "毎年",
+            "ans": "まいとし",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "駅の前",
+            "ans": "えきのまえ",
+            "remarks": ""
+        },
+        {
+            "id": 12,
+            "word": "車",
+            "ans": "くるま",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "電車",
+            "ans": "でんしゃ",
+            "remarks": ""
+        },
+        {
+            "id": 14,
+            "word": "自転車",
+            "ans": "じてんしゃ",
+            "remarks": ""
+        }
+    ]
+}

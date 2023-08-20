@@ -1,0 +1,285 @@
+{
+    "id": 9,
+    "name": "Lesson 10",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "exist, be, there is/are",
+            "ans": "あります",
+            "remarks": "(referring to inanimate things)"
+        },
+        {
+            "id": 1,
+            "word": "exist, be, there is/are",
+            "ans": "います",
+            "remarks": "refering to animate things"
+        },
+        {
+            "id": 2,
+            "word": "various",
+            "ans": "いろいろ",
+            "remarks": "色々「な」"
+        },
+        {
+            "id": 3,
+            "word": "man",
+            "ans": "おとこのひと",
+            "remarks": "男_人"
+        },
+        {
+            "id": 4,
+            "word": "woman",
+            "ans": "おんなのひと",
+            "remarks": "女_人"
+        },
+        {
+            "id": 5,
+            "word": "boy",
+            "ans": "おとこのこ",
+            "remarks": "男_子"
+        },
+        {
+            "id": 6,
+            "word": "girl",
+            "ans": "おんなのこ",
+            "remarks": "女_子"
+        },
+        {
+            "id": 7,
+            "word": "dog",
+            "ans": "いぬ",
+            "remarks": "犬"
+        },
+        {
+            "id": 8,
+            "word": "cat",
+            "ans": "ねこ",
+            "remarks": "cat"
+        },
+        {
+            "id": 9,
+            "word": "panda",
+            "ans": "パンダ",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "elephant",
+            "ans": "ぞう",
+            "remarks": "象"
+        },
+        {
+            "id": 11,
+            "word": "tree, wood",
+            "ans": "き",
+            "remarks": "木"
+        },
+        {
+            "id": 12,
+            "word": "thing",
+            "ans": "もの",
+            "remarks": "物"
+        },
+        {
+            "id": 13,
+            "word": "battery",
+            "ans": "でんち",
+            "remarks": "電池"
+        },
+        {
+            "id": 14,
+            "word": "box",
+            "ans": "はこ",
+            "remarks": "箱"
+        },
+        {
+            "id": 15,
+            "word": "switch",
+            "ans": "スイッチ",
+            "remarks": "light etc."
+        },
+        {
+            "id": 16,
+            "word": "refrigerator",
+            "ans": "れいぞうこ",
+            "remarks": "冷蔵庫"
+        },
+        {
+            "id": 17,
+            "word": "table",
+            "ans": "テーブル",
+            "remarks": ""
+        },
+        {
+            "id": 18,
+            "word": "bed",
+            "ans": "ベッド",
+            "remarks": ""
+        },
+        {
+            "id": 19,
+            "word": "shelf",
+            "ans": "たな",
+            "remarks": "棚"
+        },
+        {
+            "id": 20,
+            "word": "door",
+            "ans": "ドア",
+            "remarks": ""
+        },
+        {
+            "id": 21,
+            "word": "window",
+            "ans": "まど",
+            "remarks": "窓"
+        },
+        {
+            "id": 22,
+            "word": "postbox",
+            "ans": "ポスト",
+            "remarks": ""
+        },
+        {
+            "id": 23,
+            "word": "building",
+            "ans": "ビル",
+            "remarks": "dont confuse with beer"
+        },
+        {
+            "id": 24,
+            "word": "convenience store",
+            "ans": "コンビニ",
+            "remarks": ""
+        },
+        {
+            "id": 25,
+            "word": "park",
+            "ans": "こうえん",
+            "remarks": "公園"
+        },
+        {
+            "id": 26,
+            "word": "cafe, coffee shop",
+            "ans": "きっさてん",
+            "remarks": "喫茶店"
+        },
+        {
+            "id": 27,
+            "word": "~ shop, ~ store",
+            "ans": "や",
+            "remarks": "屋"
+        },
+        {
+            "id": 28,
+            "word": "a fixed place to catch taxis, trains, etc.",
+            "ans": "のりば",
+            "remarks": "乗_場"
+        },
+        {
+            "id": 29,
+            "word": "prefecture",
+            "ans": "けん",
+            "remarks": "県"
+        },
+        {
+            "id": 30,
+            "word": "on, above, over",
+            "ans": "うえ",
+            "remarks": "上"
+        },
+        {
+            "id": 31,
+            "word": "under, below, beneath",
+            "ans": "した",
+            "remarks": "下"
+        },
+        {
+            "id": 32,
+            "word": "front, before",
+            "ans": "まえ",
+            "remarks": "前"
+        },
+        {
+            "id": 33,
+            "word": "back, behind",
+            "ans": "うしろ",
+            "remarks": "後_"
+        },
+        {
+            "id": 34,
+            "word": "right",
+            "ans": "みぎ",
+            "remarks": "右"
+        },
+        {
+            "id": 35,
+            "word": "left",
+            "ans": "ひだり",
+            "remarks": "左"
+        },
+        {
+            "id": 36,
+            "word": "in, inside",
+            "ans": "なか",
+            "remarks": "中"
+        },
+        {
+            "id": 37,
+            "word": "outside",
+            "ans": "そと",
+            "remarks": "外"
+        },
+        {
+            "id": 38,
+            "word": "next, next door",
+            "ans": "となり",
+            "remarks": "隣"
+        },
+        {
+            "id": 39,
+            "word": "near, vicinity",
+            "ans": "ちかく",
+            "remarks": "近_"
+        },
+        {
+            "id": 40,
+            "word": "between, among",
+            "ans": "あいだ",
+            "remarks": "間"
+        },
+        {
+            "id": 41,
+            "word": "A, B etc.",
+            "ans": "AやBなど",
+            "remarks": "use format: A_B__"
+        },
+        {
+            "id": 42,
+            "word": "Sorry for bothering you",
+            "ans": "すみません",
+            "remarks": ""
+        },
+        {
+            "id": 43,
+            "word": "the bottom",
+            "ans": "いちばんした",
+            "remarks": "一番 下"
+        },
+        {
+            "id": 44,
+            "word": "corner, section",
+            "ans": "コーナー",
+            "remarks": ""
+        },
+        {
+            "id": 45,
+            "word": "nam pla (Thai fish sauce)",
+            "ans": "ナンプラー",
+            "remarks": ""
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": 65,
+  "name": "Reading 1",
+  "tags": [
+    "容疑者Xの献身"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "容疑者",
+      "ans": "ようぎしゃ",
+      "remarks": "Suspect"
+    },
+    {
+      "id": 1,
+      "word": "献身",
+      "ans": "けんしん",
+      "remarks": "devotion / sacrifice"
+    },
+    {
+      "id": 2,
+      "word": "although; although",
+      "ans": "とはいえ",
+      "remarks": "＿＿言＿"
+    },
+    {
+      "id": 3,
+      "word": "go south; literally",
+      "ans": "なんか",
+      "remarks": "南下"
+    },
+    {
+      "id": 4,
+      "word": "thrust",
+      "ans": "つき",
+      "remarks": "突＿"
+    },
+    {
+      "id": 5,
+      "word": "",
+      "ans": "",
+      "remarks": ""
+    }
+  ]
+}

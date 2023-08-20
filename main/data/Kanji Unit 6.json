@@ -1,0 +1,99 @@
+{
+    "id": 25,
+    "name": "Kanji Unit 6",
+    "tags": [
+        "LAJ 2"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "高い",
+            "ans": "たかい",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "高校生",
+            "ans": "こうこうせい",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "安い",
+            "ans": "やすい",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "大きい",
+            "ans": "おおきい",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "大学",
+            "ans": "だいがく",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "小学校",
+            "ans": "しょうがっこう",
+            "remarks": ""
+        },
+        {
+            "id": 6,
+            "word": "小学生",
+            "ans": "しょうがくせい",
+            "remarks": ""
+        },
+        {
+            "id": 7,
+            "word": "小さい",
+            "ans": "ちいさい",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "新しい",
+            "ans": "あたらしい",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "新聞",
+            "ans": "しんぶん",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "古い",
+            "ans": "ふるい",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "青い",
+            "ans": "あおい",
+            "remarks": ""
+        },
+        {
+            "id": 12,
+            "word": "白い",
+            "ans": "しろい",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "赤い",
+            "ans": "あかい",
+            "remarks": ""
+        },
+        {
+            "id": 14,
+            "word": "黒い",
+            "ans": "くろい",
+            "remarks": ""
+        }
+    ]
+}

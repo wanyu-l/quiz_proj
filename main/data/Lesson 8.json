@@ -1,0 +1,339 @@
+{
+    "id": 7,
+    "name": "Lesson 8",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "handsome",
+            "ans": "ハンサム",
+            "remarks": "な adjective"
+        },
+        {
+            "id": 1,
+            "word": "beautiful, clean",
+            "ans": "きれい",
+            "remarks": "な adjective"
+        },
+        {
+            "id": 2,
+            "word": "quiet",
+            "ans": "しずか",
+            "remarks": "な adjective"
+        },
+        {
+            "id": 3,
+            "word": "famous",
+            "ans": "ゆうめい",
+            "remarks": "有名, な adjective"
+        },
+        {
+            "id": 4,
+            "word": "helpful, kind, considerate",
+            "ans": "しんせつ",
+            "remarks": "not used for family, な adjective"
+        },
+        {
+            "id": 5,
+            "word": "healty, energetic, cheerful",
+            "ans": "げんき",
+            "remarks": "元気［な］"
+        },
+        {
+            "id": 6,
+            "word": "free (time)",
+            "ans": "ひま",
+            "remarks": "暇［な］"
+        },
+        {
+            "id": 7,
+            "word": "convenient",
+            "ans": "べんり",
+            "remarks": "便利［な］"
+        },
+        {
+            "id": 8,
+            "word": "fine, nice, wonderful",
+            "ans": "すてき",
+            "remarks": "な adjective"
+        },
+        {
+            "id": 9,
+            "word": "big, large",
+            "ans": "おおきい",
+            "remarks": "い adjective"
+        },
+        {
+            "id": 10,
+            "word": "small, little",
+            "ans": "ちいさい",
+            "remarks": "い adjective"
+        },
+        {
+            "id": 11,
+            "word": "new",
+            "ans": "あたらしい",
+            "remarks": "い adjective"
+        },
+        {
+            "id": 12,
+            "word": "old",
+            "ans": "ふるい",
+            "remarks": "古い"
+        },
+        {
+            "id": 13,
+            "word": "good",
+            "ans": "いい",
+            "remarks": ""
+        },
+        {
+            "id": 14,
+            "word": "bad",
+            "ans": "わるい",
+            "remarks": "悪い"
+        },
+        {
+            "id": 15,
+            "word": "hot (weather)",
+            "ans": "あつい",
+            "remarks": "暑い"
+        },
+        {
+            "id": 16,
+            "word": "hot (to touch)",
+            "ans": "あつい",
+            "remarks": "熱い"
+        },
+        {
+            "id": 17,
+            "word": "cold (weather)",
+            "ans": "さむい",
+            "remarks": "寒い"
+        },
+        {
+            "id": 18,
+            "word": "cold (to touch)",
+            "ans": "つめたい",
+            "remarks": "冷_い"
+        },
+        {
+            "id": 19,
+            "word": "difficult難しい",
+            "ans": "むずかしい",
+            "remarks": "難_い"
+        },
+        {
+            "id": 20,
+            "word": "easy",
+            "ans": "やさしい",
+            "remarks": "易_い"
+        },
+        {
+            "id": 21,
+            "word": "gentle",
+            "ans": "やさしい",
+            "remarks": "優_い"
+        },
+        {
+            "id": 22,
+            "word": "expensive, tall, high",
+            "ans": "たかい",
+            "remarks": "高い"
+        },
+        {
+            "id": 23,
+            "word": "inexpensive, cheap",
+            "ans": "やすい",
+            "remarks": "安い"
+        },
+        {
+            "id": 24,
+            "word": "low",
+            "ans": "ひくい",
+            "remarks": "低い"
+        },
+        {
+            "id": 25,
+            "word": "interesting",
+            "ans": "おもしろい",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "delicious, tasty",
+            "ans": "おいしい",
+            "remarks": ""
+        },
+        {
+            "id": 27,
+            "word": "busy",
+            "ans": "いそがしい",
+            "remarks": "忙_い"
+        },
+        {
+            "id": 28,
+            "word": "enjoyable",
+            "ans": "たのしい",
+            "remarks": "楽_い"
+        },
+        {
+            "id": 29,
+            "word": "white",
+            "ans": "しろい",
+            "remarks": "白い"
+        },
+        {
+            "id": 30,
+            "word": "black",
+            "ans": "くろい",
+            "remarks": "黒い"
+        },
+        {
+            "id": 31,
+            "word": "red",
+            "ans": "あかい",
+            "remarks": "赤い"
+        },
+        {
+            "id": 32,
+            "word": "blue",
+            "ans": "あおい",
+            "remarks": "青い"
+        },
+        {
+            "id": 33,
+            "word": "cherry (blossom)",
+            "ans": "さくら",
+            "remarks": "桜"
+        },
+        {
+            "id": 34,
+            "word": "mountain",
+            "ans": "やま",
+            "remarks": "山"
+        },
+        {
+            "id": 35,
+            "word": "town, city",
+            "ans": "まち",
+            "remarks": "町"
+        },
+        {
+            "id": 36,
+            "word": "food",
+            "ans": "たべもの",
+            "remarks": "食_物"
+        },
+        {
+            "id": 37,
+            "word": "place",
+            "ans": "ところ",
+            "remarks": "所"
+        },
+        {
+            "id": 38,
+            "word": "domitory",
+            "ans": "りょう",
+            "remarks": "寮"
+        },
+        {
+            "id": 39,
+            "word": "restaurant",
+            "ans": "レストラン",
+            "remarks": ""
+        },
+        {
+            "id": 40,
+            "word": "life",
+            "ans": "せいかつ",
+            "remarks": "生活"
+        },
+        {
+            "id": 41,
+            "word": "work, business",
+            "ans": "しごと",
+            "remarks": ""
+        },
+        {
+            "id": 42,
+            "word": "how",
+            "ans": "どう",
+            "remarks": ""
+        },
+        {
+            "id": 43,
+            "word": "What kind of ~",
+            "ans": "どんな",
+            "remarks": ""
+        },
+        {
+            "id": 44,
+            "word": "very",
+            "ans": "とても",
+            "remarks": ""
+        },
+        {
+            "id": 45,
+            "word": "not very",
+            "ans": "あまり",
+            "remarks": "use with negative"
+        },
+        {
+            "id": 46,
+            "word": "and",
+            "ans": "そして",
+            "remarks": "(used to connect sentences)"
+        },
+        {
+            "id": 47,
+            "word": "～, but ～",
+            "ans": "が",
+            "remarks": "particle only"
+        },
+        {
+            "id": 48,
+            "word": "How are you?",
+            "ans": "おげんきですか",
+            "remarks": "are you 元気"
+        },
+        {
+            "id": 49,
+            "word": "Well let me see.",
+            "ans": "そうですね",
+            "remarks": ""
+        },
+        {
+            "id": 50,
+            "word": "Won't you have another cup?",
+            "ans": "もういっぱいいかがですか",
+            "remarks": ""
+        },
+        {
+            "id": 51,
+            "word": "No, thank you.",
+            "ans": "けっこうです",
+            "remarks": ""
+        },
+        {
+            "id": 52,
+            "word": "It's already 6:00, isn't it?",
+            "ans": "もう6時ですね",
+            "remarks": "Not kanji, use number"
+        },
+        {
+            "id": 53,
+            "word": "It's time for me to leave",
+            "ans": "そろそろしつれいします",
+            "remarks": ""
+        },
+        {
+            "id": 54,
+            "word": "Please come again.",
+            "ans": "またいらっしゃってください",
+            "remarks": ""
+        }
+    ]
+}

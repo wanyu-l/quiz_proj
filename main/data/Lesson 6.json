@@ -1,0 +1,303 @@
+{
+    "id": 5,
+    "name": "Lesson 6",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "eat",
+            "ans": "たべます",
+            "remarks": "verb"
+        },
+        {
+            "id": 1,
+            "word": "drink",
+            "ans": "のみます",
+            "remarks": "verb"
+        },
+        {
+            "id": 2,
+            "word": "see, look, watch",
+            "ans": "みます",
+            "remarks": "verb"
+        },
+        {
+            "id": 3,
+            "word": "listen, hear",
+            "ans": "ききます",
+            "remarks": "verb"
+        },
+        {
+            "id": 4,
+            "word": "read",
+            "ans": "よみます",
+            "remarks": "verb"
+        },
+        {
+            "id": 5,
+            "word": "write, draw",
+            "ans": "かきます",
+            "remarks": "verb"
+        },
+        {
+            "id": 6,
+            "word": "buy",
+            "ans": "かいます",
+            "remarks": "verb"
+        },
+        {
+            "id": 7,
+            "word": "do, play",
+            "ans": "します",
+            "remarks": "verb"
+        },
+        {
+            "id": 8,
+            "word": "meet a friend",
+            "ans": "ともだちにあいます",
+            "remarks": "verb, particle"
+        },
+        {
+            "id": 9,
+            "word": "take a photo",
+            "ans": "しゃしんをとります",
+            "remarks": "verb, particle"
+        },
+        {
+            "id": 10,
+            "word": "smoke",
+            "ans": "たばこをすいます",
+            "remarks": "verb, particle"
+        },
+        {
+            "id": 11,
+            "word": "meal, (cooked) rice",
+            "ans": "ごはん",
+            "remarks": ""
+        },
+        {
+            "id": 12,
+            "word": "breakfast",
+            "ans": "あさごはん",
+            "remarks": "朝---"
+        },
+        {
+            "id": 13,
+            "word": "lunch",
+            "ans": "ひるごはん",
+            "remarks": "昼---"
+        },
+        {
+            "id": 14,
+            "word": "dinner晩",
+            "ans": "ばんごはん",
+            "remarks": "晩---"
+        },
+        {
+            "id": 15,
+            "word": "bread",
+            "ans": "パン",
+            "remarks": ""
+        },
+        {
+            "id": 16,
+            "word": "egg",
+            "ans": "たまご",
+            "remarks": ""
+        },
+        {
+            "id": 17,
+            "word": "meat",
+            "ans": "にく",
+            "remarks": "肉"
+        },
+        {
+            "id": 18,
+            "word": "fish",
+            "ans": "さかな",
+            "remarks": "魚"
+        },
+        {
+            "id": 19,
+            "word": "vegetable",
+            "ans": "やさい",
+            "remarks": ""
+        },
+        {
+            "id": 20,
+            "word": "fruit",
+            "ans": "くだもの",
+            "remarks": ""
+        },
+        {
+            "id": 21,
+            "word": "water",
+            "ans": "みず",
+            "remarks": "水"
+        },
+        {
+            "id": 22,
+            "word": "tea",
+            "ans": "おちゃ",
+            "remarks": ""
+        },
+        {
+            "id": 23,
+            "word": "English tea",
+            "ans": "こうちゃ",
+            "remarks": ""
+        },
+        {
+            "id": 24,
+            "word": "milk",
+            "ans": "ぎゅうにゅう",
+            "remarks": ""
+        },
+        {
+            "id": 25,
+            "word": "milk (for babies) / (for coffee/tea)",
+            "ans": "ミルク",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "juice",
+            "ans": "ジュース",
+            "remarks": ""
+        },
+        {
+            "id": 27,
+            "word": "beer",
+            "ans": "ビール",
+            "remarks": ""
+        },
+        {
+            "id": 28,
+            "word": "alcohol, Japanese",
+            "ans": "さけ",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "letter",
+            "ans": "てがみ",
+            "remarks": ""
+        },
+        {
+            "id": 30,
+            "word": "report",
+            "ans": "レポート",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "photo",
+            "ans": "しゃしん",
+            "remarks": "写真"
+        },
+        {
+            "id": 32,
+            "word": "video",
+            "ans": "ビデオ",
+            "remarks": ""
+        },
+        {
+            "id": 33,
+            "word": "shop, store",
+            "ans": "みせ",
+            "remarks": ""
+        },
+        {
+            "id": 34,
+            "word": "garden",
+            "ans": "にわ",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "homework",
+            "ans": "しゅくだい",
+            "remarks": ""
+        },
+        {
+            "id": 36,
+            "word": "tennis",
+            "ans": "テニス",
+            "remarks": ""
+        },
+        {
+            "id": 37,
+            "word": "soccer",
+            "ans": "サッカー",
+            "remarks": ""
+        },
+        {
+            "id": 38,
+            "word": "cherry blossom viewing",
+            "ans": "はなみ",
+            "remarks": "can have honor form"
+        },
+        {
+            "id": 39,
+            "word": "what",
+            "ans": "なに",
+            "remarks": "何"
+        },
+        {
+            "id": 40,
+            "word": "together",
+            "ans": "いっしょに",
+            "remarks": ""
+        },
+        {
+            "id": 41,
+            "word": "a little bit",
+            "ans": "ちょっと",
+            "remarks": ""
+        },
+        {
+            "id": 42,
+            "word": "always, usually",
+            "ans": "いつも",
+            "remarks": ""
+        },
+        {
+            "id": 43,
+            "word": "sometimes",
+            "ans": "ときどき",
+            "remarks": "時々"
+        },
+        {
+            "id": 44,
+            "word": "after that, and then",
+            "ans": "それから",
+            "remarks": "from there"
+        },
+        {
+            "id": 45,
+            "word": "Yes",
+            "ans": "ええ",
+            "remarks": "convo response casual"
+        },
+        {
+            "id": 46,
+            "word": "That's good.",
+            "ans": "いいですね",
+            "remarks": ""
+        },
+        {
+            "id": 47,
+            "word": "I see. / I got it.",
+            "ans": "わかりました",
+            "remarks": ""
+        },
+        {
+            "id": 48,
+            "word": "See you tomorrow",
+            "ans": "じゃ、またあした",
+            "remarks": "there is a punctuation"
+        }
+    ]
+}

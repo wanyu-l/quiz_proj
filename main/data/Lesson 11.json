@@ -1,0 +1,255 @@
+{
+    "id": 15,
+    "name": "Lesson 11",
+    "tags": [
+        "LAJ 2"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "have",
+            "ans": "います",
+            "remarks": "animate, person/pet"
+        },
+        {
+            "id": 1,
+            "word": "have a child",
+            "ans": "こどもがいます",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "stay/be in Japan",
+            "ans": "にほんにいます",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "take, cost",
+            "ans": "かかります",
+            "remarks": "referring to time or money"
+        },
+        {
+            "id": 4,
+            "word": "take a day off / take a rest",
+            "ans": "やすみます",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "take a day off / absent from work",
+            "ans": "かいしゃをやすみます",
+            "remarks": ""
+        },
+        {
+            "id": 6,
+            "word": "apple",
+            "ans": "りんご",
+            "remarks": ""
+        },
+        {
+            "id": 7,
+            "word": "(Japanese) mandarin orange",
+            "ans": "みかん",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "sandwich",
+            "ans": "サンドイッチ",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "curry",
+            "ans": "カレー",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "ice cream",
+            "ans": "アイスクリーム",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "postage stamp",
+            "ans": "きって",
+            "remarks": "切手"
+        },
+        {
+            "id": 12,
+            "word": "postcard",
+            "ans": "はがき",
+            "remarks": "葉書"
+        },
+        {
+            "id": 13,
+            "word": "envelope",
+            "ans": "ふうとう",
+            "remarks": "封筒"
+        },
+        {
+            "id": 14,
+            "word": "parents",
+            "ans": "りょうしん",
+            "remarks": "両親"
+        },
+        {
+            "id": 15,
+            "word": "brothers and sisters, siblings",
+            "ans": "きょうだい",
+            "remarks": "兄弟"
+        },
+        {
+            "id": 16,
+            "word": "(my) elder brother",
+            "ans": "あに",
+            "remarks": "兄"
+        },
+        {
+            "id": 17,
+            "word": "(someone else's) elder brother",
+            "ans": "おにいさん",
+            "remarks": ""
+        },
+        {
+            "id": 18,
+            "word": "(my) elder sister",
+            "ans": "あね",
+            "remarks": "姉"
+        },
+        {
+            "id": 19,
+            "word": "(someone else's) elder sister",
+            "ans": "おねえさん",
+            "remarks": ""
+        },
+        {
+            "id": 20,
+            "word": "(my) younger brother",
+            "ans": "おとうと",
+            "remarks": "弟"
+        },
+        {
+            "id": 21,
+            "word": "(someone else's) younger brother",
+            "ans": "おとうとさん",
+            "remarks": ""
+        },
+        {
+            "id": 22,
+            "word": "(my) younger sister",
+            "ans": "いもうと",
+            "remarks": "妹"
+        },
+        {
+            "id": 23,
+            "word": "(someone else's) younger sister",
+            "ans": "いもうとさん",
+            "remarks": ""
+        },
+        {
+            "id": 24,
+            "word": "foreign country",
+            "ans": "がいこく",
+            "remarks": "外国"
+        },
+        {
+            "id": 25,
+            "word": "foreign student",
+            "ans": "りゅうがくせい",
+            "remarks": "留学生"
+        },
+        {
+            "id": 26,
+            "word": "class",
+            "ans": "クラス",
+            "remarks": ""
+        },
+        {
+            "id": 27,
+            "word": "about ~",
+            "ans": "ぐらい",
+            "remarks": "(used for amount/duration)"
+        },
+        {
+            "id": 28,
+            "word": "in total",
+            "ans": "ぜんぶで",
+            "remarks": "全部_"
+        },
+        {
+            "id": 29,
+            "word": "all, everything, everyone",
+            "ans": "みんな",
+            "remarks": ""
+        },
+        {
+            "id": 30,
+            "word": "only ~",
+            "ans": "だけ",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "Certainly./Sure.",
+            "ans": "かしこまりました",
+            "remarks": "formal, at restaurants etc"
+        },
+        {
+            "id": 32,
+            "word": "Nice weather, isn't it?",
+            "ans": "いいてんきですね",
+            "remarks": "can add お as honorific form"
+        },
+        {
+            "id": 33,
+            "word": "Are you going out?",
+            "ans": "おでかけですか",
+            "remarks": ""
+        },
+        {
+            "id": 34,
+            "word": "I'm just going to the post office.",
+            "ans": "ちょっとゆうびんきょくまで",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "See you later.",
+            "ans": "いってらっしゃい",
+            "remarks": "(when sending off)"
+        },
+        {
+            "id": 36,
+            "word": "See you later.",
+            "ans": "いってきます",
+            "remarks": "when going out"
+        },
+        {
+            "id": 37,
+            "word": "sea mail",
+            "ans": "ふなびん",
+            "remarks": "船便"
+        },
+        {
+            "id": 38,
+            "word": "airmail",
+            "ans": "こうくうびん",
+            "remarks": "航空便"
+        },
+        {
+            "id": 39,
+            "word": "airmail",
+            "ans": "エアメール",
+            "remarks": "Katakana"
+        },
+        {
+            "id": 40,
+            "word": "Please.",
+            "ans": "おねがいします",
+            "remarks": "拜托了"
+        }
+    ]
+}

@@ -546,7 +546,6 @@ fn add_word_page_builder(set_id: usize) -> impl Widget<AppState> {
             data.word_ans_to_add.clear();
             data.word_to_add.clear();
             data.storage_unit.update_set(set_id, target_set);
-            data.storage_unit.save();
             if set_id == data.res.len() {
                 data.res.push(Vec::new());
                 data.input_str.push(Vec::new());
@@ -630,7 +629,6 @@ fn edit_word_page_builder(
             data.word_ans_to_add.clear();
             data.word_to_add.clear();
             data.storage_unit.update_set(set_id, target_set);
-            data.storage_unit.save();
             if set_id == data.res.len() {
                 data.res.push(Vec::new());
                 data.input_str.push(Vec::new());
@@ -754,7 +752,6 @@ fn view_page_builder(
                 ))
                 .title(window_title);
                 data.storage_unit.update_set(lesson_id, target_set);
-                data.storage_unit.save();
                 ctx.window().close();
                 ctx.new_window(new_win);
             },
@@ -926,27 +923,31 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
         );
         let learn_button = Button::new("Learn").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
-                let new_win = WindowDesc::new(learn_page_builder(
-                    set_cloned.get_id(),
-                    set_cloned.get_set_name(),
-                ))
-                .title(set_cloned.get_set_name());
-                ctx.window().close();
-                ctx.new_window(new_win);
+                if set_cloned.get_num_of_cards() > 0 {
+                    let new_win = WindowDesc::new(learn_page_builder(
+                        set_cloned.get_id(),
+                        set_cloned.get_set_name(),
+                    ))
+                    .title(set_cloned.get_set_name());
+                    ctx.window().close();
+                    ctx.new_window(new_win);
+                }
             },
         );
         let test_button = Button::new("Test").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
-                let new_win = WindowDesc::new(test_page_builder(set.get_id(), set.get_set_name()))
-                    .title(set.get_set_name());
-                ctx.window().close();
-                ctx.new_window(new_win);
+                if set.get_num_of_cards() > 0 {
+                    let new_win =
+                        WindowDesc::new(test_page_builder(set.get_id(), set.get_set_name()))
+                            .title(set.get_set_name());
+                    ctx.window().close();
+                    ctx.new_window(new_win);
+                }
             },
         );
         let delete_button = Button::new("Delete").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
                 data.storage_unit.delete_set(id_clone);
-                data.storage_unit.save();
                 let new_win = WindowDesc::new(start_page_builder(
                     data.storage_unit.get_all_study_sets(),
                     data.storage_unit.get_all_tags(),
@@ -1025,7 +1026,6 @@ fn add_set_page_builder() -> impl Widget<AppState> {
                 new_set.add_tag(set_tag.trim().to_string());
             }
             data.storage_unit.add_set(new_set);
-            data.storage_unit.save();
             let new_win = WindowDesc::new(start_page_builder(
                 data.storage_unit.get_all_study_sets(),
                 data.storage_unit.get_all_tags(),
@@ -1099,7 +1099,6 @@ fn edit_set_page_builder(
                 target_set.add_tag(set_tag.trim().to_string());
             }
             data.storage_unit.update_set(set_id, target_set);
-            data.storage_unit.save();
             let new_win = WindowDesc::new(start_page_builder(
                 data.storage_unit.get_all_study_sets(),
                 data.storage_unit.get_all_tags(),

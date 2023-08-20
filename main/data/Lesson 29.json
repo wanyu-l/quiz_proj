@@ -1,0 +1,339 @@
+{
+    "id": 43,
+    "name": "Lesson 29",
+    "tags": [
+        "LAJ 3"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "open",
+            "ans": "あきます",
+            "remarks": "開___"
+        },
+        {
+            "id": 1,
+            "word": "door opens; intransitive",
+            "ans": "ドアがあきます",
+            "remarks": "___開___"
+        },
+        {
+            "id": 2,
+            "word": "close, shut",
+            "ans": "しまります",
+            "remarks": "閉____"
+        },
+        {
+            "id": 3,
+            "word": "door close; intransitive",
+            "ans": "ドアがしまります",
+            "remarks": "___閉____"
+        },
+        {
+            "id": 4,
+            "word": "come on, be turned on",
+            "ans": "つきます",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "light comes on; intransitive",
+            "ans": "でんきがつきます",
+            "remarks": "電気_____"
+        },
+        {
+            "id": 6,
+            "word": "go off; intransitive",
+            "ans": "きえます",
+            "remarks": "消___"
+        },
+        {
+            "id": 7,
+            "word": "light goes off; intransitive",
+            "ans": "でんきがきえます",
+            "remarks": "電気__消___"
+        },
+        {
+            "id": 8,
+            "word": "break",
+            "ans": "こわれます",
+            "remarks": "壊___"
+        },
+        {
+            "id": 9,
+            "word": "chair breaks; intransitive",
+            "ans": "いすがこわれます",
+            "remarks": "___壊___"
+        },
+        {
+            "id": 10,
+            "word": "break, smash (glass)",
+            "ans": "われます",
+            "remarks": "割___"
+        },
+        {
+            "id": 11,
+            "word": "glass breaks; intransitive",
+            "ans": "コップがわれます",
+            "remarks": "___割___"
+        },
+        {
+            "id": 12,
+            "word": "break, smash; intransitive",
+            "ans": "おれます",
+            "remarks": "折___"
+        },
+        {
+            "id": 13,
+            "word": "tree breaks",
+            "ans": "きがおれます",
+            "remarks": "木__折___"
+        },
+        {
+            "id": 14,
+            "word": "tear",
+            "ans": "やぶれます",
+            "remarks": "破___"
+        },
+        {
+            "id": 15,
+            "word": "paper gets torn",
+            "ans": "かみがやぶれます",
+            "remarks": "紙_破___"
+        },
+        {
+            "id": 16,
+            "word": "get dirty",
+            "ans": "よごれます",
+            "remarks": "汚___"
+        },
+        {
+            "id": 17,
+            "word": "clothes get dirty",
+            "ans": "ふくがよごれます",
+            "remarks": "服_汚___"
+        },
+        {
+            "id": 18,
+            "word": "be attached",
+            "ans": "つきます",
+            "remarks": "付___"
+        },
+        {
+            "id": 19,
+            "word": "pocket is attached",
+            "ans": "ポケットがついています",
+            "remarks": "____付____"
+        },
+        {
+            "id": 20,
+            "word": "be undone",
+            "ans": "はずれます",
+            "remarks": "外___"
+        },
+        {
+            "id": 21,
+            "word": "button is undone",
+            "ans": "ボタンがはずれています",
+            "remarks": "____外____"
+        },
+        {
+            "id": 22,
+            "word": "stop, park",
+            "ans": "とまります",
+            "remarks": "止____"
+        },
+        {
+            "id": 23,
+            "word": "car is parked / car has stopped",
+            "ans": "くるまがとまっています",
+            "remarks": "車__止_____"
+        },
+        {
+            "id": 24,
+            "word": "make a mistake",
+            "ans": "まちがえます",
+            "remarks": "間違___"
+        },
+        {
+            "id": 25,
+            "word": "drop, lose",
+            "ans": "おとします",
+            "remarks": "落____"
+        },
+        {
+            "id": 26,
+            "word": "be locked",
+            "ans": "かかります",
+            "remarks": "掛____"
+        },
+        {
+            "id": 27,
+            "word": "it's locked",
+            "ans": "かぎがかかっています",
+            "remarks": "鍵_掛_____"
+        },
+        {
+            "id": 28,
+            "word": "wipe",
+            "ans": "ふきます",
+            "remarks": "拭___"
+        },
+        {
+            "id": 29,
+            "word": "change",
+            "ans": "とりかえます",
+            "remarks": "取_替___"
+        },
+        {
+            "id": 30,
+            "word": "tidy up, put in order",
+            "ans": "かたづけます",
+            "remarks": "片付___"
+        },
+        {
+            "id": 31,
+            "word": "plate, dish",
+            "ans": "さら",
+            "remarks": "［お］皿"
+        },
+        {
+            "id": 32,
+            "word": "bowl",
+            "ans": "ちゃわん",
+            "remarks": "［お］茶碗"
+        },
+        {
+            "id": 33,
+            "word": "glass",
+            "ans": "コップ",
+            "remarks": "tall glass; not wine glass"
+        },
+        {
+            "id": 34,
+            "word": "glass (material)",
+            "ans": "ガラス",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "bag",
+            "ans": "ふくろ",
+            "remarks": "袋"
+        },
+        {
+            "id": 36,
+            "word": "document",
+            "ans": "しょるい",
+            "remarks": "書類"
+        },
+        {
+            "id": 37,
+            "word": "branch (of a tree)",
+            "ans": "えだ",
+            "remarks": "枝"
+        },
+        {
+            "id": 38,
+            "word": "station attendant",
+            "ans": "えきいん",
+            "remarks": "駅員"
+        },
+        {
+            "id": 39,
+            "word": "police box / police post",
+            "ans": "こうばん",
+            "remarks": "交番"
+        },
+        {
+            "id": 40,
+            "word": "speech",
+            "ans": "スピーチ",
+            "remarks": ""
+        },
+        {
+            "id": 41,
+            "word": "give a speech",
+            "ans": "スピーチをします",
+            "remarks": ""
+        },
+        {
+            "id": 42,
+            "word": "reply, answer",
+            "ans": "へんじ",
+            "remarks": "返事"
+        },
+        {
+            "id": 43,
+            "word": "reply, answer",
+            "ans": "へんじをします",
+            "remarks": "返事___"
+        },
+        {
+            "id": 44,
+            "word": "After you. / Go ahead, please.",
+            "ans": "おさきにどうぞ",
+            "remarks": "_先_____"
+        },
+        {
+            "id": 45,
+            "word": "the train which has just left",
+            "ans": "いまのでんしゃ",
+            "remarks": "今_電車"
+        },
+        {
+            "id": 46,
+            "word": "things left behind, lost property",
+            "ans": "わすれもの",
+            "remarks": "忘_物"
+        },
+        {
+            "id": 47,
+            "word": "about this",
+            "ans": "このくらい",
+            "remarks": "estimate (size)"
+        },
+        {
+            "id": 48,
+            "word": "-- side",
+            "ans": "がわ",
+            "remarks": "～側"
+        },
+        {
+            "id": 49,
+            "word": "pocket",
+            "ans": "ポケット",
+            "remarks": ""
+        },
+        {
+            "id": 50,
+            "word": "around --",
+            "ans": "へん",
+            "remarks": "～辺"
+        },
+        {
+            "id": 51,
+            "word": "I don't remember.",
+            "ans": "おぼえていません",
+            "remarks": "覚______"
+        },
+        {
+            "id": 52,
+            "word": "overhead rack",
+            "ans": "あみだな",
+            "remarks": "網棚"
+        },
+        {
+            "id": 53,
+            "word": "I'm pretty sure --",
+            "ans": "たしか",
+            "remarks": "確_"
+        },
+        {
+            "id": 54,
+            "word": "Oh that's great!",
+            "ans": "よかった",
+            "remarks": "［ああ］; feeling of relief"
+        }
+    ]
+}

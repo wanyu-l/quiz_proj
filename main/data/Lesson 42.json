@@ -1,0 +1,249 @@
+{
+    "id": 64,
+    "name": "Lesson 42",
+    "tags": [
+        "LAJ 4"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "wrap",
+            "ans": "つつみます",
+            "remarks": "包＿＿"
+        },
+        {
+            "id": 1,
+            "word": "boil",
+            "ans": "わかします",
+            "remarks": "沸＿＿＿"
+        },
+        {
+            "id": 2,
+            "word": "mix",
+            "ans": "まぜます",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "calculate",
+            "ans": "けいさんします",
+            "remarks": "計算＿＿"
+        },
+        {
+            "id": 4,
+            "word": "stand in a queue, line up",
+            "ans": "ならびます",
+            "remarks": "並＿＿"
+        },
+        {
+            "id": 5,
+            "word": "strong, healthy",
+            "ans": "じょうぶ",
+            "remarks": "丈夫「な」"
+        },
+        {
+            "id": 6,
+            "word": "apartment, flat",
+            "ans": "アパート",
+            "remarks": ""
+        },
+        {
+            "id": 7,
+            "word": "lawyer, attorney, solicitor, barrister",
+            "ans": "べんごし",
+            "remarks": "弁護士"
+        },
+        {
+            "id": 8,
+            "word": "musician",
+            "ans": "おんがくか",
+            "remarks": "音楽家"
+        },
+        {
+            "id": 9,
+            "word": "children",
+            "ans": "こどもたち",
+            "remarks": "子供＿＿"
+        },
+        {
+            "id": 10,
+            "word": "nature",
+            "ans": "しぜん",
+            "remarks": "自然"
+        },
+        {
+            "id": 11,
+            "word": "education",
+            "ans": "きょういく",
+            "remarks": "教育"
+        },
+        {
+            "id": 12,
+            "word": "culture",
+            "ans": "ぶんか",
+            "remarks": "文化"
+        },
+        {
+            "id": 13,
+            "word": "society",
+            "ans": "しゃかい",
+            "remarks": "社会"
+        },
+        {
+            "id": 14,
+            "word": "politics",
+            "ans": "せいじ",
+            "remarks": "政治"
+        },
+        {
+            "id": 15,
+            "word": "law",
+            "ans": "ほうりつ",
+            "remarks": "法律"
+        },
+        {
+            "id": 16,
+            "word": "war",
+            "ans": "せんそう",
+            "remarks": "戦争"
+        },
+        {
+            "id": 17,
+            "word": "peace",
+            "ans": "へいわ",
+            "remarks": "平和"
+        },
+        {
+            "id": 18,
+            "word": "purpose",
+            "ans": "もくてき",
+            "remarks": "目的"
+        },
+        {
+            "id": 19,
+            "word": "thesis, academic paper",
+            "ans": "ろんぶん",
+            "remarks": "論文"
+        },
+        {
+            "id": 20,
+            "word": "pleasure, enjoyment, expectation",
+            "ans": "たのしみ",
+            "remarks": "楽＿＿"
+        },
+        {
+            "id": 21,
+            "word": "mixer, blender",
+            "ans": "ミキサー",
+            "remarks": ""
+        },
+        {
+            "id": 22,
+            "word": "kettle",
+            "ans": "やかん",
+            "remarks": ""
+        },
+        {
+            "id": 23,
+            "word": "lid, cover, cap",
+            "ans": "ふた",
+            "remarks": "蓋"
+        },
+        {
+            "id": 24,
+            "word": "bottle opener, corkscrew",
+            "ans": "せんぬき",
+            "remarks": "栓抜"
+        },
+        {
+            "id": 25,
+            "word": "can opener",
+            "ans": "かんきり",
+            "remarks": "缶切＿"
+        },
+        {
+            "id": 26,
+            "word": "canned food, tinned food",
+            "ans": "かんづめ",
+            "remarks": "缶詰"
+        },
+        {
+            "id": 27,
+            "word": "envelop for a gift of money",
+            "ans": "のしぶくろ",
+            "remarks": ""
+        },
+        {
+            "id": 28,
+            "word": "wrapping cloth used to carry things",
+            "ans": "ふろしき",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "abacus",
+            "ans": "そろばん",
+            "remarks": "算盤"
+        },
+        {
+            "id": 30,
+            "word": "(clinical) thermometer",
+            "ans": "たいおんけい",
+            "remarks": "体温計"
+        },
+        {
+            "id": 31,
+            "word": "material, ingredient",
+            "ans": "ざいりょう",
+            "remarks": "材料"
+        },
+        {
+            "id": 32,
+            "word": "a certain~, one~",
+            "ans": "ある",
+            "remarks": "there is a ~"
+        },
+        {
+            "id": 33,
+            "word": "with all one's effort",
+            "ans": "いっしょうけんめい",
+            "remarks": "一生懸命"
+        },
+        {
+            "id": 34,
+            "word": "why",
+            "ans": "なぜ",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "how much, how many",
+            "ans": "どのくらい",
+            "remarks": ""
+        },
+        {
+            "id": 36,
+            "word": "be paid",
+            "ans": "でます",
+            "remarks": "出ます"
+        },
+        {
+            "id": 37,
+            "word": "bonus be paid",
+            "ans": "ボーナスがでます",
+            "remarks": ""
+        },
+        {
+            "id": 38,
+            "word": "half",
+            "ans": "はんぶん",
+            "remarks": "半分"
+        },
+        {
+            "id": 39,
+            "word": "loan",
+            "ans": "ローン",
+            "remarks": ""
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "id": 10,
+    "name": "Kanji Unit 1",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "日曜日",
+            "ans": "にちようび",
+            "remarks": "Sunday"
+        },
+        {
+            "id": 1,
+            "word": "月曜日",
+            "ans": "げつようび",
+            "remarks": "Monday"
+        },
+        {
+            "id": 2,
+            "word": "火曜日",
+            "ans": "かようび",
+            "remarks": "Tuesday"
+        },
+        {
+            "id": 3,
+            "word": "水曜日",
+            "ans": "すいようび",
+            "remarks": "Wednesday"
+        },
+        {
+            "id": 4,
+            "word": "木曜日",
+            "ans": "もくようび",
+            "remarks": "Thursday"
+        },
+        {
+            "id": 5,
+            "word": "金曜日",
+            "ans": "きんようび",
+            "remarks": "Friday"
+        },
+        {
+            "id": 6,
+            "word": "土曜日",
+            "ans": "どようび",
+            "remarks": "Saturday"
+        },
+        {
+            "id": 7,
+            "word": "水",
+            "ans": "みず",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "木",
+            "ans": "き",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "お金",
+            "ans": "おかね",
+            "remarks": "Money"
+        },
+        {
+            "id": 10,
+            "word": "山",
+            "ans": "やま",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "川",
+            "ans": "かわ",
+            "remarks": ""
+        },
+        {
+            "id": 12,
+            "word": "山田さん",
+            "ans": "やまださん",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "山川さん",
+            "ans": "やまかわさん",
+            "remarks": "No 連濁"
+        }
+    ]
+}

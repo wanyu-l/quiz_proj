@@ -1,0 +1,273 @@
+{
+    "id": 62,
+    "name": "Lesson 40",
+    "tags": [
+        "LAJ 4"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "count",
+            "ans": "かぞえます",
+            "remarks": "数＿＿"
+        },
+        {
+            "id": 1,
+            "word": "measure, weight",
+            "ans": "はかります",
+            "remarks": "図＿＿"
+        },
+        {
+            "id": 2,
+            "word": "confirm, make sure",
+            "ans": "たしかめます",
+            "remarks": "確＿＿"
+        },
+        {
+            "id": 3,
+            "word": "the size fit",
+            "ans": "サイズがあいます",
+            "remarks": "＿＿合＿＿"
+        },
+        {
+            "id": 4,
+            "word": "depart",
+            "ans": "しゅっぱつします",
+            "remarks": "出発＿＿"
+        },
+        {
+            "id": 5,
+            "word": "arrive",
+            "ans": "とうちゃくします",
+            "remarks": "到着＿＿"
+        },
+        {
+            "id": 6,
+            "word": "get drunk",
+            "ans": "よいます",
+            "remarks": "酔＿＿"
+        },
+        {
+            "id": 7,
+            "word": "go well",
+            "ans": "うまくいきます",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "problems be on the test",
+            "ans": "もんだいがでます",
+            "remarks": "come out on test"
+        },
+        {
+            "id": 9,
+            "word": "consult, discuss",
+            "ans": "そうだんします",
+            "remarks": "相談＿＿"
+        },
+        {
+            "id": 10,
+            "word": "necessary",
+            "ans": "ひつよう",
+            "remarks": "必要「な」"
+        },
+        {
+            "id": 11,
+            "word": "weather forecast",
+            "ans": "てんきよほう",
+            "remarks": "天気予報"
+        },
+        {
+            "id": 12,
+            "word": "year-end party",
+            "ans": "ぼうねんかい",
+            "remarks": "忘年会"
+        },
+        {
+            "id": 13,
+            "word": "New Year's party",
+            "ans": "しんねんかい",
+            "remarks": "新年会"
+        },
+        {
+            "id": 14,
+            "word": "second party",
+            "ans": "にじかい",
+            "remarks": "二次会"
+        },
+        {
+            "id": 15,
+            "word": "presentation meeting",
+            "ans": "はっぴょうかい",
+            "remarks": "発表会"
+        },
+        {
+            "id": 16,
+            "word": "rally, convention",
+            "ans": "たいかい",
+            "remarks": "大会"
+        },
+        {
+            "id": 17,
+            "word": "marathon",
+            "ans": "マラソン",
+            "remarks": ""
+        },
+        {
+            "id": 18,
+            "word": "contest",
+            "ans": "コンテスト",
+            "remarks": ""
+        },
+        {
+            "id": 19,
+            "word": "face, front",
+            "ans": "おもて",
+            "remarks": "表"
+        },
+        {
+            "id": 20,
+            "word": "back (side)",
+            "ans": "うら",
+            "remarks": "裏"
+        },
+        {
+            "id": 21,
+            "word": "mistake",
+            "ans": "まちがい",
+            "remarks": "間違「い」"
+        },
+        {
+            "id": 22,
+            "word": "defect, wound, scratch",
+            "ans": "きず",
+            "remarks": ""
+        },
+        {
+            "id": 23,
+            "word": "trousers",
+            "ans": "ズボン",
+            "remarks": ""
+        },
+        {
+            "id": 24,
+            "word": "elderly person",
+            "ans": "としより",
+            "remarks": "（お）年寄「＿」"
+        },
+        {
+            "id": 25,
+            "word": "length",
+            "ans": "ながさ",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "weight",
+            "ans": "おもさ",
+            "remarks": ""
+        },
+        {
+            "id": 27,
+            "word": "height",
+            "ans": "たかさ",
+            "remarks": ""
+        },
+        {
+            "id": 28,
+            "word": "size, scale",
+            "ans": "おおきさ",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "flight, flight number",
+            "ans": "びん",
+            "remarks": ""
+        },
+        {
+            "id": 30,
+            "word": "counter for small objects",
+            "ans": "こ",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "counter for long objects",
+            "ans": "ほん",
+            "remarks": ""
+        },
+        {
+            "id": 32,
+            "word": "counter for glass or cup of",
+            "ans": "はい",
+            "remarks": ""
+        },
+        {
+            "id": 33,
+            "word": "centimetres",
+            "ans": "センチ",
+            "remarks": ""
+        },
+        {
+            "id": 34,
+            "word": "millimetres",
+            "ans": "ミリ",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "grammes",
+            "ans": "グラム",
+            "remarks": ""
+        },
+        {
+            "id": 36,
+            "word": "not less than~, over~",
+            "ans": "いじょう",
+            "remarks": "more than"
+        },
+        {
+            "id": 37,
+            "word": "not more than~, under~",
+            "ans": "いか",
+            "remarks": "less than"
+        },
+        {
+            "id": 38,
+            "word": "How is~",
+            "ans": "どうでしょうか",
+            "remarks": "polite どうですか"
+        },
+        {
+            "id": 39,
+            "word": "test, examination",
+            "ans": "テスト",
+            "remarks": ""
+        },
+        {
+            "id": 40,
+            "word": "performance, score, result",
+            "ans": "せいせき",
+            "remarks": "成績"
+        },
+        {
+            "id": 41,
+            "word": "by the way",
+            "ans": "ところで",
+            "remarks": ""
+        },
+        {
+            "id": 42,
+            "word": "come",
+            "ans": "いらっしゃいます",
+            "remarks": "respectful きます"
+        },
+        {
+            "id": 43,
+            "word": "situation, condition, appearance",
+            "ans": "ようす",
+            "remarks": "様子"
+        }
+    ]
+}

@@ -1,0 +1,339 @@
+{
+    "id": 20,
+    "name": "Lesson 16",
+    "tags": [
+        "LAJ 2"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "ride, get on",
+            "ans": "のります",
+            "remarks": "乗____"
+        },
+        {
+            "id": 1,
+            "word": "get on a bus",
+            "ans": "バスにのります",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "get off, alight",
+            "ans": "おります",
+            "remarks": "降___"
+        },
+        {
+            "id": 3,
+            "word": "alight a bus",
+            "ans": "バスをおります",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "change (trains etc)",
+            "ans": "のりかえます",
+            "remarks": "乗り換えます"
+        },
+        {
+            "id": 5,
+            "word": "take a shower",
+            "ans": "シャワーをあびます",
+            "remarks": ""
+        },
+        {
+            "id": 6,
+            "word": "put in, insert",
+            "ans": "いれます",
+            "remarks": "入___"
+        },
+        {
+            "id": 7,
+            "word": "take out, withdraw",
+            "ans": "だします",
+            "remarks": "出____"
+        },
+        {
+            "id": 8,
+            "word": "withdraw money",
+            "ans": "おかねをおろします",
+            "remarks": "___下___"
+        },
+        {
+            "id": 9,
+            "word": "enter university",
+            "ans": "だいがくにはいります",
+            "remarks": "大学_入___"
+        },
+        {
+            "id": 10,
+            "word": "graduate from university",
+            "ans": "だいがくをでます",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "push, press",
+            "ans": "おします",
+            "remarks": "押___"
+        },
+        {
+            "id": 12,
+            "word": "drink alcohol",
+            "ans": "のみます",
+            "remarks": "飲___"
+        },
+        {
+            "id": 13,
+            "word": "start, begin",
+            "ans": "はじめます",
+            "remarks": "始___"
+        },
+        {
+            "id": 14,
+            "word": "tour, visit a place to study it",
+            "ans": "けんがくします",
+            "remarks": "見学___"
+        },
+        {
+            "id": 15,
+            "word": "make a phone call",
+            "ans": "でんわします",
+            "remarks": "電話____"
+        },
+        {
+            "id": 16,
+            "word": "young",
+            "ans": "わかい",
+            "remarks": "若_"
+        },
+        {
+            "id": 17,
+            "word": "long",
+            "ans": "ながい",
+            "remarks": "長_"
+        },
+        {
+            "id": 18,
+            "word": "short",
+            "ans": "みじかい",
+            "remarks": "短_"
+        },
+        {
+            "id": 19,
+            "word": "bright, light",
+            "ans": "あかるい",
+            "remarks": "明__, also positive attitute"
+        },
+        {
+            "id": 20,
+            "word": "dark",
+            "ans": "くらい",
+            "remarks": "暗_"
+        },
+        {
+            "id": 21,
+            "word": "body",
+            "ans": "からだ",
+            "remarks": "体"
+        },
+        {
+            "id": 22,
+            "word": "head",
+            "ans": "あたま",
+            "remarks": "頭"
+        },
+        {
+            "id": 23,
+            "word": "hair",
+            "ans": "かみ",
+            "remarks": "髪"
+        },
+        {
+            "id": 24,
+            "word": "face",
+            "ans": "かお",
+            "remarks": "顔"
+        },
+        {
+            "id": 25,
+            "word": "eye",
+            "ans": "め",
+            "remarks": "目"
+        },
+        {
+            "id": 26,
+            "word": "ear",
+            "ans": "みみ",
+            "remarks": "耳"
+        },
+        {
+            "id": 27,
+            "word": "nose",
+            "ans": "はな",
+            "remarks": "鼻"
+        },
+        {
+            "id": 28,
+            "word": "mouth",
+            "ans": "くち",
+            "remarks": "口"
+        },
+        {
+            "id": 29,
+            "word": "tooth",
+            "ans": "は",
+            "remarks": "歯"
+        },
+        {
+            "id": 30,
+            "word": "stomach",
+            "ans": "おなか",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "leg, foot",
+            "ans": "あし",
+            "remarks": "足"
+        },
+        {
+            "id": 32,
+            "word": "[someone is] tall",
+            "ans": "せがたかい",
+            "remarks": "背_高_"
+        },
+        {
+            "id": 33,
+            "word": "[someone is] short",
+            "ans": "せがひくい",
+            "remarks": "背_低_"
+        },
+        {
+            "id": 34,
+            "word": "service",
+            "ans": "サービス",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "jogging",
+            "ans": "ジョギング",
+            "remarks": ""
+        },
+        {
+            "id": 36,
+            "word": "shower",
+            "ans": "シャワー",
+            "remarks": ""
+        },
+        {
+            "id": 37,
+            "word": "green, greenery",
+            "ans": "みどり",
+            "remarks": "緑"
+        },
+        {
+            "id": 38,
+            "word": "Buddhist temple",
+            "ans": "てら",
+            "remarks": "［お］寺"
+        },
+        {
+            "id": 39,
+            "word": "Shrine (Shinto)",
+            "ans": "じんじゃ",
+            "remarks": "神社"
+        },
+        {
+            "id": 40,
+            "word": "number -",
+            "ans": "ばん",
+            "remarks": "～番"
+        },
+        {
+            "id": 41,
+            "word": "in what way, how",
+            "ans": "どうやって",
+            "remarks": ""
+        },
+        {
+            "id": 42,
+            "word": "which ~",
+            "ans": "どの",
+            "remarks": "used for three or more, casual"
+        },
+        {
+            "id": 43,
+            "word": "which one",
+            "ans": "どれ",
+            "remarks": "of three or more things"
+        },
+        {
+            "id": 44,
+            "word": "That's amazing! / That's great!",
+            "ans": "すごいですね",
+            "remarks": "convo"
+        },
+        {
+            "id": 45,
+            "word": "No, I still have a long way to go.",
+            "ans": "まだまだです",
+            "remarks": "［いいえ、］______"
+        },
+        {
+            "id": 46,
+            "word": "Are you making a withdrawal?",
+            "ans": "おひきだしですか",
+            "remarks": ""
+        },
+        {
+            "id": 47,
+            "word": "first of all",
+            "ans": "まず",
+            "remarks": ""
+        },
+        {
+            "id": 48,
+            "word": "next, as a next step",
+            "ans": "つぎに",
+            "remarks": "次_"
+        },
+        {
+            "id": 49,
+            "word": "cash card",
+            "ans": "キャッシュカード",
+            "remarks": ""
+        },
+        {
+            "id": 50,
+            "word": "amount of money",
+            "ans": "きんがく",
+            "remarks": "金額"
+        },
+        {
+            "id": 51,
+            "word": "confirmation",
+            "ans": "かくにん",
+            "remarks": "確認"
+        },
+        {
+            "id": 52,
+            "word": "confirm",
+            "ans": "かくにんします",
+            "remarks": "verb"
+        },
+        {
+            "id": 53,
+            "word": "button",
+            "ans": "ボタン",
+            "remarks": ""
+        },
+        {
+            "id": 54,
+            "word": "PIN number",
+            "ans": "あんしょうばんごう",
+            "remarks": "暗証番号"
+        }
+    ]
+}

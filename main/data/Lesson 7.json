@@ -1,0 +1,279 @@
+{
+    "id": 6,
+    "name": "Lesson 7",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "cut",
+            "ans": "きります",
+            "remarks": "verb"
+        },
+        {
+            "id": 1,
+            "word": "send",
+            "ans": "おくります",
+            "remarks": "verb"
+        },
+        {
+            "id": 2,
+            "word": "give",
+            "ans": "あげます",
+            "remarks": "verb"
+        },
+        {
+            "id": 3,
+            "word": "receive",
+            "ans": "もらいます",
+            "remarks": "verb"
+        },
+        {
+            "id": 4,
+            "word": "lend to",
+            "ans": "かします",
+            "remarks": "verb"
+        },
+        {
+            "id": 5,
+            "word": "borrow",
+            "ans": "かります",
+            "remarks": "verb"
+        },
+        {
+            "id": 6,
+            "word": "teach",
+            "ans": "おしえます",
+            "remarks": "verb"
+        },
+        {
+            "id": 7,
+            "word": "learn",
+            "ans": "ならいます",
+            "remarks": "verb"
+        },
+        {
+            "id": 8,
+            "word": "make a phone call",
+            "ans": "でんわをかけます",
+            "remarks": "verb, particle"
+        },
+        {
+            "id": 9,
+            "word": "hand",
+            "ans": "て",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "chopsticks",
+            "ans": "はし",
+            "remarks": "can preppend with honor form"
+        },
+        {
+            "id": 11,
+            "word": "spoon",
+            "ans": "スプーン",
+            "remarks": ""
+        },
+        {
+            "id": 12,
+            "word": "knife",
+            "ans": "ナイフ",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "fork",
+            "ans": "フォーク",
+            "remarks": ""
+        },
+        {
+            "id": 14,
+            "word": "scissors",
+            "ans": "はさみ",
+            "remarks": ""
+        },
+        {
+            "id": 15,
+            "word": "PC",
+            "ans": "パソコン",
+            "remarks": "personal device"
+        },
+        {
+            "id": 16,
+            "word": "mobile phone",
+            "ans": "ケータイ",
+            "remarks": ""
+        },
+        {
+            "id": 17,
+            "word": "e-mail",
+            "ans": "メール",
+            "remarks": "also message from mobile"
+        },
+        {
+            "id": 18,
+            "word": "New Year's greeting card",
+            "ans": "ねんがじょう",
+            "remarks": "年贺状"
+        },
+        {
+            "id": 19,
+            "word": "stapler",
+            "ans": "ホッチキス",
+            "remarks": ""
+        },
+        {
+            "id": 20,
+            "word": "scotch tape",
+            "ans": "セロテープ",
+            "remarks": ""
+        },
+        {
+            "id": 21,
+            "word": "eraser",
+            "ans": "けしゴム",
+            "remarks": ""
+        },
+        {
+            "id": 22,
+            "word": "paper",
+            "ans": "かみ",
+            "remarks": ""
+        },
+        {
+            "id": 23,
+            "word": "flower",
+            "ans": "はな",
+            "remarks": ""
+        },
+        {
+            "id": 24,
+            "word": "shirt",
+            "ans": "シャツ",
+            "remarks": ""
+        },
+        {
+            "id": 25,
+            "word": "present",
+            "ans": "プレゼント",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "baggage, parcel",
+            "ans": "にもつ",
+            "remarks": ""
+        },
+        {
+            "id": 27,
+            "word": "money",
+            "ans": "おかね",
+            "remarks": "honor form by default"
+        },
+        {
+            "id": 28,
+            "word": "ticket",
+            "ans": "きっぷ",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "Christmas",
+            "ans": "クリスマス",
+            "remarks": ""
+        },
+        {
+            "id": 30,
+            "word": "hole punch",
+            "ans": "パンチ",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "*my* father",
+            "ans": "ちち",
+            "remarks": ""
+        },
+        {
+            "id": 32,
+            "word": "*my* mother",
+            "ans": "はは",
+            "remarks": ""
+        },
+        {
+            "id": 33,
+            "word": "someone's father",
+            "ans": "おとうさん",
+            "remarks": ""
+        },
+        {
+            "id": 34,
+            "word": "someone's mother",
+            "ans": "おかあさん",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "already",
+            "ans": "もう",
+            "remarks": ""
+        },
+        {
+            "id": 36,
+            "word": "not yet",
+            "ans": "まだ",
+            "remarks": ""
+        },
+        {
+            "id": 37,
+            "word": "from now on, soon",
+            "ans": "これから",
+            "remarks": "from here"
+        },
+        {
+            "id": 38,
+            "word": "What a nice --!",
+            "ans": "すてきですね",
+            "remarks": ""
+        },
+        {
+            "id": 39,
+            "word": "Welcome! / How nice of you to come",
+            "ans": "いらっしゃい",
+            "remarks": ""
+        },
+        {
+            "id": 40,
+            "word": "Please come in.",
+            "ans": "どうぞおあがりください",
+            "remarks": "Polite, please come up"
+        },
+        {
+            "id": 41,
+            "word": "May I come in?",
+            "ans": "しつれいします",
+            "remarks": "失礼了~"
+        },
+        {
+            "id": 42,
+            "word": "Would you like to have --?",
+            "ans": "いかがですか",
+            "remarks": "subject omitted"
+        },
+        {
+            "id": 43,
+            "word": "greeting used before eating/drinking",
+            "ans": "いただきます",
+            "remarks": "我开动了"
+        },
+        {
+            "id": 44,
+            "word": "greeting used after eating/drinking",
+            "ans": "ごちそうさまでした",
+            "remarks": "多谢招待"
+        }
+    ]
+}

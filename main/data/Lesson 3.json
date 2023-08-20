@@ -1,0 +1,285 @@
+{
+    "id": 2,
+    "name": "Lesson 3",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "here",
+            "ans": "ここ",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "there (near listener)",
+            "ans": "そこ",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "over there",
+            "ans": "あそこ",
+            "remarks": "far from both"
+        },
+        {
+            "id": 3,
+            "word": "where",
+            "ans": "どこ",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "here (polite)",
+            "ans": "こちら",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "there (near listener) (polite)",
+            "ans": "そちら",
+            "remarks": ""
+        },
+        {
+            "id": 6,
+            "word": "over there (polite)",
+            "ans": "あちら",
+            "remarks": "far from both"
+        },
+        {
+            "id": 7,
+            "word": "where (polite)",
+            "ans": "どちら",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "classroom",
+            "ans": "きょうしつ",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "canteen",
+            "ans": "しょくどう",
+            "remarks": "食堂"
+        },
+        {
+            "id": 10,
+            "word": "(admin) office",
+            "ans": "じむしょ",
+            "remarks": "事务所"
+        },
+        {
+            "id": 11,
+            "word": "meeting room",
+            "ans": "かいぎしつ",
+            "remarks": "会议室"
+        },
+        {
+            "id": 12,
+            "word": "reception",
+            "ans": "うけつけ",
+            "remarks": ""
+        },
+        {
+            "id": 13,
+            "word": "lobby",
+            "ans": "ロビー",
+            "remarks": ""
+        },
+        {
+            "id": 14,
+            "word": "room",
+            "ans": "へや",
+            "remarks": ""
+        },
+        {
+            "id": 15,
+            "word": "toilet",
+            "ans": "トイレ",
+            "remarks": "toilet"
+        },
+        {
+            "id": 16,
+            "word": "toilet",
+            "ans": "おてあらい",
+            "remarks": "盥洗室"
+        },
+        {
+            "id": 17,
+            "word": "staircase",
+            "ans": "かいだん",
+            "remarks": ""
+        },
+        {
+            "id": 18,
+            "word": "elevator",
+            "ans": "エレベーター",
+            "remarks": ""
+        },
+        {
+            "id": 19,
+            "word": "escalator",
+            "ans": "エスカレーター",
+            "remarks": ""
+        },
+        {
+            "id": 20,
+            "word": "vending machine",
+            "ans": "じどうはんばいき",
+            "remarks": "自动贩卖机"
+        },
+        {
+            "id": 21,
+            "word": "telephone",
+            "ans": "でんわ",
+            "remarks": ""
+        },
+        {
+            "id": 22,
+            "word": "country",
+            "ans": "くに",
+            "remarks": ""
+        },
+        {
+            "id": 23,
+            "word": "your/someone's country",
+            "ans": "おくに",
+            "remarks": "polite"
+        },
+        {
+            "id": 24,
+            "word": "company",
+            "ans": "かいしゃ",
+            "remarks": "会社"
+        },
+        {
+            "id": 25,
+            "word": "home",
+            "ans": "うち",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "shoes",
+            "ans": "くつ",
+            "remarks": ""
+        },
+        {
+            "id": 27,
+            "word": "necktie",
+            "ans": "ネクタイ",
+            "remarks": ""
+        },
+        {
+            "id": 28,
+            "word": "wine",
+            "ans": "ワイン",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "department, section (of a store)",
+            "ans": "うりば",
+            "remarks": "卖场"
+        },
+        {
+            "id": 30,
+            "word": "basement",
+            "ans": "ちか",
+            "remarks": "地下"
+        },
+        {
+            "id": 31,
+            "word": "--th floor",
+            "ans": "かい",
+            "remarks": "~阶"
+        },
+        {
+            "id": 32,
+            "word": "which floor",
+            "ans": "なんがい",
+            "remarks": "何阶"
+        },
+        {
+            "id": 33,
+            "word": "yen (currency)",
+            "ans": "えん",
+            "remarks": ""
+        },
+        {
+            "id": 34,
+            "word": "how much",
+            "ans": "いくら",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "hundred",
+            "ans": "ひゃく",
+            "remarks": ""
+        },
+        {
+            "id": 36,
+            "word": "thousand",
+            "ans": "せん",
+            "remarks": ""
+        },
+        {
+            "id": 37,
+            "word": "ten thousand",
+            "ans": "まん",
+            "remarks": ""
+        },
+        {
+            "id": 38,
+            "word": "Excuse me",
+            "ans": "すみません",
+            "remarks": ""
+        },
+        {
+            "id": 39,
+            "word": "Thanks",
+            "ans": "どうも",
+            "remarks": "casual"
+        },
+        {
+            "id": 40,
+            "word": "Welcome (used to a customer)",
+            "ans": "いらっしゃいませ",
+            "remarks": ""
+        },
+        {
+            "id": 41,
+            "word": "Please show me that watch (near you)",
+            "ans": "そのとけいをみせてください",
+            "remarks": ""
+        },
+        {
+            "id": 42,
+            "word": "Then,",
+            "ans": "じゃ",
+            "remarks": ""
+        },
+        {
+            "id": 43,
+            "word": "Please give me this one. / I'll have this one.",
+            "ans": "これをください",
+            "remarks": ""
+        },
+        {
+            "id": 44,
+            "word": "--dollars",
+            "ans": "ドル",
+            "remarks": ""
+        },
+        {
+            "id": 45,
+            "word": "--cents",
+            "ans": "セント",
+            "remarks": ""
+        }
+    ]
+}

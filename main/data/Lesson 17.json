@@ -1,0 +1,219 @@
+{
+    "id": 21,
+    "name": "Lesson 17",
+    "tags": [
+        "LAJ 2"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "memorize",
+            "ans": "おぼえます",
+            "remarks": "覚____"
+        },
+        {
+            "id": 1,
+            "word": "forget",
+            "ans": "わすれます",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "lose",
+            "ans": "なくします",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "pay",
+            "ans": "はらいます",
+            "remarks": "払____"
+        },
+        {
+            "id": 4,
+            "word": "give back, return",
+            "ans": "かえします",
+            "remarks": "返____"
+        },
+        {
+            "id": 5,
+            "word": "go out",
+            "ans": "でかけます",
+            "remarks": "出____"
+        },
+        {
+            "id": 6,
+            "word": "take off (clothes, shoes etc)",
+            "ans": "ぬぎます",
+            "remarks": "脱___"
+        },
+        {
+            "id": 7,
+            "word": "take (something) to somewhere",
+            "ans": "もっていきます",
+            "remarks": "持__行___"
+        },
+        {
+            "id": 8,
+            "word": "bring (something) here",
+            "ans": "もってきます",
+            "remarks": "持__来__"
+        },
+        {
+            "id": 9,
+            "word": "worry",
+            "ans": "しんぱいします",
+            "remarks": "心配___"
+        },
+        {
+            "id": 10,
+            "word": "work overtime",
+            "ans": "ざんぎょうします",
+            "remarks": "残業___"
+        },
+        {
+            "id": 11,
+            "word": "go on a business trip",
+            "ans": "しゅっちょうします",
+            "remarks": "出張___"
+        },
+        {
+            "id": 12,
+            "word": "take medicine",
+            "ans": "くすりをのみます",
+            "remarks": "薬_飲___"
+        },
+        {
+            "id": 13,
+            "word": "take a bath",
+            "ans": "おふろにはいります",
+            "remarks": "_風呂_入___"
+        },
+        {
+            "id": 14,
+            "word": "important, precious",
+            "ans": "たいせつ",
+            "remarks": "大切［な］"
+        },
+        {
+            "id": 15,
+            "word": "all right",
+            "ans": "だいじょうぶ",
+            "remarks": "大丈夫［な］"
+        },
+        {
+            "id": 16,
+            "word": "dangerous",
+            "ans": "あぶない",
+            "remarks": "危__"
+        },
+        {
+            "id": 17,
+            "word": "no smoking",
+            "ans": "きんえん",
+            "remarks": "禁煙"
+        },
+        {
+            "id": 18,
+            "word": "insurance card",
+            "ans": "ほけんしょう",
+            "remarks": "保険証"
+        },
+        {
+            "id": 19,
+            "word": "health",
+            "ans": "けんこう",
+            "remarks": "健康"
+        },
+        {
+            "id": 20,
+            "word": "fever",
+            "ans": "ねつ",
+            "remarks": "熱"
+        },
+        {
+            "id": 21,
+            "word": "illness, disease",
+            "ans": "びょうき",
+            "remarks": "病気"
+        },
+        {
+            "id": 22,
+            "word": "medicine",
+            "ans": "くすり",
+            "remarks": "薬"
+        },
+        {
+            "id": 23,
+            "word": "bath",
+            "ans": "ふろ",
+            "remarks": "［お］風呂"
+        },
+        {
+            "id": 24,
+            "word": "jacket, outerwear",
+            "ans": "うわぎ",
+            "remarks": "上着"
+        },
+        {
+            "id": 25,
+            "word": "underwear",
+            "ans": "したぎ",
+            "remarks": "下着"
+        },
+        {
+            "id": 26,
+            "word": "two or three days",
+            "ans": "２、３にち",
+            "remarks": "２、３日"
+        },
+        {
+            "id": 27,
+            "word": "before ~, by ~",
+            "ans": "までに",
+            "remarks": "indicating time limit"
+        },
+        {
+            "id": 28,
+            "word": "therefore, so",
+            "ans": "ですから",
+            "remarks": ""
+        },
+        {
+            "id": 29,
+            "word": "What's the matter?",
+            "ans": "どうしましたか",
+            "remarks": "What happened"
+        },
+        {
+            "id": 30,
+            "word": "throat",
+            "ans": "のど",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "I have pain in my throat.",
+            "ans": "のどがいたいです",
+            "remarks": "including but not limited to sore throat"
+        },
+        {
+            "id": 32,
+            "word": "cold, flu",
+            "ans": "かぜ",
+            "remarks": ""
+        },
+        {
+            "id": 33,
+            "word": "and, furthermore",
+            "ans": "それから",
+            "remarks": "from there"
+        },
+        {
+            "id": 34,
+            "word": "Take care of yourself",
+            "ans": "おだいじに",
+            "remarks": "said to people who are ill"
+        }
+    ]
+}

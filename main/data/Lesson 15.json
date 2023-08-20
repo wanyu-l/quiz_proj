@@ -1,0 +1,153 @@
+{
+    "id": 19,
+    "name": "Lesson 15",
+    "tags": [
+        "LAJ 2"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "put",
+            "ans": "おきます",
+            "remarks": "置___"
+        },
+        {
+            "id": 1,
+            "word": "make, produce",
+            "ans": "つくります",
+            "remarks": "作___"
+        },
+        {
+            "id": 2,
+            "word": "sell",
+            "ans": "うります",
+            "remarks": "売___"
+        },
+        {
+            "id": 3,
+            "word": "get to know",
+            "ans": "しります",
+            "remarks": "知____"
+        },
+        {
+            "id": 4,
+            "word": "know",
+            "ans": "しっています",
+            "remarks": "state of being"
+        },
+        {
+            "id": 5,
+            "word": "going to live",
+            "ans": "すみます",
+            "remarks": "住___"
+        },
+        {
+            "id": 6,
+            "word": "live",
+            "ans": "すんでいます",
+            "remarks": "state of being"
+        },
+        {
+            "id": 7,
+            "word": "do research",
+            "ans": "けんきゅうします",
+            "remarks": "研究___"
+        },
+        {
+            "id": 8,
+            "word": "material, data",
+            "ans": "しりょう",
+            "remarks": "資料"
+        },
+        {
+            "id": 9,
+            "word": "catalogue",
+            "ans": "カタログ",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "timetable",
+            "ans": "じこくひょう",
+            "remarks": "時刻表"
+        },
+        {
+            "id": 11,
+            "word": "clothes",
+            "ans": "ふく",
+            "remarks": "服"
+        },
+        {
+            "id": 12,
+            "word": "products",
+            "ans": "せいひん",
+            "remarks": "製品"
+        },
+        {
+            "id": 13,
+            "word": "software",
+            "ans": "ソフト",
+            "remarks": ""
+        },
+        {
+            "id": 14,
+            "word": "electronic dictionary",
+            "ans": "でんしじしょ",
+            "remarks": "電子辞書"
+        },
+        {
+            "id": 15,
+            "word": "economy",
+            "ans": "けいざい",
+            "remarks": "経済"
+        },
+        {
+            "id": 16,
+            "word": "municipal office, city hall",
+            "ans": "しやくしょ",
+            "remarks": "市役所"
+        },
+        {
+            "id": 17,
+            "word": "(senior) high school",
+            "ans": "こうこう",
+            "remarks": "高校"
+        },
+        {
+            "id": 18,
+            "word": "dentist",
+            "ans": "はいしゃ",
+            "remarks": "歯医者"
+        },
+        {
+            "id": 19,
+            "word": "single, unmarried",
+            "ans": "どくしん",
+            "remarks": "独身"
+        },
+        {
+            "id": 20,
+            "word": "I'm sorry",
+            "ans": "すみません",
+            "remarks": "apology"
+        },
+        {
+            "id": 21,
+            "word": "everyboby",
+            "ans": "みなさん",
+            "remarks": "皆__"
+        },
+        {
+            "id": 22,
+            "word": "remember, recollect",
+            "ans": "おもいだします",
+            "remarks": "思_出___"
+        },
+        {
+            "id": 23,
+            "word": "state of being",
+            "ans": "いらっしゃいます",
+            "remarks": "honorific equivalent of います"
+        }
+    ]
+}

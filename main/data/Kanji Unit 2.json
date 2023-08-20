@@ -1,0 +1,183 @@
+{
+    "id": 11,
+    "name": "Kanji Unit 2",
+    "tags": [
+        "LAJ 1"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "一月",
+            "ans": "いちがつ",
+            "remarks": "January"
+        },
+        {
+            "id": 1,
+            "word": "四月",
+            "ans": "しがつ",
+            "remarks": "April"
+        },
+        {
+            "id": 2,
+            "word": "七月",
+            "ans": "しちがつ",
+            "remarks": "July"
+        },
+        {
+            "id": 3,
+            "word": "九月",
+            "ans": "くがつ",
+            "remarks": "September"
+        },
+        {
+            "id": 4,
+            "word": "十一月",
+            "ans": "じゅういちがつ",
+            "remarks": "November"
+        },
+        {
+            "id": 5,
+            "word": "一日",
+            "ans": "ついたち",
+            "remarks": "1st Day of the Month"
+        },
+        {
+            "id": 6,
+            "word": "二日",
+            "ans": "ふつか",
+            "remarks": "2nd Day of the Month"
+        },
+        {
+            "id": 7,
+            "word": "三日",
+            "ans": "みっか",
+            "remarks": "3rd Day of the Month"
+        },
+        {
+            "id": 8,
+            "word": "四日",
+            "ans": "よっか",
+            "remarks": "4th Day of the Month"
+        },
+        {
+            "id": 9,
+            "word": "五日",
+            "ans": "いつか",
+            "remarks": "5th Day of the Month"
+        },
+        {
+            "id": 10,
+            "word": "六日",
+            "ans": "むいか",
+            "remarks": "6th Day of the Month"
+        },
+        {
+            "id": 11,
+            "word": "七日",
+            "ans": "なのか",
+            "remarks": "7th Day of the Month"
+        },
+        {
+            "id": 12,
+            "word": "八日",
+            "ans": "ようか",
+            "remarks": "8th Day of the Month"
+        },
+        {
+            "id": 13,
+            "word": "九日",
+            "ans": "ここのか",
+            "remarks": "9th Day of the Month"
+        },
+        {
+            "id": 14,
+            "word": "十日",
+            "ans": "とおか",
+            "remarks": "10th Day of the Month"
+        },
+        {
+            "id": 15,
+            "word": "十四日",
+            "ans": "じゅうよっか",
+            "remarks": "14th Day of the Month"
+        },
+        {
+            "id": 16,
+            "word": "二十日",
+            "ans": "はつか",
+            "remarks": "20th Day of the Month, irregular"
+        },
+        {
+            "id": 17,
+            "word": "百",
+            "ans": "ひゃく",
+            "remarks": ""
+        },
+        {
+            "id": 18,
+            "word": "三百",
+            "ans": "さんびゃく",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 19,
+            "word": "六百",
+            "ans": "ろっぴゃく",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 20,
+            "word": "八百",
+            "ans": "はっぴゃく",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 21,
+            "word": "千",
+            "ans": "せん",
+            "remarks": "Root form for counter"
+        },
+        {
+            "id": 22,
+            "word": "三千",
+            "ans": "さんぜん",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 23,
+            "word": "八千",
+            "ans": "はっせん",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 24,
+            "word": "一万",
+            "ans": "いちまん",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 25,
+            "word": "十万",
+            "ans": "じゅうまん",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 26,
+            "word": "一千万",
+            "ans": "いっせんまん",
+            "remarks": "Form change for counter"
+        },
+        {
+            "id": 27,
+            "word": "一万円",
+            "ans": "いちまんえん",
+            "remarks": ""
+        },
+        {
+            "id": 28,
+            "word": "二千五百円",
+            "ans": "にせんごひゃくえん",
+            "remarks": ""
+        }
+    ]
+}

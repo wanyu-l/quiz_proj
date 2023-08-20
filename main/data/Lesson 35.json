@@ -1,0 +1,231 @@
+{
+    "id": 57,
+    "name": "Lesson 35",
+    "tags": [
+        "LAJ 4"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "travel agency",
+            "ans": "りょこうしゃ",
+            "remarks": "旅行社"
+        },
+        {
+            "id": 1,
+            "word": "detailed",
+            "ans": "くわしい",
+            "remarks": ""
+        },
+        {
+            "id": 2,
+            "word": "key",
+            "ans": "キー",
+            "remarks": "not 鍵"
+        },
+        {
+            "id": 3,
+            "word": "chance, opportunity",
+            "ans": "きかい",
+            "remarks": "機会"
+        },
+        {
+            "id": 4,
+            "word": "Well, let me see",
+            "ans": "さあ",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "old days, ancient times",
+            "ans": "むかし",
+            "remarks": "昔"
+        },
+        {
+            "id": 6,
+            "word": "in that case",
+            "ans": "それなら",
+            "remarks": ""
+        },
+        {
+            "id": 7,
+            "word": "be in trouble, have a problem",
+            "ans": "こまります",
+            "remarks": "困___"
+        },
+        {
+            "id": 8,
+            "word": "history",
+            "ans": "れきし",
+            "remarks": "歴史"
+        },
+        {
+            "id": 9,
+            "word": "mountain climbing",
+            "ans": "やまのぼり",
+            "remarks": "山登_"
+        },
+        {
+            "id": 10,
+            "word": "draw (a circle), mark (with a circle), add",
+            "ans": "つけます",
+            "remarks": ""
+        },
+        {
+            "id": 11,
+            "word": "rooftop",
+            "ans": "おくじょう",
+            "remarks": "屋上"
+        },
+        {
+            "id": 12,
+            "word": "(the colour) change",
+            "ans": "かわります",
+            "remarks": "変____"
+        },
+        {
+            "id": 13,
+            "word": "equipment, facilities",
+            "ans": "せつび",
+            "remarks": "設備"
+        },
+        {
+            "id": 14,
+            "word": "island",
+            "ans": "しま",
+            "remarks": "島"
+        },
+        {
+            "id": 15,
+            "word": "lever",
+            "ans": "レバー",
+            "remarks": ""
+        },
+        {
+            "id": 16,
+            "word": "rice cooker",
+            "ans": "すいはんき",
+            "remarks": "炊飯器"
+        },
+        {
+            "id": 17,
+            "word": "Let's finish now",
+            "ans": "これでおわりましょう",
+            "remarks": "convo"
+        },
+        {
+            "id": 18,
+            "word": "circle",
+            "ans": "まる",
+            "remarks": "丸"
+        },
+        {
+            "id": 19,
+            "word": "be fixed, be repaired",
+            "ans": "なおります",
+            "remarks": "直___"
+        },
+        {
+            "id": 20,
+            "word": "curtain",
+            "ans": "カーテン",
+            "remarks": ""
+        },
+        {
+            "id": 21,
+            "word": "more",
+            "ans": "もっと",
+            "remarks": ""
+        },
+        {
+            "id": 22,
+            "word": "input; casual",
+            "ans": "にゅうりょくする",
+            "remarks": "入力___"
+        },
+        {
+            "id": 23,
+            "word": "recover from (sickness), get well",
+            "ans": "なおります",
+            "remarks": "治___"
+        },
+        {
+            "id": 24,
+            "word": "correct, right",
+            "ans": "ただしい",
+            "remarks": "正__"
+        },
+        {
+            "id": 25,
+            "word": "kana above or beside kanji",
+            "ans": "ふりがな",
+            "remarks": ""
+        },
+        {
+            "id": 26,
+            "word": "(flowers) bloom",
+            "ans": "さきます",
+            "remarks": "咲___"
+        },
+        {
+            "id": 27,
+            "word": "overnight bus",
+            "ans": "やこうバス",
+            "remarks": "夜行__"
+        },
+        {
+            "id": 28,
+            "word": "permission",
+            "ans": "きょか",
+            "remarks": "許可"
+        },
+        {
+            "id": 29,
+            "word": "click",
+            "ans": "クリックする",
+            "remarks": "casual"
+        },
+        {
+            "id": 30,
+            "word": "ski resort, ski area",
+            "ans": "スキーじょう",
+            "remarks": "___場"
+        },
+        {
+            "id": 31,
+            "word": "leaf",
+            "ans": "は",
+            "remarks": "葉"
+        },
+        {
+            "id": 32,
+            "word": "overseas",
+            "ans": "かいがい",
+            "remarks": "海外"
+        },
+        {
+            "id": 33,
+            "word": "neighbourhood, vicinity",
+            "ans": "きんじょ",
+            "remarks": "近所"
+        },
+        {
+            "id": 34,
+            "word": "string",
+            "ans": "ひも",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "over there, the other side",
+            "ans": "むこう",
+            "remarks": "向__"
+        },
+        {
+            "id": 36,
+            "word": "port, harbour",
+            "ans": "みなと",
+            "remarks": "港"
+        }
+    ]
+}

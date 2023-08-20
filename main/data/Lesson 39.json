@@ -1,0 +1,261 @@
+{
+    "id": 61,
+    "name": "Lesson 39",
+    "tags": [
+        "LAJ 4"
+    ],
+    "cards": [
+        {
+            "id": 0,
+            "word": "answer a question",
+            "ans": "しつもんにこたえます",
+            "remarks": ""
+        },
+        {
+            "id": 1,
+            "word": "a building fall down",
+            "ans": "ビルがたおれます",
+            "remarks": "intransitive"
+        },
+        {
+            "id": 2,
+            "word": "pass along a street",
+            "ans": "みちをとおります",
+            "remarks": ""
+        },
+        {
+            "id": 3,
+            "word": "die; transitive",
+            "ans": "しにます",
+            "remarks": ""
+        },
+        {
+            "id": 4,
+            "word": "be surprised",
+            "ans": "びっくりします",
+            "remarks": ""
+        },
+        {
+            "id": 5,
+            "word": "be disappointed",
+            "ans": "がっかりします",
+            "remarks": ""
+        },
+        {
+            "id": 6,
+            "word": "be relieved",
+            "ans": "あんしんします",
+            "remarks": "安心＿＿"
+        },
+        {
+            "id": 7,
+            "word": "quarrel, fight",
+            "ans": "けんかします",
+            "remarks": ""
+        },
+        {
+            "id": 8,
+            "word": "divorce",
+            "ans": "りこんします",
+            "remarks": ""
+        },
+        {
+            "id": 9,
+            "word": "get fat, gain weight",
+            "ans": "ふとります",
+            "remarks": ""
+        },
+        {
+            "id": 10,
+            "word": "get slim, lose weight",
+            "ans": "やせます",
+            "remarks": "瘦＿＿"
+        },
+        {
+            "id": 11,
+            "word": "complicated, complex",
+            "ans": "ふくざつ",
+            "remarks": "複雑「な」"
+        },
+        {
+            "id": 12,
+            "word": "obstructive, in the say",
+            "ans": "じゃま",
+            "remarks": "邪魔「な」"
+        },
+        {
+            "id": 13,
+            "word": "hard, tough, solid",
+            "ans": "かたい",
+            "remarks": "硬「＿」"
+        },
+        {
+            "id": 14,
+            "word": "soft, tender",
+            "ans": "やわらかい",
+            "remarks": "柔「＿＿」"
+        },
+        {
+            "id": 15,
+            "word": "dirty",
+            "ans": "きたない",
+            "remarks": "汚「＿」"
+        },
+        {
+            "id": 16,
+            "word": "glad, happy",
+            "ans": "うれしい",
+            "remarks": "嬉「＿」"
+        },
+        {
+            "id": 17,
+            "word": "sad",
+            "ans": "かなしい",
+            "remarks": "悲「＿＿」"
+        },
+        {
+            "id": 18,
+            "word": "embarrassed, ashamed",
+            "ans": "はずかしい",
+            "remarks": "恥「＿＿＿」"
+        },
+        {
+            "id": 19,
+            "word": "Prime Minister",
+            "ans": "しゅしょう",
+            "remarks": "首相"
+        },
+        {
+            "id": 20,
+            "word": "earthquake",
+            "ans": "じしん",
+            "remarks": "地震"
+        },
+        {
+            "id": 21,
+            "word": "tsunami, tidal wave",
+            "ans": "つなみ",
+            "remarks": ""
+        },
+        {
+            "id": 22,
+            "word": "typhoon",
+            "ans": "たいふう",
+            "remarks": "台風"
+        },
+        {
+            "id": 23,
+            "word": "thunder",
+            "ans": "かみなり",
+            "remarks": "雷"
+        },
+        {
+            "id": 24,
+            "word": "fire",
+            "ans": "かじ",
+            "remarks": "火事"
+        },
+        {
+            "id": 25,
+            "word": "accident",
+            "ans": "じこ",
+            "remarks": "事故"
+        },
+        {
+            "id": 26,
+            "word": "hiking",
+            "ans": "ハイキング",
+            "remarks": ""
+        },
+        {
+            "id": 27,
+            "word": "a meeting arranged with a view to marriage",
+            "ans": "みあい",
+            "remarks": "（お）見合「＿」; no need お"
+        },
+        {
+            "id": 28,
+            "word": "operation",
+            "ans": "そうさ",
+            "remarks": "操作"
+        },
+        {
+            "id": 29,
+            "word": "venue, event location",
+            "ans": "かいじょう",
+            "remarks": "会場"
+        },
+        {
+            "id": 30,
+            "word": "charge, fare, fee",
+            "ans": "だい",
+            "remarks": ""
+        },
+        {
+            "id": 31,
+            "word": "er (e.x. baker, grocer, etc.)",
+            "ans": "や",
+            "remarks": "屋"
+        },
+        {
+            "id": 32,
+            "word": "front desk, reception desk",
+            "ans": "フロント",
+            "remarks": ""
+        },
+        {
+            "id": 33,
+            "word": "room number",
+            "ans": "ごうしつ",
+            "remarks": ""
+        },
+        {
+            "id": 34,
+            "word": "towel",
+            "ans": "タオル",
+            "remarks": ""
+        },
+        {
+            "id": 35,
+            "word": "soap",
+            "ans": "せっけん",
+            "remarks": ""
+        },
+        {
+            "id": 36,
+            "word": "a great number (of people)",
+            "ans": "おおぜい",
+            "remarks": "大勢"
+        },
+        {
+            "id": 37,
+            "word": "Thank you for your hard work.",
+            "ans": "おつかれさまでした",
+            "remarks": "You have tired yourself"
+        },
+        {
+            "id": 38,
+            "word": "I'm coming.",
+            "ans": "うかがいます",
+            "remarks": "humble equivalent of 行きます"
+        },
+        {
+            "id": 39,
+            "word": "on the way, in the midst of~",
+            "ans": "とちゅうで",
+            "remarks": "途中「＿」"
+        },
+        {
+            "id": 40,
+            "word": "truck, lorry",
+            "ans": "トラック",
+            "remarks": ""
+        },
+        {
+            "id": 41,
+            "word": "bump, collide",
+            "ans": "ぶつかります",
+            "remarks": ""
+        }
+    ]
+}
