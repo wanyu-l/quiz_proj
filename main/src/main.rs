@@ -539,6 +539,7 @@ fn add_word_page_builder(set_id: usize) -> impl Widget<AppState> {
                 set_id,
                 lesson_name,
                 target_set.get_all_cards(),
+                target_set.get_all_tags(),
             ))
             .title(window_title);
             // clear data
@@ -622,6 +623,7 @@ fn edit_word_page_builder(
                 set_id,
                 lesson_name,
                 target_set.get_all_cards(),
+                target_set.get_all_tags(),
             ))
             .title(window_title);
             // clear data
@@ -660,6 +662,7 @@ fn view_page_builder(
     lesson_id: usize,
     lesson_name: String,
     cards: Vec<Card>,
+    tags: Vec<String>,
 ) -> impl Widget<AppState> {
     let return_to_main = Button::new("Return to Study Sets List").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
@@ -685,6 +688,9 @@ fn view_page_builder(
                     data.storage_unit
                         .get_study_set(lesson_id - 1)
                         .get_all_cards(),
+                    data.storage_unit
+                        .get_study_set(lesson_id - 1)
+                        .get_all_tags(),
                 ))
                 .title(MAIN_TITLE);
                 ctx.window().close();
@@ -704,6 +710,9 @@ fn view_page_builder(
                     data.storage_unit
                         .get_study_set(lesson_id + 1)
                         .get_all_cards(),
+                    data.storage_unit
+                        .get_study_set(lesson_id + 1)
+                        .get_all_tags(),
                 ))
                 .title(MAIN_TITLE);
                 ctx.window().close();
@@ -728,6 +737,19 @@ fn view_page_builder(
         .with_spacer(30.0)
         .with_child(lesson_label);
 
+    let mut tag_row = Flex::row();
+    for tag in tags {
+        let tag_label = Label::new(tag)
+            .with_text_size(20.0)
+            .with_text_color(Color::rgba(0.5, 0.3, 0.7, 1.0))
+            .padding(3.0)
+            .border(Color::YELLOW, 1.0);
+        tag_row = tag_row.with_child(tag_label).with_spacer(5.0);
+    }
+    list = list
+        .with_spacer(20.0)
+        .with_child(tag_row);
+
     let add_word_button = Button::new("Add Word").on_click(
         move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
             let new_win =
@@ -749,6 +771,7 @@ fn view_page_builder(
                     lesson_id,
                     window_title.clone(),
                     target_set.get_all_cards(),
+                    target_set.get_all_tags(),
                 ))
                 .title(window_title);
                 data.storage_unit.update_set(lesson_id, target_set);
@@ -915,6 +938,7 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
                     set_cloned_for_view.get_id(),
                     set_cloned_for_view.get_set_name(),
                     set_cloned_for_view.get_all_cards(),
+                    set_cloned_for_view.get_all_tags(),
                 ))
                 .title(set_cloned_for_view.get_set_name());
                 ctx.window().close();
