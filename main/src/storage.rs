@@ -202,15 +202,8 @@ impl Data for Storage {
 
 impl Storage {
     pub fn new() -> Storage {
-        let data_sets_json = Storage::read();
-        let read_data = serde_json::from_str(&data_sets_json);
-        match read_data {
-            Ok(data) => Storage { sets: data },
-            Err(_) => {
-                println!("Error Reading Data");
-                Storage { sets: vec![] }
-            }
-        }
+        let data_sets = Storage::read();
+        Storage { sets: data_sets }
     }
 
     pub fn get_all_tags(&self) -> Vec<String> {
@@ -243,7 +236,11 @@ impl Storage {
         sets
     }
 
-    pub fn get_study_set_by_tags(&self, tags: HashSet<String>, is_match_any: bool) -> Vec<StudySet> {
+    pub fn get_study_set_by_tags(
+        &self,
+        tags: HashSet<String>,
+        is_match_any: bool,
+    ) -> Vec<StudySet> {
         let mut sets = Vec::new();
         if is_match_any {
             for set in &self.sets {
@@ -282,6 +279,7 @@ impl Storage {
         }
     }
 
+    // todo: change saving to be individual sets if necessary
     pub fn save(&self) -> () {
         // clean up various ids
         let mut set_arr: Vec<StudySet> = vec![];
@@ -305,26 +303,79 @@ impl Storage {
             set_id += 1;
             set_arr.push(temp_set);
         }
-        let data = serde_json::to_string(&set_arr).expect("Error parsing data to json");
-        let mut file = OpenOptions::new()
-            .write(true)
-            .truncate(true)
-            .open(DATA_PATH)
-            .expect("Error opening data file");
-        file.write_all(data.as_bytes())
-            .expect("Error writing to file")
+        // let data = serde_json::to_string(&set_arr).expect("Error parsing data to json");
+        // let mut file = OpenOptions::new()
+        //     .write(true)
+        //     .truncate(true)
+        //     .open(DATA_PATH)
+        //     .expect("Error opening data file");
+        // file.write_all(data.as_bytes())
+        //     .expect("Error writing to file")
+
+        for set in set_arr {
+            let file_name = set.get_set_name();
+            let set_data = serde_json::to_string(&set).expect("Error parsing data to json");
+
+            let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
+            let open_res = OpenOptions::new()
+                .write(true)
+                .truncate(true)
+                .open(set_data_path.clone());
+            match open_res {
+                Ok(mut file) => {
+                    let _ = file.write_all(set_data.as_bytes());
+                }
+                Err(_) => {
+                    // file does not yet exist, create a file first
+                    File::create(set_data_path.clone()).expect("Failed to create data file");
+                    let mut file = OpenOptions::new()
+                        .write(true)
+                        .truncate(true)
+                        .open(set_data_path)
+                        .expect("Failed to open set data file");
+                    let _ = file.write_all(set_data.as_bytes());
+                }
+            }
+        }
     }
 
-    pub fn read() -> String {
-        let data = match fs::read_to_string(DATA_PATH) {
-            Ok(content) => content,
-            Err(_) => {
-                println!("No data found, creating data file....");
-                fs::create_dir(DATA_DIR_PATH).expect("Failed to create directory for data");
-                File::create(DATA_PATH).expect("Failed to create data file");
-                fs::read_to_string(DATA_PATH).expect("Failed to read created data file")
+    pub fn read() -> Vec<StudySet> {
+        // let data = match fs::read_to_string(DATA_PATH) {
+        //     Ok(content) => content,
+        //     Err(_) => {
+        //         println!("No data found, creating data file....");
+        //         fs::create_dir(DATA_DIR_PATH).expect("Failed to create directory for data");
+        //         File::create(DATA_PATH).expect("Failed to create data file");
+        //         fs::read_to_string(DATA_PATH).expect("Failed to read created data file")
+        //     }
+        // };
+        // let read_data = serde_json::from_str(&data).expect("Error parsing data sets");
+        // read_data
+        let mut sets: Vec<StudySet> = Vec::new();
+        match fs::read_dir(DATA_DIR_PATH) {
+            Ok(dir_entries) => {
+                for entry in dir_entries {
+                    if let Ok(entry) = entry {
+                        let set_data_file_path = entry.path();
+                        let set_data = fs::read_to_string(set_data_file_path)
+                            .expect("Failed to read set data file");
+                        let read_data_json = serde_json::from_str(&set_data);
+                        match read_data_json {
+                            Ok(data) => {
+                                sets.push(data);
+                            }
+                            Err(_) => {
+                                println!("Error Reading Data");
+                            }
+                        }
+                    } else {
+                        eprintln!("Error reading directory entry");
+                    }
+                }
             }
-        };
-        data
+            Err(err) => eprintln!("Error reading directory: {}", err),
+        }
+        sets.sort_by(|a, b| a.id.cmp(&b.id));
+        sets
     }
 }
