@@ -442,17 +442,17 @@ fn get_scores(user_answers: Vec<String>, study_set: StudySet) -> usize {
     score
 }
 
-fn get_ind(ans: String, input: String) -> usize {
-    let ans_arr = ans.chars().collect::<Vec<_>>();
-    let input_arr = input.chars().collect::<Vec<_>>();
-    let min_len = ans_arr.len().min(input_arr.len());
-    for i in 0..min_len {
-        if ans_arr[i] != input_arr[i] {
-            return i;
-        }
-    }
-    min_len
-}
+// fn get_ind(ans: String, input: String) -> usize {
+//     let ans_arr = ans.chars().collect::<Vec<_>>();
+//     let input_arr = input.chars().collect::<Vec<_>>();
+//     let min_len = ans_arr.len().min(input_arr.len());
+//     for i in 0..min_len {
+//         if ans_arr[i] != input_arr[i] {
+//             return i;
+//         }
+//     }
+//     min_len
+// }
 
 fn result_page_builder(
     test_name: String,

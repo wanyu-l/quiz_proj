@@ -331,6 +331,9 @@ impl Storage {
     }
 
     pub fn read() -> Vec<StudySet> {
+        if !fs::metadata(&DATA_DIR_PATH).is_ok() {
+            fs::create_dir(DATA_DIR_PATH).expect("Failed to Create Data Folder");
+        }
         let mut sets: Vec<StudySet> = Vec::new();
         match fs::read_dir(DATA_DIR_PATH) {
             Ok(dir_entries) => {
