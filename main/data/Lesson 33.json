@@ -1,201 +1,201 @@
 {
-    "id": 55,
-    "name": "Lesson 33",
-    "tags": [
-        "LAJ 4"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "Do Not Use",
-            "ans": "しようきんし",
-            "remarks": "使用禁止"
-        },
-        {
-            "id": 1,
-            "word": "ball",
-            "ans": "ボール",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "be away (from one's desk)",
-            "ans": "はずします",
-            "remarks": ""
-        },
-        {
-            "id": 3,
-            "word": "(not) any longer (used with negatives)",
-            "ans": "もう",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "In Use",
-            "ans": "しようちゅう",
-            "remarks": "使用中"
-        },
-        {
-            "id": 5,
-            "word": "All You Can Drink",
-            "ans": "のみほうだい",
-            "remarks": "飲_放題"
-        },
-        {
-            "id": 6,
-            "word": "entrance",
-            "ans": "いりぐち",
-            "remarks": "入口"
-        },
-        {
-            "id": 7,
-            "word": "Danger",
-            "ans": "きけん",
-            "remarks": "危険"
-        },
-        {
-            "id": 8,
-            "word": "~left",
-            "ans": "あと",
-            "remarks": "~5分で終わります"
-        },
-        {
-            "id": 9,
-            "word": "Free of Charge",
-            "ans": "むりょう",
-            "remarks": "無料"
-        },
-        {
-            "id": 10,
-            "word": "~ing",
-            "ans": "ちゅう",
-            "remarks": "～中"
-        },
-        {
-            "id": 11,
-            "word": "have (a telephone call)",
-            "ans": "あります",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "police (station)",
-            "ans": "けいさつ",
-            "remarks": "警察"
-        },
-        {
-            "id": 13,
-            "word": "however~, even if ~",
-            "ans": "いくら",
-            "remarks": "__むずかしくても~"
-        },
-        {
-            "id": 14,
-            "word": "Applications Wanted",
-            "ans": "ぼしゅうちゅう",
-            "remarks": "募集中"
-        },
-        {
-            "id": 15,
-            "word": "emergency exit",
-            "ans": "ひじょうぐち",
-            "remarks": "非常口"
-        },
-        {
-            "id": 16,
-            "word": "what (kind of ~)",
-            "ans": "どういう",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "exit",
-            "ans": "でぐち",
-            "remarks": "出口"
-        },
-        {
-            "id": 18,
-            "word": "same",
-            "ans": "おなじ",
-            "remarks": "同_"
-        },
-        {
-            "id": 19,
-            "word": "recycle",
-            "ans": "リサイクルします",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "about~",
-            "ans": "ほど",
-            "remarks": "~１０分__かかります"
-        },
-        {
-            "id": 21,
-            "word": "seat",
-            "ans": "せき",
-            "remarks": "席"
-        },
-        {
-            "id": 22,
-            "word": "no good, not permitted, impossible",
-            "ans": "だめ",
-            "remarks": "__（な）"
-        },
-        {
-            "id": 23,
-            "word": "fine",
-            "ans": "ばっきん",
-            "remarks": "罰金"
-        },
-        {
-            "id": 24,
-            "word": "parking violation",
-            "ans": "ちゅうしゃいはん",
-            "remarks": "駐車違反"
-        },
-        {
-            "id": 25,
-            "word": "Discount",
-            "ans": "わりびき",
-            "remarks": "割引"
-        },
-        {
-            "id": 26,
-            "word": "mark, symbol",
-            "ans": "マーク",
-            "remarks": ""
-        },
-        {
-            "id": 27,
-            "word": "deadline",
-            "ans": "しめきり",
-            "remarks": "締_切_"
-        },
-        {
-            "id": 28,
-            "word": "Keep Out",
-            "ans": "たちいりきんし",
-            "remarks": "立入禁止"
-        },
-        {
-            "id": 29,
-            "word": "Go Slow",
-            "ans": "じょこう",
-            "remarks": "徐行"
-        },
-        {
-            "id": 30,
-            "word": "regulation, rule",
-            "ans": "きそく",
-            "remarks": "規則"
-        },
-        {
-            "id": 31,
-            "word": "come back, return",
-            "ans": "もどります",
-            "remarks": "for person"
-        }
-    ]
+  "id": 55,
+  "name": "Lesson 33",
+  "tags": [
+    "LAJ 4"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "Do Not Use",
+      "ans": "しようきんし",
+      "remarks": "使用禁止"
+    },
+    {
+      "id": 1,
+      "word": "ball",
+      "ans": "ボール",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "be away (from one's desk)",
+      "ans": "はずします",
+      "remarks": ""
+    },
+    {
+      "id": 3,
+      "word": "(not) any longer (used with negatives)",
+      "ans": "もう",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "In Use",
+      "ans": "しようちゅう",
+      "remarks": "使用中"
+    },
+    {
+      "id": 5,
+      "word": "All You Can Drink",
+      "ans": "のみほうだい",
+      "remarks": "飲_放題"
+    },
+    {
+      "id": 6,
+      "word": "entrance",
+      "ans": "いりぐち",
+      "remarks": "入口"
+    },
+    {
+      "id": 7,
+      "word": "Danger",
+      "ans": "きけん",
+      "remarks": "危険"
+    },
+    {
+      "id": 8,
+      "word": "~left",
+      "ans": "あと",
+      "remarks": "~5分で終わります"
+    },
+    {
+      "id": 9,
+      "word": "Free of Charge",
+      "ans": "むりょう",
+      "remarks": "無料"
+    },
+    {
+      "id": 10,
+      "word": "~ing",
+      "ans": "ちゅう",
+      "remarks": "～中"
+    },
+    {
+      "id": 11,
+      "word": "have (a telephone call)",
+      "ans": "あります",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "police (station)",
+      "ans": "けいさつ",
+      "remarks": "警察"
+    },
+    {
+      "id": 13,
+      "word": "however~, even if ~",
+      "ans": "いくら",
+      "remarks": "__むずかしくても~"
+    },
+    {
+      "id": 14,
+      "word": "Applications Wanted",
+      "ans": "ぼしゅうちゅう",
+      "remarks": "募集中"
+    },
+    {
+      "id": 15,
+      "word": "emergency exit",
+      "ans": "ひじょうぐち",
+      "remarks": "非常口"
+    },
+    {
+      "id": 16,
+      "word": "what (kind of ~)",
+      "ans": "どういう",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "exit",
+      "ans": "でぐち",
+      "remarks": "出口"
+    },
+    {
+      "id": 18,
+      "word": "same",
+      "ans": "おなじ",
+      "remarks": "同_"
+    },
+    {
+      "id": 19,
+      "word": "recycle",
+      "ans": "リサイクルします",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "about~",
+      "ans": "ほど",
+      "remarks": "~１０分__かかります"
+    },
+    {
+      "id": 21,
+      "word": "seat",
+      "ans": "せき",
+      "remarks": "席"
+    },
+    {
+      "id": 22,
+      "word": "no good, not permitted, impossible",
+      "ans": "だめ",
+      "remarks": "__（な）"
+    },
+    {
+      "id": 23,
+      "word": "fine",
+      "ans": "ばっきん",
+      "remarks": "罰金"
+    },
+    {
+      "id": 24,
+      "word": "parking violation",
+      "ans": "ちゅうしゃいはん",
+      "remarks": "駐車違反"
+    },
+    {
+      "id": 25,
+      "word": "Discount",
+      "ans": "わりびき",
+      "remarks": "割引"
+    },
+    {
+      "id": 26,
+      "word": "mark, symbol",
+      "ans": "マーク",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "deadline",
+      "ans": "しめきり",
+      "remarks": "締_切_"
+    },
+    {
+      "id": 28,
+      "word": "Keep Out",
+      "ans": "たちいりきんし",
+      "remarks": "立入禁止"
+    },
+    {
+      "id": 29,
+      "word": "Go Slow",
+      "ans": "じょこう",
+      "remarks": "徐行"
+    },
+    {
+      "id": 30,
+      "word": "regulation, rule",
+      "ans": "きそく",
+      "remarks": "規則"
+    },
+    {
+      "id": 31,
+      "word": "come back, return",
+      "ans": "もどります",
+      "remarks": "for person"
+    }
+  ]
 }

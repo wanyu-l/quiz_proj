@@ -1,333 +1,333 @@
 {
-    "id": 3,
-    "name": "Lesson 4",
-    "tags": [
-        "LAJ 1"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "get up, wake up",
-            "ans": "おきます",
-            "remarks": "verb"
-        },
-        {
-            "id": 1,
-            "word": "sleep, go to bed",
-            "ans": "ねます",
-            "remarks": "verb"
-        },
-        {
-            "id": 2,
-            "word": "work",
-            "ans": "はたらきます",
-            "remarks": "verb"
-        },
-        {
-            "id": 3,
-            "word": "take a rest, take a holiday",
-            "ans": "やすみます",
-            "remarks": "verb"
-        },
-        {
-            "id": 4,
-            "word": "study",
-            "ans": "べんきょうします",
-            "remarks": "verb"
-        },
-        {
-            "id": 5,
-            "word": "finish",
-            "ans": "おわります",
-            "remarks": "verb"
-        },
-        {
-            "id": 6,
-            "word": "department store",
-            "ans": "デパート",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "bank",
-            "ans": "ぎんこう",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "post office",
-            "ans": "ゆうびんきょく",
-            "remarks": ""
-        },
-        {
-            "id": 9,
-            "word": "library",
-            "ans": "としょかん",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "art museum",
-            "ans": "びじゅつかん",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "now",
-            "ans": "いま",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "-- o'clock",
-            "ans": "じ",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "-- minutes",
-            "ans": "ふん",
-            "remarks": "has irregular ver."
-        },
-        {
-            "id": 14,
-            "word": "half past (time) --",
-            "ans": "はん",
-            "remarks": ""
-        },
-        {
-            "id": 15,
-            "word": "what time",
-            "ans": "なんじ",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "what minute",
-            "ans": "なんぷん",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "a.m.",
-            "ans": "ごぜん",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "p.m.",
-            "ans": "ごご",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "morning",
-            "ans": "あさ",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "daytime, noon",
-            "ans": "ひる",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "night, evening",
-            "ans": "ばん",
-            "remarks": "(usually used in compound words)"
-        },
-        {
-            "id": 22,
-            "word": "night, evening",
-            "ans": "よる",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "the day before yesterday",
-            "ans": "おととい",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "yesterday",
-            "ans": "きのう",
-            "remarks": ""
-        },
-        {
-            "id": 25,
-            "word": "today",
-            "ans": "きょう",
-            "remarks": ""
-        },
-        {
-            "id": 26,
-            "word": "tomorrow",
-            "ans": "あした",
-            "remarks": ""
-        },
-        {
-            "id": 27,
-            "word": "the day after tomorrow",
-            "ans": "あさって",
-            "remarks": ""
-        },
-        {
-            "id": 28,
-            "word": "this morning",
-            "ans": "けさ",
-            "remarks": ""
-        },
-        {
-            "id": 29,
-            "word": "tonight",
-            "ans": "こんばん",
-            "remarks": ""
-        },
-        {
-            "id": 30,
-            "word": "rest, holiday, day off",
-            "ans": "やすみ",
-            "remarks": ""
-        },
-        {
-            "id": 31,
-            "word": "lunch break",
-            "ans": "ひるやすみ",
-            "remarks": ""
-        },
-        {
-            "id": 32,
-            "word": "exam",
-            "ans": "しけん",
-            "remarks": ""
-        },
-        {
-            "id": 33,
-            "word": "meeting, conference",
-            "ans": "かいぎ",
-            "remarks": ""
-        },
-        {
-            "id": 34,
-            "word": "movie",
-            "ans": "えいが",
-            "remarks": "映画"
-        },
-        {
-            "id": 35,
-            "word": "part-time job",
-            "ans": "アルバイト",
-            "remarks": ""
-        },
-        {
-            "id": 36,
-            "word": "every morning",
-            "ans": "まいあさ",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "every night",
-            "ans": "まいばん",
-            "remarks": ""
-        },
-        {
-            "id": 38,
-            "word": "every day",
-            "ans": "まいにち",
-            "remarks": ""
-        },
-        {
-            "id": 39,
-            "word": "Monday",
-            "ans": "げつようび",
-            "remarks": ""
-        },
-        {
-            "id": 40,
-            "word": "Tuesday",
-            "ans": "かようび",
-            "remarks": ""
-        },
-        {
-            "id": 41,
-            "word": "Wednesday",
-            "ans": "すいようび",
-            "remarks": ""
-        },
-        {
-            "id": 42,
-            "word": "Thursday",
-            "ans": "もくようび",
-            "remarks": ""
-        },
-        {
-            "id": 43,
-            "word": "Friday",
-            "ans": "きんようび",
-            "remarks": ""
-        },
-        {
-            "id": 44,
-            "word": "Saturday",
-            "ans": "どようび",
-            "remarks": ""
-        },
-        {
-            "id": 45,
-            "word": "Sunday",
-            "ans": "にちようび",
-            "remarks": ""
-        },
-        {
-            "id": 46,
-            "word": "what day of the week",
-            "ans": "なんようび",
-            "remarks": ""
-        },
-        {
-            "id": 47,
-            "word": "from --",
-            "ans": "から",
-            "remarks": ""
-        },
-        {
-            "id": 48,
-            "word": "until --",
-            "ans": "まで",
-            "remarks": ""
-        },
-        {
-            "id": 49,
-            "word": "-- and --",
-            "ans": "と",
-            "remarks": "particle"
-        },
-        {
-            "id": 50,
-            "word": "telephone number",
-            "ans": "でんわばんごう",
-            "remarks": ""
-        },
-        {
-            "id": 51,
-            "word": "what number",
-            "ans": "なんばん",
-            "remarks": ""
-        },
-        {
-            "id": 52,
-            "word": "That's tough, isn't it?",
-            "ans": "たいへんですね",
-            "remarks": ""
-        },
-        {
-            "id": 53,
-            "word": "What time are you open to?",
-            "ans": "そちらはなんじまでですか",
-            "remarks": "polite"
-        }
-    ]
+  "id": 3,
+  "name": "Lesson 4",
+  "tags": [
+    "LAJ 1"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "get up, wake up",
+      "ans": "おきます",
+      "remarks": "verb"
+    },
+    {
+      "id": 1,
+      "word": "sleep, go to bed",
+      "ans": "ねます",
+      "remarks": "verb"
+    },
+    {
+      "id": 2,
+      "word": "work",
+      "ans": "はたらきます",
+      "remarks": "verb"
+    },
+    {
+      "id": 3,
+      "word": "take a rest, take a holiday",
+      "ans": "やすみます",
+      "remarks": "verb"
+    },
+    {
+      "id": 4,
+      "word": "study",
+      "ans": "べんきょうします",
+      "remarks": "verb"
+    },
+    {
+      "id": 5,
+      "word": "finish",
+      "ans": "おわります",
+      "remarks": "verb"
+    },
+    {
+      "id": 6,
+      "word": "department store",
+      "ans": "デパート",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "bank",
+      "ans": "ぎんこう",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "post office",
+      "ans": "ゆうびんきょく",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "library",
+      "ans": "としょかん",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "art museum",
+      "ans": "びじゅつかん",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "now",
+      "ans": "いま",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "-- o'clock",
+      "ans": "じ",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "-- minutes",
+      "ans": "ふん",
+      "remarks": "has irregular ver."
+    },
+    {
+      "id": 14,
+      "word": "half past (time) --",
+      "ans": "はん",
+      "remarks": ""
+    },
+    {
+      "id": 15,
+      "word": "what time",
+      "ans": "なんじ",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "what minute",
+      "ans": "なんぷん",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "a.m.",
+      "ans": "ごぜん",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "p.m.",
+      "ans": "ごご",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "morning",
+      "ans": "あさ",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "daytime, noon",
+      "ans": "ひる",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "night, evening",
+      "ans": "ばん",
+      "remarks": "(usually used in compound words)"
+    },
+    {
+      "id": 22,
+      "word": "night, evening",
+      "ans": "よる",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "the day before yesterday",
+      "ans": "おととい",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "yesterday",
+      "ans": "きのう",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "today",
+      "ans": "きょう",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "tomorrow",
+      "ans": "あした",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "the day after tomorrow",
+      "ans": "あさって",
+      "remarks": ""
+    },
+    {
+      "id": 28,
+      "word": "this morning",
+      "ans": "けさ",
+      "remarks": ""
+    },
+    {
+      "id": 29,
+      "word": "tonight",
+      "ans": "こんばん",
+      "remarks": ""
+    },
+    {
+      "id": 30,
+      "word": "rest, holiday, day off",
+      "ans": "やすみ",
+      "remarks": ""
+    },
+    {
+      "id": 31,
+      "word": "lunch break",
+      "ans": "ひるやすみ",
+      "remarks": ""
+    },
+    {
+      "id": 32,
+      "word": "exam",
+      "ans": "しけん",
+      "remarks": ""
+    },
+    {
+      "id": 33,
+      "word": "meeting, conference",
+      "ans": "かいぎ",
+      "remarks": ""
+    },
+    {
+      "id": 34,
+      "word": "movie",
+      "ans": "えいが",
+      "remarks": "映画"
+    },
+    {
+      "id": 35,
+      "word": "part-time job",
+      "ans": "アルバイト",
+      "remarks": ""
+    },
+    {
+      "id": 36,
+      "word": "every morning",
+      "ans": "まいあさ",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "every night",
+      "ans": "まいばん",
+      "remarks": ""
+    },
+    {
+      "id": 38,
+      "word": "every day",
+      "ans": "まいにち",
+      "remarks": ""
+    },
+    {
+      "id": 39,
+      "word": "Monday",
+      "ans": "げつようび",
+      "remarks": ""
+    },
+    {
+      "id": 40,
+      "word": "Tuesday",
+      "ans": "かようび",
+      "remarks": ""
+    },
+    {
+      "id": 41,
+      "word": "Wednesday",
+      "ans": "すいようび",
+      "remarks": ""
+    },
+    {
+      "id": 42,
+      "word": "Thursday",
+      "ans": "もくようび",
+      "remarks": ""
+    },
+    {
+      "id": 43,
+      "word": "Friday",
+      "ans": "きんようび",
+      "remarks": ""
+    },
+    {
+      "id": 44,
+      "word": "Saturday",
+      "ans": "どようび",
+      "remarks": ""
+    },
+    {
+      "id": 45,
+      "word": "Sunday",
+      "ans": "にちようび",
+      "remarks": ""
+    },
+    {
+      "id": 46,
+      "word": "what day of the week",
+      "ans": "なんようび",
+      "remarks": ""
+    },
+    {
+      "id": 47,
+      "word": "from --",
+      "ans": "から",
+      "remarks": ""
+    },
+    {
+      "id": 48,
+      "word": "until --",
+      "ans": "まで",
+      "remarks": ""
+    },
+    {
+      "id": 49,
+      "word": "-- and --",
+      "ans": "と",
+      "remarks": "particle"
+    },
+    {
+      "id": 50,
+      "word": "telephone number",
+      "ans": "でんわばんごう",
+      "remarks": ""
+    },
+    {
+      "id": 51,
+      "word": "what number",
+      "ans": "なんばん",
+      "remarks": ""
+    },
+    {
+      "id": 52,
+      "word": "That's tough, isn't it?",
+      "ans": "たいへんですね",
+      "remarks": ""
+    },
+    {
+      "id": 53,
+      "word": "What time are you open to?",
+      "ans": "そちらはなんじまでですか",
+      "remarks": "polite"
+    }
+  ]
 }

@@ -1,321 +1,321 @@
 {
-    "id": 16,
-    "name": "Lesson 12",
-    "tags": [
-        "LAJ 2"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "easy, simple",
-            "ans": "かんたん",
-            "remarks": "簡単［な］"
-        },
-        {
-            "id": 1,
-            "word": "near",
-            "ans": "ちかい",
-            "remarks": "近_"
-        },
-        {
-            "id": 2,
-            "word": "far",
-            "ans": "とおい",
-            "remarks": "遠_"
-        },
-        {
-            "id": 3,
-            "word": "fast",
-            "ans": "はやい",
-            "remarks": "速_"
-        },
-        {
-            "id": 4,
-            "word": "early",
-            "ans": "はやい",
-            "remarks": "早_"
-        },
-        {
-            "id": 5,
-            "word": "slow, late",
-            "ans": "おそい",
-            "remarks": "遅_"
-        },
-        {
-            "id": 6,
-            "word": "many, much",
-            "ans": "おおい",
-            "remarks": "多_"
-        },
-        {
-            "id": 7,
-            "word": "many people",
-            "ans": "ひとがおおい",
-            "remarks": "remember particle"
-        },
-        {
-            "id": 8,
-            "word": "few, little",
-            "ans": "すくない",
-            "remarks": "少__"
-        },
-        {
-            "id": 9,
-            "word": "few people",
-            "ans": "ひとがすくない",
-            "remarks": "remember particle"
-        },
-        {
-            "id": 10,
-            "word": "warm (weather)",
-            "ans": "あたたかい",
-            "remarks": "暖__"
-        },
-        {
-            "id": 11,
-            "word": "warm (to touch)",
-            "ans": "あたたかい",
-            "remarks": "温__"
-        },
-        {
-            "id": 12,
-            "word": "cool (weather)",
-            "ans": "すずしい",
-            "remarks": "涼__"
-        },
-        {
-            "id": 13,
-            "word": "sweet",
-            "ans": "あまい",
-            "remarks": "甘_"
-        },
-        {
-            "id": 14,
-            "word": "hot (taste), spicy",
-            "ans": "からい",
-            "remarks": "辛_"
-        },
-        {
-            "id": 15,
-            "word": "heavy",
-            "ans": "おもい",
-            "remarks": "重_"
-        },
-        {
-            "id": 16,
-            "word": "light",
-            "ans": "かるい",
-            "remarks": "軽_"
-        },
-        {
-            "id": 17,
-            "word": "prefer coffee",
-            "ans": "コーヒーがいい",
-            "remarks": "when ordering / offered drink"
-        },
-        {
-            "id": 18,
-            "word": "season",
-            "ans": "きせつ",
-            "remarks": "季節"
-        },
-        {
-            "id": 19,
-            "word": "spring",
-            "ans": "はる",
-            "remarks": "春"
-        },
-        {
-            "id": 20,
-            "word": "summer",
-            "ans": "なつ",
-            "remarks": "夏"
-        },
-        {
-            "id": 21,
-            "word": "autumn, fall",
-            "ans": "あき",
-            "remarks": "秋"
-        },
-        {
-            "id": 22,
-            "word": "winter",
-            "ans": "ふゆ",
-            "remarks": "冬"
-        },
-        {
-            "id": 23,
-            "word": "weather",
-            "ans": "てんき",
-            "remarks": "天気"
-        },
-        {
-            "id": 24,
-            "word": "rain",
-            "ans": "あめ",
-            "remarks": "雨"
-        },
-        {
-            "id": 25,
-            "word": "snow",
-            "ans": "ゆき",
-            "remarks": "雪"
-        },
-        {
-            "id": 26,
-            "word": "cloudy",
-            "ans": "くもり",
-            "remarks": "曇_"
-        },
-        {
-            "id": 27,
-            "word": "hotel",
-            "ans": "ホテル",
-            "remarks": ""
-        },
-        {
-            "id": 28,
-            "word": "airport",
-            "ans": "くうこう",
-            "remarks": "空港"
-        },
-        {
-            "id": 29,
-            "word": "sea, ocean",
-            "ans": "うみ",
-            "remarks": "海"
-        },
-        {
-            "id": 30,
-            "word": "world",
-            "ans": "せかい",
-            "remarks": "世界"
-        },
-        {
-            "id": 31,
-            "word": "party",
-            "ans": "パーティー",
-            "remarks": ""
-        },
-        {
-            "id": 32,
-            "word": "festival",
-            "ans": "まつり",
-            "remarks": "［お］祭_"
-        },
-        {
-            "id": 33,
-            "word": "beef and vegetable hot pot",
-            "ans": "すきやき",
-            "remarks": "__焼_"
-        },
-        {
-            "id": 34,
-            "word": "sashimi",
-            "ans": "さしみ",
-            "remarks": "刺身"
-        },
-        {
-            "id": 35,
-            "word": "sushi",
-            "ans": "すし",
-            "remarks": "［お］寿司"
-        },
-        {
-            "id": 36,
-            "word": "tempura",
-            "ans": "てんぷら",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "pork",
-            "ans": "ぶたにく",
-            "remarks": "豚肉"
-        },
-        {
-            "id": 38,
-            "word": "chicken",
-            "ans": "とりにく",
-            "remarks": "鶏肉"
-        },
-        {
-            "id": 39,
-            "word": "beef",
-            "ans": "ぎゅうにく",
-            "remarks": "牛肉"
-        },
-        {
-            "id": 40,
-            "word": "lemon",
-            "ans": "レモン",
-            "remarks": ""
-        },
-        {
-            "id": 41,
-            "word": "Japanese flower arrangement",
-            "ans": "いけばな",
-            "remarks": "生_花"
-        },
-        {
-            "id": 42,
-            "word": "maple, red leaves of autumn",
-            "ans": "もみじ",
-            "remarks": "紅葉"
-        },
-        {
-            "id": 43,
-            "word": "which one (of two things)",
-            "ans": "どちら",
-            "remarks": ""
-        },
-        {
-            "id": 44,
-            "word": "both",
-            "ans": "どちらも",
-            "remarks": ""
-        },
-        {
-            "id": 45,
-            "word": "the most",
-            "ans": "いちばん",
-            "remarks": "一番"
-        },
-        {
-            "id": 46,
-            "word": "by far, much (more)",
-            "ans": "ずっと",
-            "remarks": ""
-        },
-        {
-            "id": 47,
-            "word": "for the first time",
-            "ans": "はじめて",
-            "remarks": "初__"
-        },
-        {
-            "id": 48,
-            "word": "I'm home.",
-            "ans": "ただいま",
-            "remarks": "convo"
-        },
-        {
-            "id": 49,
-            "word": "Welcome home",
-            "ans": "おかえりなさい",
-            "remarks": "convo"
-        },
-        {
-            "id": 50,
-            "word": "Wow, look at all those people!",
-            "ans": "わあ、すごいひとですね",
-            "remarks": "there is a comma"
-        },
-        {
-            "id": 51,
-            "word": "I'm tired.",
-            "ans": "つかれました",
-            "remarks": ""
-        }
-    ]
+  "id": 16,
+  "name": "Lesson 12",
+  "tags": [
+    "LAJ 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "easy, simple",
+      "ans": "かんたん",
+      "remarks": "簡単［な］"
+    },
+    {
+      "id": 1,
+      "word": "near",
+      "ans": "ちかい",
+      "remarks": "近_"
+    },
+    {
+      "id": 2,
+      "word": "far",
+      "ans": "とおい",
+      "remarks": "遠_"
+    },
+    {
+      "id": 3,
+      "word": "fast",
+      "ans": "はやい",
+      "remarks": "速_"
+    },
+    {
+      "id": 4,
+      "word": "early",
+      "ans": "はやい",
+      "remarks": "早_"
+    },
+    {
+      "id": 5,
+      "word": "slow, late",
+      "ans": "おそい",
+      "remarks": "遅_"
+    },
+    {
+      "id": 6,
+      "word": "many, much",
+      "ans": "おおい",
+      "remarks": "多_"
+    },
+    {
+      "id": 7,
+      "word": "many people",
+      "ans": "ひとがおおい",
+      "remarks": "remember particle"
+    },
+    {
+      "id": 8,
+      "word": "few, little",
+      "ans": "すくない",
+      "remarks": "少__"
+    },
+    {
+      "id": 9,
+      "word": "few people",
+      "ans": "ひとがすくない",
+      "remarks": "remember particle"
+    },
+    {
+      "id": 10,
+      "word": "warm (weather)",
+      "ans": "あたたかい",
+      "remarks": "暖__"
+    },
+    {
+      "id": 11,
+      "word": "warm (to touch)",
+      "ans": "あたたかい",
+      "remarks": "温__"
+    },
+    {
+      "id": 12,
+      "word": "cool (weather)",
+      "ans": "すずしい",
+      "remarks": "涼__"
+    },
+    {
+      "id": 13,
+      "word": "sweet",
+      "ans": "あまい",
+      "remarks": "甘_"
+    },
+    {
+      "id": 14,
+      "word": "hot (taste), spicy",
+      "ans": "からい",
+      "remarks": "辛_"
+    },
+    {
+      "id": 15,
+      "word": "heavy",
+      "ans": "おもい",
+      "remarks": "重_"
+    },
+    {
+      "id": 16,
+      "word": "light",
+      "ans": "かるい",
+      "remarks": "軽_"
+    },
+    {
+      "id": 17,
+      "word": "prefer coffee",
+      "ans": "コーヒーがいい",
+      "remarks": "when ordering / offered drink"
+    },
+    {
+      "id": 18,
+      "word": "season",
+      "ans": "きせつ",
+      "remarks": "季節"
+    },
+    {
+      "id": 19,
+      "word": "spring",
+      "ans": "はる",
+      "remarks": "春"
+    },
+    {
+      "id": 20,
+      "word": "summer",
+      "ans": "なつ",
+      "remarks": "夏"
+    },
+    {
+      "id": 21,
+      "word": "autumn, fall",
+      "ans": "あき",
+      "remarks": "秋"
+    },
+    {
+      "id": 22,
+      "word": "winter",
+      "ans": "ふゆ",
+      "remarks": "冬"
+    },
+    {
+      "id": 23,
+      "word": "weather",
+      "ans": "てんき",
+      "remarks": "天気"
+    },
+    {
+      "id": 24,
+      "word": "rain",
+      "ans": "あめ",
+      "remarks": "雨"
+    },
+    {
+      "id": 25,
+      "word": "snow",
+      "ans": "ゆき",
+      "remarks": "雪"
+    },
+    {
+      "id": 26,
+      "word": "cloudy",
+      "ans": "くもり",
+      "remarks": "曇_"
+    },
+    {
+      "id": 27,
+      "word": "hotel",
+      "ans": "ホテル",
+      "remarks": ""
+    },
+    {
+      "id": 28,
+      "word": "airport",
+      "ans": "くうこう",
+      "remarks": "空港"
+    },
+    {
+      "id": 29,
+      "word": "sea, ocean",
+      "ans": "うみ",
+      "remarks": "海"
+    },
+    {
+      "id": 30,
+      "word": "world",
+      "ans": "せかい",
+      "remarks": "世界"
+    },
+    {
+      "id": 31,
+      "word": "party",
+      "ans": "パーティー",
+      "remarks": ""
+    },
+    {
+      "id": 32,
+      "word": "festival",
+      "ans": "まつり",
+      "remarks": "［お］祭_"
+    },
+    {
+      "id": 33,
+      "word": "beef and vegetable hot pot",
+      "ans": "すきやき",
+      "remarks": "__焼_"
+    },
+    {
+      "id": 34,
+      "word": "sashimi",
+      "ans": "さしみ",
+      "remarks": "刺身"
+    },
+    {
+      "id": 35,
+      "word": "sushi",
+      "ans": "すし",
+      "remarks": "［お］寿司"
+    },
+    {
+      "id": 36,
+      "word": "tempura",
+      "ans": "てんぷら",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "pork",
+      "ans": "ぶたにく",
+      "remarks": "豚肉"
+    },
+    {
+      "id": 38,
+      "word": "chicken",
+      "ans": "とりにく",
+      "remarks": "鶏肉"
+    },
+    {
+      "id": 39,
+      "word": "beef",
+      "ans": "ぎゅうにく",
+      "remarks": "牛肉"
+    },
+    {
+      "id": 40,
+      "word": "lemon",
+      "ans": "レモン",
+      "remarks": ""
+    },
+    {
+      "id": 41,
+      "word": "Japanese flower arrangement",
+      "ans": "いけばな",
+      "remarks": "生_花"
+    },
+    {
+      "id": 42,
+      "word": "maple, red leaves of autumn",
+      "ans": "もみじ",
+      "remarks": "紅葉"
+    },
+    {
+      "id": 43,
+      "word": "which one (of two things)",
+      "ans": "どちら",
+      "remarks": ""
+    },
+    {
+      "id": 44,
+      "word": "both",
+      "ans": "どちらも",
+      "remarks": ""
+    },
+    {
+      "id": 45,
+      "word": "the most",
+      "ans": "いちばん",
+      "remarks": "一番"
+    },
+    {
+      "id": 46,
+      "word": "by far, much (more)",
+      "ans": "ずっと",
+      "remarks": ""
+    },
+    {
+      "id": 47,
+      "word": "for the first time",
+      "ans": "はじめて",
+      "remarks": "初__"
+    },
+    {
+      "id": 48,
+      "word": "I'm home.",
+      "ans": "ただいま",
+      "remarks": "convo"
+    },
+    {
+      "id": 49,
+      "word": "Welcome home",
+      "ans": "おかえりなさい",
+      "remarks": "convo"
+    },
+    {
+      "id": 50,
+      "word": "Wow, look at all those people!",
+      "ans": "わあ、すごいひとですね",
+      "remarks": "there is a comma"
+    },
+    {
+      "id": 51,
+      "word": "I'm tired.",
+      "ans": "つかれました",
+      "remarks": ""
+    }
+  ]
 }

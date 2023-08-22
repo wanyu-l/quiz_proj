@@ -1,237 +1,237 @@
 {
-    "id": 40,
-    "name": "Lesson 26",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "check, take a look at",
-            "ans": "みます",
-            "remarks": "見/診__"
-        },
-        {
-            "id": 1,
-            "word": "look for, search",
-            "ans": "さがします",
-            "remarks": "探/捜____"
-        },
-        {
-            "id": 2,
-            "word": "be late for something",
-            "ans": "じかんにおくれます",
-            "remarks": "時間_遅___"
-        },
-        {
-            "id": 3,
-            "word": "be in time for something",
-            "ans": "じかんにまにあいます",
-            "remarks": "時間_間_合____"
-        },
-        {
-            "id": 4,
-            "word": "do",
-            "ans": "やります",
-            "remarks": "casual"
-        },
-        {
-            "id": 5,
-            "word": "pick up",
-            "ans": "ひろいます",
-            "remarks": "拾___"
-        },
-        {
-            "id": 6,
-            "word": "get in touch with, contact",
-            "ans": "れんらくします",
-            "remarks": "連絡___"
-        },
-        {
-            "id": 7,
-            "word": "feel well",
-            "ans": "きぶんがいい",
-            "remarks": "気分____"
-        },
-        {
-            "id": 8,
-            "word": "feel ill",
-            "ans": "きぶんがわるい",
-            "remarks": "気分_悪_"
-        },
-        {
-            "id": 9,
-            "word": "athletic meet, sports day",
-            "ans": "うんどうかい",
-            "remarks": "運動会"
-        },
-        {
-            "id": 10,
-            "word": "Bon Festival dance",
-            "ans": "ぼんおどり",
-            "remarks": "盆踊_"
-        },
-        {
-            "id": 11,
-            "word": "flea market",
-            "ans": "フリーマーケット",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "place",
-            "ans": "ばしょ",
-            "remarks": "場所"
-        },
-        {
-            "id": 13,
-            "word": "volunteer",
-            "ans": "ボランティア",
-            "remarks": ""
-        },
-        {
-            "id": 14,
-            "word": "wallet, purse",
-            "ans": "さいふ",
-            "remarks": "財布"
-        },
-        {
-            "id": 15,
-            "word": "garbage, rubbish",
-            "ans": "ごみ",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "the Diet Building",
-            "ans": "こっかいぎじどう",
-            "remarks": "国会議事堂"
-        },
-        {
-            "id": 17,
-            "word": "weekday",
-            "ans": "へいじつ",
-            "remarks": "平日"
-        },
-        {
-            "id": 18,
-            "word": "~dialect",
-            "ans": "べん",
-            "remarks": "～弁"
-        },
-        {
-            "id": 19,
-            "word": "next time, another time",
-            "ans": "こんど",
-            "remarks": "今度"
-        },
-        {
-            "id": 20,
-            "word": "very, extremely, surprisingly",
-            "ans": "ずいぶん",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "directly",
-            "ans": "ちょくせつ",
-            "remarks": "直接"
-        },
-        {
-            "id": 22,
-            "word": "any time",
-            "ans": "いつでも",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "anything",
-            "ans": "なんでも",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "anywhere",
-            "ans": "どこでも",
-            "remarks": ""
-        },
-        {
-            "id": 25,
-            "word": "anybody",
-            "ans": "だれでも",
-            "remarks": ""
-        },
-        {
-            "id": 26,
-            "word": "like this",
-            "ans": "こんな",
-            "remarks": ""
-        },
-        {
-            "id": 27,
-            "word": "like that (near the listener)",
-            "ans": "そんな",
-            "remarks": ""
-        },
-        {
-            "id": 28,
-            "word": "like that (far from both the speaker and listener)",
-            "ans": "あんな",
-            "remarks": ""
-        },
-        {
-            "id": 29,
-            "word": "tidy up boxes",
-            "ans": "にもつをかたづきます",
-            "remarks": "荷物_片付___"
-        },
-        {
-            "id": 30,
-            "word": "take out the rubbish",
-            "ans": "ごみをだします",
-            "remarks": ""
-        },
-        {
-            "id": 31,
-            "word": "burnable rubbish",
-            "ans": "もえるごみ",
-            "remarks": "燃＿＿"
-        },
-        {
-            "id": 32,
-            "word": "place where something is put",
-            "ans": "おきば",
-            "remarks": "置_場"
-        },
-        {
-            "id": 33,
-            "word": "side",
-            "ans": "よこ",
-            "remarks": "横"
-        },
-        {
-            "id": 34,
-            "word": "bottle",
-            "ans": "びん",
-            "remarks": "瓶"
-        },
-        {
-            "id": 35,
-            "word": "can",
-            "ans": "かん",
-            "remarks": "缶"
-        },
-        {
-            "id": 36,
-            "word": "gas",
-            "ans": "ガス",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "-- company",
-            "ans": "がいしゃ",
-            "remarks": "～会社"
-        }
-    ]
+  "id": 40,
+  "name": "Lesson 26",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "check, take a look at",
+      "ans": "みます",
+      "remarks": "見/診__"
+    },
+    {
+      "id": 1,
+      "word": "look for, search",
+      "ans": "さがします",
+      "remarks": "探/捜____"
+    },
+    {
+      "id": 2,
+      "word": "be late for something",
+      "ans": "じかんにおくれます",
+      "remarks": "時間_遅___"
+    },
+    {
+      "id": 3,
+      "word": "be in time for something",
+      "ans": "じかんにまにあいます",
+      "remarks": "時間_間_合____"
+    },
+    {
+      "id": 4,
+      "word": "do",
+      "ans": "やります",
+      "remarks": "casual"
+    },
+    {
+      "id": 5,
+      "word": "pick up",
+      "ans": "ひろいます",
+      "remarks": "拾___"
+    },
+    {
+      "id": 6,
+      "word": "get in touch with, contact",
+      "ans": "れんらくします",
+      "remarks": "連絡___"
+    },
+    {
+      "id": 7,
+      "word": "feel well",
+      "ans": "きぶんがいい",
+      "remarks": "気分____"
+    },
+    {
+      "id": 8,
+      "word": "feel ill",
+      "ans": "きぶんがわるい",
+      "remarks": "気分_悪_"
+    },
+    {
+      "id": 9,
+      "word": "athletic meet, sports day",
+      "ans": "うんどうかい",
+      "remarks": "運動会"
+    },
+    {
+      "id": 10,
+      "word": "Bon Festival dance",
+      "ans": "ぼんおどり",
+      "remarks": "盆踊_"
+    },
+    {
+      "id": 11,
+      "word": "flea market",
+      "ans": "フリーマーケット",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "place",
+      "ans": "ばしょ",
+      "remarks": "場所"
+    },
+    {
+      "id": 13,
+      "word": "volunteer",
+      "ans": "ボランティア",
+      "remarks": ""
+    },
+    {
+      "id": 14,
+      "word": "wallet, purse",
+      "ans": "さいふ",
+      "remarks": "財布"
+    },
+    {
+      "id": 15,
+      "word": "garbage, rubbish",
+      "ans": "ごみ",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "the Diet Building",
+      "ans": "こっかいぎじどう",
+      "remarks": "国会議事堂"
+    },
+    {
+      "id": 17,
+      "word": "weekday",
+      "ans": "へいじつ",
+      "remarks": "平日"
+    },
+    {
+      "id": 18,
+      "word": "~dialect",
+      "ans": "べん",
+      "remarks": "～弁"
+    },
+    {
+      "id": 19,
+      "word": "next time, another time",
+      "ans": "こんど",
+      "remarks": "今度"
+    },
+    {
+      "id": 20,
+      "word": "very, extremely, surprisingly",
+      "ans": "ずいぶん",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "directly",
+      "ans": "ちょくせつ",
+      "remarks": "直接"
+    },
+    {
+      "id": 22,
+      "word": "any time",
+      "ans": "いつでも",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "anything",
+      "ans": "なんでも",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "anywhere",
+      "ans": "どこでも",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "anybody",
+      "ans": "だれでも",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "like this",
+      "ans": "こんな",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "like that (near the listener)",
+      "ans": "そんな",
+      "remarks": ""
+    },
+    {
+      "id": 28,
+      "word": "like that (far from both the speaker and listener)",
+      "ans": "あんな",
+      "remarks": ""
+    },
+    {
+      "id": 29,
+      "word": "tidy up boxes",
+      "ans": "にもつをかたづきます",
+      "remarks": "荷物_片付___"
+    },
+    {
+      "id": 30,
+      "word": "take out the rubbish",
+      "ans": "ごみをだします",
+      "remarks": ""
+    },
+    {
+      "id": 31,
+      "word": "burnable rubbish",
+      "ans": "もえるごみ",
+      "remarks": "燃＿＿"
+    },
+    {
+      "id": 32,
+      "word": "place where something is put",
+      "ans": "おきば",
+      "remarks": "置_場"
+    },
+    {
+      "id": 33,
+      "word": "side",
+      "ans": "よこ",
+      "remarks": "横"
+    },
+    {
+      "id": 34,
+      "word": "bottle",
+      "ans": "びん",
+      "remarks": "瓶"
+    },
+    {
+      "id": 35,
+      "word": "can",
+      "ans": "かん",
+      "remarks": "缶"
+    },
+    {
+      "id": 36,
+      "word": "gas",
+      "ans": "ガス",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "-- company",
+      "ans": "がいしゃ",
+      "remarks": "～会社"
+    }
+  ]
 }

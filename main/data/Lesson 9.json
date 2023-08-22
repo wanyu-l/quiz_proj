@@ -1,351 +1,351 @@
 {
-    "id": 8,
-    "name": "Lesson 9",
-    "tags": [
-        "LAJ 1"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "understand",
-            "ans": "わかります",
-            "remarks": "verb"
-        },
-        {
-            "id": 1,
-            "word": "have",
-            "ans": "あります",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "like",
-            "ans": "すき",
-            "remarks": "好_［な］"
-        },
-        {
-            "id": 3,
-            "word": "dislike",
-            "ans": "きらい",
-            "remarks": "嫌_［な］"
-        },
-        {
-            "id": 4,
-            "word": "good at",
-            "ans": "じょうず",
-            "remarks": "上手［な］"
-        },
-        {
-            "id": 5,
-            "word": "poor at",
-            "ans": "へた",
-            "remarks": "下手［な］"
-        },
-        {
-            "id": 6,
-            "word": "drinks",
-            "ans": "のみもの",
-            "remarks": "飲_物"
-        },
-        {
-            "id": 7,
-            "word": "dish (cooked food), cooking",
-            "ans": "りょうり",
-            "remarks": "料理"
-        },
-        {
-            "id": 8,
-            "word": "cook",
-            "ans": "りょうりをします",
-            "remarks": "料理をします"
-        },
-        {
-            "id": 9,
-            "word": "sports",
-            "ans": "スポーツ",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "play sports",
-            "ans": "スポーツをします",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "baseball",
-            "ans": "やきゅう",
-            "remarks": "野球"
-        },
-        {
-            "id": 12,
-            "word": "dance",
-            "ans": "ダンス",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "travel, make a trip",
-            "ans": "りょこうをします",
-            "remarks": "旅行_________"
-        },
-        {
-            "id": 14,
-            "word": "trip, tour",
-            "ans": "りょこう",
-            "remarks": "旅行"
-        },
-        {
-            "id": 15,
-            "word": "classical music",
-            "ans": "クラシック",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "jazz",
-            "ans": "ジャズ",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "music",
-            "ans": "おんがく",
-            "remarks": "音楽"
-        },
-        {
-            "id": 18,
-            "word": "concert",
-            "ans": "コンサート",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "song",
-            "ans": "うた",
-            "remarks": "歌"
-        },
-        {
-            "id": 20,
-            "word": "karaoke",
-            "ans": "カラオケ",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "hiragana script",
-            "ans": "ひらがな",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "katakana script",
-            "ans": "かたかな",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "ticket",
-            "ans": "チケット",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "promise (verb)",
-            "ans": "やくそくをします",
-            "remarks": "約束___"
-        },
-        {
-            "id": 25,
-            "word": "traditional Japanese musical drama",
-            "ans": "かぶき",
-            "remarks": "歌舞伎"
-        },
-        {
-            "id": 26,
-            "word": "side job, part-time job",
-            "ans": "アルバイト",
-            "remarks": ""
-        },
-        {
-            "id": 27,
-            "word": "picture, drawing",
-            "ans": "え",
-            "remarks": "絵"
-        },
-        {
-            "id": 28,
-            "word": "well, much",
-            "ans": "よく",
-            "remarks": "describe familarity"
-        },
-        {
-            "id": 29,
-            "word": "letter, character",
-            "ans": "じ",
-            "remarks": "字"
-        },
-        {
-            "id": 30,
-            "word": "mostly, roughly",
-            "ans": "だいたい",
-            "remarks": ""
-        },
-        {
-            "id": 31,
-            "word": "Chinese character",
-            "ans": "かんじ",
-            "remarks": "漢字"
-        },
-        {
-            "id": 32,
-            "word": "many, much",
-            "ans": "たくさん",
-            "remarks": ""
-        },
-        {
-            "id": 33,
-            "word": "because ~",
-            "ans": "から",
-            "remarks": "similar to `from ~`"
-        },
-        {
-            "id": 34,
-            "word": "why",
-            "ans": "どうして",
-            "remarks": ""
-        },
-        {
-            "id": 35,
-            "word": "Roman alphabet",
-            "ans": "ローマじ",
-            "remarks": ""
-        },
-        {
-            "id": 36,
-            "word": "please lend (it to me)",
-            "ans": "かしてください",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "small change",
-            "ans": "こまかいおかね",
-            "remarks": "細___ _金"
-        },
-        {
-            "id": 38,
-            "word": "sure, certainly",
-            "ans": "いいですよ",
-            "remarks": "response in affirmation"
-        },
-        {
-            "id": 39,
-            "word": "I'm sorry [, but], unfortunately",
-            "ans": "ざんねんですが",
-            "remarks": "残念___"
-        },
-        {
-            "id": 40,
-            "word": "time",
-            "ans": "じかん",
-            "remarks": "時間"
-        },
-        {
-            "id": 41,
-            "word": "errand, something to do",
-            "ans": "ようじ",
-            "remarks": "用事"
-        },
-        {
-            "id": 42,
-            "word": "appointment, promise",
-            "ans": "やくそく",
-            "remarks": "約束"
-        },
-        {
-            "id": 43,
-            "word": "(someone else's) husband",
-            "ans": "ごしゅじん",
-            "remarks": "__主人"
-        },
-        {
-            "id": 44,
-            "word": "(my) husband",
-            "ans": "おっと",
-            "remarks": "夫"
-        },
-        {
-            "id": 45,
-            "word": "(someone else's) wife",
-            "ans": "おくさん",
-            "remarks": "奥__"
-        },
-        {
-            "id": 46,
-            "word": "(my) wife",
-            "ans": "つま",
-            "remarks": "妻"
-        },
-        {
-            "id": 47,
-            "word": "child",
-            "ans": "こども",
-            "remarks": "子__"
-        },
-        {
-            "id": 48,
-            "word": "a little, a few",
-            "ans": "すこし",
-            "remarks": "少_"
-        },
-        {
-            "id": 49,
-            "word": "not at all (used with negatives)",
-            "ans": "ぜんぜん",
-            "remarks": "全然"
-        },
-        {
-            "id": 50,
-            "word": "early",
-            "ans": "はやく",
-            "remarks": "早_"
-        },
-        {
-            "id": 51,
-            "word": "quickly, fast",
-            "ans": "はやく",
-            "remarks": "速_"
-        },
-        {
-            "id": 52,
-            "word": "work part-time",
-            "ans": "アルバイトをします",
-            "remarks": "verb"
-        },
-        {
-            "id": 53,
-            "word": "Won't you join me/us?",
-            "ans": "いっしょにいかがですか",
-            "remarks": "polite invitation"
-        },
-        {
-            "id": 54,
-            "word": "~ is a bit difficult.",
-            "ans": "ちょっと",
-            "remarks": "no particles or punctuation"
-        },
-        {
-            "id": 55,
-            "word": "So you can't?",
-            "ans": "だめですか",
-            "remarks": ""
-        },
-        {
-            "id": 56,
-            "word": "Please ask me again some other time.",
-            "ans": "またこんどおねがいします",
-            "remarks": ""
-        }
-    ]
+  "id": 8,
+  "name": "Lesson 9",
+  "tags": [
+    "LAJ 1"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "understand",
+      "ans": "わかります",
+      "remarks": "verb"
+    },
+    {
+      "id": 1,
+      "word": "have",
+      "ans": "あります",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "like",
+      "ans": "すき",
+      "remarks": "好_［な］"
+    },
+    {
+      "id": 3,
+      "word": "dislike",
+      "ans": "きらい",
+      "remarks": "嫌_［な］"
+    },
+    {
+      "id": 4,
+      "word": "good at",
+      "ans": "じょうず",
+      "remarks": "上手［な］"
+    },
+    {
+      "id": 5,
+      "word": "poor at",
+      "ans": "へた",
+      "remarks": "下手［な］"
+    },
+    {
+      "id": 6,
+      "word": "drinks",
+      "ans": "のみもの",
+      "remarks": "飲_物"
+    },
+    {
+      "id": 7,
+      "word": "dish (cooked food), cooking",
+      "ans": "りょうり",
+      "remarks": "料理"
+    },
+    {
+      "id": 8,
+      "word": "cook",
+      "ans": "りょうりをします",
+      "remarks": "料理をします"
+    },
+    {
+      "id": 9,
+      "word": "sports",
+      "ans": "スポーツ",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "play sports",
+      "ans": "スポーツをします",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "baseball",
+      "ans": "やきゅう",
+      "remarks": "野球"
+    },
+    {
+      "id": 12,
+      "word": "dance",
+      "ans": "ダンス",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "travel, make a trip",
+      "ans": "りょこうをします",
+      "remarks": "旅行_________"
+    },
+    {
+      "id": 14,
+      "word": "trip, tour",
+      "ans": "りょこう",
+      "remarks": "旅行"
+    },
+    {
+      "id": 15,
+      "word": "classical music",
+      "ans": "クラシック",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "jazz",
+      "ans": "ジャズ",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "music",
+      "ans": "おんがく",
+      "remarks": "音楽"
+    },
+    {
+      "id": 18,
+      "word": "concert",
+      "ans": "コンサート",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "song",
+      "ans": "うた",
+      "remarks": "歌"
+    },
+    {
+      "id": 20,
+      "word": "karaoke",
+      "ans": "カラオケ",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "hiragana script",
+      "ans": "ひらがな",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "katakana script",
+      "ans": "かたかな",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "ticket",
+      "ans": "チケット",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "promise (verb)",
+      "ans": "やくそくをします",
+      "remarks": "約束___"
+    },
+    {
+      "id": 25,
+      "word": "traditional Japanese musical drama",
+      "ans": "かぶき",
+      "remarks": "歌舞伎"
+    },
+    {
+      "id": 26,
+      "word": "side job, part-time job",
+      "ans": "アルバイト",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "picture, drawing",
+      "ans": "え",
+      "remarks": "絵"
+    },
+    {
+      "id": 28,
+      "word": "well, much",
+      "ans": "よく",
+      "remarks": "describe familarity"
+    },
+    {
+      "id": 29,
+      "word": "letter, character",
+      "ans": "じ",
+      "remarks": "字"
+    },
+    {
+      "id": 30,
+      "word": "mostly, roughly",
+      "ans": "だいたい",
+      "remarks": ""
+    },
+    {
+      "id": 31,
+      "word": "Chinese character",
+      "ans": "かんじ",
+      "remarks": "漢字"
+    },
+    {
+      "id": 32,
+      "word": "many, much",
+      "ans": "たくさん",
+      "remarks": ""
+    },
+    {
+      "id": 33,
+      "word": "because ~",
+      "ans": "から",
+      "remarks": "similar to `from ~`"
+    },
+    {
+      "id": 34,
+      "word": "why",
+      "ans": "どうして",
+      "remarks": ""
+    },
+    {
+      "id": 35,
+      "word": "Roman alphabet",
+      "ans": "ローマじ",
+      "remarks": ""
+    },
+    {
+      "id": 36,
+      "word": "please lend (it to me)",
+      "ans": "かしてください",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "small change",
+      "ans": "こまかいおかね",
+      "remarks": "細___ _金"
+    },
+    {
+      "id": 38,
+      "word": "sure, certainly",
+      "ans": "いいですよ",
+      "remarks": "response in affirmation"
+    },
+    {
+      "id": 39,
+      "word": "I'm sorry [, but], unfortunately",
+      "ans": "ざんねんですが",
+      "remarks": "残念___"
+    },
+    {
+      "id": 40,
+      "word": "time",
+      "ans": "じかん",
+      "remarks": "時間"
+    },
+    {
+      "id": 41,
+      "word": "errand, something to do",
+      "ans": "ようじ",
+      "remarks": "用事"
+    },
+    {
+      "id": 42,
+      "word": "appointment, promise",
+      "ans": "やくそく",
+      "remarks": "約束"
+    },
+    {
+      "id": 43,
+      "word": "(someone else's) husband",
+      "ans": "ごしゅじん",
+      "remarks": "__主人"
+    },
+    {
+      "id": 44,
+      "word": "(my) husband",
+      "ans": "おっと",
+      "remarks": "夫"
+    },
+    {
+      "id": 45,
+      "word": "(someone else's) wife",
+      "ans": "おくさん",
+      "remarks": "奥__"
+    },
+    {
+      "id": 46,
+      "word": "(my) wife",
+      "ans": "つま",
+      "remarks": "妻"
+    },
+    {
+      "id": 47,
+      "word": "child",
+      "ans": "こども",
+      "remarks": "子__"
+    },
+    {
+      "id": 48,
+      "word": "a little, a few",
+      "ans": "すこし",
+      "remarks": "少_"
+    },
+    {
+      "id": 49,
+      "word": "not at all (used with negatives)",
+      "ans": "ぜんぜん",
+      "remarks": "全然"
+    },
+    {
+      "id": 50,
+      "word": "early",
+      "ans": "はやく",
+      "remarks": "早_"
+    },
+    {
+      "id": 51,
+      "word": "quickly, fast",
+      "ans": "はやく",
+      "remarks": "速_"
+    },
+    {
+      "id": 52,
+      "word": "work part-time",
+      "ans": "アルバイトをします",
+      "remarks": "verb"
+    },
+    {
+      "id": 53,
+      "word": "Won't you join me/us?",
+      "ans": "いっしょにいかがですか",
+      "remarks": "polite invitation"
+    },
+    {
+      "id": 54,
+      "word": "~ is a bit difficult.",
+      "ans": "ちょっと",
+      "remarks": "no particles or punctuation"
+    },
+    {
+      "id": 55,
+      "word": "So you can't?",
+      "ans": "だめですか",
+      "remarks": ""
+    },
+    {
+      "id": 56,
+      "word": "Please ask me again some other time.",
+      "ans": "またこんどおねがいします",
+      "remarks": ""
+    }
+  ]
 }

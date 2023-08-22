@@ -1,255 +1,255 @@
 {
-    "id": 44,
-    "name": "Lesson 30",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "put up, post, paste",
-            "ans": "はります",
-            "remarks": "貼___"
-        },
-        {
-            "id": 1,
-            "word": "hang",
-            "ans": "かけます",
-            "remarks": "掛___"
-        },
-        {
-            "id": 2,
-            "word": "display, decorate",
-            "ans": "かざります",
-            "remarks": "飾___"
-        },
-        {
-            "id": 3,
-            "word": "arrange, line up",
-            "ans": "ならべます",
-            "remarks": "並____"
-        },
-        {
-            "id": 4,
-            "word": "plant",
-            "ans": "うえます",
-            "remarks": "植___"
-        },
-        {
-            "id": 5,
-            "word": "return, put back",
-            "ans": "もどします",
-            "remarks": "戻___"
-        },
-        {
-            "id": 6,
-            "word": "put together, in shape, sum up",
-            "ans": "まとめます",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "put (things) away",
-            "ans": "しまいます",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "decide",
-            "ans": "きめます",
-            "remarks": "決___"
-        },
-        {
-            "id": 9,
-            "word": "prepare one's lesson",
-            "ans": "よしゅうします",
-            "remarks": "予習___"
-        },
-        {
-            "id": 10,
-            "word": "review one's lesson",
-            "ans": "ふくしゅうします",
-            "remarks": "復習___"
-        },
-        {
-            "id": 11,
-            "word": "leave things as they are",
-            "ans": "そのままにします",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "class",
-            "ans": "じゅぎょう",
-            "remarks": "授業"
-        },
-        {
-            "id": 13,
-            "word": "lecture",
-            "ans": "こうぎ",
-            "remarks": "講義"
-        },
-        {
-            "id": 14,
-            "word": "meeting",
-            "ans": "ミーティング",
-            "remarks": "Not 会議"
-        },
-        {
-            "id": 15,
-            "word": "plan, schedule",
-            "ans": "よてい",
-            "remarks": "予定"
-        },
-        {
-            "id": 16,
-            "word": "notice",
-            "ans": "おしらせ",
-            "remarks": "_知__"
-        },
-        {
-            "id": 17,
-            "word": "guidebook",
-            "ans": "ガイドブック",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "calendar",
-            "ans": "カレンダー",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "poster",
-            "ans": "ポスター",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "schedule",
-            "ans": "よていひょう",
-            "remarks": "予定表"
-        },
-        {
-            "id": 21,
-            "word": "trash can, dust bin",
-            "ans": "ごみばこ",
-            "remarks": "__箱"
-        },
-        {
-            "id": 22,
-            "word": "doll",
-            "ans": "にんぎょう",
-            "remarks": "人形"
-        },
-        {
-            "id": 23,
-            "word": "vase",
-            "ans": "かびん",
-            "remarks": "花瓶"
-        },
-        {
-            "id": 24,
-            "word": "mirror",
-            "ans": "かがみ",
-            "remarks": "鏡"
-        },
-        {
-            "id": 25,
-            "word": "drawer",
-            "ans": "ひきだし",
-            "remarks": "引_出_"
-        },
-        {
-            "id": 26,
-            "word": "porch (in house), entrance hall",
-            "ans": "げんかん",
-            "remarks": "玄関"
-        },
-        {
-            "id": 27,
-            "word": "hallway, corridor",
-            "ans": "ろうか",
-            "remarks": "廊下"
-        },
-        {
-            "id": 28,
-            "word": "wall",
-            "ans": "かべ",
-            "remarks": "壁"
-        },
-        {
-            "id": 29,
-            "word": "pond",
-            "ans": "いけ",
-            "remarks": "池"
-        },
-        {
-            "id": 30,
-            "word": "original place",
-            "ans": "もとのところ",
-            "remarks": "元_所"
-        },
-        {
-            "id": 31,
-            "word": "round, around",
-            "ans": "まわり",
-            "remarks": "周_"
-        },
-        {
-            "id": 32,
-            "word": "centre",
-            "ans": "まんなか",
-            "remarks": "真_中"
-        },
-        {
-            "id": 33,
-            "word": "corner",
-            "ans": "すみ",
-            "remarks": "隅"
-        },
-        {
-            "id": 34,
-            "word": "still",
-            "ans": "まだ",
-            "remarks": ""
-        },
-        {
-            "id": 35,
-            "word": "rucksack, backpack",
-            "ans": "リュック",
-            "remarks": ""
-        },
-        {
-            "id": 36,
-            "word": "emergency kit",
-            "ans": "ひじょうぶくろ",
-            "remarks": "非常袋"
-        },
-        {
-            "id": 37,
-            "word": "emergency",
-            "ans": "ひじょうじ",
-            "remarks": "非常時"
-        },
-        {
-            "id": 38,
-            "word": "live",
-            "ans": "せいかつします",
-            "remarks": "生活___"
-        },
-        {
-            "id": 39,
-            "word": "torch, flashlight",
-            "ans": "かいちゅうでんとう",
-            "remarks": "懐中電灯"
-        },
-        {
-            "id": 40,
-            "word": "--, --, and so on",
-            "ans": "～とか、～とか",
-            "remarks": "include`～` and `、`"
-        }
-    ]
+  "id": 44,
+  "name": "Lesson 30",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "put up, post, paste",
+      "ans": "はります",
+      "remarks": "貼___"
+    },
+    {
+      "id": 1,
+      "word": "hang",
+      "ans": "かけます",
+      "remarks": "掛___"
+    },
+    {
+      "id": 2,
+      "word": "display, decorate",
+      "ans": "かざります",
+      "remarks": "飾___"
+    },
+    {
+      "id": 3,
+      "word": "arrange, line up",
+      "ans": "ならべます",
+      "remarks": "並____"
+    },
+    {
+      "id": 4,
+      "word": "plant",
+      "ans": "うえます",
+      "remarks": "植___"
+    },
+    {
+      "id": 5,
+      "word": "return, put back",
+      "ans": "もどします",
+      "remarks": "戻___"
+    },
+    {
+      "id": 6,
+      "word": "put together, in shape, sum up",
+      "ans": "まとめます",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "put (things) away",
+      "ans": "しまいます",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "decide",
+      "ans": "きめます",
+      "remarks": "決___"
+    },
+    {
+      "id": 9,
+      "word": "prepare one's lesson",
+      "ans": "よしゅうします",
+      "remarks": "予習___"
+    },
+    {
+      "id": 10,
+      "word": "review one's lesson",
+      "ans": "ふくしゅうします",
+      "remarks": "復習___"
+    },
+    {
+      "id": 11,
+      "word": "leave things as they are",
+      "ans": "そのままにします",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "class",
+      "ans": "じゅぎょう",
+      "remarks": "授業"
+    },
+    {
+      "id": 13,
+      "word": "lecture",
+      "ans": "こうぎ",
+      "remarks": "講義"
+    },
+    {
+      "id": 14,
+      "word": "meeting",
+      "ans": "ミーティング",
+      "remarks": "Not 会議"
+    },
+    {
+      "id": 15,
+      "word": "plan, schedule",
+      "ans": "よてい",
+      "remarks": "予定"
+    },
+    {
+      "id": 16,
+      "word": "notice",
+      "ans": "おしらせ",
+      "remarks": "_知__"
+    },
+    {
+      "id": 17,
+      "word": "guidebook",
+      "ans": "ガイドブック",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "calendar",
+      "ans": "カレンダー",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "poster",
+      "ans": "ポスター",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "schedule",
+      "ans": "よていひょう",
+      "remarks": "予定表"
+    },
+    {
+      "id": 21,
+      "word": "trash can, dust bin",
+      "ans": "ごみばこ",
+      "remarks": "__箱"
+    },
+    {
+      "id": 22,
+      "word": "doll",
+      "ans": "にんぎょう",
+      "remarks": "人形"
+    },
+    {
+      "id": 23,
+      "word": "vase",
+      "ans": "かびん",
+      "remarks": "花瓶"
+    },
+    {
+      "id": 24,
+      "word": "mirror",
+      "ans": "かがみ",
+      "remarks": "鏡"
+    },
+    {
+      "id": 25,
+      "word": "drawer",
+      "ans": "ひきだし",
+      "remarks": "引_出_"
+    },
+    {
+      "id": 26,
+      "word": "porch (in house), entrance hall",
+      "ans": "げんかん",
+      "remarks": "玄関"
+    },
+    {
+      "id": 27,
+      "word": "hallway, corridor",
+      "ans": "ろうか",
+      "remarks": "廊下"
+    },
+    {
+      "id": 28,
+      "word": "wall",
+      "ans": "かべ",
+      "remarks": "壁"
+    },
+    {
+      "id": 29,
+      "word": "pond",
+      "ans": "いけ",
+      "remarks": "池"
+    },
+    {
+      "id": 30,
+      "word": "original place",
+      "ans": "もとのところ",
+      "remarks": "元_所"
+    },
+    {
+      "id": 31,
+      "word": "round, around",
+      "ans": "まわり",
+      "remarks": "周_"
+    },
+    {
+      "id": 32,
+      "word": "centre",
+      "ans": "まんなか",
+      "remarks": "真_中"
+    },
+    {
+      "id": 33,
+      "word": "corner",
+      "ans": "すみ",
+      "remarks": "隅"
+    },
+    {
+      "id": 34,
+      "word": "still",
+      "ans": "まだ",
+      "remarks": ""
+    },
+    {
+      "id": 35,
+      "word": "rucksack, backpack",
+      "ans": "リュック",
+      "remarks": ""
+    },
+    {
+      "id": 36,
+      "word": "emergency kit",
+      "ans": "ひじょうぶくろ",
+      "remarks": "非常袋"
+    },
+    {
+      "id": 37,
+      "word": "emergency",
+      "ans": "ひじょうじ",
+      "remarks": "非常時"
+    },
+    {
+      "id": 38,
+      "word": "live",
+      "ans": "せいかつします",
+      "remarks": "生活___"
+    },
+    {
+      "id": 39,
+      "word": "torch, flashlight",
+      "ans": "かいちゅうでんとう",
+      "remarks": "懐中電灯"
+    },
+    {
+      "id": 40,
+      "word": "--, --, and so on",
+      "ans": "～とか、～とか",
+      "remarks": "include`～` and `、`"
+    }
+  ]
 }

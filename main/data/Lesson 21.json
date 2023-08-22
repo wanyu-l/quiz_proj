@@ -1,261 +1,261 @@
 {
-    "id": 35,
-    "name": "Lesson 21",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "win",
-            "ans": "かちます",
-            "remarks": "勝___"
-        },
-        {
-            "id": 1,
-            "word": "lose, be beaten",
-            "ans": "まけます",
-            "remarks": "負___"
-        },
-        {
-            "id": 2,
-            "word": "there is a festival, a festival is held",
-            "ans": "おまつりがあります",
-            "remarks": ""
-        },
-        {
-            "id": 3,
-            "word": "think",
-            "ans": "おもいます",
-            "remarks": "思___"
-        },
-        {
-            "id": 4,
-            "word": "say",
-            "ans": "いいます",
-            "remarks": "言___"
-        },
-        {
-            "id": 5,
-            "word": "be useful",
-            "ans": "やくにたちます",
-            "remarks": "役_立___"
-        },
-        {
-            "id": 6,
-            "word": "move, work",
-            "ans": "うごきます",
-            "remarks": "動___"
-        },
-        {
-            "id": 7,
-            "word": "quit, stop, give up",
-            "ans": "やめます",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "leave a company",
-            "ans": "かいしゃをやめます",
-            "remarks": "会社______"
-        },
-        {
-            "id": 9,
-            "word": "pay attention, take care",
-            "ans": "きをつけます",
-            "remarks": "気_付___"
-        },
-        {
-            "id": 10,
-            "word": "study abroad",
-            "ans": "りゅうがくします",
-            "remarks": "留学____"
-        },
-        {
-            "id": 11,
-            "word": "wastefu",
-            "ans": "むだ",
-            "remarks": "無駄［な］"
-        },
-        {
-            "id": 12,
-            "word": "inconvenient",
-            "ans": "ふべん",
-            "remarks": "不便［な］"
-        },
-        {
-            "id": 13,
-            "word": "awful, great",
-            "ans": "すごい",
-            "remarks": "greatly ~; both +ve / -ve"
-        },
-        {
-            "id": 14,
-            "word": "true",
-            "ans": "ほんとう",
-            "remarks": "本当"
-        },
-        {
-            "id": 15,
-            "word": "lie",
-            "ans": "うそ",
-            "remarks": "嘘"
-        },
-        {
-            "id": 16,
-            "word": "car, automobile",
-            "ans": "じどうしゃ",
-            "remarks": "自動車"
-        },
-        {
-            "id": 17,
-            "word": "transport, traffic",
-            "ans": "こうつう",
-            "remarks": "交通"
-        },
-        {
-            "id": 18,
-            "word": "[commodity] prices",
-            "ans": "ぶっか",
-            "remarks": "物価"
-        },
-        {
-            "id": 19,
-            "word": "broadcast",
-            "ans": "ほうそう",
-            "remarks": "放送"
-        },
-        {
-            "id": 20,
-            "word": "news",
-            "ans": "ニュース",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "anime",
-            "ans": "アニメ",
-            "remarks": "(Japanese animated film)"
-        },
-        {
-            "id": 22,
-            "word": "comic book",
-            "ans": "マンガ",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "design, artwork",
-            "ans": "デザイン",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "dream",
-            "ans": "ゆめ",
-            "remarks": "夢"
-        },
-        {
-            "id": 25,
-            "word": "genius",
-            "ans": "てんさい",
-            "remarks": "天才"
-        },
-        {
-            "id": 26,
-            "word": "(sports) game, match",
-            "ans": "しあい",
-            "remarks": "試合"
-        },
-        {
-            "id": 27,
-            "word": "opinion",
-            "ans": "いけん",
-            "remarks": "意見"
-        },
-        {
-            "id": 28,
-            "word": "talk, story",
-            "ans": "はなし",
-            "remarks": "話, noun and verb"
-        },
-        {
-            "id": 29,
-            "word": "talk, tell a story",
-            "ans": "はなしをします",
-            "remarks": ""
-        },
-        {
-            "id": 30,
-            "word": "earth",
-            "ans": "ちきゅう",
-            "remarks": "地球"
-        },
-        {
-            "id": 31,
-            "word": "moon",
-            "ans": "つき",
-            "remarks": "月"
-        },
-        {
-            "id": 32,
-            "word": "recently, these days",
-            "ans": "さいきん",
-            "remarks": "最近"
-        },
-        {
-            "id": 33,
-            "word": "probably",
-            "ans": "たぶん",
-            "remarks": "多分"
-        },
-        {
-            "id": 34,
-            "word": "surely, definitely",
-            "ans": "きっと",
-            "remarks": ""
-        },
-        {
-            "id": 35,
-            "word": "really",
-            "ans": "ほんとうに",
-            "remarks": "本当_"
-        },
-        {
-            "id": 36,
-            "word": "not so",
-            "ans": "そんなに",
-            "remarks": "used with negatives"
-        },
-        {
-            "id": 37,
-            "word": "about ~ , concerning ~",
-            "ans": "について",
-            "remarks": ""
-        },
-        {
-            "id": 38,
-            "word": "Long time no see. / It's been a long time.",
-            "ans": "ひさしぶりですね",
-            "remarks": ""
-        },
-        {
-            "id": 39,
-            "word": "How about drinking tea or something?",
-            "ans": "おちゃでものみませんか",
-            "remarks": ""
-        },
-        {
-            "id": 40,
-            "word": "of course",
-            "ans": "もちろん",
-            "remarks": ""
-        },
-        {
-            "id": 41,
-            "word": "I have to go home now",
-            "ans": "もうかえらないと",
-            "remarks": "no punctuation"
-        }
-    ]
+  "id": 35,
+  "name": "Lesson 21",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "win",
+      "ans": "かちます",
+      "remarks": "勝___"
+    },
+    {
+      "id": 1,
+      "word": "lose, be beaten",
+      "ans": "まけます",
+      "remarks": "負___"
+    },
+    {
+      "id": 2,
+      "word": "there is a festival, a festival is held",
+      "ans": "おまつりがあります",
+      "remarks": ""
+    },
+    {
+      "id": 3,
+      "word": "think",
+      "ans": "おもいます",
+      "remarks": "思___"
+    },
+    {
+      "id": 4,
+      "word": "say",
+      "ans": "いいます",
+      "remarks": "言___"
+    },
+    {
+      "id": 5,
+      "word": "be useful",
+      "ans": "やくにたちます",
+      "remarks": "役_立___"
+    },
+    {
+      "id": 6,
+      "word": "move, work",
+      "ans": "うごきます",
+      "remarks": "動___"
+    },
+    {
+      "id": 7,
+      "word": "quit, stop, give up",
+      "ans": "やめます",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "leave a company",
+      "ans": "かいしゃをやめます",
+      "remarks": "会社______"
+    },
+    {
+      "id": 9,
+      "word": "pay attention, take care",
+      "ans": "きをつけます",
+      "remarks": "気_付___"
+    },
+    {
+      "id": 10,
+      "word": "study abroad",
+      "ans": "りゅうがくします",
+      "remarks": "留学____"
+    },
+    {
+      "id": 11,
+      "word": "wastefu",
+      "ans": "むだ",
+      "remarks": "無駄［な］"
+    },
+    {
+      "id": 12,
+      "word": "inconvenient",
+      "ans": "ふべん",
+      "remarks": "不便［な］"
+    },
+    {
+      "id": 13,
+      "word": "awful, great",
+      "ans": "すごい",
+      "remarks": "greatly ~; both +ve / -ve"
+    },
+    {
+      "id": 14,
+      "word": "true",
+      "ans": "ほんとう",
+      "remarks": "本当"
+    },
+    {
+      "id": 15,
+      "word": "lie",
+      "ans": "うそ",
+      "remarks": "嘘"
+    },
+    {
+      "id": 16,
+      "word": "car, automobile",
+      "ans": "じどうしゃ",
+      "remarks": "自動車"
+    },
+    {
+      "id": 17,
+      "word": "transport, traffic",
+      "ans": "こうつう",
+      "remarks": "交通"
+    },
+    {
+      "id": 18,
+      "word": "[commodity] prices",
+      "ans": "ぶっか",
+      "remarks": "物価"
+    },
+    {
+      "id": 19,
+      "word": "broadcast",
+      "ans": "ほうそう",
+      "remarks": "放送"
+    },
+    {
+      "id": 20,
+      "word": "news",
+      "ans": "ニュース",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "anime",
+      "ans": "アニメ",
+      "remarks": "(Japanese animated film)"
+    },
+    {
+      "id": 22,
+      "word": "comic book",
+      "ans": "マンガ",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "design, artwork",
+      "ans": "デザイン",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "dream",
+      "ans": "ゆめ",
+      "remarks": "夢"
+    },
+    {
+      "id": 25,
+      "word": "genius",
+      "ans": "てんさい",
+      "remarks": "天才"
+    },
+    {
+      "id": 26,
+      "word": "(sports) game, match",
+      "ans": "しあい",
+      "remarks": "試合"
+    },
+    {
+      "id": 27,
+      "word": "opinion",
+      "ans": "いけん",
+      "remarks": "意見"
+    },
+    {
+      "id": 28,
+      "word": "talk, story",
+      "ans": "はなし",
+      "remarks": "話, noun and verb"
+    },
+    {
+      "id": 29,
+      "word": "talk, tell a story",
+      "ans": "はなしをします",
+      "remarks": ""
+    },
+    {
+      "id": 30,
+      "word": "earth",
+      "ans": "ちきゅう",
+      "remarks": "地球"
+    },
+    {
+      "id": 31,
+      "word": "moon",
+      "ans": "つき",
+      "remarks": "月"
+    },
+    {
+      "id": 32,
+      "word": "recently, these days",
+      "ans": "さいきん",
+      "remarks": "最近"
+    },
+    {
+      "id": 33,
+      "word": "probably",
+      "ans": "たぶん",
+      "remarks": "多分"
+    },
+    {
+      "id": 34,
+      "word": "surely, definitely",
+      "ans": "きっと",
+      "remarks": ""
+    },
+    {
+      "id": 35,
+      "word": "really",
+      "ans": "ほんとうに",
+      "remarks": "本当_"
+    },
+    {
+      "id": 36,
+      "word": "not so",
+      "ans": "そんなに",
+      "remarks": "used with negatives"
+    },
+    {
+      "id": 37,
+      "word": "about ~ , concerning ~",
+      "ans": "について",
+      "remarks": ""
+    },
+    {
+      "id": 38,
+      "word": "Long time no see. / It's been a long time.",
+      "ans": "ひさしぶりですね",
+      "remarks": ""
+    },
+    {
+      "id": 39,
+      "word": "How about drinking tea or something?",
+      "ans": "おちゃでものみませんか",
+      "remarks": ""
+    },
+    {
+      "id": 40,
+      "word": "of course",
+      "ans": "もちろん",
+      "remarks": ""
+    },
+    {
+      "id": 41,
+      "word": "I have to go home now",
+      "ans": "もうかえらないと",
+      "remarks": "no punctuation"
+    }
+  ]
 }

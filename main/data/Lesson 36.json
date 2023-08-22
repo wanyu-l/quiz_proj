@@ -1,183 +1,183 @@
 {
-    "id": 58,
-    "name": "Lesson 36",
-    "tags": [
-        "LAJ 4"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "encounter an accident",
-            "ans": "じこにあいます",
-            "remarks": ""
-        },
-        {
-            "id": 1,
-            "word": "save money",
-            "ans": "ちょきんします",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "pass 7 o'clock",
-            "ans": "７じをすぎます",
-            "remarks": ""
-        },
-        {
-            "id": 3,
-            "word": "get accustomed to one's job",
-            "ans": "しごとになれます",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "food rot; intranstive",
-            "ans": "たべものがくさります",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "kendo",
-            "ans": "けんどう",
-            "remarks": ""
-        },
-        {
-            "id": 6,
-            "word": "judo",
-            "ans": "じゅうどう",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "rush hour",
-            "ans": "ラッシュ",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "space, universe",
-            "ans": "うちゅう",
-            "remarks": ""
-        },
-        {
-            "id": 9,
-            "word": "a piece of music",
-            "ans": "きょく",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "every week",
-            "ans": "まいしゅう",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "every month",
-            "ans": "まいつき",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "every year",
-            "ans": "まいとし",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "these days",
-            "ans": "このごろ",
-            "remarks": ""
-        },
-        {
-            "id": 14,
-            "word": "finally",
-            "ans": "やっと",
-            "remarks": ""
-        },
-        {
-            "id": 15,
-            "word": "fairly",
-            "ans": "かなり",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "without fail, by any means",
-            "ans": "かならず",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "absolutely",
-            "ans": "ぜったいに",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "well, skillfully",
-            "ans": "じょうずに",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "as much as possible",
-            "ans": "できるだけ",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "almost all / scarcely",
-            "ans": "ほとんど",
-            "remarks": "can be used for +ve / -ve"
-        },
-        {
-            "id": 21,
-            "word": "visitor, guest, customer, client",
-            "ans": "おきゃくさま",
-            "remarks": "formal"
-        },
-        {
-            "id": 22,
-            "word": "special",
-            "ans": "とくべつ",
-            "remarks": "____（な）"
-        },
-        {
-            "id": 23,
-            "word": "be doing",
-            "ans": "していらっしゃいます",
-            "remarks": "polite"
-        },
-        {
-            "id": 24,
-            "word": "swimming",
-            "ans": "すいえい",
-            "remarks": "水泳"
-        },
-        {
-            "id": 25,
-            "word": "be different",
-            "ans": "ちがいます",
-            "remarks": ""
-        },
-        {
-            "id": 26,
-            "word": "You're using, aren't you?",
-            "ans": "つかっていらっしゃるんですね",
-            "remarks": "polite"
-        },
-        {
-            "id": 27,
-            "word": "challenge",
-            "ans": "チャレンジします",
-            "remarks": ""
-        },
-        {
-            "id": 28,
-            "word": "spirit, mood",
-            "ans": "きもち",
-            "remarks": ""
-        }
-    ]
+  "id": 58,
+  "name": "Lesson 36",
+  "tags": [
+    "LAJ 4"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "encounter an accident",
+      "ans": "じこにあいます",
+      "remarks": ""
+    },
+    {
+      "id": 1,
+      "word": "save money",
+      "ans": "ちょきんします",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "pass 7 o'clock",
+      "ans": "７じをすぎます",
+      "remarks": ""
+    },
+    {
+      "id": 3,
+      "word": "get accustomed to one's job",
+      "ans": "しごとになれます",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "food rot; intranstive",
+      "ans": "たべものがくさります",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "kendo",
+      "ans": "けんどう",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "judo",
+      "ans": "じゅうどう",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "rush hour",
+      "ans": "ラッシュ",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "space, universe",
+      "ans": "うちゅう",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "a piece of music",
+      "ans": "きょく",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "every week",
+      "ans": "まいしゅう",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "every month",
+      "ans": "まいつき",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "every year",
+      "ans": "まいとし",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "these days",
+      "ans": "このごろ",
+      "remarks": ""
+    },
+    {
+      "id": 14,
+      "word": "finally",
+      "ans": "やっと",
+      "remarks": ""
+    },
+    {
+      "id": 15,
+      "word": "fairly",
+      "ans": "かなり",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "without fail, by any means",
+      "ans": "かならず",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "absolutely",
+      "ans": "ぜったいに",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "well, skillfully",
+      "ans": "じょうずに",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "as much as possible",
+      "ans": "できるだけ",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "almost all / scarcely",
+      "ans": "ほとんど",
+      "remarks": "can be used for +ve / -ve"
+    },
+    {
+      "id": 21,
+      "word": "visitor, guest, customer, client",
+      "ans": "おきゃくさま",
+      "remarks": "formal"
+    },
+    {
+      "id": 22,
+      "word": "special",
+      "ans": "とくべつ",
+      "remarks": "____（な）"
+    },
+    {
+      "id": 23,
+      "word": "be doing",
+      "ans": "していらっしゃいます",
+      "remarks": "polite"
+    },
+    {
+      "id": 24,
+      "word": "swimming",
+      "ans": "すいえい",
+      "remarks": "水泳"
+    },
+    {
+      "id": 25,
+      "word": "be different",
+      "ans": "ちがいます",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "You're using, aren't you?",
+      "ans": "つかっていらっしゃるんですね",
+      "remarks": "polite"
+    },
+    {
+      "id": 27,
+      "word": "challenge",
+      "ans": "チャレンジします",
+      "remarks": ""
+    },
+    {
+      "id": 28,
+      "word": "spirit, mood",
+      "ans": "きもち",
+      "remarks": ""
+    }
+  ]
 }

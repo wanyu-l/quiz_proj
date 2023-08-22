@@ -1,213 +1,213 @@
 {
-    "id": 41,
-    "name": "Lesson 27",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "keep (a pet)",
-            "ans": "かいます",
-            "remarks": "飼___"
-        },
-        {
-            "id": 1,
-            "word": "run",
-            "ans": "はしります",
-            "remarks": "走___"
-        },
-        {
-            "id": 2,
-            "word": "drive along a road",
-            "ans": "みちをはしります",
-            "remarks": "道_走___"
-        },
-        {
-            "id": 3,
-            "word": "can be seen",
-            "ans": "みえます",
-            "remarks": "見___"
-        },
-        {
-            "id": 4,
-            "word": "a mountain can be seen",
-            "ans": "やまがみえます",
-            "remarks": "山_見___"
-        },
-        {
-            "id": 5,
-            "word": "can be heard",
-            "ans": "きこえます",
-            "remarks": "聞____"
-        },
-        {
-            "id": 6,
-            "word": "a sound can be heard",
-            "ans": "おとがきこえます",
-            "remarks": "音_聞____"
-        },
-        {
-            "id": 7,
-            "word": "be made, be completed, come into existence",
-            "ans": "できます",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "a road is made",
-            "ans": "みちができます",
-            "remarks": "道_____"
-        },
-        {
-            "id": 9,
-            "word": "set up, open, hold",
-            "ans": "ひらきます",
-            "remarks": "開___"
-        },
-        {
-            "id": 10,
-            "word": "set up a class",
-            "ans": "きょうしつをひらきます",
-            "remarks": "教室_開___"
-        },
-        {
-            "id": 11,
-            "word": "worried, anxious",
-            "ans": "しんぱい",
-            "remarks": "心配［な］"
-        },
-        {
-            "id": 12,
-            "word": "pet",
-            "ans": "ペット",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "bird",
-            "ans": "とり",
-            "remarks": "鳥"
-        },
-        {
-            "id": 14,
-            "word": "voice",
-            "ans": "こえ",
-            "remarks": "声"
-        },
-        {
-            "id": 15,
-            "word": "wave",
-            "ans": "なみ",
-            "remarks": "波"
-        },
-        {
-            "id": 16,
-            "word": "fireworks",
-            "ans": "はなび",
-            "remarks": "花火"
-        },
-        {
-            "id": 17,
-            "word": "tool, instrument, equipment",
-            "ans": "どうぐ",
-            "remarks": "道具"
-        },
-        {
-            "id": 18,
-            "word": "dry cleaning, laundry",
-            "ans": "クリーニング",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "house, home",
-            "ans": "いえ",
-            "remarks": "家"
-        },
-        {
-            "id": 20,
-            "word": "condominium, apartment",
-            "ans": "マンション",
-            "remarks": "mansion"
-        },
-        {
-            "id": 21,
-            "word": "kitchen",
-            "ans": "キッチン",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "-- class",
-            "ans": "きょうしつ",
-            "remarks": "～教室"
-        },
-        {
-            "id": 23,
-            "word": "party room",
-            "ans": "パーティールーム",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "person",
-            "ans": "かた",
-            "remarks": "respectful of ひと"
-        },
-        {
-            "id": 25,
-            "word": "after -- (duration of time)",
-            "ans": "ご",
-            "remarks": "～後"
-        },
-        {
-            "id": 26,
-            "word": "only --",
-            "ans": "しか",
-            "remarks": "used with negatives"
-        },
-        {
-            "id": 27,
-            "word": "other",
-            "ans": "ほかの",
-            "remarks": "他_"
-        },
-        {
-            "id": 28,
-            "word": "clearly",
-            "ans": "はっきり",
-            "remarks": ""
-        },
-        {
-            "id": 29,
-            "word": "furniture",
-            "ans": "かぐ",
-            "remarks": "家具"
-        },
-        {
-            "id": 30,
-            "word": "bookcase",
-            "ans": "ほんだな",
-            "remarks": "本棚"
-        },
-        {
-            "id": 31,
-            "word": "one day, some day",
-            "ans": "いつか",
-            "remarks": ""
-        },
-        {
-            "id": 32,
-            "word": "build",
-            "ans": "たてます",
-            "remarks": "建___"
-        },
-        {
-            "id": 33,
-            "word": "wonderful",
-            "ans": "すばらしい",
-            "remarks": ""
-        }
-    ]
+  "id": 41,
+  "name": "Lesson 27",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "keep (a pet)",
+      "ans": "かいます",
+      "remarks": "飼___"
+    },
+    {
+      "id": 1,
+      "word": "run",
+      "ans": "はしります",
+      "remarks": "走___"
+    },
+    {
+      "id": 2,
+      "word": "drive along a road",
+      "ans": "みちをはしります",
+      "remarks": "道_走___"
+    },
+    {
+      "id": 3,
+      "word": "can be seen",
+      "ans": "みえます",
+      "remarks": "見___"
+    },
+    {
+      "id": 4,
+      "word": "a mountain can be seen",
+      "ans": "やまがみえます",
+      "remarks": "山_見___"
+    },
+    {
+      "id": 5,
+      "word": "can be heard",
+      "ans": "きこえます",
+      "remarks": "聞____"
+    },
+    {
+      "id": 6,
+      "word": "a sound can be heard",
+      "ans": "おとがきこえます",
+      "remarks": "音_聞____"
+    },
+    {
+      "id": 7,
+      "word": "be made, be completed, come into existence",
+      "ans": "できます",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "a road is made",
+      "ans": "みちができます",
+      "remarks": "道_____"
+    },
+    {
+      "id": 9,
+      "word": "set up, open, hold",
+      "ans": "ひらきます",
+      "remarks": "開___"
+    },
+    {
+      "id": 10,
+      "word": "set up a class",
+      "ans": "きょうしつをひらきます",
+      "remarks": "教室_開___"
+    },
+    {
+      "id": 11,
+      "word": "worried, anxious",
+      "ans": "しんぱい",
+      "remarks": "心配［な］"
+    },
+    {
+      "id": 12,
+      "word": "pet",
+      "ans": "ペット",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "bird",
+      "ans": "とり",
+      "remarks": "鳥"
+    },
+    {
+      "id": 14,
+      "word": "voice",
+      "ans": "こえ",
+      "remarks": "声"
+    },
+    {
+      "id": 15,
+      "word": "wave",
+      "ans": "なみ",
+      "remarks": "波"
+    },
+    {
+      "id": 16,
+      "word": "fireworks",
+      "ans": "はなび",
+      "remarks": "花火"
+    },
+    {
+      "id": 17,
+      "word": "tool, instrument, equipment",
+      "ans": "どうぐ",
+      "remarks": "道具"
+    },
+    {
+      "id": 18,
+      "word": "dry cleaning, laundry",
+      "ans": "クリーニング",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "house, home",
+      "ans": "いえ",
+      "remarks": "家"
+    },
+    {
+      "id": 20,
+      "word": "condominium, apartment",
+      "ans": "マンション",
+      "remarks": "mansion"
+    },
+    {
+      "id": 21,
+      "word": "kitchen",
+      "ans": "キッチン",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "-- class",
+      "ans": "きょうしつ",
+      "remarks": "～教室"
+    },
+    {
+      "id": 23,
+      "word": "party room",
+      "ans": "パーティールーム",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "person",
+      "ans": "かた",
+      "remarks": "respectful of ひと"
+    },
+    {
+      "id": 25,
+      "word": "after -- (duration of time)",
+      "ans": "ご",
+      "remarks": "～後"
+    },
+    {
+      "id": 26,
+      "word": "only --",
+      "ans": "しか",
+      "remarks": "used with negatives"
+    },
+    {
+      "id": 27,
+      "word": "other",
+      "ans": "ほかの",
+      "remarks": "他_"
+    },
+    {
+      "id": 28,
+      "word": "clearly",
+      "ans": "はっきり",
+      "remarks": ""
+    },
+    {
+      "id": 29,
+      "word": "furniture",
+      "ans": "かぐ",
+      "remarks": "家具"
+    },
+    {
+      "id": 30,
+      "word": "bookcase",
+      "ans": "ほんだな",
+      "remarks": "本棚"
+    },
+    {
+      "id": 31,
+      "word": "one day, some day",
+      "ans": "いつか",
+      "remarks": ""
+    },
+    {
+      "id": 32,
+      "word": "build",
+      "ans": "たてます",
+      "remarks": "建___"
+    },
+    {
+      "id": 33,
+      "word": "wonderful",
+      "ans": "すばらしい",
+      "remarks": ""
+    }
+  ]
 }

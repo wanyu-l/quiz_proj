@@ -1,279 +1,279 @@
 {
-    "id": 46,
-    "name": "Lesson 32",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "exercise",
-            "ans": "うんどうします",
-            "remarks": "運動___"
-        },
-        {
-            "id": 1,
-            "word": "succeed",
-            "ans": "せいこうします",
-            "remarks": "成功___"
-        },
-        {
-            "id": 2,
-            "word": "fail",
-            "ans": "しっぱいします",
-            "remarks": "失敗___"
-        },
-        {
-            "id": 3,
-            "word": "pass (exam)",
-            "ans": "ごうかくします",
-            "remarks": "合格___"
-        },
-        {
-            "id": 4,
-            "word": "rain stops",
-            "ans": "あめがやみます",
-            "remarks": "雨_____"
-        },
-        {
-            "id": 5,
-            "word": "はれます",
-            "ans": "はれます",
-            "remarks": "晴___"
-        },
-        {
-            "id": 6,
-            "word": "get cloudy",
-            "ans": "くもります",
-            "remarks": "曇___"
-        },
-        {
-            "id": 7,
-            "word": "continue",
-            "ans": "つづきます",
-            "remarks": "続___"
-        },
-        {
-            "id": 8,
-            "word": "catch a cold",
-            "ans": "かぜをひきます",
-            "remarks": ""
-        },
-        {
-            "id": 9,
-            "word": "cool",
-            "ans": "ひやします",
-            "remarks": "冷____"
-        },
-        {
-            "id": 10,
-            "word": "get crowded",
-            "ans": "こみます",
-            "remarks": "込/混___"
-        },
-        {
-            "id": 11,
-            "word": "get less crowded",
-            "ans": "すきます",
-            "remarks": "空___"
-        },
-        {
-            "id": 12,
-            "word": "participate, attend",
-            "ans": "でます",
-            "remarks": "出__"
-        },
-        {
-            "id": 13,
-            "word": "overdo things",
-            "ans": "むりをします",
-            "remarks": "無理____"
-        },
-        {
-            "id": 14,
-            "word": "enough, sufficient",
-            "ans": "じゅうぶん",
-            "remarks": "十分［な］"
-        },
-        {
-            "id": 15,
-            "word": "strange, funny",
-            "ans": "おかしい",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "noisy",
-            "ans": "うるさい",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "teacher, doctor",
-            "ans": "せんせい",
-            "remarks": "先生"
-        },
-        {
-            "id": 18,
-            "word": "burning",
-            "ans": "やけど",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "injury",
-            "ans": "けが",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "cough",
-            "ans": "せき",
-            "remarks": "咳"
-        },
-        {
-            "id": 21,
-            "word": "influenza",
-            "ans": "インフルエンザ",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "sky",
-            "ans": "そら",
-            "remarks": "空"
-        },
-        {
-            "id": 23,
-            "word": "sun",
-            "ans": "たいよう",
-            "remarks": "太陽"
-        },
-        {
-            "id": 24,
-            "word": "star",
-            "ans": "ほし",
-            "remarks": "星"
-        },
-        {
-            "id": 25,
-            "word": "wind",
-            "ans": "かぜ",
-            "remarks": "風"
-        },
-        {
-            "id": 26,
-            "word": "east",
-            "ans": "ひがし",
-            "remarks": "東"
-        },
-        {
-            "id": 27,
-            "word": "west",
-            "ans": "にし",
-            "remarks": "西"
-        },
-        {
-            "id": 28,
-            "word": "south",
-            "ans": "みなみ",
-            "remarks": "南"
-        },
-        {
-            "id": 29,
-            "word": "north",
-            "ans": "きた",
-            "remarks": "北"
-        },
-        {
-            "id": 30,
-            "word": "international",
-            "ans": "こくさい",
-            "remarks": "国際"
-        },
-        {
-            "id": 31,
-            "word": "tap, faucet, water supply",
-            "ans": "すいどう",
-            "remarks": "水道"
-        },
-        {
-            "id": 32,
-            "word": "engine",
-            "ans": "エンジン",
-            "remarks": ""
-        },
-        {
-            "id": 33,
-            "word": "team",
-            "ans": "チーム",
-            "remarks": ""
-        },
-        {
-            "id": 34,
-            "word": "this evening",
-            "ans": "こんや",
-            "remarks": "今夜"
-        },
-        {
-            "id": 35,
-            "word": "late afternoon",
-            "ans": "ゆうがた",
-            "remarks": "夕方"
-        },
-        {
-            "id": 36,
-            "word": "a time in the past, before",
-            "ans": "まえ",
-            "remarks": "前"
-        },
-        {
-            "id": 37,
-            "word": "late",
-            "ans": "おそく",
-            "remarks": "遅_"
-        },
-        {
-            "id": 38,
-            "word": "this much",
-            "ans": "こんなに",
-            "remarks": ""
-        },
-        {
-            "id": 39,
-            "word": "that much",
-            "ans": "そんなに",
-            "remarks": "related to listener"
-        },
-        {
-            "id": 40,
-            "word": "that much",
-            "ans": "あんなに",
-            "remarks": "not related to speaker or listener"
-        },
-        {
-            "id": 41,
-            "word": "vigour",
-            "ans": "げんき",
-            "remarks": "元気"
-        },
-        {
-            "id": 42,
-            "word": "stomach",
-            "ans": "い",
-            "remarks": "胃"
-        },
-        {
-            "id": 43,
-            "word": "stress",
-            "ans": "ストレス",
-            "remarks": ""
-        },
-        {
-            "id": 44,
-            "word": "that is not allowed",
-            "ans": "それはいけませんね",
-            "remarks": "that will not do"
-        }
-    ]
+  "id": 46,
+  "name": "Lesson 32",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "exercise",
+      "ans": "うんどうします",
+      "remarks": "運動___"
+    },
+    {
+      "id": 1,
+      "word": "succeed",
+      "ans": "せいこうします",
+      "remarks": "成功___"
+    },
+    {
+      "id": 2,
+      "word": "fail",
+      "ans": "しっぱいします",
+      "remarks": "失敗___"
+    },
+    {
+      "id": 3,
+      "word": "pass (exam)",
+      "ans": "ごうかくします",
+      "remarks": "合格___"
+    },
+    {
+      "id": 4,
+      "word": "rain stops",
+      "ans": "あめがやみます",
+      "remarks": "雨_____"
+    },
+    {
+      "id": 5,
+      "word": "はれます",
+      "ans": "はれます",
+      "remarks": "晴___"
+    },
+    {
+      "id": 6,
+      "word": "get cloudy",
+      "ans": "くもります",
+      "remarks": "曇___"
+    },
+    {
+      "id": 7,
+      "word": "continue",
+      "ans": "つづきます",
+      "remarks": "続___"
+    },
+    {
+      "id": 8,
+      "word": "catch a cold",
+      "ans": "かぜをひきます",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "cool",
+      "ans": "ひやします",
+      "remarks": "冷____"
+    },
+    {
+      "id": 10,
+      "word": "get crowded",
+      "ans": "こみます",
+      "remarks": "込/混___"
+    },
+    {
+      "id": 11,
+      "word": "get less crowded",
+      "ans": "すきます",
+      "remarks": "空___"
+    },
+    {
+      "id": 12,
+      "word": "participate, attend",
+      "ans": "でます",
+      "remarks": "出__"
+    },
+    {
+      "id": 13,
+      "word": "overdo things",
+      "ans": "むりをします",
+      "remarks": "無理____"
+    },
+    {
+      "id": 14,
+      "word": "enough, sufficient",
+      "ans": "じゅうぶん",
+      "remarks": "十分［な］"
+    },
+    {
+      "id": 15,
+      "word": "strange, funny",
+      "ans": "おかしい",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "noisy",
+      "ans": "うるさい",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "teacher, doctor",
+      "ans": "せんせい",
+      "remarks": "先生"
+    },
+    {
+      "id": 18,
+      "word": "burning",
+      "ans": "やけど",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "injury",
+      "ans": "けが",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "cough",
+      "ans": "せき",
+      "remarks": "咳"
+    },
+    {
+      "id": 21,
+      "word": "influenza",
+      "ans": "インフルエンザ",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "sky",
+      "ans": "そら",
+      "remarks": "空"
+    },
+    {
+      "id": 23,
+      "word": "sun",
+      "ans": "たいよう",
+      "remarks": "太陽"
+    },
+    {
+      "id": 24,
+      "word": "star",
+      "ans": "ほし",
+      "remarks": "星"
+    },
+    {
+      "id": 25,
+      "word": "wind",
+      "ans": "かぜ",
+      "remarks": "風"
+    },
+    {
+      "id": 26,
+      "word": "east",
+      "ans": "ひがし",
+      "remarks": "東"
+    },
+    {
+      "id": 27,
+      "word": "west",
+      "ans": "にし",
+      "remarks": "西"
+    },
+    {
+      "id": 28,
+      "word": "south",
+      "ans": "みなみ",
+      "remarks": "南"
+    },
+    {
+      "id": 29,
+      "word": "north",
+      "ans": "きた",
+      "remarks": "北"
+    },
+    {
+      "id": 30,
+      "word": "international",
+      "ans": "こくさい",
+      "remarks": "国際"
+    },
+    {
+      "id": 31,
+      "word": "tap, faucet, water supply",
+      "ans": "すいどう",
+      "remarks": "水道"
+    },
+    {
+      "id": 32,
+      "word": "engine",
+      "ans": "エンジン",
+      "remarks": ""
+    },
+    {
+      "id": 33,
+      "word": "team",
+      "ans": "チーム",
+      "remarks": ""
+    },
+    {
+      "id": 34,
+      "word": "this evening",
+      "ans": "こんや",
+      "remarks": "今夜"
+    },
+    {
+      "id": 35,
+      "word": "late afternoon",
+      "ans": "ゆうがた",
+      "remarks": "夕方"
+    },
+    {
+      "id": 36,
+      "word": "a time in the past, before",
+      "ans": "まえ",
+      "remarks": "前"
+    },
+    {
+      "id": 37,
+      "word": "late",
+      "ans": "おそく",
+      "remarks": "遅_"
+    },
+    {
+      "id": 38,
+      "word": "this much",
+      "ans": "こんなに",
+      "remarks": ""
+    },
+    {
+      "id": 39,
+      "word": "that much",
+      "ans": "そんなに",
+      "remarks": "related to listener"
+    },
+    {
+      "id": 40,
+      "word": "that much",
+      "ans": "あんなに",
+      "remarks": "not related to speaker or listener"
+    },
+    {
+      "id": 41,
+      "word": "vigour",
+      "ans": "げんき",
+      "remarks": "元気"
+    },
+    {
+      "id": 42,
+      "word": "stomach",
+      "ans": "い",
+      "remarks": "胃"
+    },
+    {
+      "id": 43,
+      "word": "stress",
+      "ans": "ストレス",
+      "remarks": ""
+    },
+    {
+      "id": 44,
+      "word": "that is not allowed",
+      "ans": "それはいけませんね",
+      "remarks": "that will not do"
+    }
+  ]
 }

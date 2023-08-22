@@ -1,309 +1,309 @@
 {
-    "id": 1,
-    "name": "Lesson 2",
-    "tags": [
-        "LAJ 1"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "this one (close to speaker)",
-            "ans": "これ",
-            "remarks": ""
-        },
-        {
-            "id": 1,
-            "word": "that one (near listener)",
-            "ans": "それ",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "that one over there",
-            "ans": "あれ",
-            "remarks": "far from both"
-        },
-        {
-            "id": 3,
-            "word": "this [+ noun]",
-            "ans": "この",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "that [+ noun] near listener",
-            "ans": "その",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "that [+ noun] over there",
-            "ans": "あの",
-            "remarks": "far from both"
-        },
-        {
-            "id": 6,
-            "word": "book",
-            "ans": "ほん",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "dictionary",
-            "ans": "じしょ",
-            "remarks": "辞书"
-        },
-        {
-            "id": 8,
-            "word": "textbook",
-            "ans": "きょうかしょ",
-            "remarks": "教科书"
-        },
-        {
-            "id": 9,
-            "word": "magazine",
-            "ans": "ざっし",
-            "remarks": "杂志"
-        },
-        {
-            "id": 10,
-            "word": "newspaper",
-            "ans": "しんぶん",
-            "remarks": "新闻"
-        },
-        {
-            "id": 11,
-            "word": "notebook",
-            "ans": "ノート",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "pocket notebook",
-            "ans": "てちょう",
-            "remarks": "手账"
-        },
-        {
-            "id": 13,
-            "word": "business card",
-            "ans": "めいし",
-            "remarks": "名刺"
-        },
-        {
-            "id": 14,
-            "word": "card",
-            "ans": "カード",
-            "remarks": "credit card etc."
-        },
-        {
-            "id": 15,
-            "word": "pencil",
-            "ans": "えんぴつ",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "pen",
-            "ans": "ペン",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "ballpoint pen",
-            "ans": "ボールペン",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "mechanical pencil",
-            "ans": "シャープペンシル",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "key",
-            "ans": "かぎ",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "watch, clock",
-            "ans": "とけい",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "umbrella",
-            "ans": "かさ",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "bag",
-            "ans": "かばん",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "TV",
-            "ans": "テレビ",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "radio",
-            "ans": "ラジオ",
-            "remarks": ""
-        },
-        {
-            "id": 25,
-            "word": "camera",
-            "ans": "カメラ",
-            "remarks": ""
-        },
-        {
-            "id": 26,
-            "word": "computer / PC",
-            "ans": "コンピューター",
-            "remarks": "General computers"
-        },
-        {
-            "id": 27,
-            "word": "computer / PC",
-            "ans": "パソコン",
-            "remarks": "Personal device"
-        },
-        {
-            "id": 28,
-            "word": "car",
-            "ans": "くるま",
-            "remarks": ""
-        },
-        {
-            "id": 29,
-            "word": "mobile phone",
-            "ans": "けいたいでんわ",
-            "remarks": "携带电话"
-        },
-        {
-            "id": 30,
-            "word": "desk",
-            "ans": "つくえ",
-            "remarks": ""
-        },
-        {
-            "id": 31,
-            "word": "chair",
-            "ans": "いす",
-            "remarks": ""
-        },
-        {
-            "id": 32,
-            "word": "chocolate",
-            "ans": "チョコレート",
-            "remarks": ""
-        },
-        {
-            "id": 33,
-            "word": "coffee",
-            "ans": "コーヒー",
-            "remarks": ""
-        },
-        {
-            "id": 34,
-            "word": "souvenir",
-            "ans": "おみやげ",
-            "remarks": ""
-        },
-        {
-            "id": 35,
-            "word": "English (language)",
-            "ans": "えいご",
-            "remarks": "英语"
-        },
-        {
-            "id": 36,
-            "word": "Japanese language",
-            "ans": "にほんご",
-            "remarks": "日本语"
-        },
-        {
-            "id": 37,
-            "word": "-- language",
-            "ans": "ご",
-            "remarks": ""
-        },
-        {
-            "id": 38,
-            "word": "what",
-            "ans": "なん",
-            "remarks": ""
-        },
-        {
-            "id": 39,
-            "word": "That's right.",
-            "ans": "そうです",
-            "remarks": ""
-        },
-        {
-            "id": 40,
-            "word": "No, it isn't. / That's wrong",
-            "ans": "ちがいます",
-            "remarks": ""
-        },
-        {
-            "id": 41,
-            "word": "I see",
-            "ans": "そうですか",
-            "remarks": ""
-        },
-        {
-            "id": 42,
-            "word": "Well, -- (hesitating)",
-            "ans": "あのう",
-            "remarks": ""
-        },
-        {
-            "id": 43,
-            "word": "Oh? What!",
-            "ans": "えっ",
-            "remarks": "(reaction) something unexpected"
-        },
-        {
-            "id": 44,
-            "word": "Oh",
-            "ans": "あ",
-            "remarks": "when becoming aware of something"
-        },
-        {
-            "id": 45,
-            "word": "Please. (offering)",
-            "ans": "どうぞ",
-            "remarks": ""
-        },
-        {
-            "id": 46,
-            "word": "Thanks",
-            "ans": "どうも",
-            "remarks": "Casual response"
-        },
-        {
-            "id": 47,
-            "word": "Thank you very much",
-            "ans": "どうもありがとうございます",
-            "remarks": ""
-        },
-        {
-            "id": 48,
-            "word": "I hope for your kind assistance hereafter",
-            "ans": "これからおせわになります",
-            "remarks": ""
-        },
-        {
-            "id": 49,
-            "word": "I'm pleased to meet you, too",
-            "ans": "こちらこそよろしくおねがいします",
-            "remarks": "No me more"
-        }
-    ]
+  "id": 1,
+  "name": "Lesson 2",
+  "tags": [
+    "LAJ 1"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "this one (close to speaker)",
+      "ans": "これ",
+      "remarks": ""
+    },
+    {
+      "id": 1,
+      "word": "that one (near listener)",
+      "ans": "それ",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "that one over there",
+      "ans": "あれ",
+      "remarks": "far from both"
+    },
+    {
+      "id": 3,
+      "word": "this [+ noun]",
+      "ans": "この",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "that [+ noun] near listener",
+      "ans": "その",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "that [+ noun] over there",
+      "ans": "あの",
+      "remarks": "far from both"
+    },
+    {
+      "id": 6,
+      "word": "book",
+      "ans": "ほん",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "dictionary",
+      "ans": "じしょ",
+      "remarks": "辞书"
+    },
+    {
+      "id": 8,
+      "word": "textbook",
+      "ans": "きょうかしょ",
+      "remarks": "教科书"
+    },
+    {
+      "id": 9,
+      "word": "magazine",
+      "ans": "ざっし",
+      "remarks": "杂志"
+    },
+    {
+      "id": 10,
+      "word": "newspaper",
+      "ans": "しんぶん",
+      "remarks": "新闻"
+    },
+    {
+      "id": 11,
+      "word": "notebook",
+      "ans": "ノート",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "pocket notebook",
+      "ans": "てちょう",
+      "remarks": "手账"
+    },
+    {
+      "id": 13,
+      "word": "business card",
+      "ans": "めいし",
+      "remarks": "名刺"
+    },
+    {
+      "id": 14,
+      "word": "card",
+      "ans": "カード",
+      "remarks": "credit card etc."
+    },
+    {
+      "id": 15,
+      "word": "pencil",
+      "ans": "えんぴつ",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "pen",
+      "ans": "ペン",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "ballpoint pen",
+      "ans": "ボールペン",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "mechanical pencil",
+      "ans": "シャープペンシル",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "key",
+      "ans": "かぎ",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "watch, clock",
+      "ans": "とけい",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "umbrella",
+      "ans": "かさ",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "bag",
+      "ans": "かばん",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "TV",
+      "ans": "テレビ",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "radio",
+      "ans": "ラジオ",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "camera",
+      "ans": "カメラ",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "computer / PC",
+      "ans": "コンピューター",
+      "remarks": "General computers"
+    },
+    {
+      "id": 27,
+      "word": "computer / PC",
+      "ans": "パソコン",
+      "remarks": "Personal device"
+    },
+    {
+      "id": 28,
+      "word": "car",
+      "ans": "くるま",
+      "remarks": ""
+    },
+    {
+      "id": 29,
+      "word": "mobile phone",
+      "ans": "けいたいでんわ",
+      "remarks": "携带电话"
+    },
+    {
+      "id": 30,
+      "word": "desk",
+      "ans": "つくえ",
+      "remarks": ""
+    },
+    {
+      "id": 31,
+      "word": "chair",
+      "ans": "いす",
+      "remarks": ""
+    },
+    {
+      "id": 32,
+      "word": "chocolate",
+      "ans": "チョコレート",
+      "remarks": ""
+    },
+    {
+      "id": 33,
+      "word": "coffee",
+      "ans": "コーヒー",
+      "remarks": ""
+    },
+    {
+      "id": 34,
+      "word": "souvenir",
+      "ans": "おみやげ",
+      "remarks": ""
+    },
+    {
+      "id": 35,
+      "word": "English (language)",
+      "ans": "えいご",
+      "remarks": "英语"
+    },
+    {
+      "id": 36,
+      "word": "Japanese language",
+      "ans": "にほんご",
+      "remarks": "日本语"
+    },
+    {
+      "id": 37,
+      "word": "-- language",
+      "ans": "ご",
+      "remarks": ""
+    },
+    {
+      "id": 38,
+      "word": "what",
+      "ans": "なん",
+      "remarks": ""
+    },
+    {
+      "id": 39,
+      "word": "That's right.",
+      "ans": "そうです",
+      "remarks": ""
+    },
+    {
+      "id": 40,
+      "word": "No, it isn't. / That's wrong",
+      "ans": "ちがいます",
+      "remarks": ""
+    },
+    {
+      "id": 41,
+      "word": "I see",
+      "ans": "そうですか",
+      "remarks": ""
+    },
+    {
+      "id": 42,
+      "word": "Well, -- (hesitating)",
+      "ans": "あのう",
+      "remarks": ""
+    },
+    {
+      "id": 43,
+      "word": "Oh? What!",
+      "ans": "えっ",
+      "remarks": "(reaction) something unexpected"
+    },
+    {
+      "id": 44,
+      "word": "Oh",
+      "ans": "あ",
+      "remarks": "when becoming aware of something"
+    },
+    {
+      "id": 45,
+      "word": "Please. (offering)",
+      "ans": "どうぞ",
+      "remarks": ""
+    },
+    {
+      "id": 46,
+      "word": "Thanks",
+      "ans": "どうも",
+      "remarks": "Casual response"
+    },
+    {
+      "id": 47,
+      "word": "Thank you very much",
+      "ans": "どうもありがとうございます",
+      "remarks": ""
+    },
+    {
+      "id": 48,
+      "word": "I hope for your kind assistance hereafter",
+      "ans": "これからおせわになります",
+      "remarks": ""
+    },
+    {
+      "id": 49,
+      "word": "I'm pleased to meet you, too",
+      "ans": "こちらこそよろしくおねがいします",
+      "remarks": "No me more"
+    }
+  ]
 }

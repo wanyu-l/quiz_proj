@@ -1,255 +1,255 @@
 {
-    "id": 0,
-    "name": "Lesson 1",
-    "tags": [
-        "LAJ 1"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "I",
-            "ans": "わたし",
-            "remarks": ""
-        },
-        {
-            "id": 1,
-            "word": "We",
-            "ans": "わたしたち",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "You (DO NOT use in conversation/messages)",
-            "ans": "あなた",
-            "remarks": "can be used in announcements"
-        },
-        {
-            "id": 3,
-            "word": "That person",
-            "ans": "あのひと",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "That person (polite)",
-            "ans": "あのかた",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "All of you / Everyone",
-            "ans": "みなさん",
-            "remarks": ""
-        },
-        {
-            "id": 6,
-            "word": "Mr./Mrs. ~",
-            "ans": "～さん",
-            "remarks": "title of respect"
-        },
-        {
-            "id": 7,
-            "word": "Suffix of name (casual)",
-            "ans": "ちゃん",
-            "remarks": "often for girls or nicknames"
-        },
-        {
-            "id": 8,
-            "word": "suffix meaning 'a national of --'",
-            "ans": "じん",
-            "remarks": "eg: nihon~, chuugoku~"
-        },
-        {
-            "id": 9,
-            "word": "teacher",
-            "ans": "せんせい",
-            "remarks": "honourable title, not only teachers"
-        },
-        {
-            "id": 10,
-            "word": "teacher (own or family member's job)",
-            "ans": "きょうし",
-            "remarks": "job title"
-        },
-        {
-            "id": 11,
-            "word": "student",
-            "ans": "がくせい",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "company employee",
-            "ans": "かいしゃいん",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "employee of - company",
-            "ans": "しゃいん",
-            "remarks": ""
-        },
-        {
-            "id": 14,
-            "word": "bank employee",
-            "ans": "ぎんこういん",
-            "remarks": ""
-        },
-        {
-            "id": 15,
-            "word": "medical doctor",
-            "ans": "いしゃ",
-            "remarks": "医者"
-        },
-        {
-            "id": 16,
-            "word": "researcher",
-            "ans": "けんきゅうしゃ",
-            "remarks": "研究者"
-        },
-        {
-            "id": 17,
-            "word": "university",
-            "ans": "だいがく",
-            "remarks": "大学"
-        },
-        {
-            "id": 18,
-            "word": "hospital",
-            "ans": "びょういん",
-            "remarks": "dont get confused with salon"
-        },
-        {
-            "id": 19,
-            "word": "who",
-            "ans": "だれ",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "who (polite)",
-            "ans": "どなた",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "-- years old",
-            "ans": "さい",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "how old",
-            "ans": "なんさい",
-            "remarks": "how (many years) old"
-        },
-        {
-            "id": 23,
-            "word": "how old (polite)",
-            "ans": "おいくつ",
-            "remarks": "remember DESU KA"
-        },
-        {
-            "id": 24,
-            "word": "Yes",
-            "ans": "はい",
-            "remarks": ""
-        },
-        {
-            "id": 25,
-            "word": "No",
-            "ans": "いいえ",
-            "remarks": ""
-        },
-        {
-            "id": 26,
-            "word": "National University of Singapore",
-            "ans": "シンガポールこくりつだいがく",
-            "remarks": ""
-        },
-        {
-            "id": 27,
-            "word": "major",
-            "ans": "せんこう",
-            "remarks": "专攻"
-        },
-        {
-            "id": 28,
-            "word": "major",
-            "ans": "せんもん",
-            "remarks": "专门"
-        },
-        {
-            "id": 29,
-            "word": "what year of study",
-            "ans": "なんねんせい",
-            "remarks": "何年生"
-        },
-        {
-            "id": 30,
-            "word": "1st year student",
-            "ans": "いちねんせい",
-            "remarks": "一年生"
-        },
-        {
-            "id": 31,
-            "word": "2nd year student",
-            "ans": "にねんせい",
-            "remarks": "二年生"
-        },
-        {
-            "id": 32,
-            "word": "3rd year student",
-            "ans": "さんねんせい",
-            "remarks": "三年生"
-        },
-        {
-            "id": 33,
-            "word": "4th year student",
-            "ans": "よねんせい",
-            "remarks": "四年生"
-        },
-        {
-            "id": 34,
-            "word": "20 years old",
-            "ans": "はたち",
-            "remarks": "irregular"
-        },
-        {
-            "id": 35,
-            "word": "How do you do?",
-            "ans": "はじめまして",
-            "remarks": "greeting used at first meet"
-        },
-        {
-            "id": 36,
-            "word": "I came from the US.",
-            "ans": "アメリカからきました",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "Pleased to meet you.",
-            "ans": "どうぞよろしくおねがいします",
-            "remarks": "Please take care of me 请多指教"
-        },
-        {
-            "id": 38,
-            "word": "Excuse me / I might be being rude, but ---",
-            "ans": "しつれいですが",
-            "remarks": ""
-        },
-        {
-            "id": 39,
-            "word": "Your name is?",
-            "ans": "おなまえは",
-            "remarks": ""
-        },
-        {
-            "id": 40,
-            "word": "This is Mr Miller (polite)",
-            "ans": "こちらはミラーさんです",
-            "remarks": ""
-        }
-    ]
+  "id": 0,
+  "name": "Lesson 1",
+  "tags": [
+    "LAJ 1"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "I",
+      "ans": "わたし",
+      "remarks": ""
+    },
+    {
+      "id": 1,
+      "word": "We",
+      "ans": "わたしたち",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "You (DO NOT use in conversation/messages)",
+      "ans": "あなた",
+      "remarks": "can be used in announcements"
+    },
+    {
+      "id": 3,
+      "word": "That person",
+      "ans": "あのひと",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "That person (polite)",
+      "ans": "あのかた",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "All of you / Everyone",
+      "ans": "みなさん",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "Mr./Mrs. ~",
+      "ans": "～さん",
+      "remarks": "title of respect"
+    },
+    {
+      "id": 7,
+      "word": "Suffix of name (casual)",
+      "ans": "ちゃん",
+      "remarks": "often for girls or nicknames"
+    },
+    {
+      "id": 8,
+      "word": "suffix meaning 'a national of --'",
+      "ans": "じん",
+      "remarks": "eg: nihon~, chuugoku~"
+    },
+    {
+      "id": 9,
+      "word": "teacher",
+      "ans": "せんせい",
+      "remarks": "honourable title, not only teachers"
+    },
+    {
+      "id": 10,
+      "word": "teacher (own or family member's job)",
+      "ans": "きょうし",
+      "remarks": "job title"
+    },
+    {
+      "id": 11,
+      "word": "student",
+      "ans": "がくせい",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "company employee",
+      "ans": "かいしゃいん",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "employee of - company",
+      "ans": "しゃいん",
+      "remarks": ""
+    },
+    {
+      "id": 14,
+      "word": "bank employee",
+      "ans": "ぎんこういん",
+      "remarks": ""
+    },
+    {
+      "id": 15,
+      "word": "medical doctor",
+      "ans": "いしゃ",
+      "remarks": "医者"
+    },
+    {
+      "id": 16,
+      "word": "researcher",
+      "ans": "けんきゅうしゃ",
+      "remarks": "研究者"
+    },
+    {
+      "id": 17,
+      "word": "university",
+      "ans": "だいがく",
+      "remarks": "大学"
+    },
+    {
+      "id": 18,
+      "word": "hospital",
+      "ans": "びょういん",
+      "remarks": "dont get confused with salon"
+    },
+    {
+      "id": 19,
+      "word": "who",
+      "ans": "だれ",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "who (polite)",
+      "ans": "どなた",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "-- years old",
+      "ans": "さい",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "how old",
+      "ans": "なんさい",
+      "remarks": "how (many years) old"
+    },
+    {
+      "id": 23,
+      "word": "how old (polite)",
+      "ans": "おいくつ",
+      "remarks": "remember DESU KA"
+    },
+    {
+      "id": 24,
+      "word": "Yes",
+      "ans": "はい",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "No",
+      "ans": "いいえ",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "National University of Singapore",
+      "ans": "シンガポールこくりつだいがく",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "major",
+      "ans": "せんこう",
+      "remarks": "专攻"
+    },
+    {
+      "id": 28,
+      "word": "major",
+      "ans": "せんもん",
+      "remarks": "专门"
+    },
+    {
+      "id": 29,
+      "word": "what year of study",
+      "ans": "なんねんせい",
+      "remarks": "何年生"
+    },
+    {
+      "id": 30,
+      "word": "1st year student",
+      "ans": "いちねんせい",
+      "remarks": "一年生"
+    },
+    {
+      "id": 31,
+      "word": "2nd year student",
+      "ans": "にねんせい",
+      "remarks": "二年生"
+    },
+    {
+      "id": 32,
+      "word": "3rd year student",
+      "ans": "さんねんせい",
+      "remarks": "三年生"
+    },
+    {
+      "id": 33,
+      "word": "4th year student",
+      "ans": "よねんせい",
+      "remarks": "四年生"
+    },
+    {
+      "id": 34,
+      "word": "20 years old",
+      "ans": "はたち",
+      "remarks": "irregular"
+    },
+    {
+      "id": 35,
+      "word": "How do you do?",
+      "ans": "はじめまして",
+      "remarks": "greeting used at first meet"
+    },
+    {
+      "id": 36,
+      "word": "I came from the US.",
+      "ans": "アメリカからきました",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "Pleased to meet you.",
+      "ans": "どうぞよろしくおねがいします",
+      "remarks": "Please take care of me 请多指教"
+    },
+    {
+      "id": 38,
+      "word": "Excuse me / I might be being rude, but ---",
+      "ans": "しつれいですが",
+      "remarks": ""
+    },
+    {
+      "id": 39,
+      "word": "Your name is?",
+      "ans": "おなまえは",
+      "remarks": ""
+    },
+    {
+      "id": 40,
+      "word": "This is Mr Miller (polite)",
+      "ans": "こちらはミラーさんです",
+      "remarks": ""
+    }
+  ]
 }

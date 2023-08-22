@@ -1,177 +1,177 @@
 {
-    "id": 36,
-    "name": "Lesson 22",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "put on (a shirt, dress etc)",
-            "ans": "きます",
-            "remarks": "着__"
-        },
-        {
-            "id": 1,
-            "word": "put on (shoes, socks, pants, skirt)",
-            "ans": "はきます",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "put on (a hat)",
-            "ans": "かぶります",
-            "remarks": ""
-        },
-        {
-            "id": 3,
-            "word": "put on glasses",
-            "ans": "めがねをかけます",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "put on a tie",
-            "ans": "ネクタイをします",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "be born",
-            "ans": "うまれます",
-            "remarks": "生____"
-        },
-        {
-            "id": 6,
-            "word": "we",
-            "ans": "わたしたち",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "coat",
-            "ans": "コート",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "sweater",
-            "ans": "セーター",
-            "remarks": ""
-        },
-        {
-            "id": 9,
-            "word": "suit",
-            "ans": "スーツ",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "hat, cap",
-            "ans": "ぼうし",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "glasses",
-            "ans": "めがね",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "cake",
-            "ans": "ケーキ",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "box lunch",
-            "ans": "べんとう",
-            "remarks": "［お］弁当"
-        },
-        {
-            "id": 14,
-            "word": "robot",
-            "ans": "ロボット",
-            "remarks": ""
-        },
-        {
-            "id": 15,
-            "word": "humor",
-            "ans": "ユーモア",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "convenience",
-            "ans": "つごう",
-            "remarks": "都合"
-        },
-        {
-            "id": 17,
-            "word": "often",
-            "ans": "よく",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "Well, let me see",
-            "ans": "えーと",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "Congratulations.",
-            "ans": "おめでとう",
-            "remarks": "_____[ございます]"
-        },
-        {
-            "id": 20,
-            "word": "Are you looking for --?",
-            "ans": "おさがしですか",
-            "remarks": "_探____"
-        },
-        {
-            "id": 21,
-            "word": "Well then,",
-            "ans": "では",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "this (polite)",
-            "ans": "こちら",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "rent",
-            "ans": "やちん",
-            "remarks": "家賃"
-        },
-        {
-            "id": 24,
-            "word": "kitchen with a dining area",
-            "ans": "ダイニングキッチン",
-            "remarks": ""
-        },
-        {
-            "id": 25,
-            "word": "Japanese-style room",
-            "ans": "わしつ",
-            "remarks": "和室"
-        },
-        {
-            "id": 26,
-            "word": "Japanese-style closet",
-            "ans": "おしいれ",
-            "remarks": "押_入_"
-        },
-        {
-            "id": 27,
-            "word": "Japanese-style mattress and quilt",
-            "ans": "ふとん",
-            "remarks": "布団"
-        }
-    ]
+  "id": 36,
+  "name": "Lesson 22",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "put on (a shirt, dress etc)",
+      "ans": "きます",
+      "remarks": "着__"
+    },
+    {
+      "id": 1,
+      "word": "put on (shoes, socks, pants, skirt)",
+      "ans": "はきます",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "put on (a hat)",
+      "ans": "かぶります",
+      "remarks": ""
+    },
+    {
+      "id": 3,
+      "word": "put on glasses",
+      "ans": "めがねをかけます",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "put on a tie",
+      "ans": "ネクタイをします",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "be born",
+      "ans": "うまれます",
+      "remarks": "生____"
+    },
+    {
+      "id": 6,
+      "word": "we",
+      "ans": "わたしたち",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "coat",
+      "ans": "コート",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "sweater",
+      "ans": "セーター",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "suit",
+      "ans": "スーツ",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "hat, cap",
+      "ans": "ぼうし",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "glasses",
+      "ans": "めがね",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "cake",
+      "ans": "ケーキ",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "box lunch",
+      "ans": "べんとう",
+      "remarks": "［お］弁当"
+    },
+    {
+      "id": 14,
+      "word": "robot",
+      "ans": "ロボット",
+      "remarks": ""
+    },
+    {
+      "id": 15,
+      "word": "humor",
+      "ans": "ユーモア",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "convenience",
+      "ans": "つごう",
+      "remarks": "都合"
+    },
+    {
+      "id": 17,
+      "word": "often",
+      "ans": "よく",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "Well, let me see",
+      "ans": "えーと",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "Congratulations.",
+      "ans": "おめでとう",
+      "remarks": "_____[ございます]"
+    },
+    {
+      "id": 20,
+      "word": "Are you looking for --?",
+      "ans": "おさがしですか",
+      "remarks": "_探____"
+    },
+    {
+      "id": 21,
+      "word": "Well then,",
+      "ans": "では",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "this (polite)",
+      "ans": "こちら",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "rent",
+      "ans": "やちん",
+      "remarks": "家賃"
+    },
+    {
+      "id": 24,
+      "word": "kitchen with a dining area",
+      "ans": "ダイニングキッチン",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "Japanese-style room",
+      "ans": "わしつ",
+      "remarks": "和室"
+    },
+    {
+      "id": 26,
+      "word": "Japanese-style closet",
+      "ans": "おしいれ",
+      "remarks": "押_入_"
+    },
+    {
+      "id": 27,
+      "word": "Japanese-style mattress and quilt",
+      "ans": "ふとん",
+      "remarks": "布団"
+    }
+  ]
 }

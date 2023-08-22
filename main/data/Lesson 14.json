@@ -1,279 +1,279 @@
 {
-    "id": 18,
-    "name": "Lesson 14",
-    "tags": [
-        "LAJ 2"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "turn on",
-            "ans": "つけます",
-            "remarks": "appliances"
-        },
-        {
-            "id": 1,
-            "word": "turn off",
-            "ans": "けします",
-            "remarks": "消__"
-        },
-        {
-            "id": 2,
-            "word": "open",
-            "ans": "あけます",
-            "remarks": "開____"
-        },
-        {
-            "id": 3,
-            "word": "close",
-            "ans": "しめます",
-            "remarks": "閉___"
-        },
-        {
-            "id": 4,
-            "word": "hurry",
-            "ans": "いそぎます",
-            "remarks": "急___"
-        },
-        {
-            "id": 5,
-            "word": "wait",
-            "ans": "まちます",
-            "remarks": "待___"
-        },
-        {
-            "id": 6,
-            "word": "hold",
-            "ans": "もちます",
-            "remarks": "持___"
-        },
-        {
-            "id": 7,
-            "word": "take, pass",
-            "ans": "とります",
-            "remarks": "取___"
-        },
-        {
-            "id": 8,
-            "word": "help (with a task)",
-            "ans": "てつだいます",
-            "remarks": "手伝_____"
-        },
-        {
-            "id": 9,
-            "word": "call",
-            "ans": "よびます",
-            "remarks": "呼___"
-        },
-        {
-            "id": 10,
-            "word": "speak, talk",
-            "ans": "はなします",
-            "remarks": "話___"
-        },
-        {
-            "id": 11,
-            "word": "use",
-            "ans": "つかいます",
-            "remarks": "使___"
-        },
-        {
-            "id": 12,
-            "word": "とめます",
-            "ans": "とめます",
-            "remarks": "止___"
-        },
-        {
-            "id": 13,
-            "word": "show",
-            "ans": "みせます",
-            "remarks": "見___"
-        },
-        {
-            "id": 14,
-            "word": "tell an address",
-            "ans": "じゅうしょをおしえます",
-            "remarks": "住所_教___"
-        },
-        {
-            "id": 15,
-            "word": "sit down",
-            "ans": "すわります",
-            "remarks": "座___"
-        },
-        {
-            "id": 16,
-            "word": "stand up",
-            "ans": "たちます",
-            "remarks": "立___"
-        },
-        {
-            "id": 17,
-            "word": "enter a cafe",
-            "ans": "きっさてんにはいります",
-            "remarks": "喫茶店__入___"
-        },
-        {
-            "id": 18,
-            "word": "go out of a cafe",
-            "ans": "きっさてんをでます",
-            "remarks": "喫茶店_出__"
-        },
-        {
-            "id": 19,
-            "word": "rain",
-            "ans": "あめがふります",
-            "remarks": "雨_降___"
-        },
-        {
-            "id": 20,
-            "word": "copy",
-            "ans": "コピーします",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "electricity, light",
-            "ans": "でんき",
-            "remarks": "電気"
-        },
-        {
-            "id": 22,
-            "word": "air conditioner",
-            "ans": "エアコン",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "passport",
-            "ans": "パスポート",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "name",
-            "ans": "なまえ",
-            "remarks": "名前"
-        },
-        {
-            "id": 25,
-            "word": "address",
-            "ans": "じゅうしょ",
-            "remarks": "住所"
-        },
-        {
-            "id": 26,
-            "word": "map",
-            "ans": "ちず",
-            "remarks": "地図"
-        },
-        {
-            "id": 27,
-            "word": "salt",
-            "ans": "しお",
-            "remarks": "塩"
-        },
-        {
-            "id": 28,
-            "word": "sugar",
-            "ans": "さとう",
-            "remarks": "砂糖"
-        },
-        {
-            "id": 29,
-            "word": "question, problem, trouble",
-            "ans": "もんだい",
-            "remarks": "問題"
-        },
-        {
-            "id": 30,
-            "word": "answer",
-            "ans": "こたえ",
-            "remarks": "答え"
-        },
-        {
-            "id": 31,
-            "word": "how to read",
-            "ans": "よみかた",
-            "remarks": "読_方"
-        },
-        {
-            "id": 32,
-            "word": "how to ~",
-            "ans": "かた",
-            "remarks": "method, 方"
-        },
-        {
-            "id": 33,
-            "word": "straight",
-            "ans": "まっすぐ",
-            "remarks": ""
-        },
-        {
-            "id": 34,
-            "word": "slowly",
-            "ans": "ゆっくり",
-            "remarks": ""
-        },
-        {
-            "id": 35,
-            "word": "immediately",
-            "ans": "すぐ",
-            "remarks": ""
-        },
-        {
-            "id": 36,
-            "word": "again",
-            "ans": "また",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "later",
-            "ans": "あとで",
-            "remarks": "後_"
-        },
-        {
-            "id": 38,
-            "word": "a little more",
-            "ans": "もうすこし",
-            "remarks": ""
-        },
-        {
-            "id": 39,
-            "word": "~ more, another ~",
-            "ans": "もう",
-            "remarks": ""
-        },
-        {
-            "id": 40,
-            "word": "used when encouraging some course of action",
-            "ans": "さあ",
-            "remarks": ""
-        },
-        {
-            "id": 41,
-            "word": "Oh! Eh?",
-            "ans": "あれ",
-            "remarks": "(in surprise or wonder)"
-        },
-        {
-            "id": 42,
-            "word": "Please turn right at the traffic light.",
-            "ans": "しんごうをみぎへまがってください",
-            "remarks": ""
-        },
-        {
-            "id": 43,
-            "word": "I'd like to pay with this.",
-            "ans": "これでおねがいします",
-            "remarks": ""
-        },
-        {
-            "id": 44,
-            "word": "change",
-            "ans": "おつり",
-            "remarks": "dont get confused with 細___"
-        }
-    ]
+  "id": 18,
+  "name": "Lesson 14",
+  "tags": [
+    "LAJ 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "turn on",
+      "ans": "つけます",
+      "remarks": "appliances"
+    },
+    {
+      "id": 1,
+      "word": "turn off",
+      "ans": "けします",
+      "remarks": "消__"
+    },
+    {
+      "id": 2,
+      "word": "open",
+      "ans": "あけます",
+      "remarks": "開____"
+    },
+    {
+      "id": 3,
+      "word": "close",
+      "ans": "しめます",
+      "remarks": "閉___"
+    },
+    {
+      "id": 4,
+      "word": "hurry",
+      "ans": "いそぎます",
+      "remarks": "急___"
+    },
+    {
+      "id": 5,
+      "word": "wait",
+      "ans": "まちます",
+      "remarks": "待___"
+    },
+    {
+      "id": 6,
+      "word": "hold",
+      "ans": "もちます",
+      "remarks": "持___"
+    },
+    {
+      "id": 7,
+      "word": "take, pass",
+      "ans": "とります",
+      "remarks": "取___"
+    },
+    {
+      "id": 8,
+      "word": "help (with a task)",
+      "ans": "てつだいます",
+      "remarks": "手伝_____"
+    },
+    {
+      "id": 9,
+      "word": "call",
+      "ans": "よびます",
+      "remarks": "呼___"
+    },
+    {
+      "id": 10,
+      "word": "speak, talk",
+      "ans": "はなします",
+      "remarks": "話___"
+    },
+    {
+      "id": 11,
+      "word": "use",
+      "ans": "つかいます",
+      "remarks": "使___"
+    },
+    {
+      "id": 12,
+      "word": "とめます",
+      "ans": "とめます",
+      "remarks": "止___"
+    },
+    {
+      "id": 13,
+      "word": "show",
+      "ans": "みせます",
+      "remarks": "見___"
+    },
+    {
+      "id": 14,
+      "word": "tell an address",
+      "ans": "じゅうしょをおしえます",
+      "remarks": "住所_教___"
+    },
+    {
+      "id": 15,
+      "word": "sit down",
+      "ans": "すわります",
+      "remarks": "座___"
+    },
+    {
+      "id": 16,
+      "word": "stand up",
+      "ans": "たちます",
+      "remarks": "立___"
+    },
+    {
+      "id": 17,
+      "word": "enter a cafe",
+      "ans": "きっさてんにはいります",
+      "remarks": "喫茶店__入___"
+    },
+    {
+      "id": 18,
+      "word": "go out of a cafe",
+      "ans": "きっさてんをでます",
+      "remarks": "喫茶店_出__"
+    },
+    {
+      "id": 19,
+      "word": "rain",
+      "ans": "あめがふります",
+      "remarks": "雨_降___"
+    },
+    {
+      "id": 20,
+      "word": "copy",
+      "ans": "コピーします",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "electricity, light",
+      "ans": "でんき",
+      "remarks": "電気"
+    },
+    {
+      "id": 22,
+      "word": "air conditioner",
+      "ans": "エアコン",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "passport",
+      "ans": "パスポート",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "name",
+      "ans": "なまえ",
+      "remarks": "名前"
+    },
+    {
+      "id": 25,
+      "word": "address",
+      "ans": "じゅうしょ",
+      "remarks": "住所"
+    },
+    {
+      "id": 26,
+      "word": "map",
+      "ans": "ちず",
+      "remarks": "地図"
+    },
+    {
+      "id": 27,
+      "word": "salt",
+      "ans": "しお",
+      "remarks": "塩"
+    },
+    {
+      "id": 28,
+      "word": "sugar",
+      "ans": "さとう",
+      "remarks": "砂糖"
+    },
+    {
+      "id": 29,
+      "word": "question, problem, trouble",
+      "ans": "もんだい",
+      "remarks": "問題"
+    },
+    {
+      "id": 30,
+      "word": "answer",
+      "ans": "こたえ",
+      "remarks": "答え"
+    },
+    {
+      "id": 31,
+      "word": "how to read",
+      "ans": "よみかた",
+      "remarks": "読_方"
+    },
+    {
+      "id": 32,
+      "word": "how to ~",
+      "ans": "かた",
+      "remarks": "method, 方"
+    },
+    {
+      "id": 33,
+      "word": "straight",
+      "ans": "まっすぐ",
+      "remarks": ""
+    },
+    {
+      "id": 34,
+      "word": "slowly",
+      "ans": "ゆっくり",
+      "remarks": ""
+    },
+    {
+      "id": 35,
+      "word": "immediately",
+      "ans": "すぐ",
+      "remarks": ""
+    },
+    {
+      "id": 36,
+      "word": "again",
+      "ans": "また",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "later",
+      "ans": "あとで",
+      "remarks": "後_"
+    },
+    {
+      "id": 38,
+      "word": "a little more",
+      "ans": "もうすこし",
+      "remarks": ""
+    },
+    {
+      "id": 39,
+      "word": "~ more, another ~",
+      "ans": "もう",
+      "remarks": ""
+    },
+    {
+      "id": 40,
+      "word": "used when encouraging some course of action",
+      "ans": "さあ",
+      "remarks": ""
+    },
+    {
+      "id": 41,
+      "word": "Oh! Eh?",
+      "ans": "あれ",
+      "remarks": "(in surprise or wonder)"
+    },
+    {
+      "id": 42,
+      "word": "Please turn right at the traffic light.",
+      "ans": "しんごうをみぎへまがってください",
+      "remarks": ""
+    },
+    {
+      "id": 43,
+      "word": "I'd like to pay with this.",
+      "ans": "これでおねがいします",
+      "remarks": ""
+    },
+    {
+      "id": 44,
+      "word": "change",
+      "ans": "おつり",
+      "remarks": "dont get confused with 細___"
+    }
+  ]
 }

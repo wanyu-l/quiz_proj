@@ -1,123 +1,123 @@
 {
-    "id": 26,
-    "name": "Kanji Unit 7",
-    "tags": [
-        "LAJ 2"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "上",
-            "ans": "うえ",
-            "remarks": ""
-        },
-        {
-            "id": 1,
-            "word": "下",
-            "ans": "した",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "父",
-            "ans": "ちち",
-            "remarks": ""
-        },
-        {
-            "id": 3,
-            "word": "母",
-            "ans": "はは",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "お父さん",
-            "ans": "おとうさん",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "お母さん",
-            "ans": "おかあさん",
-            "remarks": ""
-        },
-        {
-            "id": 6,
-            "word": "子ども",
-            "ans": "こども",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "手",
-            "ans": "て",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "上手",
-            "ans": "じょうず",
-            "remarks": ""
-        },
-        {
-            "id": 9,
-            "word": "下手",
-            "ans": "へた",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "好き",
-            "ans": "すき",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "大きい木",
-            "ans": "おおきいき",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "主人",
-            "ans": "しゅじん",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "肉",
-            "ans": "にく",
-            "remarks": ""
-        },
-        {
-            "id": 14,
-            "word": "魚",
-            "ans": "さかな",
-            "remarks": ""
-        },
-        {
-            "id": 15,
-            "word": "食べます",
-            "ans": "たべます",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "飲みます",
-            "ans": "のみます",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "食べ物",
-            "ans": "たべもの",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "飲み物",
-            "ans": "のみもの",
-            "remarks": ""
-        }
-    ]
+  "id": 26,
+  "name": "Kanji Unit 7",
+  "tags": [
+    "LAJ 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "上",
+      "ans": "うえ",
+      "remarks": ""
+    },
+    {
+      "id": 1,
+      "word": "下",
+      "ans": "した",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "父",
+      "ans": "ちち",
+      "remarks": ""
+    },
+    {
+      "id": 3,
+      "word": "母",
+      "ans": "はは",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "お父さん",
+      "ans": "おとうさん",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "お母さん",
+      "ans": "おかあさん",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "子ども",
+      "ans": "こども",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "手",
+      "ans": "て",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "上手",
+      "ans": "じょうず",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "下手",
+      "ans": "へた",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "好き",
+      "ans": "すき",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "大きい木",
+      "ans": "おおきいき",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "主人",
+      "ans": "しゅじん",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "肉",
+      "ans": "にく",
+      "remarks": ""
+    },
+    {
+      "id": 14,
+      "word": "魚",
+      "ans": "さかな",
+      "remarks": ""
+    },
+    {
+      "id": 15,
+      "word": "食べます",
+      "ans": "たべます",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "飲みます",
+      "ans": "のみます",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "食べ物",
+      "ans": "たべもの",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "飲み物",
+      "ans": "のみもの",
+      "remarks": ""
+    }
+  ]
 }

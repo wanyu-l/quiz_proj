@@ -1,285 +1,285 @@
 {
-    "id": 4,
-    "name": "Lesson 5",
-    "tags": [
-        "LAJ 1"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "go",
-            "ans": "いきます",
-            "remarks": "verb"
-        },
-        {
-            "id": 1,
-            "word": "come",
-            "ans": "きます",
-            "remarks": "verb"
-        },
-        {
-            "id": 2,
-            "word": "go home, return",
-            "ans": "かえります",
-            "remarks": "verb"
-        },
-        {
-            "id": 3,
-            "word": "school",
-            "ans": "がっこう",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "supermarket",
-            "ans": "スーパー",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "station",
-            "ans": "えき",
-            "remarks": "駅"
-        },
-        {
-            "id": 6,
-            "word": "airplane",
-            "ans": "ひこうき",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "ship",
-            "ans": "ふね",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "train",
-            "ans": "でんしゃ",
-            "remarks": "電車"
-        },
-        {
-            "id": 9,
-            "word": "subway",
-            "ans": "ちかてつ",
-            "remarks": "地下铁"
-        },
-        {
-            "id": 10,
-            "word": "Bullet Train",
-            "ans": "しんかんせん",
-            "remarks": "新干线"
-        },
-        {
-            "id": 11,
-            "word": "bus",
-            "ans": "バス",
-            "remarks": ""
-        },
-        {
-            "id": 12,
-            "word": "taxi",
-            "ans": "タクシー",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "bicycle",
-            "ans": "じてんしゃ",
-            "remarks": "自転車"
-        },
-        {
-            "id": 14,
-            "word": "on foot (walk)",
-            "ans": "あるいて",
-            "remarks": "means"
-        },
-        {
-            "id": 15,
-            "word": "person",
-            "ans": "ひと",
-            "remarks": "人"
-        },
-        {
-            "id": 16,
-            "word": "friend",
-            "ans": "ともだち",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "boyfriend",
-            "ans": "かれ",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "girlfriend",
-            "ans": "かのじょ",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "family",
-            "ans": "かぞく",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "alone / by oneself",
-            "ans": "ひとりで",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "last week",
-            "ans": "せんしゅう",
-            "remarks": "先週"
-        },
-        {
-            "id": 22,
-            "word": "こんしゅう",
-            "ans": "this week",
-            "remarks": "今週"
-        },
-        {
-            "id": 23,
-            "word": "next week",
-            "ans": "らいしゅう",
-            "remarks": "来週"
-        },
-        {
-            "id": 24,
-            "word": "last month",
-            "ans": "せんげつ",
-            "remarks": "先月"
-        },
-        {
-            "id": 25,
-            "word": "this month",
-            "ans": "こんげつ",
-            "remarks": "今月"
-        },
-        {
-            "id": 26,
-            "word": "next month",
-            "ans": "らいげつ",
-            "remarks": "来月"
-        },
-        {
-            "id": 27,
-            "word": "last year",
-            "ans": "きょねん",
-            "remarks": "去年"
-        },
-        {
-            "id": 28,
-            "word": "this year",
-            "ans": "ことし",
-            "remarks": "今年"
-        },
-        {
-            "id": 29,
-            "word": "next year",
-            "ans": "らいねん",
-            "remarks": "来年"
-        },
-        {
-            "id": 30,
-            "word": "--th year",
-            "ans": "ねん",
-            "remarks": "～年"
-        },
-        {
-            "id": 31,
-            "word": "which year",
-            "ans": "なんねん",
-            "remarks": "何年"
-        },
-        {
-            "id": 32,
-            "word": "--th month",
-            "ans": "がつ",
-            "remarks": "～月"
-        },
-        {
-            "id": 33,
-            "word": "which month",
-            "ans": "なんがつ",
-            "remarks": "何月"
-        },
-        {
-            "id": 34,
-            "word": "--th day",
-            "ans": "にち",
-            "remarks": "～日"
-        },
-        {
-            "id": 35,
-            "word": "which day of the month",
-            "ans": "なんにち",
-            "remarks": "何日"
-        },
-        {
-            "id": 36,
-            "word": "when",
-            "ans": "いつ",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "birthday",
-            "ans": "たんじょうび",
-            "remarks": ""
-        },
-        {
-            "id": 38,
-            "word": "Yes, it is. (agreeing)",
-            "ans": "そうですね",
-            "remarks": ""
-        },
-        {
-            "id": 39,
-            "word": "Thank you very much",
-            "ans": "どうもありがとうございました",
-            "remarks": "often used at the end of the conversation/even"
-        },
-        {
-            "id": 40,
-            "word": "You're welcome.",
-            "ans": "どういたしまして",
-            "remarks": "Casual"
-        },
-        {
-            "id": 41,
-            "word": "platform 1",
-            "ans": "１ばんせん",
-            "remarks": ""
-        },
-        {
-            "id": 42,
-            "word": "next [...]",
-            "ans": "つぎの",
-            "remarks": ""
-        },
-        {
-            "id": 43,
-            "word": "normal, local train",
-            "ans": "ふつう",
-            "remarks": ""
-        },
-        {
-            "id": 44,
-            "word": "rapid / express",
-            "ans": "きゅうこう",
-            "remarks": "急行"
-        },
-        {
-            "id": 45,
-            "word": "super express",
-            "ans": "とっきゅう",
-            "remarks": "特急"
-        }
-    ]
+  "id": 4,
+  "name": "Lesson 5",
+  "tags": [
+    "LAJ 1"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "go",
+      "ans": "いきます",
+      "remarks": "verb"
+    },
+    {
+      "id": 1,
+      "word": "come",
+      "ans": "きます",
+      "remarks": "verb"
+    },
+    {
+      "id": 2,
+      "word": "go home, return",
+      "ans": "かえります",
+      "remarks": "verb"
+    },
+    {
+      "id": 3,
+      "word": "school",
+      "ans": "がっこう",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "supermarket",
+      "ans": "スーパー",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "station",
+      "ans": "えき",
+      "remarks": "駅"
+    },
+    {
+      "id": 6,
+      "word": "airplane",
+      "ans": "ひこうき",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "ship",
+      "ans": "ふね",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "train",
+      "ans": "でんしゃ",
+      "remarks": "電車"
+    },
+    {
+      "id": 9,
+      "word": "subway",
+      "ans": "ちかてつ",
+      "remarks": "地下铁"
+    },
+    {
+      "id": 10,
+      "word": "Bullet Train",
+      "ans": "しんかんせん",
+      "remarks": "新干线"
+    },
+    {
+      "id": 11,
+      "word": "bus",
+      "ans": "バス",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "taxi",
+      "ans": "タクシー",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "bicycle",
+      "ans": "じてんしゃ",
+      "remarks": "自転車"
+    },
+    {
+      "id": 14,
+      "word": "on foot (walk)",
+      "ans": "あるいて",
+      "remarks": "means"
+    },
+    {
+      "id": 15,
+      "word": "person",
+      "ans": "ひと",
+      "remarks": "人"
+    },
+    {
+      "id": 16,
+      "word": "friend",
+      "ans": "ともだち",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "boyfriend",
+      "ans": "かれ",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "girlfriend",
+      "ans": "かのじょ",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "family",
+      "ans": "かぞく",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "alone / by oneself",
+      "ans": "ひとりで",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "last week",
+      "ans": "せんしゅう",
+      "remarks": "先週"
+    },
+    {
+      "id": 22,
+      "word": "こんしゅう",
+      "ans": "this week",
+      "remarks": "今週"
+    },
+    {
+      "id": 23,
+      "word": "next week",
+      "ans": "らいしゅう",
+      "remarks": "来週"
+    },
+    {
+      "id": 24,
+      "word": "last month",
+      "ans": "せんげつ",
+      "remarks": "先月"
+    },
+    {
+      "id": 25,
+      "word": "this month",
+      "ans": "こんげつ",
+      "remarks": "今月"
+    },
+    {
+      "id": 26,
+      "word": "next month",
+      "ans": "らいげつ",
+      "remarks": "来月"
+    },
+    {
+      "id": 27,
+      "word": "last year",
+      "ans": "きょねん",
+      "remarks": "去年"
+    },
+    {
+      "id": 28,
+      "word": "this year",
+      "ans": "ことし",
+      "remarks": "今年"
+    },
+    {
+      "id": 29,
+      "word": "next year",
+      "ans": "らいねん",
+      "remarks": "来年"
+    },
+    {
+      "id": 30,
+      "word": "--th year",
+      "ans": "ねん",
+      "remarks": "～年"
+    },
+    {
+      "id": 31,
+      "word": "which year",
+      "ans": "なんねん",
+      "remarks": "何年"
+    },
+    {
+      "id": 32,
+      "word": "--th month",
+      "ans": "がつ",
+      "remarks": "～月"
+    },
+    {
+      "id": 33,
+      "word": "which month",
+      "ans": "なんがつ",
+      "remarks": "何月"
+    },
+    {
+      "id": 34,
+      "word": "--th day",
+      "ans": "にち",
+      "remarks": "～日"
+    },
+    {
+      "id": 35,
+      "word": "which day of the month",
+      "ans": "なんにち",
+      "remarks": "何日"
+    },
+    {
+      "id": 36,
+      "word": "when",
+      "ans": "いつ",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "birthday",
+      "ans": "たんじょうび",
+      "remarks": ""
+    },
+    {
+      "id": 38,
+      "word": "Yes, it is. (agreeing)",
+      "ans": "そうですね",
+      "remarks": ""
+    },
+    {
+      "id": 39,
+      "word": "Thank you very much",
+      "ans": "どうもありがとうございました",
+      "remarks": "often used at the end of the conversation/even"
+    },
+    {
+      "id": 40,
+      "word": "You're welcome.",
+      "ans": "どういたしまして",
+      "remarks": "Casual"
+    },
+    {
+      "id": 41,
+      "word": "platform 1",
+      "ans": "１ばんせん",
+      "remarks": ""
+    },
+    {
+      "id": 42,
+      "word": "next [...]",
+      "ans": "つぎの",
+      "remarks": ""
+    },
+    {
+      "id": 43,
+      "word": "normal, local train",
+      "ans": "ふつう",
+      "remarks": ""
+    },
+    {
+      "id": 44,
+      "word": "rapid / express",
+      "ans": "きゅうこう",
+      "remarks": "急行"
+    },
+    {
+      "id": 45,
+      "word": "super express",
+      "ans": "とっきゅう",
+      "remarks": "特急"
+    }
+  ]
 }

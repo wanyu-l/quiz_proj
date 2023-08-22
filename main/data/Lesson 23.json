@@ -1,153 +1,153 @@
 {
-    "id": 37,
-    "name": "Lesson 23",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "ask the teacher",
-            "ans": "せんせいにききます",
-            "remarks": "先生_聞___"
-        },
-        {
-            "id": 1,
-            "word": "turn",
-            "ans": "まわします",
-            "remarks": "回___"
-        },
-        {
-            "id": 2,
-            "word": "pull",
-            "ans": "ひきます",
-            "remarks": "引___"
-        },
-        {
-            "id": 3,
-            "word": "change",
-            "ans": "かえます",
-            "remarks": "変___"
-        },
-        {
-            "id": 4,
-            "word": "touch a door",
-            "ans": "ドアにさわります",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "change comes out",
-            "ans": "おつりがでます",
-            "remarks": "money withdrawal"
-        },
-        {
-            "id": 6,
-            "word": "walk",
-            "ans": "あるきます",
-            "remarks": "歩___"
-        },
-        {
-            "id": 7,
-            "word": "cross a bridge",
-            "ans": "はしをわたります",
-            "remarks": "橋_渡___"
-        },
-        {
-            "id": 8,
-            "word": "turn to the right",
-            "ans": "みぎへまがります",
-            "remarks": "右_曲____"
-        },
-        {
-            "id": 9,
-            "word": "lonely",
-            "ans": "さびしい",
-            "remarks": "寂__"
-        },
-        {
-            "id": 10,
-            "word": "hot water",
-            "ans": "ゆ",
-            "remarks": "［お］湯"
-        },
-        {
-            "id": 11,
-            "word": "sound",
-            "ans": "おと",
-            "remarks": "音"
-        },
-        {
-            "id": 12,
-            "word": "size",
-            "ans": "サイズ",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "breakdown",
-            "ans": "こしょう",
-            "remarks": "故障"
-        },
-        {
-            "id": 14,
-            "word": "break down",
-            "ans": "こしょうします",
-            "remarks": "故障___"
-        },
-        {
-            "id": 15,
-            "word": "road, way",
-            "ans": "みち",
-            "remarks": "道"
-        },
-        {
-            "id": 16,
-            "word": "junction, crossroads",
-            "ans": "こうさてん",
-            "remarks": "交差点"
-        },
-        {
-            "id": 17,
-            "word": "traffic lights",
-            "ans": "しんごう",
-            "remarks": "信号"
-        },
-        {
-            "id": 18,
-            "word": "corner",
-            "ans": "かど",
-            "remarks": "角"
-        },
-        {
-            "id": 19,
-            "word": "bridge",
-            "ans": "はし",
-            "remarks": "橋"
-        },
-        {
-            "id": 20,
-            "word": "car park, parking lot",
-            "ans": "ちゅうしゃじょう",
-            "remarks": "駐車場"
-        },
-        {
-            "id": 21,
-            "word": "building",
-            "ans": "たてもの",
-            "remarks": "建物"
-        },
-        {
-            "id": 22,
-            "word": "many times",
-            "ans": "なんかいも",
-            "remarks": "何回_"
-        },
-        {
-            "id": 23,
-            "word": "the ~th (indicating order)",
-            "ans": "め",
-            "remarks": "～目"
-        }
-    ]
+  "id": 37,
+  "name": "Lesson 23",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "ask the teacher",
+      "ans": "せんせいにききます",
+      "remarks": "先生_聞___"
+    },
+    {
+      "id": 1,
+      "word": "turn",
+      "ans": "まわします",
+      "remarks": "回___"
+    },
+    {
+      "id": 2,
+      "word": "pull",
+      "ans": "ひきます",
+      "remarks": "引___"
+    },
+    {
+      "id": 3,
+      "word": "change",
+      "ans": "かえます",
+      "remarks": "変___"
+    },
+    {
+      "id": 4,
+      "word": "touch a door",
+      "ans": "ドアにさわります",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "change comes out",
+      "ans": "おつりがでます",
+      "remarks": "money withdrawal"
+    },
+    {
+      "id": 6,
+      "word": "walk",
+      "ans": "あるきます",
+      "remarks": "歩___"
+    },
+    {
+      "id": 7,
+      "word": "cross a bridge",
+      "ans": "はしをわたります",
+      "remarks": "橋_渡___"
+    },
+    {
+      "id": 8,
+      "word": "turn to the right",
+      "ans": "みぎへまがります",
+      "remarks": "右_曲____"
+    },
+    {
+      "id": 9,
+      "word": "lonely",
+      "ans": "さびしい",
+      "remarks": "寂__"
+    },
+    {
+      "id": 10,
+      "word": "hot water",
+      "ans": "ゆ",
+      "remarks": "［お］湯"
+    },
+    {
+      "id": 11,
+      "word": "sound",
+      "ans": "おと",
+      "remarks": "音"
+    },
+    {
+      "id": 12,
+      "word": "size",
+      "ans": "サイズ",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "breakdown",
+      "ans": "こしょう",
+      "remarks": "故障"
+    },
+    {
+      "id": 14,
+      "word": "break down",
+      "ans": "こしょうします",
+      "remarks": "故障___"
+    },
+    {
+      "id": 15,
+      "word": "road, way",
+      "ans": "みち",
+      "remarks": "道"
+    },
+    {
+      "id": 16,
+      "word": "junction, crossroads",
+      "ans": "こうさてん",
+      "remarks": "交差点"
+    },
+    {
+      "id": 17,
+      "word": "traffic lights",
+      "ans": "しんごう",
+      "remarks": "信号"
+    },
+    {
+      "id": 18,
+      "word": "corner",
+      "ans": "かど",
+      "remarks": "角"
+    },
+    {
+      "id": 19,
+      "word": "bridge",
+      "ans": "はし",
+      "remarks": "橋"
+    },
+    {
+      "id": 20,
+      "word": "car park, parking lot",
+      "ans": "ちゅうしゃじょう",
+      "remarks": "駐車場"
+    },
+    {
+      "id": 21,
+      "word": "building",
+      "ans": "たてもの",
+      "remarks": "建物"
+    },
+    {
+      "id": 22,
+      "word": "many times",
+      "ans": "なんかいも",
+      "remarks": "何回_"
+    },
+    {
+      "id": 23,
+      "word": "the ~th (indicating order)",
+      "ans": "め",
+      "remarks": "～目"
+    }
+  ]
 }

@@ -1,165 +1,165 @@
 {
-    "id": 23,
-    "name": "Lesson 19",
-    "tags": [
-        "LAJ 2"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "climb",
-            "ans": "のぼります",
-            "remarks": "登___"
-        },
-        {
-            "id": 1,
-            "word": "go up",
-            "ans": "のぼります",
-            "remarks": "上___"
-        },
-        {
-            "id": 2,
-            "word": "stay at a hotel",
-            "ans": "ホテルにとまります",
-            "remarks": "泊"
-        },
-        {
-            "id": 3,
-            "word": "clean (a room)",
-            "ans": "そうじします",
-            "remarks": "掃除___"
-        },
-        {
-            "id": 4,
-            "word": "wash (clothes)",
-            "ans": "せんたくします",
-            "remarks": "洗濯___"
-        },
-        {
-            "id": 5,
-            "word": "become",
-            "ans": "なります",
-            "remarks": ""
-        },
-        {
-            "id": 6,
-            "word": "sleepy",
-            "ans": "ねむい",
-            "remarks": "眠_"
-        },
-        {
-            "id": 7,
-            "word": "strong",
-            "ans": "つよい",
-            "remarks": "強_"
-        },
-        {
-            "id": 8,
-            "word": "weak",
-            "ans": "よわい",
-            "remarks": "弱_"
-        },
-        {
-            "id": 9,
-            "word": "practice",
-            "ans": "れんしゅう",
-            "remarks": "練習"
-        },
-        {
-            "id": 10,
-            "word": "golf",
-            "ans": "ゴルフ",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "sumo wrestling",
-            "ans": "すもう",
-            "remarks": "相撲"
-        },
-        {
-            "id": 12,
-            "word": "tea ceremony",
-            "ans": "おちゃ",
-            "remarks": "_茶"
-        },
-        {
-            "id": 13,
-            "word": "day, date",
-            "ans": "ひ",
-            "remarks": "日"
-        },
-        {
-            "id": 14,
-            "word": "condition",
-            "ans": "ちょうし",
-            "remarks": "調子"
-        },
-        {
-            "id": 15,
-            "word": "once",
-            "ans": "いちど",
-            "remarks": "一度"
-        },
-        {
-            "id": 16,
-            "word": "never",
-            "ans": "いちども",
-            "remarks": "一度_"
-        },
-        {
-            "id": 17,
-            "word": "gradually",
-            "ans": "だんだん",
-            "remarks": ""
-        },
-        {
-            "id": 18,
-            "word": "soon",
-            "ans": "もうすぐ",
-            "remarks": ""
-        },
-        {
-            "id": 19,
-            "word": "thanks to you",
-            "ans": "おかげさまで",
-            "remarks": "can be response to how are you"
-        },
-        {
-            "id": 20,
-            "word": "but",
-            "ans": "でも",
-            "remarks": ""
-        },
-        {
-            "id": 21,
-            "word": "Cheers!",
-            "ans": "かんぱい",
-            "remarks": "乾杯"
-        },
-        {
-            "id": 22,
-            "word": "diet",
-            "ans": "ダイエット",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "go on a diet",
-            "ans": "ダイエットをします",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "excessive, impossible",
-            "ans": "むり",
-            "remarks": "無理［な］"
-        },
-        {
-            "id": 25,
-            "word": "good for one's health",
-            "ans": "からだにいい",
-            "remarks": "体___"
-        }
-    ]
+  "id": 23,
+  "name": "Lesson 19",
+  "tags": [
+    "LAJ 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "climb",
+      "ans": "のぼります",
+      "remarks": "登___"
+    },
+    {
+      "id": 1,
+      "word": "go up",
+      "ans": "のぼります",
+      "remarks": "上___"
+    },
+    {
+      "id": 2,
+      "word": "stay at a hotel",
+      "ans": "ホテルにとまります",
+      "remarks": "泊"
+    },
+    {
+      "id": 3,
+      "word": "clean (a room)",
+      "ans": "そうじします",
+      "remarks": "掃除___"
+    },
+    {
+      "id": 4,
+      "word": "wash (clothes)",
+      "ans": "せんたくします",
+      "remarks": "洗濯___"
+    },
+    {
+      "id": 5,
+      "word": "become",
+      "ans": "なります",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "sleepy",
+      "ans": "ねむい",
+      "remarks": "眠_"
+    },
+    {
+      "id": 7,
+      "word": "strong",
+      "ans": "つよい",
+      "remarks": "強_"
+    },
+    {
+      "id": 8,
+      "word": "weak",
+      "ans": "よわい",
+      "remarks": "弱_"
+    },
+    {
+      "id": 9,
+      "word": "practice",
+      "ans": "れんしゅう",
+      "remarks": "練習"
+    },
+    {
+      "id": 10,
+      "word": "golf",
+      "ans": "ゴルフ",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "sumo wrestling",
+      "ans": "すもう",
+      "remarks": "相撲"
+    },
+    {
+      "id": 12,
+      "word": "tea ceremony",
+      "ans": "おちゃ",
+      "remarks": "_茶"
+    },
+    {
+      "id": 13,
+      "word": "day, date",
+      "ans": "ひ",
+      "remarks": "日"
+    },
+    {
+      "id": 14,
+      "word": "condition",
+      "ans": "ちょうし",
+      "remarks": "調子"
+    },
+    {
+      "id": 15,
+      "word": "once",
+      "ans": "いちど",
+      "remarks": "一度"
+    },
+    {
+      "id": 16,
+      "word": "never",
+      "ans": "いちども",
+      "remarks": "一度_"
+    },
+    {
+      "id": 17,
+      "word": "gradually",
+      "ans": "だんだん",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "soon",
+      "ans": "もうすぐ",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "thanks to you",
+      "ans": "おかげさまで",
+      "remarks": "can be response to how are you"
+    },
+    {
+      "id": 20,
+      "word": "but",
+      "ans": "でも",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "Cheers!",
+      "ans": "かんぱい",
+      "remarks": "乾杯"
+    },
+    {
+      "id": 22,
+      "word": "diet",
+      "ans": "ダイエット",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "go on a diet",
+      "ans": "ダイエットをします",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "excessive, impossible",
+      "ans": "むり",
+      "remarks": "無理［な］"
+    },
+    {
+      "id": 25,
+      "word": "good for one's health",
+      "ans": "からだにいい",
+      "remarks": "体___"
+    }
+  ]
 }

@@ -1,279 +1,279 @@
 {
-    "id": 63,
-    "name": "Lesson 41",
-    "tags": [
-        "LAJ 4"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "receive",
-            "ans": "いただきます",
-            "remarks": "humble もらいます"
-        },
-        {
-            "id": 1,
-            "word": "give",
-            "ans": "くださいます",
-            "remarks": "humble くれます"
-        },
-        {
-            "id": 2,
-            "word": "give",
-            "ans": "やります",
-            "remarks": "to a lower status person"
-        },
-        {
-            "id": 3,
-            "word": "raise, lift up",
-            "ans": "あげます",
-            "remarks": "上＿＿"
-        },
-        {
-            "id": 4,
-            "word": "lower, pull down",
-            "ans": "さげます",
-            "remarks": "下＿＿"
-        },
-        {
-            "id": 5,
-            "word": "be kind",
-            "ans": "しんせつにします",
-            "remarks": "to someone"
-        },
-        {
-            "id": 6,
-            "word": "lovely, cute",
-            "ans": "かわいい",
-            "remarks": "可愛「＿」"
-        },
-        {
-            "id": 7,
-            "word": "rare, uncommon",
-            "ans": "めずらしい",
-            "remarks": "珍「＿＿」"
-        },
-        {
-            "id": 8,
-            "word": "celebration, gift",
-            "ans": "おいわい",
-            "remarks": "＿祝＿＿"
-        },
-        {
-            "id": 9,
-            "word": "money given as New Year's gift",
-            "ans": "おとしだま",
-            "remarks": "＿年玉"
-        },
-        {
-            "id": 10,
-            "word": "consolatory gift to sick person",
-            "ans": "みまい",
-            "remarks": "（お）見舞「＿」"
-        },
-        {
-            "id": 11,
-            "word": "interest",
-            "ans": "きょうみ",
-            "remarks": "興味"
-        },
-        {
-            "id": 12,
-            "word": "be interested in computers",
-            "ans": "コンピューターにきょうみがあります",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "information",
-            "ans": "じょうほう",
-            "remarks": "情報"
-        },
-        {
-            "id": 14,
-            "word": "grammar",
-            "ans": "ぶんぽう",
-            "remarks": "文法"
-        },
-        {
-            "id": 15,
-            "word": "pronunciation",
-            "ans": "はつおん",
-            "remarks": "発音"
-        },
-        {
-            "id": 16,
-            "word": "ape, monkey",
-            "ans": "さる",
-            "remarks": "猿"
-        },
-        {
-            "id": 17,
-            "word": "feed, bait",
-            "ans": "えさ",
-            "remarks": "餌"
-        },
-        {
-            "id": 18,
-            "word": "toy",
-            "ans": "おもちゃ",
-            "remarks": "玩具"
-        },
-        {
-            "id": 19,
-            "word": "picture book",
-            "ans": "えほん",
-            "remarks": "絵本"
-        },
-        {
-            "id": 20,
-            "word": "picture postcard",
-            "ans": "えはがき",
-            "remarks": "絵葉書"
-        },
-        {
-            "id": 21,
-            "word": "screwdriver",
-            "ans": "ドライバー",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "handkerchief",
-            "ans": "ハンカチ",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "socks, stockings",
-            "ans": "くつした",
-            "remarks": "靴下"
-        },
-        {
-            "id": 24,
-            "word": "gloves",
-            "ans": "てぶくろ",
-            "remarks": "手袋"
-        },
-        {
-            "id": 25,
-            "word": "preschool, kindergarten",
-            "ans": "ようちえん",
-            "remarks": "幼稚園"
-        },
-        {
-            "id": 26,
-            "word": "heating",
-            "ans": "だんぼう",
-            "remarks": "暖房"
-        },
-        {
-            "id": 27,
-            "word": "air-conditioning",
-            "ans": "れいぼう",
-            "remarks": "冷房"
-        },
-        {
-            "id": 28,
-            "word": "temperature",
-            "ans": "おんど",
-            "remarks": "温度"
-        },
-        {
-            "id": 29,
-            "word": "(my) grandfather",
-            "ans": "そふ",
-            "remarks": "祖父"
-        },
-        {
-            "id": 30,
-            "word": "(my) grandmother",
-            "ans": "そぼ",
-            "remarks": "祖母"
-        },
-        {
-            "id": 31,
-            "word": "(my) grandchild",
-            "ans": "まご",
-            "remarks": "孫"
-        },
-        {
-            "id": 32,
-            "word": "(someone else's) grandchild",
-            "ans": "おまごさん",
-            "remarks": ""
-        },
-        {
-            "id": 33,
-            "word": "(my) uncle",
-            "ans": "おじ",
-            "remarks": ""
-        },
-        {
-            "id": 34,
-            "word": "(someone else's) uncle",
-            "ans": "おじさん",
-            "remarks": ""
-        },
-        {
-            "id": 35,
-            "word": "(my) aunt",
-            "ans": "おば",
-            "remarks": ""
-        },
-        {
-            "id": 36,
-            "word": "(someone else's) aunt",
-            "ans": "おばさん",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "janitor, caretaker",
-            "ans": "かんりにん",
-            "remarks": "管理人"
-        },
-        {
-            "id": 38,
-            "word": "suffix to job title",
-            "ans": "さん",
-            "remarks": "polite way of referring"
-        },
-        {
-            "id": 39,
-            "word": "the other day",
-            "ans": "このあいだ",
-            "remarks": "＿＿間＿"
-        },
-        {
-            "id": 40,
-            "word": "a few words",
-            "ans": "ひとこと",
-            "remarks": "一言"
-        },
-        {
-            "id": 41,
-            "word": "each",
-            "ans": "ずつ",
-            "remarks": ""
-        },
-        {
-            "id": 42,
-            "word": "couple; 2 people",
-            "ans": "ふたり",
-            "remarks": ""
-        },
-        {
-            "id": 43,
-            "word": "home",
-            "ans": "おたく",
-            "remarks": "respectful うち or いえ"
-        },
-        {
-            "id": 44,
-            "word": "I hope you will be very happy",
-            "ans": "どうぞおしあわせに",
-            "remarks": "blissful"
-        }
-    ]
+  "id": 63,
+  "name": "Lesson 41",
+  "tags": [
+    "LAJ 4"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "receive",
+      "ans": "いただきます",
+      "remarks": "humble もらいます"
+    },
+    {
+      "id": 1,
+      "word": "give",
+      "ans": "くださいます",
+      "remarks": "humble くれます"
+    },
+    {
+      "id": 2,
+      "word": "give",
+      "ans": "やります",
+      "remarks": "to a lower status person"
+    },
+    {
+      "id": 3,
+      "word": "raise, lift up",
+      "ans": "あげます",
+      "remarks": "上＿＿"
+    },
+    {
+      "id": 4,
+      "word": "lower, pull down",
+      "ans": "さげます",
+      "remarks": "下＿＿"
+    },
+    {
+      "id": 5,
+      "word": "be kind",
+      "ans": "しんせつにします",
+      "remarks": "to someone"
+    },
+    {
+      "id": 6,
+      "word": "lovely, cute",
+      "ans": "かわいい",
+      "remarks": "可愛「＿」"
+    },
+    {
+      "id": 7,
+      "word": "rare, uncommon",
+      "ans": "めずらしい",
+      "remarks": "珍「＿＿」"
+    },
+    {
+      "id": 8,
+      "word": "celebration, gift",
+      "ans": "おいわい",
+      "remarks": "＿祝＿＿"
+    },
+    {
+      "id": 9,
+      "word": "money given as New Year's gift",
+      "ans": "おとしだま",
+      "remarks": "＿年玉"
+    },
+    {
+      "id": 10,
+      "word": "consolatory gift to sick person",
+      "ans": "みまい",
+      "remarks": "（お）見舞「＿」"
+    },
+    {
+      "id": 11,
+      "word": "interest",
+      "ans": "きょうみ",
+      "remarks": "興味"
+    },
+    {
+      "id": 12,
+      "word": "be interested in computers",
+      "ans": "コンピューターにきょうみがあります",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "information",
+      "ans": "じょうほう",
+      "remarks": "情報"
+    },
+    {
+      "id": 14,
+      "word": "grammar",
+      "ans": "ぶんぽう",
+      "remarks": "文法"
+    },
+    {
+      "id": 15,
+      "word": "pronunciation",
+      "ans": "はつおん",
+      "remarks": "発音"
+    },
+    {
+      "id": 16,
+      "word": "ape, monkey",
+      "ans": "さる",
+      "remarks": "猿"
+    },
+    {
+      "id": 17,
+      "word": "feed, bait",
+      "ans": "えさ",
+      "remarks": "餌"
+    },
+    {
+      "id": 18,
+      "word": "toy",
+      "ans": "おもちゃ",
+      "remarks": "玩具"
+    },
+    {
+      "id": 19,
+      "word": "picture book",
+      "ans": "えほん",
+      "remarks": "絵本"
+    },
+    {
+      "id": 20,
+      "word": "picture postcard",
+      "ans": "えはがき",
+      "remarks": "絵葉書"
+    },
+    {
+      "id": 21,
+      "word": "screwdriver",
+      "ans": "ドライバー",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "handkerchief",
+      "ans": "ハンカチ",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "socks, stockings",
+      "ans": "くつした",
+      "remarks": "靴下"
+    },
+    {
+      "id": 24,
+      "word": "gloves",
+      "ans": "てぶくろ",
+      "remarks": "手袋"
+    },
+    {
+      "id": 25,
+      "word": "preschool, kindergarten",
+      "ans": "ようちえん",
+      "remarks": "幼稚園"
+    },
+    {
+      "id": 26,
+      "word": "heating",
+      "ans": "だんぼう",
+      "remarks": "暖房"
+    },
+    {
+      "id": 27,
+      "word": "air-conditioning",
+      "ans": "れいぼう",
+      "remarks": "冷房"
+    },
+    {
+      "id": 28,
+      "word": "temperature",
+      "ans": "おんど",
+      "remarks": "温度"
+    },
+    {
+      "id": 29,
+      "word": "(my) grandfather",
+      "ans": "そふ",
+      "remarks": "祖父"
+    },
+    {
+      "id": 30,
+      "word": "(my) grandmother",
+      "ans": "そぼ",
+      "remarks": "祖母"
+    },
+    {
+      "id": 31,
+      "word": "(my) grandchild",
+      "ans": "まご",
+      "remarks": "孫"
+    },
+    {
+      "id": 32,
+      "word": "(someone else's) grandchild",
+      "ans": "おまごさん",
+      "remarks": ""
+    },
+    {
+      "id": 33,
+      "word": "(my) uncle",
+      "ans": "おじ",
+      "remarks": ""
+    },
+    {
+      "id": 34,
+      "word": "(someone else's) uncle",
+      "ans": "おじさん",
+      "remarks": ""
+    },
+    {
+      "id": 35,
+      "word": "(my) aunt",
+      "ans": "おば",
+      "remarks": ""
+    },
+    {
+      "id": 36,
+      "word": "(someone else's) aunt",
+      "ans": "おばさん",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "janitor, caretaker",
+      "ans": "かんりにん",
+      "remarks": "管理人"
+    },
+    {
+      "id": 38,
+      "word": "suffix to job title",
+      "ans": "さん",
+      "remarks": "polite way of referring"
+    },
+    {
+      "id": 39,
+      "word": "the other day",
+      "ans": "このあいだ",
+      "remarks": "＿＿間＿"
+    },
+    {
+      "id": 40,
+      "word": "a few words",
+      "ans": "ひとこと",
+      "remarks": "一言"
+    },
+    {
+      "id": 41,
+      "word": "each",
+      "ans": "ずつ",
+      "remarks": ""
+    },
+    {
+      "id": 42,
+      "word": "couple; 2 people",
+      "ans": "ふたり",
+      "remarks": ""
+    },
+    {
+      "id": 43,
+      "word": "home",
+      "ans": "おたく",
+      "remarks": "respectful うち or いえ"
+    },
+    {
+      "id": 44,
+      "word": "I hope you will be very happy",
+      "ans": "どうぞおしあわせに",
+      "remarks": "blissful"
+    }
+  ]
 }

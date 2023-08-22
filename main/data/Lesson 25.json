@@ -1,111 +1,111 @@
 {
-    "id": 39,
-    "name": "Lesson 25",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "think, consider",
-            "ans": "かんがえます",
-            "remarks": "考___"
-        },
-        {
-            "id": 1,
-            "word": "arrive",
-            "ans": "つきます",
-            "remarks": "着___"
-        },
-        {
-            "id": 2,
-            "word": "grow old",
-            "ans": "としをとります",
-            "remarks": "年_取___"
-        },
-        {
-            "id": 3,
-            "word": "be enough, be sufficient",
-            "ans": "たります",
-            "remarks": "足___"
-        },
-        {
-            "id": 4,
-            "word": "countryside, hometown",
-            "ans": "いなか",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "chance",
-            "ans": "チャンス",
-            "remarks": ""
-        },
-        {
-            "id": 6,
-            "word": "hundred million",
-            "ans": "おく",
-            "remarks": "億"
-        },
-        {
-            "id": 7,
-            "word": "if",
-            "ans": "もし",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "meaning",
-            "ans": "いみ",
-            "remarks": "意味"
-        },
-        {
-            "id": 9,
-            "word": "hello (used on the phone)",
-            "ans": "もしもし",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "transfer",
-            "ans": "てんきん",
-            "remarks": "転勤"
-        },
-        {
-            "id": 11,
-            "word": "be transferred to another location",
-            "ans": "てんきんします",
-            "remarks": "転勤___"
-        },
-        {
-            "id": 12,
-            "word": "thing, matter",
-            "ans": "こと",
-            "remarks": ""
-        },
-        {
-            "id": 13,
-            "word": "free time",
-            "ans": "ひま",
-            "remarks": "暇"
-        },
-        {
-            "id": 14,
-            "word": "Thank you for everything you've done for me.",
-            "ans": "おせわになりました",
-            "remarks": "［色々］_世話_____"
-        },
-        {
-            "id": 15,
-            "word": "do one's best",
-            "ans": "がんばります",
-            "remarks": "頑張___"
-        },
-        {
-            "id": 16,
-            "word": "Please take care of yourself.",
-            "ans": "どうぞおげんきで",
-            "remarks": "＿＿＿元気＿"
-        }
-    ]
+  "id": 39,
+  "name": "Lesson 25",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "think, consider",
+      "ans": "かんがえます",
+      "remarks": "考___"
+    },
+    {
+      "id": 1,
+      "word": "arrive",
+      "ans": "つきます",
+      "remarks": "着___"
+    },
+    {
+      "id": 2,
+      "word": "grow old",
+      "ans": "としをとります",
+      "remarks": "年_取___"
+    },
+    {
+      "id": 3,
+      "word": "be enough, be sufficient",
+      "ans": "たります",
+      "remarks": "足___"
+    },
+    {
+      "id": 4,
+      "word": "countryside, hometown",
+      "ans": "いなか",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "chance",
+      "ans": "チャンス",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "hundred million",
+      "ans": "おく",
+      "remarks": "億"
+    },
+    {
+      "id": 7,
+      "word": "if",
+      "ans": "もし",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "meaning",
+      "ans": "いみ",
+      "remarks": "意味"
+    },
+    {
+      "id": 9,
+      "word": "hello (used on the phone)",
+      "ans": "もしもし",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "transfer",
+      "ans": "てんきん",
+      "remarks": "転勤"
+    },
+    {
+      "id": 11,
+      "word": "be transferred to another location",
+      "ans": "てんきんします",
+      "remarks": "転勤___"
+    },
+    {
+      "id": 12,
+      "word": "thing, matter",
+      "ans": "こと",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "free time",
+      "ans": "ひま",
+      "remarks": "暇"
+    },
+    {
+      "id": 14,
+      "word": "Thank you for everything you've done for me.",
+      "ans": "おせわになりました",
+      "remarks": "［色々］_世話_____"
+    },
+    {
+      "id": 15,
+      "word": "do one's best",
+      "ans": "がんばります",
+      "remarks": "頑張___"
+    },
+    {
+      "id": 16,
+      "word": "Please take care of yourself.",
+      "ans": "どうぞおげんきで",
+      "remarks": "＿＿＿元気＿"
+    }
+  ]
 }

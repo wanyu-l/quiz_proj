@@ -1,237 +1,237 @@
 {
-    "id": 60,
-    "name": "Lesson 38",
-    "tags": [
-        "LAJ 4"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "join a tour, participate, attend",
-            "ans": "りょこうにさんかします",
-            "remarks": ""
-        },
-        {
-            "id": 1,
-            "word": "breed, bring up",
-            "ans": "そだてます",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "carry, transport",
-            "ans": "はこびます",
-            "remarks": "運＿"
-        },
-        {
-            "id": 3,
-            "word": "enter hospital",
-            "ans": "にゅういんします",
-            "remarks": "入院＿＿"
-        },
-        {
-            "id": 4,
-            "word": "leave hospital",
-            "ans": "たいいんします",
-            "remarks": "退院＿＿"
-        },
-        {
-            "id": 5,
-            "word": "turn on the power switch",
-            "ans": "でんげんをいれます",
-            "remarks": "電源＿＿"
-        },
-        {
-            "id": 6,
-            "word": "turn off the power switch",
-            "ans": "でんげんをきります",
-            "remarks": "電源＿＿＿"
-        },
-        {
-            "id": 7,
-            "word": "lock; verb",
-            "ans": "かぎをかけます",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "tell a lie",
-            "ans": "うそをつきます",
-            "remarks": ""
-        },
-        {
-            "id": 9,
-            "word": "pleasant, agreeable",
-            "ans": "きもちがいい",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "unpleasant, disgusting",
-            "ans": "きもちがわるい",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "large~, big~",
-            "ans": "おおきな",
-            "remarks": "for intangible things"
-        },
-        {
-            "id": 12,
-            "word": "small~, little~,",
-            "ans": "ちいさな",
-            "remarks": "for abstract things"
-        },
-        {
-            "id": 13,
-            "word": "baby",
-            "ans": "あかちゃん",
-            "remarks": ""
-        },
-        {
-            "id": 14,
-            "word": "elementary school",
-            "ans": "しょうがっこう",
-            "remarks": "Primary School"
-        },
-        {
-            "id": 15,
-            "word": "junior school",
-            "ans": "ちゅうがっこう",
-            "remarks": "中＿＿"
-        },
-        {
-            "id": 16,
-            "word": "the area in front of the station",
-            "ans": "えきまえ",
-            "remarks": ""
-        },
-        {
-            "id": 17,
-            "word": "seaside, seashore",
-            "ans": "かいがん",
-            "remarks": "海岸"
-        },
-        {
-            "id": 18,
-            "word": "factory",
-            "ans": "こうじょう",
-            "remarks": "工場"
-        },
-        {
-            "id": 19,
-            "word": "village",
-            "ans": "むら",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "hiragana and katakana script",
-            "ans": "かな",
-            "remarks": "type of __"
-        },
-        {
-            "id": 21,
-            "word": "ring",
-            "ans": "ゆびわ",
-            "remarks": ""
-        },
-        {
-            "id": 22,
-            "word": "power switch",
-            "ans": "でんげん",
-            "remarks": ""
-        },
-        {
-            "id": 23,
-            "word": "habit",
-            "ans": "しゅうかん",
-            "remarks": ""
-        },
-        {
-            "id": 24,
-            "word": "health",
-            "ans": "けんこう",
-            "remarks": ""
-        },
-        {
-            "id": 25,
-            "word": "made in~",
-            "ans": "せい",
-            "remarks": "~製"
-        },
-        {
-            "id": 26,
-            "word": "the year before last",
-            "ans": "おととし",
-            "remarks": ""
-        },
-        {
-            "id": 27,
-            "word": "Oops!/Oh, no!",
-            "ans": "いけない",
-            "remarks": "（あ）when made mistake"
-        },
-        {
-            "id": 28,
-            "word": "Excuse me",
-            "ans": "おさきに",
-            "remarks": "for leaving before someone"
-        },
-        {
-            "id": 29,
-            "word": "circular",
-            "ans": "かいらん",
-            "remarks": ""
-        },
-        {
-            "id": 30,
-            "word": "laboratory",
-            "ans": "けんきゅうしつ",
-            "remarks": "研究室"
-        },
-        {
-            "id": 31,
-            "word": "neatly, tidily",
-            "ans": "きちんと",
-            "remarks": ""
-        },
-        {
-            "id": 32,
-            "word": "sort (things) out",
-            "ans": "せいりします",
-            "remarks": "整理＿＿"
-        },
-        {
-            "id": 33,
-            "word": "method",
-            "ans": "ほうほう",
-            "remarks": "方法"
-        },
-        {
-            "id": 34,
-            "word": "entitled~, named~, called~",
-            "ans": "という",
-            "remarks": ""
-        },
-        {
-            "id": 35,
-            "word": "counter for books, etc.",
-            "ans": "さつ",
-            "remarks": "冊"
-        },
-        {
-            "id": 36,
-            "word": "seal, stamp",
-            "ans": "はんこ",
-            "remarks": ""
-        },
-        {
-            "id": 37,
-            "word": "affix (a seal), stamp",
-            "ans": "はんこをおします",
-            "remarks": ""
-        }
-    ]
+  "id": 60,
+  "name": "Lesson 38",
+  "tags": [
+    "LAJ 4"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "join a tour, participate, attend",
+      "ans": "りょこうにさんかします",
+      "remarks": ""
+    },
+    {
+      "id": 1,
+      "word": "breed, bring up",
+      "ans": "そだてます",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "carry, transport",
+      "ans": "はこびます",
+      "remarks": "運＿"
+    },
+    {
+      "id": 3,
+      "word": "enter hospital",
+      "ans": "にゅういんします",
+      "remarks": "入院＿＿"
+    },
+    {
+      "id": 4,
+      "word": "leave hospital",
+      "ans": "たいいんします",
+      "remarks": "退院＿＿"
+    },
+    {
+      "id": 5,
+      "word": "turn on the power switch",
+      "ans": "でんげんをいれます",
+      "remarks": "電源＿＿"
+    },
+    {
+      "id": 6,
+      "word": "turn off the power switch",
+      "ans": "でんげんをきります",
+      "remarks": "電源＿＿＿"
+    },
+    {
+      "id": 7,
+      "word": "lock; verb",
+      "ans": "かぎをかけます",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "tell a lie",
+      "ans": "うそをつきます",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "pleasant, agreeable",
+      "ans": "きもちがいい",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "unpleasant, disgusting",
+      "ans": "きもちがわるい",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "large~, big~",
+      "ans": "おおきな",
+      "remarks": "for intangible things"
+    },
+    {
+      "id": 12,
+      "word": "small~, little~,",
+      "ans": "ちいさな",
+      "remarks": "for abstract things"
+    },
+    {
+      "id": 13,
+      "word": "baby",
+      "ans": "あかちゃん",
+      "remarks": ""
+    },
+    {
+      "id": 14,
+      "word": "elementary school",
+      "ans": "しょうがっこう",
+      "remarks": "Primary School"
+    },
+    {
+      "id": 15,
+      "word": "junior school",
+      "ans": "ちゅうがっこう",
+      "remarks": "中＿＿"
+    },
+    {
+      "id": 16,
+      "word": "the area in front of the station",
+      "ans": "えきまえ",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "seaside, seashore",
+      "ans": "かいがん",
+      "remarks": "海岸"
+    },
+    {
+      "id": 18,
+      "word": "factory",
+      "ans": "こうじょう",
+      "remarks": "工場"
+    },
+    {
+      "id": 19,
+      "word": "village",
+      "ans": "むら",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "hiragana and katakana script",
+      "ans": "かな",
+      "remarks": "type of __"
+    },
+    {
+      "id": 21,
+      "word": "ring",
+      "ans": "ゆびわ",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "power switch",
+      "ans": "でんげん",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "habit",
+      "ans": "しゅうかん",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "health",
+      "ans": "けんこう",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "made in~",
+      "ans": "せい",
+      "remarks": "~製"
+    },
+    {
+      "id": 26,
+      "word": "the year before last",
+      "ans": "おととし",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "Oops!/Oh, no!",
+      "ans": "いけない",
+      "remarks": "（あ）when made mistake"
+    },
+    {
+      "id": 28,
+      "word": "Excuse me",
+      "ans": "おさきに",
+      "remarks": "for leaving before someone"
+    },
+    {
+      "id": 29,
+      "word": "circular",
+      "ans": "かいらん",
+      "remarks": ""
+    },
+    {
+      "id": 30,
+      "word": "laboratory",
+      "ans": "けんきゅうしつ",
+      "remarks": "研究室"
+    },
+    {
+      "id": 31,
+      "word": "neatly, tidily",
+      "ans": "きちんと",
+      "remarks": ""
+    },
+    {
+      "id": 32,
+      "word": "sort (things) out",
+      "ans": "せいりします",
+      "remarks": "整理＿＿"
+    },
+    {
+      "id": 33,
+      "word": "method",
+      "ans": "ほうほう",
+      "remarks": "方法"
+    },
+    {
+      "id": 34,
+      "word": "entitled~, named~, called~",
+      "ans": "という",
+      "remarks": ""
+    },
+    {
+      "id": 35,
+      "word": "counter for books, etc.",
+      "ans": "さつ",
+      "remarks": "冊"
+    },
+    {
+      "id": 36,
+      "word": "seal, stamp",
+      "ans": "はんこ",
+      "remarks": ""
+    },
+    {
+      "id": 37,
+      "word": "affix (a seal), stamp",
+      "ans": "はんこをおします",
+      "remarks": ""
+    }
+  ]
 }

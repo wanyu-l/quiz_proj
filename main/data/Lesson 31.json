@@ -1,171 +1,171 @@
 {
-    "id": 45,
-    "name": "Lesson 31",
-    "tags": [
-        "LAJ 3"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "continue",
-            "ans": "つづけます",
-            "remarks": "続___"
-        },
-        {
-            "id": 1,
-            "word": "find",
-            "ans": "みつけます",
-            "remarks": "見____"
-        },
-        {
-            "id": 2,
-            "word": "take",
-            "ans": "とります",
-            "remarks": "取___"
-        },
-        {
-            "id": 3,
-            "word": "take (test/exam)",
-            "ans": "うけます",
-            "remarks": "受___"
-        },
-        {
-            "id": 4,
-            "word": "apply for",
-            "ans": "もうしこみます",
-            "remarks": "申_込___"
-        },
-        {
-            "id": 5,
-            "word": "take a break",
-            "ans": "きゅうけいします",
-            "remarks": "休憩___"
-        },
-        {
-            "id": 6,
-            "word": "consecutive holidays",
-            "ans": "れんきゅう",
-            "remarks": "連休"
-        },
-        {
-            "id": 7,
-            "word": "composition, essay",
-            "ans": "さくぶん",
-            "remarks": "作文"
-        },
-        {
-            "id": 8,
-            "word": "presentation, announcement",
-            "ans": "はっぴょう",
-            "remarks": "発表"
-        },
-        {
-            "id": 9,
-            "word": "exhibition",
-            "ans": "てんらんかい",
-            "remarks": "展覧会"
-        },
-        {
-            "id": 10,
-            "word": "wedding ceremony",
-            "ans": "けっこんしき",
-            "remarks": "結婚式"
-        },
-        {
-            "id": 11,
-            "word": "funeral",
-            "ans": "そうしき",
-            "remarks": "［お］葬式"
-        },
-        {
-            "id": 12,
-            "word": "ceremony",
-            "ans": "しき",
-            "remarks": "式"
-        },
-        {
-            "id": 13,
-            "word": "head office",
-            "ans": "ほんしゃ",
-            "remarks": "本社"
-        },
-        {
-            "id": 14,
-            "word": "branch office",
-            "ans": "してん",
-            "remarks": "支店"
-        },
-        {
-            "id": 15,
-            "word": "church",
-            "ans": "きょうかい",
-            "remarks": "教会"
-        },
-        {
-            "id": 16,
-            "word": "graduate school",
-            "ans": "だいがくいん",
-            "remarks": "大学院"
-        },
-        {
-            "id": 17,
-            "word": "zoo",
-            "ans": "どうぶつえん",
-            "remarks": "動物園"
-        },
-        {
-            "id": 18,
-            "word": "hot spring",
-            "ans": "おんせん",
-            "remarks": "温泉"
-        },
-        {
-            "id": 19,
-            "word": "return",
-            "ans": "かえり",
-            "remarks": "帰_"
-        },
-        {
-            "id": 20,
-            "word": "(someone else's) child",
-            "ans": "おこさん",
-            "remarks": "_子__"
-        },
-        {
-            "id": 21,
-            "word": "train number, typhoon number etc",
-            "ans": "ごう",
-            "remarks": "～号"
-        },
-        {
-            "id": 22,
-            "word": "place toward ~, direction of ~",
-            "ans": "のほう",
-            "remarks": "~_方; can refer to 1 of few things"
-        },
-        {
-            "id": 23,
-            "word": "the whole time",
-            "ans": "ずっと",
-            "remarks": "`一直`"
-        },
-        {
-            "id": 24,
-            "word": "remain, be left, stay behind",
-            "ans": "のこります",
-            "remarks": "残____"
-        },
-        {
-            "id": 25,
-            "word": "entrance exam",
-            "ans": "にゅうがくしけん",
-            "remarks": "入学試験"
-        },
-        {
-            "id": 26,
-            "word": "in the month of",
-            "ans": "つきに",
-            "remarks": "月_; express time with month"
-        }
-    ]
+  "id": 45,
+  "name": "Lesson 31",
+  "tags": [
+    "LAJ 3"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "continue",
+      "ans": "つづけます",
+      "remarks": "続___"
+    },
+    {
+      "id": 1,
+      "word": "find",
+      "ans": "みつけます",
+      "remarks": "見____"
+    },
+    {
+      "id": 2,
+      "word": "take",
+      "ans": "とります",
+      "remarks": "取___"
+    },
+    {
+      "id": 3,
+      "word": "take (test/exam)",
+      "ans": "うけます",
+      "remarks": "受___"
+    },
+    {
+      "id": 4,
+      "word": "apply for",
+      "ans": "もうしこみます",
+      "remarks": "申_込___"
+    },
+    {
+      "id": 5,
+      "word": "take a break",
+      "ans": "きゅうけいします",
+      "remarks": "休憩___"
+    },
+    {
+      "id": 6,
+      "word": "consecutive holidays",
+      "ans": "れんきゅう",
+      "remarks": "連休"
+    },
+    {
+      "id": 7,
+      "word": "composition, essay",
+      "ans": "さくぶん",
+      "remarks": "作文"
+    },
+    {
+      "id": 8,
+      "word": "presentation, announcement",
+      "ans": "はっぴょう",
+      "remarks": "発表"
+    },
+    {
+      "id": 9,
+      "word": "exhibition",
+      "ans": "てんらんかい",
+      "remarks": "展覧会"
+    },
+    {
+      "id": 10,
+      "word": "wedding ceremony",
+      "ans": "けっこんしき",
+      "remarks": "結婚式"
+    },
+    {
+      "id": 11,
+      "word": "funeral",
+      "ans": "そうしき",
+      "remarks": "［お］葬式"
+    },
+    {
+      "id": 12,
+      "word": "ceremony",
+      "ans": "しき",
+      "remarks": "式"
+    },
+    {
+      "id": 13,
+      "word": "head office",
+      "ans": "ほんしゃ",
+      "remarks": "本社"
+    },
+    {
+      "id": 14,
+      "word": "branch office",
+      "ans": "してん",
+      "remarks": "支店"
+    },
+    {
+      "id": 15,
+      "word": "church",
+      "ans": "きょうかい",
+      "remarks": "教会"
+    },
+    {
+      "id": 16,
+      "word": "graduate school",
+      "ans": "だいがくいん",
+      "remarks": "大学院"
+    },
+    {
+      "id": 17,
+      "word": "zoo",
+      "ans": "どうぶつえん",
+      "remarks": "動物園"
+    },
+    {
+      "id": 18,
+      "word": "hot spring",
+      "ans": "おんせん",
+      "remarks": "温泉"
+    },
+    {
+      "id": 19,
+      "word": "return",
+      "ans": "かえり",
+      "remarks": "帰_"
+    },
+    {
+      "id": 20,
+      "word": "(someone else's) child",
+      "ans": "おこさん",
+      "remarks": "_子__"
+    },
+    {
+      "id": 21,
+      "word": "train number, typhoon number etc",
+      "ans": "ごう",
+      "remarks": "～号"
+    },
+    {
+      "id": 22,
+      "word": "place toward ~, direction of ~",
+      "ans": "のほう",
+      "remarks": "~_方; can refer to 1 of few things"
+    },
+    {
+      "id": 23,
+      "word": "the whole time",
+      "ans": "ずっと",
+      "remarks": "`一直`"
+    },
+    {
+      "id": 24,
+      "word": "remain, be left, stay behind",
+      "ans": "のこります",
+      "remarks": "残____"
+    },
+    {
+      "id": 25,
+      "word": "entrance exam",
+      "ans": "にゅうがくしけん",
+      "remarks": "入学試験"
+    },
+    {
+      "id": 26,
+      "word": "in the month of",
+      "ans": "つきに",
+      "remarks": "月_; express time with month"
+    }
+  ]
 }

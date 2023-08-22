@@ -1,225 +1,225 @@
 {
-    "id": 17,
-    "name": "Lesson 13",
-    "tags": [
-        "LAJ 2"
-    ],
-    "cards": [
-        {
-            "id": 0,
-            "word": "enjoy oneself, play",
-            "ans": "あそびます",
-            "remarks": "verb"
-        },
-        {
-            "id": 1,
-            "word": "go to play, go and enjoy",
-            "ans": "あそびにいきます",
-            "remarks": ""
-        },
-        {
-            "id": 2,
-            "word": "swim",
-            "ans": "およぎます",
-            "remarks": "verb"
-        },
-        {
-            "id": 3,
-            "word": "go to meet, welcome, fetch",
-            "ans": "むかえます",
-            "remarks": ""
-        },
-        {
-            "id": 4,
-            "word": "go to pick up someone",
-            "ans": "むかえにいきます",
-            "remarks": ""
-        },
-        {
-            "id": 5,
-            "word": "get tired",
-            "ans": "つかれます",
-            "remarks": ""
-        },
-        {
-            "id": 6,
-            "word": "get married",
-            "ans": "けっこんします",
-            "remarks": ""
-        },
-        {
-            "id": 7,
-            "word": "do shopping",
-            "ans": "かいものします",
-            "remarks": ""
-        },
-        {
-            "id": 8,
-            "word": "have a meal, dine",
-            "ans": "しょくじします",
-            "remarks": "食事"
-        },
-        {
-            "id": 9,
-            "word": "take a walk",
-            "ans": "さんぽします",
-            "remarks": ""
-        },
-        {
-            "id": 10,
-            "word": "take a walk in a park",
-            "ans": "こうえんをさんぽします",
-            "remarks": ""
-        },
-        {
-            "id": 11,
-            "word": "hard, tough",
-            "ans": "たいへん",
-            "remarks": "大変［な］"
-        },
-        {
-            "id": 12,
-            "word": "want (something)",
-            "ans": "ほしい",
-            "remarks": "欲＿＿"
-        },
-        {
-            "id": 13,
-            "word": "wide, spacious",
-            "ans": "ひろい",
-            "remarks": "広＿"
-        },
-        {
-            "id": 14,
-            "word": "narrow, small (room etc)",
-            "ans": "せまい",
-            "remarks": "狭_"
-        },
-        {
-            "id": 15,
-            "word": "swimming pool",
-            "ans": "プール",
-            "remarks": ""
-        },
-        {
-            "id": 16,
-            "word": "river",
-            "ans": "かわ",
-            "remarks": "川"
-        },
-        {
-            "id": 17,
-            "word": "fine arts",
-            "ans": "びじゅつ",
-            "remarks": "美術"
-        },
-        {
-            "id": 18,
-            "word": "fishing",
-            "ans": "つり",
-            "remarks": "釣_"
-        },
-        {
-            "id": 19,
-            "word": "skiing",
-            "ans": "スキー",
-            "remarks": ""
-        },
-        {
-            "id": 20,
-            "word": "weekend",
-            "ans": "しゅうまつ",
-            "remarks": "週末"
-        },
-        {
-            "id": 21,
-            "word": "New Year's Day",
-            "ans": "しょうがつ",
-            "remarks": "［お］正月"
-        },
-        {
-            "id": 22,
-            "word": "about ~ (time)",
-            "ans": "ごろ",
-            "remarks": "~ 頃"
-        },
-        {
-            "id": 23,
-            "word": "something",
-            "ans": "なにか",
-            "remarks": "何_"
-        },
-        {
-            "id": 24,
-            "word": "somewhere",
-            "ans": "どこか",
-            "remarks": ""
-        },
-        {
-            "id": 25,
-            "word": "get thirsty",
-            "ans": "のどがかわきます",
-            "remarks": ""
-        },
-        {
-            "id": 26,
-            "word": "I'm thirsty",
-            "ans": "のどがかわきました",
-            "remarks": ""
-        },
-        {
-            "id": 27,
-            "word": "get hungry",
-            "ans": "おなかがすきます",
-            "remarks": ""
-        },
-        {
-            "id": 28,
-            "word": "I'm hungry",
-            "ans": "おなかがすきました",
-            "remarks": ""
-        },
-        {
-            "id": 29,
-            "word": "Let's do that",
-            "ans": "そうしましょう",
-            "remarks": ""
-        },
-        {
-            "id": 30,
-            "word": "May I take your order?May I take your order?",
-            "ans": "ごちゅうもんは",
-            "remarks": ""
-        },
-        {
-            "id": 31,
-            "word": "set meal",
-            "ans": "ていしょく",
-            "remarks": "定食"
-        },
-        {
-            "id": 32,
-            "word": "bowl of rice topped with beef",
-            "ans": "ぎゅうどん",
-            "remarks": "牛丼"
-        },
-        {
-            "id": 33,
-            "word": "Please wait a moment.",
-            "ans": "しょうしょうおまちください",
-            "remarks": "少々_____"
-        },
-        {
-            "id": 34,
-            "word": "1,000円",
-            "ans": "1000えんでございます",
-            "remarks": "polite response"
-        },
-        {
-            "id": 35,
-            "word": "separately",
-            "ans": "べつべつに",
-            "remarks": "別々_"
-        }
-    ]
+  "id": 17,
+  "name": "Lesson 13",
+  "tags": [
+    "LAJ 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "enjoy oneself, play",
+      "ans": "あそびます",
+      "remarks": "verb"
+    },
+    {
+      "id": 1,
+      "word": "go to play, go and enjoy",
+      "ans": "あそびにいきます",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "swim",
+      "ans": "およぎます",
+      "remarks": "verb"
+    },
+    {
+      "id": 3,
+      "word": "go to meet, welcome, fetch",
+      "ans": "むかえます",
+      "remarks": ""
+    },
+    {
+      "id": 4,
+      "word": "go to pick up someone",
+      "ans": "むかえにいきます",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "get tired",
+      "ans": "つかれます",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "get married",
+      "ans": "けっこんします",
+      "remarks": ""
+    },
+    {
+      "id": 7,
+      "word": "do shopping",
+      "ans": "かいものします",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "have a meal, dine",
+      "ans": "しょくじします",
+      "remarks": "食事"
+    },
+    {
+      "id": 9,
+      "word": "take a walk",
+      "ans": "さんぽします",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "take a walk in a park",
+      "ans": "こうえんをさんぽします",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "hard, tough",
+      "ans": "たいへん",
+      "remarks": "大変［な］"
+    },
+    {
+      "id": 12,
+      "word": "want (something)",
+      "ans": "ほしい",
+      "remarks": "欲＿＿"
+    },
+    {
+      "id": 13,
+      "word": "wide, spacious",
+      "ans": "ひろい",
+      "remarks": "広＿"
+    },
+    {
+      "id": 14,
+      "word": "narrow, small (room etc)",
+      "ans": "せまい",
+      "remarks": "狭_"
+    },
+    {
+      "id": 15,
+      "word": "swimming pool",
+      "ans": "プール",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "river",
+      "ans": "かわ",
+      "remarks": "川"
+    },
+    {
+      "id": 17,
+      "word": "fine arts",
+      "ans": "びじゅつ",
+      "remarks": "美術"
+    },
+    {
+      "id": 18,
+      "word": "fishing",
+      "ans": "つり",
+      "remarks": "釣_"
+    },
+    {
+      "id": 19,
+      "word": "skiing",
+      "ans": "スキー",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "weekend",
+      "ans": "しゅうまつ",
+      "remarks": "週末"
+    },
+    {
+      "id": 21,
+      "word": "New Year's Day",
+      "ans": "しょうがつ",
+      "remarks": "［お］正月"
+    },
+    {
+      "id": 22,
+      "word": "about ~ (time)",
+      "ans": "ごろ",
+      "remarks": "~ 頃"
+    },
+    {
+      "id": 23,
+      "word": "something",
+      "ans": "なにか",
+      "remarks": "何_"
+    },
+    {
+      "id": 24,
+      "word": "somewhere",
+      "ans": "どこか",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "get thirsty",
+      "ans": "のどがかわきます",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "I'm thirsty",
+      "ans": "のどがかわきました",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "get hungry",
+      "ans": "おなかがすきます",
+      "remarks": ""
+    },
+    {
+      "id": 28,
+      "word": "I'm hungry",
+      "ans": "おなかがすきました",
+      "remarks": ""
+    },
+    {
+      "id": 29,
+      "word": "Let's do that",
+      "ans": "そうしましょう",
+      "remarks": ""
+    },
+    {
+      "id": 30,
+      "word": "May I take your order?May I take your order?",
+      "ans": "ごちゅうもんは",
+      "remarks": ""
+    },
+    {
+      "id": 31,
+      "word": "set meal",
+      "ans": "ていしょく",
+      "remarks": "定食"
+    },
+    {
+      "id": 32,
+      "word": "bowl of rice topped with beef",
+      "ans": "ぎゅうどん",
+      "remarks": "牛丼"
+    },
+    {
+      "id": 33,
+      "word": "Please wait a moment.",
+      "ans": "しょうしょうおまちください",
+      "remarks": "少々_____"
+    },
+    {
+      "id": 34,
+      "word": "1,000円",
+      "ans": "1000えんでございます",
+      "remarks": "polite response"
+    },
+    {
+      "id": 35,
+      "word": "separately",
+      "ans": "べつべつに",
+      "remarks": "別々_"
+    }
+  ]
 }
