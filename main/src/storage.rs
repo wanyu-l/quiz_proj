@@ -217,8 +217,26 @@ impl Storage {
         res
     }
 
+    pub fn get_all_names(&self) -> Vec<String> {
+        let mut res: Vec<String> = Vec::new();
+        for set in &self.sets {
+            res.push(set.get_set_name());
+        }
+        res
+    }
+
     pub fn get_all_study_sets(&self) -> Vec<StudySet> {
         self.sets.clone()
+    }
+
+    pub fn get_all_untagged_study_sets(&self) -> Vec<StudySet> {
+        let mut res = Vec::new();
+        for set in &self.sets {
+            if set.tags.is_empty() {
+                res.push(set.clone());
+            }
+        }
+        res
     }
 
     pub fn get_study_set(&self, to_get: usize) -> StudySet {
@@ -262,7 +280,7 @@ impl Storage {
     }
 
     pub fn update_set(&mut self, set_id: usize, updated_set: StudySet) {
-        if self.sets[set_id].get_set_name() != updated_set.get_set_name() {
+        if self.get_study_set(set_id).get_set_name() != updated_set.get_set_name() {
             self.rename_set_file(self.sets[set_id].get_set_name(), updated_set.get_set_name());
         }
         self.sets[set_id] = updated_set.clone();
@@ -330,6 +348,23 @@ impl Storage {
         fs::remove_file(set_data_path).expect(&err_msg_delete);
     }
 
+    pub fn clean_up(&mut self) {
+        // let mut cleaned_sets = Vec::new();
+        // let mut count = 0;
+        // let mut curr_sets = self.sets.clone();
+        // curr_sets.sort_by(|a, b| a.id.cmp(&b.id));
+        // for set in curr_sets {
+        //     let mut temp = set;
+        //     temp.set_id(count);
+        //     cleaned_sets.push(temp);
+        //     count += 1;
+        // }
+        // for set in &cleaned_sets {
+        //     self.update_set_file(set.clone());
+        // }
+        // self.sets = cleaned_sets;
+    }
+
     pub fn read() -> Vec<StudySet> {
         if !fs::metadata(&DATA_DIR_PATH).is_ok() {
             fs::create_dir(DATA_DIR_PATH).expect("Failed to Create Data Folder");
@@ -348,15 +383,15 @@ impl Storage {
                                 sets.push(data);
                             }
                             Err(_) => {
-                                println!("Error Reading Data");
+                                // println!("Error Reading Data");
                             }
                         }
                     } else {
-                        eprintln!("Error reading directory entry");
+                        // eprintln!("Error reading directory entry");
                     }
                 }
             }
-            Err(err) => eprintln!("Error reading directory: {}", err),
+            Err(_err) => (),
         }
         sets.sort_by(|a, b| a.id.cmp(&b.id));
         sets

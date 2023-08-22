@@ -46,6 +46,11 @@ fn is_valid(input_str: String) -> bool {
     input_str.replace(" ", "") != ""
 }
 
+fn has_duplicate(input_name: String, existing_names: Vec<String>) -> bool {
+    let actual_name = input_name.trim().to_string();
+    existing_names.contains(&actual_name)
+}
+
 // todo: color coding of tags
 // enum Module {}
 
@@ -73,6 +78,12 @@ impl Data for AppState {
             return false;
         }
         if self.answer_to_show != other.answer_to_show {
+            return false;
+        }
+        if self.new_set_name != other.new_set_name {
+            return false;
+        }
+        if self.new_set_tag != other.new_set_tag {
             return false;
         }
         for elem in &self.current_filter {
@@ -917,13 +928,28 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
         },
     );
 
+    let untagged_sets = Button::new("See All Untagged Sets").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            let new_win = WindowDesc::new(start_page_builder(
+                data.storage_unit.get_all_untagged_study_sets(),
+                data.storage_unit.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
+            data.current_filter.clear();
+            ctx.window().close();
+            ctx.new_window(new_win);
+        },
+    );
+
     let mut filter_buttons = Flex::row();
     filter_buttons = filter_buttons
         .with_child(match_all)
         .with_spacer(10.0)
         .with_child(match_any)
         .with_spacer(10.0)
-        .with_child(all_sets);
+        .with_child(all_sets)
+        .with_spacer(10.0)
+        .with_child(untagged_sets);
 
     list.add_child(filter_buttons);
     for set in study_sets {
@@ -932,7 +958,7 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
         let set_cloned_for_view = set.clone();
         let set_cloned = set.clone();
         let mut section = Flex::column();
-        let set_name_label = Label::new(set.get_set_name()).with_text_size(24.0);
+        let set_name_label = Label::new(format!("{} {}", id, set.get_set_name())).with_text_size(24.0);
         section.add_child(set_name_label);
         for tag in set_cloned.get_all_tags() {
             let tag_label = Label::new(tag).with_text_color(Color::LIME);
@@ -1031,9 +1057,17 @@ fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widg
 }
 
 fn add_set_page_builder() -> impl Widget<AppState> {
-    let error_label = Label::new(String::from("Set Name Cannot Be Empty"))
-        .with_text_size(32.0)
-        .with_text_color(Color::YELLOW);
+    let error_label = Label::dynamic(|data: &AppState, _env| -> String {
+        if !is_valid(data.new_set_name.clone()) {
+            return String::from("Set Name Cannot Be Empty");
+        }
+        if has_duplicate(data.new_set_name.clone(), data.storage_unit.get_all_names()) {
+            return format!("Set [{}] already exists!", data.new_set_name.trim());
+        }
+        return String::from("Please input Set Name and Tag(Optional)");
+    })
+    .with_text_size(32.0)
+    .with_text_color(Color::YELLOW);
     let set_name_input = TextBox::new()
         .with_placeholder("Enter Set Name")
         .with_text_size(24.0)
@@ -1047,7 +1081,9 @@ fn add_set_page_builder() -> impl Widget<AppState> {
     let save_button = Button::new("Add Set").on_click(move |ctx, data: &mut AppState, _env| {
         let set_name = &data.new_set_name;
         let set_tag = &data.new_set_tag;
-        if is_valid(set_name.clone()) {
+        if is_valid(set_name.clone())
+            && !has_duplicate(set_name.clone(), data.storage_unit.get_all_names())
+        {
             let mut new_set = StudySet::new(
                 set_name.trim().to_string(),
                 data.storage_unit.get_num_of_sets(),
@@ -1065,6 +1101,7 @@ fn add_set_page_builder() -> impl Widget<AppState> {
             ))
             .title(MAIN_TITLE);
             data.new_set_name.clear();
+            data.new_set_tag.clear();
             ctx.window().close();
             ctx.new_window(new_win);
         }
@@ -1096,9 +1133,17 @@ fn edit_set_page_builder(
             ctx.new_window(new_win);
         },
     );
-    let error_label = Label::new(String::from("Enter Set Name"))
-        .with_text_size(32.0)
-        .with_text_color(Color::YELLOW);
+    let curr_set_name = curr_name.clone();
+    let error_label = Label::dynamic(move |data: &AppState, _env| -> String {
+        if curr_set_name != data.new_set_name
+            && has_duplicate(data.new_set_name.clone(), data.storage_unit.get_all_names())
+        {
+            return format!("Set [{}] already exists!", data.new_set_name.trim());
+        }
+        return String::from("Please Enter New Set Name and Additional Tag(Optional)");
+    })
+    .with_text_size(32.0)
+    .with_text_color(Color::YELLOW);
     let set_name_input = TextBox::new()
         .with_placeholder(curr_name.clone())
         .with_text_size(24.0)
@@ -1115,31 +1160,53 @@ fn edit_set_page_builder(
         .with_text_color(Color::YELLOW);
     let mut tag_row = Flex::row();
     for tag in curr_tags {
-        let tag_label = Label::new(tag)
+        let mut tag_box = Flex::column();
+        let tag_label = Label::new(tag.clone())
             .with_text_size(20.0)
             .with_text_color(Color::rgba(0.5, 0.3, 0.7, 1.0))
             .border(Color::YELLOW, 1.0);
-        tag_row = tag_row.with_child(tag_label).with_spacer(5.0);
+        let delete_tag_button =
+            Button::new("Delete Tag").on_click(move |ctx, data: &mut AppState, _env| {
+                let mut target_set = data.storage_unit.get_study_set(set_id);
+                target_set.delete_tag(tag.clone());
+                data.storage_unit.update_set(set_id, target_set);
+                let new_win = WindowDesc::new(edit_set_page_builder(
+                    set_id,
+                    data.storage_unit.get_study_set(set_id).get_set_name(),
+                    data.storage_unit.get_study_set(set_id).get_all_tags(),
+                ))
+                .title("Edit Set Name & Tags");
+                ctx.new_window(new_win);
+                ctx.window().close();
+            });
+        tag_box = tag_box.with_child(tag_label).with_child(delete_tag_button);
+        tag_row = tag_row.with_child(tag_box).with_spacer(5.0);
     }
+    let tags_scroll = Scroll::new(tag_row);
 
     let save_button =
         Button::new("Save Changes").on_click(move |ctx, data: &mut AppState, _env| {
             let new_set_name = place_holder_helper(curr_name.clone(), data.new_set_name.clone());
-            let set_tag = &data.new_set_tag;
-            let mut target_set = data.storage_unit.get_study_set(set_id);
-            target_set.rename_set(new_set_name);
-            if is_valid(set_tag.clone()) {
-                target_set.add_tag(set_tag.trim().to_string());
+            if new_set_name == curr_name
+                || !has_duplicate(new_set_name.clone(), data.storage_unit.get_all_names())
+            {
+                let set_tag = &data.new_set_tag;
+                let mut target_set = data.storage_unit.get_study_set(set_id);
+                target_set.rename_set(new_set_name);
+                if is_valid(set_tag.clone()) {
+                    target_set.add_tag(set_tag.trim().to_string());
+                }
+                data.storage_unit.update_set(set_id, target_set);
+                let new_win = WindowDesc::new(start_page_builder(
+                    data.storage_unit.get_all_study_sets(),
+                    data.storage_unit.get_all_tags(),
+                ))
+                .title(MAIN_TITLE);
+                data.new_set_name.clear();
+                data.new_set_tag.clear();
+                ctx.window().close();
+                ctx.new_window(new_win);
             }
-            data.storage_unit.update_set(set_id, target_set);
-            let new_win = WindowDesc::new(start_page_builder(
-                data.storage_unit.get_all_study_sets(),
-                data.storage_unit.get_all_tags(),
-            ))
-            .title(MAIN_TITLE);
-            data.new_set_name.clear();
-            ctx.window().close();
-            ctx.new_window(new_win);
         });
     Flex::column()
         .with_child(return_to_main)
@@ -1152,7 +1219,7 @@ fn edit_set_page_builder(
         .with_spacer(50.0)
         .with_child(curr_tag_label)
         .with_spacer(10.0)
-        .with_child(tag_row)
+        .with_child(tags_scroll)
         .with_spacer(50.0)
         .with_child(save_button)
         .center()
