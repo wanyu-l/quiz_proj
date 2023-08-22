@@ -1226,7 +1226,8 @@ fn edit_set_page_builder(
 }
 
 pub fn main() {
-    let storage_unit = storage::Storage::new();
+    let mut storage_unit = storage::Storage::new();
+    storage_unit.clean_up();
     let main_window = WindowDesc::new(start_page_builder(
         storage_unit.get_all_study_sets(),
         storage_unit.get_all_tags(),

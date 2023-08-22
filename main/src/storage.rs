@@ -349,20 +349,24 @@ impl Storage {
     }
 
     pub fn clean_up(&mut self) {
-        // let mut cleaned_sets = Vec::new();
-        // let mut count = 0;
-        // let mut curr_sets = self.sets.clone();
-        // curr_sets.sort_by(|a, b| a.id.cmp(&b.id));
-        // for set in curr_sets {
-        //     let mut temp = set;
-        //     temp.set_id(count);
-        //     cleaned_sets.push(temp);
-        //     count += 1;
-        // }
-        // for set in &cleaned_sets {
-        //     self.update_set_file(set.clone());
-        // }
-        // self.sets = cleaned_sets;
+        let mut cleaned_sets = Vec::new();
+        let mut count = 0;
+        let mut curr_sets = self.sets.clone();
+        curr_sets.sort_by(|a, b| a.id.cmp(&b.id));
+        for set in curr_sets {
+            if set.get_id() != count {
+                let mut temp = set;
+                temp.set_id(count);
+                cleaned_sets.push(temp);
+            } else {
+                cleaned_sets.push(set);
+            }
+            count += 1;
+        }
+        for set in &cleaned_sets {
+            self.update_set_file(set.clone());
+        }
+        self.sets = cleaned_sets;
     }
 
     pub fn read() -> Vec<StudySet> {
