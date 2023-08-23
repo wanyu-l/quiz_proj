@@ -223,15 +223,59 @@ pub struct ListItem {
     item_id: usize,
     item_name: String,
     item_tags: Vec<String>,
+    num_of_cards: usize,
 }
 
 impl ListItem {
-    fn new(id: usize, name: String, tags: Vec<String>) -> ListItem {
+    fn new(id: usize, name: String, tags: Vec<String>, num: usize) -> ListItem {
         ListItem {
             item_id: id,
             item_name: name,
             item_tags: tags,
+            num_of_cards: num,
         }
+    }
+
+    pub fn get_id(&self) -> usize {
+        self.item_id.clone()
+    }
+
+    pub fn rename(&mut self, new_name: String) {
+        self.item_name = new_name;
+    }
+
+    pub fn get_name(&self) -> String {
+        self.item_name.clone()
+    }
+
+    pub fn get_all_tags(&self) -> Vec<String> {
+        self.item_tags.clone()
+    }
+
+    pub fn get_num_of_cards(&self) -> usize {
+        self.num_of_cards
+    }
+
+    pub fn has_tag(&self, tag: String) -> bool {
+        self.item_tags.contains(&tag)
+    }
+
+    pub fn has_any_tags(&self, tags: HashSet<String>) -> bool {
+        for tag in tags {
+            if self.has_tag(tag) {
+                return true;
+            }
+        }
+        false
+    }
+
+    pub fn has_all_tags(&self, tags: HashSet<String>) -> bool {
+        for tag in tags {
+            if !self.has_tag(tag) {
+                return false;
+            }
+        }
+        true
     }
 }
 
@@ -242,9 +286,106 @@ pub struct Catalogue {
 
 impl Catalogue {
     fn new(items: Vec<ListItem>) -> Catalogue {
-        Catalogue {
-            inventory: items
+        Catalogue { inventory: items }
+    }
+
+    pub fn get_inventory(&self) -> Vec<ListItem> {
+        self.inventory.clone()
+    }
+
+    pub fn get_num_of_items(&self) -> usize {
+        self.inventory.len()
+    }
+
+    pub fn get_all_names(&self) -> Vec<String> {
+        let mut res: Vec<String> = Vec::new();
+        for item in &self.inventory {
+            res.push(item.get_name());
         }
+        res
+    }
+
+    pub fn get_all_tags(&self) -> Vec<String> {
+        let mut res: Vec<String> = Vec::new();
+        for item in &self.inventory {
+            for tag in item.get_all_tags() {
+                if !res.contains(&tag) {
+                    res.push(tag);
+                }
+            }
+        }
+        res
+    }
+
+    pub fn get_items_by_tags(&self, tags: HashSet<String>, is_match_any: bool) -> Vec<ListItem> {
+        let mut res = Vec::new();
+        if is_match_any {
+            for item in &self.inventory {
+                if item.has_any_tags(tags.clone()) {
+                    res.push(item.clone());
+                }
+            }
+        } else {
+            for item in &self.inventory {
+                if item.has_all_tags(tags.clone()) {
+                    res.push(item.clone());
+                }
+            }
+        }
+        res
+    }
+
+    pub fn get_all_untagged_study_sets(&self) -> Vec<ListItem> {
+        let mut res = Vec::new();
+        for item in &self.inventory {
+            if item.get_all_tags().is_empty() {
+                res.push(item.clone());
+            }
+        }
+        res
+    }
+
+    pub fn update_set(&mut self, set_id: usize, updated_set: StudySet) {
+        for i in 0..self.inventory.len() {
+            if self.inventory[i].get_id() == set_id {
+                if self.inventory[i].get_name() != updated_set.get_set_name() {
+                    Storage::rename_set_file(
+                        self.inventory[i].get_name(),
+                        updated_set.get_set_name(),
+                    );
+                }
+                Storage::update_set_file(updated_set.clone());
+                let item = ListItem::new(
+                    updated_set.get_id(),
+                    updated_set.get_set_name(),
+                    updated_set.get_all_tags(),
+                    updated_set.get_num_of_cards(),
+                );
+                self.inventory[i] = item;
+            }
+        }
+    }
+
+    pub fn add_study_set(&mut self, study_set: StudySet) {
+        let item = ListItem::new(
+            study_set.get_id(),
+            study_set.get_set_name(),
+            study_set.get_all_tags(),
+            study_set.get_num_of_cards(),
+        );
+        self.inventory.push(item);
+        Storage::create_set_file(study_set);
+    }
+
+    pub fn get_item_by_id(&self, id: usize) -> Vec<ListItem> {
+        let mut res = Vec::new();
+        for item in &self.inventory {
+            if item.get_id() == id {
+                res.push(item.clone());
+                break;
+            }
+        }
+        res
     }
 }
 
@@ -254,105 +395,7 @@ impl Storage {
         Storage { sets: data_sets }
     }
 
-    pub fn get_all_tags(&self) -> Vec<String> {
-        let mut res: Vec<String> = Vec::new();
-        for set in &self.sets {
-            for tag in set.get_all_tags() {
-                if !res.contains(&tag) {
-                    res.push(tag);
-                }
-            }
-        }
-        res
-    }
-
-    pub fn get_all_names(&self) -> Vec<String> {
-        let mut res: Vec<String> = Vec::new();
-        for set in &self.sets {
-            res.push(set.get_set_name());
-        }
-        res
-    }
-
-    pub fn get_all_study_sets(&self) -> Vec<StudySet> {
-        self.sets.clone()
-    }
-
-    pub fn get_all_untagged_study_sets(&self) -> Vec<StudySet> {
-        let mut res = Vec::new();
-        for set in &self.sets {
-            if set.tags.is_empty() {
-                res.push(set.clone());
-            }
-        }
-        res
-    }
-
-    pub fn get_study_set(&self, to_get: usize) -> StudySet {
-        self.sets[to_get].clone()
-    }
-
-    pub fn get_study_set_by_tag(&self, tag: String) -> Vec<StudySet> {
-        let mut sets = Vec::new();
-        for set in &self.sets {
-            if set.has_tag(tag.clone()) {
-                sets.push(set.clone());
-            }
-        }
-        sets
-    }
-
-    pub fn get_study_set_by_tags(
-        &self,
-        tags: HashSet<String>,
-        is_match_any: bool,
-    ) -> Vec<StudySet> {
-        let mut sets = Vec::new();
-        if is_match_any {
-            for set in &self.sets {
-                if set.has_any_tags(tags.clone()) {
-                    sets.push(set.clone());
-                }
-            }
-        } else {
-            for set in &self.sets {
-                if set.has_all_tags(tags.clone()) {
-                    sets.push(set.clone());
-                }
-            }
-        }
-        sets
-    }
-
-    pub fn get_num_of_sets(&self) -> usize {
-        self.sets.len()
-    }
-
-    pub fn update_set(&mut self, set_id: usize, updated_set: StudySet) {
-        if self.get_study_set(set_id).get_set_name() != updated_set.get_set_name() {
-            self.rename_set_file(self.sets[set_id].get_set_name(), updated_set.get_set_name());
-        }
-        self.sets[set_id] = updated_set.clone();
-        self.update_set_file(updated_set);
-    }
-
-    pub fn add_set(&mut self, new_set: StudySet) {
-        self.sets.push(new_set.clone());
-        self.create_set_file(new_set);
-    }
-
-    pub fn delete_set(&mut self, set_id: usize) {
-        for i in 0..self.sets.len() {
-            if self.sets[i].get_id() == set_id {
-                let set_name = self.sets[i].get_set_name();
-                self.delete_set_file(set_name);
-                self.sets.remove(i);
-                break;
-            }
-        }
-    }
-
-    pub fn create_set_file(&self, set: StudySet) {
+    pub fn create_set_file(set: StudySet) {
         let file_name = set.get_set_name();
         let set_data = serde_json::to_string_pretty(&set).expect("Error parsing data to json");
         let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
@@ -367,7 +410,7 @@ impl Storage {
         let _ = file.write_all(set_data.as_bytes());
     }
 
-    pub fn rename_set_file(&self, prev_set_name: String, new_set_name: String) {
+    pub fn rename_set_file(prev_set_name: String, new_set_name: String) {
         let prev_set_file_name = format!("{}/{}.json", DATA_DIR_PATH, prev_set_name);
         let new_set_file_name = format!("{}/{}.json", DATA_DIR_PATH, new_set_name);
         let err_msg = format!(
@@ -377,7 +420,7 @@ impl Storage {
         fs::rename(prev_set_file_name, new_set_file_name).expect(&err_msg);
     }
 
-    pub fn update_set_file(&self, set: StudySet) {
+    pub fn update_set_file(set: StudySet) {
         let file_name = set.get_set_name();
         let set_data = serde_json::to_string_pretty(&set).expect("Error parsing data to json");
         let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
@@ -391,7 +434,7 @@ impl Storage {
         file.write_all(set_data.as_bytes()).expect(&err_msg_write);
     }
 
-    pub fn delete_set_file(&self, set_name: String) {
+    pub fn delete_set_file(set_name: String) {
         let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, set_name);
         let err_msg_delete = format!("Failed to delete set data file {}.json", set_name);
         fs::remove_file(set_data_path).expect(&err_msg_delete);
@@ -414,7 +457,7 @@ impl Storage {
             count += 1;
         }
         for set in &cleaned_sets {
-            self.update_set_file(set.clone());
+            Storage::update_set_file(set.clone());
         }
         self.sets = cleaned_sets;
     }
@@ -467,7 +510,12 @@ impl Storage {
     pub fn update_inventory(&self) {
         let mut items = Vec::new();
         for set in &self.sets {
-            let item = ListItem::new(set.get_id(), set.get_set_name(), set.get_all_tags());
+            let item = ListItem::new(
+                set.get_id(),
+                set.get_set_name(),
+                set.get_all_tags(),
+                set.get_num_of_cards(),
+            );
             items.push(item);
         }
         let catalogue = Catalogue::new(items);
@@ -497,5 +545,18 @@ impl Storage {
             Err(_err) => (),
         }
         sets
+    }
+
+    pub fn read_set_file(file_name: String) -> StudySet {
+        let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
+        let set_data = fs::read_to_string(set_data_path).expect("Failed to read set data file");
+        let read_data: StudySet = serde_json::from_str(&set_data).expect("Error parsing set file");
+        read_data
+    }
+
+    pub fn read_inventory_file() -> Catalogue {
+        let data = fs::read_to_string(INVENTORY_FILE_PATH).expect("Failed to read inventory file");
+        let catalogue: Catalogue = serde_json::from_str(&data).expect("Error parsing file");
+        catalogue
     }
 }
