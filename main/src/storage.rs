@@ -65,7 +65,6 @@ impl Card {
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct StudySet {
-    id: usize,
     name: String,
     tags: Vec<String>,
     cards: Vec<Card>,
@@ -73,7 +72,7 @@ pub struct StudySet {
 
 impl Data for StudySet {
     fn same(&self, other: &Self) -> bool {
-        if self.name == other.name && self.id == other.id && self.cards.len() == other.cards.len() {
+        if self.name == other.name && self.cards.len() == other.cards.len() {
             for i in 0..self.cards.len() {
                 if self.cards[i].same(&other.cards[i]) {
                     return true;
@@ -90,9 +89,8 @@ impl Data for StudySet {
 }
 
 impl StudySet {
-    pub fn new(new_set_name: String, new_set_id: usize) -> StudySet {
+    pub fn new(new_set_name: String) -> StudySet {
         StudySet {
-            id: new_set_id,
             name: new_set_name,
             tags: vec![],
             cards: vec![],
@@ -117,10 +115,6 @@ impl StudySet {
 
     pub fn add_tag(&mut self, tag: String) {
         self.tags.push(tag);
-    }
-
-    pub fn set_id(&mut self, new_id: usize) {
-        self.id = new_id;
     }
 
     pub fn add_card(&mut self, card: Card) {
@@ -193,27 +187,9 @@ impl StudySet {
             self.tags.remove(tag_ind as usize);
         }
     }
-
-    pub fn get_id(&self) -> usize {
-        self.id
-    }
 }
 
-#[derive(Debug, Deserialize, Serialize, Clone)]
-pub struct Storage {
-    sets: Vec<StudySet>,
-}
-
-impl Data for Storage {
-    fn same(&self, other: &Self) -> bool {
-        for i in 0..self.sets.len() {
-            if self.sets[i].same(&other.sets[i]) {
-                return true;
-            }
-        }
-        false
-    }
-}
+pub struct Storage;
 
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ListItem {
@@ -353,19 +329,20 @@ impl Catalogue {
                 }
                 Storage::update_set_file(updated_set.clone());
                 let item = ListItem::new(
-                    updated_set.get_id(),
+                    i,
                     updated_set.get_set_name(),
                     updated_set.get_all_tags(),
                     updated_set.get_num_of_cards(),
                 );
                 self.inventory[i] = item;
+                break;
             }
         }
     }
 
-    pub fn add_study_set(&mut self, study_set: StudySet) {
+    pub fn add_study_set(&mut self, study_set: StudySet, item_id: usize) {
         let item = ListItem::new(
-            study_set.get_id(),
+            item_id,
             study_set.get_set_name(),
             study_set.get_all_tags(),
             study_set.get_num_of_cards(),
@@ -459,12 +436,14 @@ impl Storage {
             fs::create_dir(DATA_DIR_PATH).expect("Failed to Create Data Folder");
         }
         if !fs::metadata(&INVENTORY_DIR_PATH).is_ok() {
-            fs::create_dir(INVENTORY_DIR_PATH).expect("Failed to Create Data Folder");
+            fs::create_dir(INVENTORY_DIR_PATH).expect("Failed to Create Inventory Folder");
         }
         if !fs::metadata(&INVENTORY_FILE_PATH).is_ok() {
-            File::create(INVENTORY_FILE_PATH).expect("Failed to Create Data Folder");
+            File::create(INVENTORY_FILE_PATH).expect("Failed to Create Inventory File");
         }
     }
+
+    pub fn clean_up_inventory() {}
 
     pub fn read_set_file(file_name: String) -> StudySet {
         let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
@@ -477,5 +456,17 @@ impl Storage {
         let data = fs::read_to_string(INVENTORY_FILE_PATH).expect("Failed to read inventory file");
         let catalogue: Catalogue = serde_json::from_str(&data).expect("Error parsing file");
         catalogue
+    }
+
+    pub fn update_inventory(inventory: Catalogue) {
+        let data = serde_json::to_string_pretty(&inventory).expect("Error parsing data to json");
+        let err_msg_open = format!("Failed to open file [{}]", INVENTORY_FILE_PATH);
+        let err_msg_write = format!("Failed to write to file [{}]", INVENTORY_FILE_PATH);
+        let mut file = OpenOptions::new()
+            .write(true)
+            .truncate(true)
+            .open(INVENTORY_FILE_PATH)
+            .expect(&err_msg_open);
+        file.write_all(data.as_bytes()).expect(&err_msg_write);
     }
 }
