@@ -930,7 +930,7 @@ fn list_page_builder(items: Vec<ListItem>, tags: Vec<String>) -> impl Widget<App
         let name_for_test = item.get_name();
         let name_for_edit = item.get_name();
         let mut section = Flex::column();
-        let set_name_label = Label::new(format!("{} {}", id, item.get_name())).with_text_size(24.0);
+        let set_name_label = Label::new(item.get_name()).with_text_size(24.0);
         section.add_child(set_name_label);
         for tag in item.get_all_tags() {
             let tag_label = Label::new(tag).with_text_color(Color::LIME);

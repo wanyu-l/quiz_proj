@@ -102,6 +102,9 @@ impl StudySet {
     pub fn get_id(&self) -> usize {
         self.id
     }
+    pub fn set_id(&mut self, new_id: usize) {
+        self.id = new_id;
+    }
 
     pub fn clean_up_set(&mut self) {
         let mut count = 0;
@@ -488,14 +491,21 @@ impl Storage {
     pub fn inventory_check() {
         let study_sets = Storage::read_data();
         let mut items = Vec::new();
+        let mut count = 0;
         for set in study_sets {
+            if set.get_id() != count {
+                let mut cloned_set = set.clone();
+                cloned_set.set_id(count);
+                Storage::update_set_file(cloned_set);
+            }
             let item = ListItem::new(
-                set.get_id(),
+                count,
                 set.get_set_name(),
                 set.get_all_tags(),
                 set.get_num_of_cards(),
             );
             items.push(item);
+            count += 1;
         }
         let new_catologue = Catalogue::new(items);
         Storage::update_inventory(new_catologue);
