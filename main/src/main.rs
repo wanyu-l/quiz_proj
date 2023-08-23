@@ -1452,7 +1452,9 @@ pub fn main() {
     //     })
     //     .launch(AppState::default(storage_unit))
     //     .unwrap();
-    let mut storage_unit = storage::Storage::new();
+    Storage::set_up();
+    let storage_unit = storage::Storage::new();
+    storage_unit.update_inventory();
     let main_window = WindowDesc::new(list_page_builder(
         Storage::read_inventory()
     ))

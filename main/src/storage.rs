@@ -1,5 +1,5 @@
 use druid::Data;
-use serde::{ Deserialize, Serialize };
+use serde::{Deserialize, Serialize};
 use std::collections::HashSet;
 use std::fs;
 use std::fs::File;
@@ -7,6 +7,8 @@ use std::fs::OpenOptions;
 use std::io::Write;
 
 const DATA_DIR_PATH: &str = "./data";
+const INVENTORY_DIR_PATH: &str = "./inventory";
+const INVENTORY_FILE_PATH: &str = "./inventory/inventory.json";
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Card {
@@ -30,7 +32,7 @@ impl Card {
         new_card_id: usize,
         new_card_word: String,
         new_card_ans: String,
-        new_card_remark: String
+        new_card_remark: String,
     ) -> Card {
         Card {
             id: new_card_id,
@@ -216,6 +218,36 @@ impl Data for Storage {
     }
 }
 
+#[derive(Debug, Deserialize, Serialize, Clone)]
+pub struct ListItem {
+    item_id: usize,
+    item_name: String,
+    item_tags: Vec<String>,
+}
+
+impl ListItem {
+    fn new(id: usize, name: String, tags: Vec<String>) -> ListItem {
+        ListItem {
+            item_id: id,
+            item_name: name,
+            item_tags: tags,
+        }
+    }
+}
+
+#[derive(Debug, Deserialize, Serialize, Clone)]
+pub struct Catalogue {
+    inventory: Vec<ListItem>,
+}
+
+impl Catalogue {
+    fn new(items: Vec<ListItem>) -> Catalogue {
+        Catalogue {
+            inventory: items
+        }
+    }
+}
+
 impl Storage {
     pub fn new() -> Storage {
         let data_sets = Storage::read();
@@ -273,7 +305,7 @@ impl Storage {
     pub fn get_study_set_by_tags(
         &self,
         tags: HashSet<String>,
-        is_match_any: bool
+        is_match_any: bool,
     ) -> Vec<StudySet> {
         let mut sets = Vec::new();
         if is_match_any {
@@ -340,8 +372,7 @@ impl Storage {
         let new_set_file_name = format!("{}/{}.json", DATA_DIR_PATH, new_set_name);
         let err_msg = format!(
             "Failed to change name from [{}] to [{}]",
-            prev_set_file_name,
-            new_set_file_name
+            prev_set_file_name, new_set_file_name
         );
         fs::rename(prev_set_file_name, new_set_file_name).expect(&err_msg);
     }
@@ -398,8 +429,7 @@ impl Storage {
                 for entry in dir_entries {
                     if let Ok(entry) = entry {
                         let set_data_file_path = entry.path();
-                        let set_data = fs
-                            ::read_to_string(set_data_file_path)
+                        let set_data = fs::read_to_string(set_data_file_path)
                             .expect("Failed to read set data file");
                         let read_data_json = serde_json::from_str(&set_data);
                         match read_data_json {
@@ -421,10 +451,38 @@ impl Storage {
         sets
     }
 
-    pub fn read_inventory() -> Vec<String> {
+    // Initialize files and folders to read/save data from/to
+    pub fn set_up() {
         if !fs::metadata(&DATA_DIR_PATH).is_ok() {
             fs::create_dir(DATA_DIR_PATH).expect("Failed to Create Data Folder");
         }
+        if !fs::metadata(&INVENTORY_DIR_PATH).is_ok() {
+            fs::create_dir(INVENTORY_DIR_PATH).expect("Failed to Create Data Folder");
+        }
+        if !fs::metadata(&INVENTORY_FILE_PATH).is_ok() {
+            File::create(INVENTORY_FILE_PATH).expect("Failed to Create Data Folder");
+        }
+    }
+
+    pub fn update_inventory(&self) {
+        let mut items = Vec::new();
+        for set in &self.sets {
+            let item = ListItem::new(set.get_id(), set.get_set_name(), set.get_all_tags());
+            items.push(item);
+        }
+        let catalogue = Catalogue::new(items);
+        let data = serde_json::to_string_pretty(&catalogue).expect("Error parsing data to json");
+        let err_msg_open = format!("Failed to open file [{}]", INVENTORY_FILE_PATH);
+        let err_msg_write = format!("Failed to write to file [{}]", INVENTORY_FILE_PATH);
+        let mut file = OpenOptions::new()
+            .write(true)
+            .truncate(true)
+            .open(INVENTORY_FILE_PATH)
+            .expect(&err_msg_open);
+        file.write_all(data.as_bytes()).expect(&err_msg_write);
+    }
+
+    pub fn read_inventory() -> Vec<String> {
         let mut sets: Vec<String> = Vec::new();
         match fs::read_dir(DATA_DIR_PATH) {
             Ok(dir_entries) => {
