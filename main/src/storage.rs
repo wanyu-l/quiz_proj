@@ -73,9 +73,6 @@ pub struct StudySet {
 
 impl Data for StudySet {
     fn same(&self, other: &Self) -> bool {
-        // Implement comparison logic for MyObject
-        // Return true if the objects are considered the same, false otherwise
-        // ...
         if self.name == other.name && self.id == other.id && self.cards.len() == other.cards.len() {
             for i in 0..self.cards.len() {
                 if self.cards[i].same(&other.cards[i]) {
@@ -240,6 +237,10 @@ impl ListItem {
         self.item_id.clone()
     }
 
+    pub fn set_id(&mut self, id: usize) {
+        self.item_id = id;
+    }
+
     pub fn rename(&mut self, new_name: String) {
         self.item_name = new_name;
     }
@@ -285,10 +286,6 @@ pub struct Catalogue {
 }
 
 impl Catalogue {
-    fn new(items: Vec<ListItem>) -> Catalogue {
-        Catalogue { inventory: items }
-    }
-
     pub fn get_inventory(&self) -> Vec<ListItem> {
         self.inventory.clone()
     }
@@ -387,14 +384,30 @@ impl Catalogue {
         }
         res
     }
+
+    pub fn delete_item_by_id(&mut self, id: usize) {
+        let mut res = Vec::new();
+        let mut count = 0;
+        for item in &self.inventory {
+            if item.get_id() != id {
+                let mut new_item = ListItem::new(
+                    item.get_id(),
+                    item.get_name(),
+                    item.get_all_tags(),
+                    item.get_num_of_cards(),
+                );
+                new_item.set_id(count);
+                res.push(new_item.clone());
+                count += 1;
+            } else {
+                Storage::delete_set_file(item.get_name());
+            }
+        }
+        self.inventory = res;
+    }
 }
 
 impl Storage {
-    pub fn new() -> Storage {
-        let data_sets = Storage::read();
-        Storage { sets: data_sets }
-    }
-
     pub fn create_set_file(set: StudySet) {
         let file_name = set.get_set_name();
         let set_data = serde_json::to_string_pretty(&set).expect("Error parsing data to json");
@@ -440,60 +453,6 @@ impl Storage {
         fs::remove_file(set_data_path).expect(&err_msg_delete);
     }
 
-    // Precautionery clean up in case data json files are edited directly
-    pub fn clean_up(&mut self) {
-        let mut cleaned_sets = Vec::new();
-        let mut count = 0;
-        let mut curr_sets = self.sets.clone();
-        curr_sets.sort_by(|a, b| a.id.cmp(&b.id));
-        for set in curr_sets {
-            if set.get_id() != count {
-                let mut temp = set;
-                temp.set_id(count);
-                cleaned_sets.push(temp);
-            } else {
-                cleaned_sets.push(set);
-            }
-            count += 1;
-        }
-        for set in &cleaned_sets {
-            Storage::update_set_file(set.clone());
-        }
-        self.sets = cleaned_sets;
-    }
-
-    pub fn read() -> Vec<StudySet> {
-        if !fs::metadata(&DATA_DIR_PATH).is_ok() {
-            fs::create_dir(DATA_DIR_PATH).expect("Failed to Create Data Folder");
-        }
-        let mut sets: Vec<StudySet> = Vec::new();
-        match fs::read_dir(DATA_DIR_PATH) {
-            Ok(dir_entries) => {
-                for entry in dir_entries {
-                    if let Ok(entry) = entry {
-                        let set_data_file_path = entry.path();
-                        let set_data = fs::read_to_string(set_data_file_path)
-                            .expect("Failed to read set data file");
-                        let read_data_json = serde_json::from_str(&set_data);
-                        match read_data_json {
-                            Ok(data) => {
-                                sets.push(data);
-                            }
-                            Err(_) => {
-                                // println!("Error Reading Data");
-                            }
-                        }
-                    } else {
-                        // eprintln!("Error reading directory entry");
-                    }
-                }
-            }
-            Err(_err) => (),
-        }
-        sets.sort_by(|a, b| a.id.cmp(&b.id));
-        sets
-    }
-
     // Initialize files and folders to read/save data from/to
     pub fn set_up() {
         if !fs::metadata(&DATA_DIR_PATH).is_ok() {
@@ -505,46 +464,6 @@ impl Storage {
         if !fs::metadata(&INVENTORY_FILE_PATH).is_ok() {
             File::create(INVENTORY_FILE_PATH).expect("Failed to Create Data Folder");
         }
-    }
-
-    pub fn update_inventory(&self) {
-        let mut items = Vec::new();
-        for set in &self.sets {
-            let item = ListItem::new(
-                set.get_id(),
-                set.get_set_name(),
-                set.get_all_tags(),
-                set.get_num_of_cards(),
-            );
-            items.push(item);
-        }
-        let catalogue = Catalogue::new(items);
-        let data = serde_json::to_string_pretty(&catalogue).expect("Error parsing data to json");
-        let err_msg_open = format!("Failed to open file [{}]", INVENTORY_FILE_PATH);
-        let err_msg_write = format!("Failed to write to file [{}]", INVENTORY_FILE_PATH);
-        let mut file = OpenOptions::new()
-            .write(true)
-            .truncate(true)
-            .open(INVENTORY_FILE_PATH)
-            .expect(&err_msg_open);
-        file.write_all(data.as_bytes()).expect(&err_msg_write);
-    }
-
-    pub fn read_inventory() -> Vec<String> {
-        let mut sets: Vec<String> = Vec::new();
-        match fs::read_dir(DATA_DIR_PATH) {
-            Ok(dir_entries) => {
-                for entry in dir_entries {
-                    if let Ok(entry) = entry {
-                        let set_data_file_path = entry.path();
-                        let str = set_data_file_path.to_str().expect("Unexpected Error");
-                        sets.push(str.to_string());
-                    }
-                }
-            }
-            Err(_err) => (),
-        }
-        sets
     }
 
     pub fn read_set_file(file_name: String) -> StudySet {
