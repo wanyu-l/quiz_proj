@@ -776,13 +776,15 @@ fn view_page_builder(
         },
     );
     list = list.with_spacer(30.0).with_child(add_word_button);
-
-    for i in 0..cards.len() {
-        let ind = cards.len() - i - 1;
+    for card in cards {
+        let card_id = card.get_id();
+        let card_word = card.get_word();
+        let card_ans = card.get_ans();
+        let card_remarks = card.get_remarks();
         let delete_word_button = Button::new("Delete").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
                 let mut target_set = data.storage_unit.get_study_set(lesson_id);
-                target_set.delete_card(ind);
+                target_set.delete_card(card_id);
                 let window_title = target_set.get_set_name();
                 let new_win = WindowDesc::new(view_page_builder(
                     lesson_id,
@@ -798,10 +800,10 @@ fn view_page_builder(
         );
         let edit_word_button = Button::new("Edit").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
-                let curr_card = data.storage_unit.get_study_set(lesson_id).get_card(ind);
+                let curr_card = data.storage_unit.get_study_set(lesson_id).get_card(card_id);
                 let new_win = WindowDesc::new(edit_word_page_builder(
                     lesson_id,
-                    ind,
+                    card.get_id(),
                     curr_card.get_word(),
                     curr_card.get_ans(),
                     curr_card.get_remarks(),
@@ -813,18 +815,18 @@ fn view_page_builder(
         );
         let word = format!(
             "Word {}:\n[{}]",
-            cards[ind].get_id() + 1,
-            cards[ind].get_word()
+            card_id + 1,
+            card_word
         );
         let word_label: Label<AppState> = Label::new(word)
             .with_text_size(24.0)
             .with_text_color(Color::FUCHSIA);
         let mut word_row: Flex<AppState> = Flex::column();
-        let expected_ans = format!("Correct Answer:\n[{}]", cards[ind].get_ans());
+        let expected_ans = format!("Correct Answer:\n[{}]", card_ans);
         let answer_label: Label<AppState> = Label::new(expected_ans)
             .with_text_size(24.0)
             .with_text_color(Color::SILVER);
-        let remarks = format!("Remarks:\n[{}]", cards[ind].get_remarks());
+        let remarks = format!("Remarks:\n[{}]", card_remarks);
         let remarks_label: Label<AppState> = Label::new(remarks)
             .with_text_size(24.0)
             .with_text_color(Color::OLIVE);
@@ -846,6 +848,214 @@ fn view_page_builder(
     }
     let scroll = Scroll::new(list.padding(40.0)).vertical();
     scroll
+}
+
+fn list_page_builder(list: Vec<String>) -> impl Widget<AppState> {
+    let mut list: Flex<AppState> = Flex::column();
+    let filter_label = Label::new("Filter by tags")
+        .with_text_size(32.0)
+        .with_text_color(Color::PURPLE);
+    // let mut tags_list: Flex<AppState> = Flex::row().with_spacer(10.0);
+    // for i in 0..tags.len() {
+    //     let curr_tag = tags[i].clone();
+    //     let curr_tag_for_filter = curr_tag.clone();
+    //     let filter_button = Button::new(curr_tag.clone())
+    //         .background(Painter::new(move |ctx, data: &AppState, _env| {
+    //             let bounds = ctx.size().to_rect();
+    //             if data.current_filter.contains(&curr_tag_for_filter) {
+    //                 ctx.fill(bounds, &SELECTED_TAG_COLOR);
+    //             } else {
+    //                 ctx.fill(bounds, &UNSELECTED_TAG_COLOR);
+    //             }
+    //         }))
+    //         .on_click(
+    //             move |_ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+    //                 if data.current_filter.contains(&curr_tag) {
+    //                     data.current_filter.remove(&curr_tag);
+    //                 } else {
+    //                     data.current_filter.insert(curr_tag.clone());
+    //                 }
+    //             },
+    //         );
+    //     tags_list = tags_list.with_child(filter_button).with_spacer(10.0);
+    // }
+    // let inner_tags_list = Scroll::new(tags_list.padding(20.0).center()).horizontal();
+    // list.add_child(filter_label);
+    // list.add_child(inner_tags_list);
+
+    // let match_all = Button::new("Match All").on_click(
+    //     move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+    //         if !data.current_filter.is_empty() {
+    //             let new_win = WindowDesc::new(start_page_builder(
+    //                 data.storage_unit
+    //                     .get_study_set_by_tags(data.current_filter.clone(), false),
+    //                 data.storage_unit.get_all_tags(),
+    //             ))
+    //             .title(MAIN_TITLE);
+    //             data.current_filter.clear();
+    //             ctx.window().close();
+    //             ctx.new_window(new_win);
+    //         }
+    //     },
+    // );
+    // let match_any = Button::new("Match Any").on_click(
+    //     move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+    //         if !data.current_filter.is_empty() {
+    //             let new_win = WindowDesc::new(start_page_builder(
+    //                 data.storage_unit
+    //                     .get_study_set_by_tags(data.current_filter.clone(), true),
+    //                 data.storage_unit.get_all_tags(),
+    //             ))
+    //             .title(MAIN_TITLE);
+    //             data.current_filter.clear();
+    //             ctx.window().close();
+    //             ctx.new_window(new_win);
+    //         }
+    //     },
+    // );
+
+    // let all_sets = Button::new("See All Sets").on_click(
+    //     move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+    //         if data.storage_unit.get_num_of_sets() != num_of_sets {
+    //             let new_win = WindowDesc::new(start_page_builder(
+    //                 data.storage_unit.get_all_study_sets(),
+    //                 data.storage_unit.get_all_tags(),
+    //             ))
+    //             .title(MAIN_TITLE);
+    //             data.current_filter.clear();
+    //             ctx.window().close();
+    //             ctx.new_window(new_win);
+    //         }
+    //     },
+    // );
+
+    // let untagged_sets = Button::new("See All Untagged Sets").on_click(
+    //     move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+    //         let new_win = WindowDesc::new(start_page_builder(
+    //             data.storage_unit.get_all_untagged_study_sets(),
+    //             data.storage_unit.get_all_tags(),
+    //         ))
+    //         .title(MAIN_TITLE);
+    //         data.current_filter.clear();
+    //         ctx.window().close();
+    //         ctx.new_window(new_win);
+    //     },
+    // );
+
+    // let mut filter_buttons = Flex::row();
+    // filter_buttons = filter_buttons
+    //     .with_child(match_all)
+    //     .with_spacer(10.0)
+    //     .with_child(match_any)
+    //     .with_spacer(10.0)
+    //     .with_child(all_sets)
+    //     .with_spacer(10.0)
+    //     .with_child(untagged_sets);
+
+    // list.add_child(filter_buttons);
+    // for set in study_sets {
+    //     let id = set.get_id();
+    //     let id_clone = id.clone();
+    //     let set_cloned_for_view = set.clone();
+    //     let set_cloned = set.clone();
+    //     let mut section = Flex::column();
+    //     let set_name_label = Label::new(format!("{} {}", id, set.get_set_name())).with_text_size(24.0);
+    //     section.add_child(set_name_label);
+    //     for tag in set_cloned.get_all_tags() {
+    //         let tag_label = Label::new(tag).with_text_color(Color::LIME);
+    //         section = section.with_spacer(5.0).with_child(tag_label);
+    //     }
+    //     let view_button = Button::new("View").on_click(
+    //         move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
+    //             let new_win = WindowDesc::new(view_page_builder(
+    //                 set_cloned_for_view.get_id(),
+    //                 set_cloned_for_view.get_set_name(),
+    //                 set_cloned_for_view.get_all_cards(),
+    //                 set_cloned_for_view.get_all_tags(),
+    //             ))
+    //             .title(set_cloned_for_view.get_set_name());
+    //             ctx.window().close();
+    //             ctx.new_window(new_win);
+    //         },
+    //     );
+    //     let learn_button = Button::new("Learn").on_click(
+    //         move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
+    //             if set_cloned.get_num_of_cards() > 0 {
+    //                 let new_win = WindowDesc::new(learn_page_builder(
+    //                     set_cloned.get_id(),
+    //                     set_cloned.get_set_name(),
+    //                 ))
+    //                 .title(set_cloned.get_set_name());
+    //                 ctx.window().close();
+    //                 ctx.new_window(new_win);
+    //             }
+    //         },
+    //     );
+    //     let test_button = Button::new("Test").on_click(
+    //         move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
+    //             if set.get_num_of_cards() > 0 {
+    //                 let new_win =
+    //                     WindowDesc::new(test_page_builder(set.get_id(), set.get_set_name()))
+    //                         .title(set.get_set_name());
+    //                 ctx.window().close();
+    //                 ctx.new_window(new_win);
+    //             }
+    //         },
+    //     );
+    //     let delete_button = Button::new("Delete").on_click(
+    //         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+    //             data.storage_unit.delete_set(id_clone);
+    //             let new_win = WindowDesc::new(start_page_builder(
+    //                 data.storage_unit.get_all_study_sets(),
+    //                 data.storage_unit.get_all_tags(),
+    //             ))
+    //             .title(MAIN_TITLE);
+    //             ctx.window().close();
+    //             ctx.new_window(new_win);
+    //         },
+    //     );
+
+    //     let edit_setname_button = Button::new("Edit").on_click(
+    //         move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+    //             let new_win = WindowDesc::new(edit_set_page_builder(
+    //                 id,
+    //                 data.storage_unit.get_study_set(id).get_set_name(),
+    //                 data.storage_unit.get_study_set(id).get_all_tags(),
+    //             ))
+    //             .title("Edit Set Name & Tags");
+    //             ctx.window().close();
+    //             ctx.new_window(new_win);
+    //         },
+    //     );
+    //     let mut row = Flex::row();
+    //     row.add_child(view_button);
+    //     row.add_child(learn_button);
+    //     row.add_child(test_button);
+    //     row.add_child(delete_button);
+    //     row.add_child(edit_setname_button);
+    //     section = section.with_spacer(20.0).with_child(row);
+    //     list.add_child(
+    //         section
+    //             .padding(30.0)
+    //             .border(Color::OLIVE, 2.0)
+    //             .padding(10.0),
+    //     );
+    // }
+    // let add_set_button = Button::new("Add Set").on_click(
+    //     move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
+    //         let new_win = WindowDesc::new(add_set_page_builder()).title("Add New Set");
+    //         ctx.window().close();
+    //         ctx.new_window(new_win);
+    //     },
+    // );
+    // list = list
+    //     .with_spacer(10.0)
+    //     .with_child(add_set_button.center())
+    //     .with_spacer(30.0);
+    // let scroll = Scroll::new(list).vertical();
+    // let aligned_widget = Align::right(scroll);
+    // aligned_widget
+    Flex::column().with_child(filter_label)
 }
 
 fn start_page_builder(study_sets: Vec<StudySet>, tags: Vec<String>) -> impl Widget<AppState> {
@@ -1225,12 +1435,26 @@ fn edit_set_page_builder(
         .center()
 }
 
+
 pub fn main() {
+    // let mut storage_unit = storage::Storage::new();
+    // storage_unit.clean_up();
+    // let main_window = WindowDesc::new(start_page_builder(
+    //     storage_unit.get_all_study_sets(),
+    //     storage_unit.get_all_tags(),
+    // ))
+    // .title(MAIN_TITLE);
+    // AppLauncher::with_window(main_window)
+    //     // .log_to_console()
+    //     .configure_env(|env, _state| {
+    //         env.set(theme::BUTTON_DARK, Color::rgba8(100, 100, 120, 0));
+    //         env.set(theme::BUTTON_LIGHT, Color::rgba8(100, 100, 100, 100));
+    //     })
+    //     .launch(AppState::default(storage_unit))
+    //     .unwrap();
     let mut storage_unit = storage::Storage::new();
-    storage_unit.clean_up();
-    let main_window = WindowDesc::new(start_page_builder(
-        storage_unit.get_all_study_sets(),
-        storage_unit.get_all_tags(),
+    let main_window = WindowDesc::new(list_page_builder(
+        Storage::read_inventory()
     ))
     .title(MAIN_TITLE);
     AppLauncher::with_window(main_window)

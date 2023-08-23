@@ -1,5 +1,5 @@
 use druid::Data;
-use serde::{Deserialize, Serialize};
+use serde::{ Deserialize, Serialize };
 use std::collections::HashSet;
 use std::fs;
 use std::fs::File;
@@ -30,7 +30,7 @@ impl Card {
         new_card_id: usize,
         new_card_word: String,
         new_card_ans: String,
-        new_card_remark: String,
+        new_card_remark: String
     ) -> Card {
         Card {
             id: new_card_id,
@@ -38,6 +38,10 @@ impl Card {
             ans: new_card_ans,
             remarks: new_card_remark,
         }
+    }
+
+    pub fn set_id(&mut self, new_card_id: usize) {
+        self.id = new_card_id;
     }
 
     pub fn get_id(&self) -> usize {
@@ -96,6 +100,18 @@ impl StudySet {
         }
     }
 
+    pub fn clean_up_set(&mut self) {
+        let mut count = 0;
+        let mut new_cards = Vec::new();
+        for card in &self.cards {
+            let mut temp = card.clone();
+            temp.set_id(count);
+            new_cards.push(temp);
+            count += 1;
+        }
+        self.cards = new_cards;
+    }
+
     pub fn rename_set(&mut self, new_name: String) {
         self.name = new_name;
     }
@@ -118,6 +134,7 @@ impl StudySet {
 
     pub fn delete_card(&mut self, to_remove: usize) {
         self.cards.remove(to_remove);
+        self.clean_up_set();
     }
 
     pub fn get_set_name(&self) -> String {
@@ -256,7 +273,7 @@ impl Storage {
     pub fn get_study_set_by_tags(
         &self,
         tags: HashSet<String>,
-        is_match_any: bool,
+        is_match_any: bool
     ) -> Vec<StudySet> {
         let mut sets = Vec::new();
         if is_match_any {
@@ -323,7 +340,8 @@ impl Storage {
         let new_set_file_name = format!("{}/{}.json", DATA_DIR_PATH, new_set_name);
         let err_msg = format!(
             "Failed to change name from [{}] to [{}]",
-            prev_set_file_name, new_set_file_name
+            prev_set_file_name,
+            new_set_file_name
         );
         fs::rename(prev_set_file_name, new_set_file_name).expect(&err_msg);
     }
@@ -348,6 +366,7 @@ impl Storage {
         fs::remove_file(set_data_path).expect(&err_msg_delete);
     }
 
+    // Precautionery clean up in case data json files are edited directly
     pub fn clean_up(&mut self) {
         let mut cleaned_sets = Vec::new();
         let mut count = 0;
@@ -379,7 +398,8 @@ impl Storage {
                 for entry in dir_entries {
                     if let Ok(entry) = entry {
                         let set_data_file_path = entry.path();
-                        let set_data = fs::read_to_string(set_data_file_path)
+                        let set_data = fs
+                            ::read_to_string(set_data_file_path)
                             .expect("Failed to read set data file");
                         let read_data_json = serde_json::from_str(&set_data);
                         match read_data_json {
@@ -398,6 +418,26 @@ impl Storage {
             Err(_err) => (),
         }
         sets.sort_by(|a, b| a.id.cmp(&b.id));
+        sets
+    }
+
+    pub fn read_inventory() -> Vec<String> {
+        if !fs::metadata(&DATA_DIR_PATH).is_ok() {
+            fs::create_dir(DATA_DIR_PATH).expect("Failed to Create Data Folder");
+        }
+        let mut sets: Vec<String> = Vec::new();
+        match fs::read_dir(DATA_DIR_PATH) {
+            Ok(dir_entries) => {
+                for entry in dir_entries {
+                    if let Ok(entry) = entry {
+                        let set_data_file_path = entry.path();
+                        let str = set_data_file_path.to_str().expect("Unexpected Error");
+                        sets.push(str.to_string());
+                    }
+                }
+            }
+            Err(_err) => (),
+        }
         sets
     }
 }
