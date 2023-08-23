@@ -1062,6 +1062,7 @@ fn add_set_page_builder() -> impl Widget<AppState> {
             && !has_duplicate(set_name.clone(), data.catalogue.get_all_names())
         {
             let mut new_set = StudySet::new(
+                data.catalogue.get_num_of_items(),
                 set_name.trim().to_string()
             );
             if !set_tag.clone().is_empty() {
@@ -1209,6 +1210,7 @@ fn edit_set_page_builder(
 
 pub fn main() {
     Storage::set_up();
+    Storage::inventory_check();
     let catalouge = Storage::read_inventory_file();
     let main_window = WindowDesc::new(list_page_builder(
         catalouge.get_inventory(),

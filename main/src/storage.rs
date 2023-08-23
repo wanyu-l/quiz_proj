@@ -65,6 +65,7 @@ impl Card {
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct StudySet {
+    id: usize,
     name: String,
     tags: Vec<String>,
     cards: Vec<Card>,
@@ -89,12 +90,17 @@ impl Data for StudySet {
 }
 
 impl StudySet {
-    pub fn new(new_set_name: String) -> StudySet {
+    pub fn new(set_id: usize, new_set_name: String) -> StudySet {
         StudySet {
+            id: set_id,
             name: new_set_name,
             tags: vec![],
             cards: vec![],
         }
+    }
+
+    pub fn get_id(&self) -> usize {
+        self.id
     }
 
     pub fn clean_up_set(&mut self) {
@@ -262,6 +268,10 @@ pub struct Catalogue {
 }
 
 impl Catalogue {
+    pub fn new(items: Vec<ListItem>) -> Catalogue {
+        Catalogue { inventory: items }
+    }
+
     pub fn get_inventory(&self) -> Vec<ListItem> {
         self.inventory.clone()
     }
@@ -443,7 +453,53 @@ impl Storage {
         }
     }
 
-    pub fn clean_up_inventory() {}
+    pub fn read_data() -> Vec<StudySet> {
+        if !fs::metadata(&DATA_DIR_PATH).is_ok() {
+            fs::create_dir(DATA_DIR_PATH).expect("Failed to Create Data Folder");
+        }
+        let mut sets: Vec<StudySet> = Vec::new();
+        match fs::read_dir(DATA_DIR_PATH) {
+            Ok(dir_entries) => {
+                for entry in dir_entries {
+                    if let Ok(entry) = entry {
+                        let set_data_file_path = entry.path();
+                        let set_data = fs::read_to_string(set_data_file_path)
+                            .expect("Failed to read set data file");
+                        let read_data_json = serde_json::from_str(&set_data);
+                        match read_data_json {
+                            Ok(data) => {
+                                sets.push(data);
+                            }
+                            Err(_) => {
+                                // println!("Error Reading Data");
+                            }
+                        }
+                    } else {
+                        // eprintln!("Error reading directory entry");
+                    }
+                }
+            }
+            Err(_err) => (),
+        }
+        sets.sort_by(|a, b| a.id.cmp(&b.id));
+        sets
+    }
+
+    pub fn inventory_check() {
+        let study_sets = Storage::read_data();
+        let mut items = Vec::new();
+        for set in study_sets {
+            let item = ListItem::new(
+                set.get_id(),
+                set.get_set_name(),
+                set.get_all_tags(),
+                set.get_num_of_cards(),
+            );
+            items.push(item);
+        }
+        let new_catologue = Catalogue::new(items);
+        Storage::update_inventory(new_catologue);
+    }
 
     pub fn read_set_file(file_name: String) -> StudySet {
         let set_data_path = format!("{}/{}.json", DATA_DIR_PATH, file_name);
