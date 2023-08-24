@@ -1,5 +1,3 @@
-#![windows_subsystem = "windows"]
-
 use std::collections::HashSet;
 
 use druid::{
