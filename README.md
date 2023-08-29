@@ -106,5 +106,6 @@ Program is not allowed to execute by operating system by default
 
 #### How to resolve
 1. Open terminal and use `cd <path_to_target_folder>` to move to folder with program.
-2. Run `chmod +x quiz_late` in the folder with program to allow program to be run.
+2. Run `chmod +777 quiz_late` in the folder with program to allow program to be run.
+This grants Read/Write/Execute privileges to the program and they are required for program to run, to read from and save to local data files.
 
