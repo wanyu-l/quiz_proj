@@ -105,7 +105,7 @@ The progoram is available [here](https://github.com/wanyu-l/quiz_proj/releases/t
 Program is not allowed to execute by operating system by default
 
 #### How to resolve
-1. Open terminal and use `cd <path_to_target_folder>` to move to folder with program.
-2. Run `chmod +777 quiz_late` in the folder with program to allow program to be run.
-This grants Read/Write/Execute privileges to the program and they are required for program to run, to read from and save to local data files.
+1. Double click the program (error may or may not be thrown)
+2. Open Settings and navigate to Privacy & Preferences
+3. There should be a prompt on disabled execution of quiz_late, click 'open_anyway'
 
