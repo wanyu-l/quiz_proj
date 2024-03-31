@@ -1,0 +1,256 @@
+{
+  "id": 77,
+  "name": "語彙第4課",
+  "tags": [
+    "LAJ 5",
+    "とびら"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "to learn; take lessons",
+      "ans": "まなぶ",
+      "remarks": "（～を）「学＿」"
+    },
+    {
+      "id": 1,
+      "word": "the present day; age; today",
+      "ans": "げんだい",
+      "remarks": "現代"
+    },
+    {
+      "id": 2,
+      "word": "elderly person",
+      "ans": "としより",
+      "remarks": "（お）「年寄＿」"
+    },
+    {
+      "id": 3,
+      "word": "kind; sort; type",
+      "ans": "しゅるい",
+      "remarks": "種類"
+    },
+    {
+      "id": 4,
+      "word": "health (Na-Adj) healthy (used for human/animal health only)",
+      "ans": "けんこう",
+      "remarks": "健康; 健康的（な）"
+    },
+    {
+      "id": 5,
+      "word": "(TV/radio) program",
+      "ans": "ばんぐみ",
+      "remarks": "番組"
+    },
+    {
+      "id": 6,
+      "word": "representative; typical",
+      "ans": "だいひょうてき",
+      "remarks": "「代表的」（な）"
+    },
+    {
+      "id": 7,
+      "word": "sumo wrestling",
+      "ans": "すもう",
+      "remarks": "相撲"
+    },
+    {
+      "id": 8,
+      "word": "a country's interior  domestic; internal ",
+      "ans": "こくない",
+      "remarks": "国内; 国内の"
+    },
+    {
+      "id": 9,
+      "word": "athlete; player",
+      "ans": "せんしゅ",
+      "remarks": "選手"
+    },
+    {
+      "id": 10,
+      "word": "entirely; everything; all",
+      "ans": "すべて",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "to win",
+      "ans": "かつ",
+      "remarks": "（～に・で）「勝＿」"
+    },
+    {
+      "id": 12,
+      "word": "growth; to grow (up)",
+      "ans": "せいちょう",
+      "remarks": "成長;  （～が）成長する"
+    },
+    {
+      "id": 13,
+      "word": "smiling face; smile",
+      "ans": "えがお",
+      "remarks": "笑顔"
+    },
+    {
+      "id": 14,
+      "word": "loud voice (N)",
+      "ans": "おおごえ",
+      "remarks": "大声"
+    },
+    {
+      "id": 15,
+      "word": "to shout; yell; cry (out)",
+      "ans": "さけぶ",
+      "remarks": "（～が）「叫＿」"
+    },
+    {
+      "id": 16,
+      "word": "to lose; be defeated",
+      "ans": "まける",
+      "remarks": "（～に・で）「負＿」"
+    },
+    {
+      "id": 17,
+      "word": "(someone is) frustrated; (something is) regrettable",
+      "ans": "くやしい",
+      "remarks": "「悔＿＿」"
+    },
+    {
+      "id": 18,
+      "word": "to look down on; make fun of",
+      "ans": "ばかにする",
+      "remarks": "（～を）「＿＿＿＿」"
+    },
+    {
+      "id": 19,
+      "word": "absolutely; surely",
+      "ans": "ぜったい",
+      "remarks": "「絶対」（に）"
+    },
+    {
+      "id": 20,
+      "word": "bow; etiquette; thanks ",
+      "ans": "れい",
+      "remarks": "礼; 礼をする"
+    },
+    {
+      "id": 21,
+      "word": "toward; for; to; in the direction of",
+      "ans": "むかって",
+      "remarks": "（～に）「向＿＿」"
+    },
+    {
+      "id": 22,
+      "word": "(to) each other / one another",
+      "ans": "おたがいに",
+      "remarks": "「＿互＿＿」"
+    },
+    {
+      "id": 23,
+      "word": "respect to respect; look up to; show one's respect for",
+      "ans": "そんけい",
+      "remarks": "（~を）「尊敬」する"
+    },
+    {
+      "id": 24,
+      "word": "gratitude; appreciation; to thank; show one's gratitude ",
+      "ans": "かんしゃ",
+      "remarks": "感謝; （～に）感謝する　"
+    },
+    {
+      "id": 25,
+      "word": "to express; represent",
+      "ans": "あらわす",
+      "remarks": "（～を）「表＿」"
+    },
+    {
+      "id": 26,
+      "word": "to include; contain; hold",
+      "ans": "ふくむ",
+      "remarks": "（～を）「含＿」"
+    },
+    {
+      "id": 27,
+      "word": "well-mannered; courteous;polite  right; correct",
+      "ans": "れいぎただしい",
+      "remarks": "「礼儀正＿＿」; 「正＿＿」"
+    },
+    {
+      "id": 28,
+      "word": "to grow (up); be brought up",
+      "ans": "そだつ",
+      "remarks": "（～が）「育＿」"
+    },
+    {
+      "id": 29,
+      "word": "mind; spirit; will ",
+      "ans": "せいしん",
+      "remarks": "精神; 精神力（りょく）(N)emotional strength"
+    },
+    {
+      "id": 30,
+      "word": "ability; capacity; competence ",
+      "ans": "のうりょく",
+      "remarks": "能力; 運動能力 (N) athletic ability"
+    },
+    {
+      "id": 31,
+      "word": "play",
+      "ans": "プレー",
+      "remarks": "「＿＿」をする (Phr) to play"
+    },
+    {
+      "id": 32,
+      "word": "to break (a stick-like object); fracture",
+      "ans": "おる",
+      "remarks": "（～を）「折＿」"
+    },
+    {
+      "id": 33,
+      "word": "to hit; strike",
+      "ans": "うつ",
+      "remarks": "（～を）「打＿」"
+    },
+    {
+      "id": 34,
+      "word": "to throw; pitch",
+      "ans": "なげる",
+      "remarks": "（～を）「投＿＿」"
+    },
+    {
+      "id": 35,
+      "word": "to give",
+      "ans": "あたえる",
+      "remarks": "（～に～を）「与＿＿」"
+    },
+    {
+      "id": 36,
+      "word": "gold",
+      "ans": "きん",
+      "remarks": "金; 金メダル (N) gold medal"
+    },
+    {
+      "id": 37,
+      "word": "to rear; bring up; train (a person)",
+      "ans": "そだてる",
+      "remarks": "（～を）「育＿＿」"
+    },
+    {
+      "id": 38,
+      "word": "to give; hand over; give up (one's seat to a senior)",
+      "ans": "ゆずる",
+      "remarks": "（～を）「譲＿」"
+    },
+    {
+      "id": 39,
+      "word": "to lose one's way; be uncertain; hesitate",
+      "ans": "まよう",
+      "remarks": "（～に）「迷＿」"
+    },
+    {
+      "id": 40,
+      "word": "general; common",
+      "ans": "いっぱんてきな",
+      "remarks": "一般的＿"
+    }
+  ]
+}

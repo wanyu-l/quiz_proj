@@ -1,0 +1,196 @@
+{
+  "id": 75,
+  "name": "語彙第1課",
+  "tags": [
+    "LAJ 5",
+    "とびら"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "geography",
+      "ans": "ちり",
+      "remarks": "地理"
+    },
+    {
+      "id": 1,
+      "word": "island",
+      "ans": "しま",
+      "remarks": "島"
+    },
+    {
+      "id": 2,
+      "word": "continent",
+      "ans": "たいりく",
+      "remarks": "大陸"
+    },
+    {
+      "id": 3,
+      "word": "city",
+      "ans": "とし",
+      "remarks": "都市"
+    },
+    {
+      "id": 4,
+      "word": "Hokkaido",
+      "ans": "ほっかいどう",
+      "remarks": "北海道"
+    },
+    {
+      "id": 5,
+      "word": "Honshu (Japan's largest island)",
+      "ans": "ほんしゅう",
+      "remarks": "本州"
+    },
+    {
+      "id": 6,
+      "word": "Shikoku (the smallest of Japan's four major islands)",
+      "ans": "しこく",
+      "remarks": "四国"
+    },
+    {
+      "id": 7,
+      "word": "Kyushu (the third largest of Japan's four major islands)",
+      "ans": "きゅうしゅう",
+      "remarks": "九州"
+    },
+    {
+      "id": 8,
+      "word": "whole; entire; general",
+      "ans": "ぜんたい",
+      "remarks": "全体（の）"
+    },
+    {
+      "id": 9,
+      "word": "one out of [] e.g. twenty-fifth",
+      "ans": "ぶんの",
+      "remarks": "～分の～"
+    },
+    {
+      "id": 10,
+      "word": "prefecture (the largest administrative unit in Japan)",
+      "ans": "とどうふけん",
+      "remarks": "都道府県"
+    },
+    {
+      "id": 11,
+      "word": "capital (city)",
+      "ans": "しゅと",
+      "remarks": "首都"
+    },
+    {
+      "id": 12,
+      "word": "war",
+      "ans": "せんそう",
+      "remarks": "戦争"
+    },
+    {
+      "id": 13,
+      "word": "peace",
+      "ans": "へいわ",
+      "remarks": "平和"
+    },
+    {
+      "id": 14,
+      "word": "to pass (knowledge) on; tell; inform",
+      "ans": "つたえる",
+      "remarks": "（～に～を）「伝＿」"
+    },
+    {
+      "id": 15,
+      "word": "climate",
+      "ans": "きこう",
+      "remarks": "気候"
+    },
+    {
+      "id": 16,
+      "word": "(atmospheric) temperature ",
+      "ans": "きおん",
+      "remarks": "気温"
+    },
+    {
+      "id": 17,
+      "word": "gap; difference",
+      "ans": "さ",
+      "remarks": "差"
+    },
+    {
+      "id": 18,
+      "word": "cherry blossoms ",
+      "ans": "さくら",
+      "remarks": "桜"
+    },
+    {
+      "id": 19,
+      "word": "the end",
+      "ans": "おわり",
+      "remarks": "「終__」"
+    },
+    {
+      "id": 20,
+      "word": "people",
+      "ans": "ひとびと",
+      "remarks": "人々"
+    },
+    {
+      "id": 21,
+      "word": "to enjoy",
+      "ans": "たのしむ",
+      "remarks": "（～を）「楽＿＿」"
+    },
+    {
+      "id": 22,
+      "word": "famous place; place of interest",
+      "ans": "めいしょ",
+      "remarks": "名所"
+    },
+    {
+      "id": 23,
+      "word": "most; extremely",
+      "ans": "もっとも",
+      "remarks": "最＿"
+    },
+    {
+      "id": 24,
+      "word": "castle",
+      "ans": "しろ",
+      "remarks": "（お）城"
+    },
+    {
+      "id": 25,
+      "word": "to remain; be left over",
+      "ans": "のこる",
+      "remarks": "（～が）「残＿」"
+    },
+    {
+      "id": 26,
+      "word": "filming; shooting (of a movie, a photograph, etc.)",
+      "ans": "さつえい",
+      "remarks": "撮影"
+    },
+    {
+      "id": 27,
+      "word": "sightseeing",
+      "ans": "かんこう",
+      "remarks": "～を「観光」する"
+    },
+    {
+      "id": 28,
+      "word": "purpose",
+      "ans": "もくてき",
+      "remarks": "目的"
+    },
+    {
+      "id": 29,
+      "word": "relax",
+      "ans": "リラックス",
+      "remarks": ""
+    },
+    {
+      "id": 30,
+      "word": "to visit, tour (of a place)",
+      "ans": "けんがく",
+      "remarks": "～を「見学」する"
+    }
+  ]
+}

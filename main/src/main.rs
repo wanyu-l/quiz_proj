@@ -263,6 +263,108 @@ fn test_page_builder(set_index: usize, file_name: String) -> impl Widget<AppStat
     card.with_spacer(20.0).with_child(return_to_main)
 }
 
+fn test_no_remarks_page_builder(set_index: usize, file_name: String) -> impl Widget<AppState> {
+    let set_name = file_name.clone();
+    let study_set = Storage::read_set_file(file_name);
+    let num_of_cards = study_set.get_num_of_cards();
+    // clone 1 for each purpose
+    let cloned_set_for_words = study_set.clone();
+    let word_label = Label::dynamic(move |data: &AppState, _env| -> String {
+        let word_index = data.curr_indexes[set_index];
+        cloned_set_for_words.get_card(word_index).get_word()
+    })
+    .with_text_size(32.0);
+
+    let text_box = TextBox::new()
+        .with_placeholder("Enter text here")
+        .with_text_size(24.0)
+        .fix_width(300.0)
+        .lens(AppState::str);
+
+    let clear = Button::new("Clear").on_click(move |ctx, data: &mut AppState, _env| -> () {
+        let message = String::from("Input Cleared");
+        data.str.clear();
+        let word_index = data.curr_indexes[set_index];
+        data.res[set_index][word_index] = message;
+        ctx.request_update();
+    });
+    let prev = Button::new("Prev").on_click(move |ctx, data: &mut AppState, _env| -> () {
+        let ind = data.curr_indexes[set_index];
+        data.input_str[set_index][ind] = data.str.clone();
+        if data.curr_indexes[set_index] >= 1 {
+            data.curr_indexes[set_index] -= 1;
+            data.str.clear();
+        }
+        ctx.request_update();
+    });
+    let next = Button::new("Next").on_click(move |ctx, data: &mut AppState, _env| -> () {
+        let ind = data.curr_indexes[set_index];
+        data.input_str[set_index][ind] = data.str.clone();
+        if data.curr_indexes[set_index] < num_of_cards - 1 {
+            data.curr_indexes[set_index] += 1;
+            data.str.clear();
+        }
+        ctx.request_update();
+    });
+
+    let eval_results = Button::new("Submit Test").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            let ind = data.curr_indexes[set_index];
+            data.input_str[set_index][ind] = data.str.clone();
+            let results_window = WindowDesc::new(result_page_builder(
+                set_name.clone(),
+                data.input_str[set_index].clone(),
+                study_set.clone(),
+            ))
+            .title("Resuts");
+            ctx.window().close();
+            ctx.new_window(results_window);
+        },
+    );
+
+    let res_label = Label::dynamic(move |data: &AppState, _| {
+        let word_index = data.curr_indexes[set_index];
+        data.res[set_index][word_index].clone()
+    })
+    .with_text_size(24.0);
+    let index_label = Label::dynamic(move |data: &AppState, _| {
+        format!("{} / {}\n", data.curr_indexes[set_index] + 1, num_of_cards)
+    })
+    .with_text_size(24.0);
+
+    let inputs = Flex::row()
+        .with_child(prev)
+        .with_child(clear)
+        .with_child(next);
+
+    let return_to_main = Button::new("Return to Study Sets List").on_click(
+        move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
+            let new_win = WindowDesc::new(list_page_builder(
+                data.catalogue.get_inventory(),
+                data.catalogue.get_all_tags(),
+            ))
+            .title(MAIN_TITLE);
+            ctx.window().close();
+            ctx.new_window(new_win);
+        },
+    );
+
+    let card = Flex::column()
+        .with_child(index_label)
+        .with_spacer(20.0)
+        .with_child(word_label)
+        .with_spacer(30.0);
+    let card = card
+        .with_child(text_box)
+        .with_spacer(20.0)
+        .with_child(inputs)
+        .with_spacer(20.0)
+        .with_child(res_label)
+        .with_spacer(20.0)
+        .with_child(eval_results);
+    card.with_spacer(20.0).with_child(return_to_main)
+}
+
 // index is the id of the study set
 fn learn_page_builder(set_index: usize, file_name: String) -> impl Widget<AppState> {
     let set_name = file_name.clone();
@@ -928,6 +1030,7 @@ fn list_page_builder(items: Vec<ListItem>, tags: Vec<String>) -> impl Widget<App
         let name_for_view = item.get_name();
         let name_for_learn = item.get_name();
         let name_for_test = item.get_name();
+        let name_for_hard_test = name_for_test.clone();
         let name_for_edit = item.get_name();
         let mut section = Flex::column();
         let set_name_label = Label::new(item.get_name()).with_text_size(24.0);
@@ -976,6 +1079,17 @@ fn list_page_builder(items: Vec<ListItem>, tags: Vec<String>) -> impl Widget<App
                 }
             },
         );
+        let hard_test_button = Button::new("Test No Remarks").on_click(
+            move |ctx: &mut druid::EventCtx<'_, '_>, _data: &mut AppState, _env| {
+                if num_of_cards > 0 {
+                    let new_win =
+                        WindowDesc::new(test_no_remarks_page_builder(id, name_for_hard_test.clone()))
+                            .title(name_for_hard_test.clone());
+                    ctx.window().close();
+                    ctx.new_window(new_win);
+                }
+            },
+        );
         let delete_button = Button::new("Delete").on_click(
             move |ctx: &mut druid::EventCtx<'_, '_>, data: &mut AppState, _env| {
                 data.catalogue.delete_item_by_id(id.clone());
@@ -1007,6 +1121,7 @@ fn list_page_builder(items: Vec<ListItem>, tags: Vec<String>) -> impl Widget<App
         row.add_child(view_button);
         row.add_child(learn_button);
         row.add_child(test_button);
+        row.add_child(hard_test_button);
         row.add_child(delete_button);
         row.add_child(edit_setname_button);
         section = section.with_spacer(20.0).with_child(row);

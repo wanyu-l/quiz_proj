@@ -326,7 +326,7 @@
       "item_tags": [
         "LAJ 3"
       ],
-      "num_of_cards": 38
+      "num_of_cards": 39
     },
     {
       "item_id": 41,
@@ -538,11 +538,12 @@
     },
     {
       "item_id": 67,
-      "item_name": "Lesson 45",
+      "item_name": "Lectures",
       "item_tags": [
-        "LAJ 5"
+        "LAJ 5",
+        "In class"
       ],
-      "num_of_cards": 3
+      "num_of_cards": 6
     },
     {
       "item_id": 68,
@@ -550,7 +551,156 @@
       "item_tags": [
         "容疑者Xの献身"
       ],
-      "num_of_cards": 6
+      "num_of_cards": 19
+    },
+    {
+      "item_id": 69,
+      "item_name": "Lesson 45",
+      "item_tags": [
+        "LAJ 5"
+      ],
+      "num_of_cards": 28
+    },
+    {
+      "item_id": 70,
+      "item_name": "Lesson 46",
+      "item_tags": [
+        "LAJ 5"
+      ],
+      "num_of_cards": 31
+    },
+    {
+      "item_id": 71,
+      "item_name": "Lesson 47",
+      "item_tags": [
+        "LAJ 5"
+      ],
+      "num_of_cards": 40
+    },
+    {
+      "item_id": 72,
+      "item_name": "Lesson 48",
+      "item_tags": [
+        "LAJ 5"
+      ],
+      "num_of_cards": 22
+    },
+    {
+      "item_id": 73,
+      "item_name": "Lesson 49",
+      "item_tags": [
+        "LAJ 5"
+      ],
+      "num_of_cards": 33
+    },
+    {
+      "item_id": 74,
+      "item_name": "Lesson 50",
+      "item_tags": [
+        "LAJ 5",
+        "尊敬語"
+      ],
+      "num_of_cards": 31
+    },
+    {
+      "item_id": 75,
+      "item_name": "語彙第1課",
+      "item_tags": [
+        "LAJ 5",
+        "とびら"
+      ],
+      "num_of_cards": 31
+    },
+    {
+      "item_id": 76,
+      "item_name": "語彙第3課",
+      "item_tags": [
+        "LAJ 5",
+        "とびら"
+      ],
+      "num_of_cards": 36
+    },
+    {
+      "item_id": 77,
+      "item_name": "語彙第4課",
+      "item_tags": [
+        "LAJ 5",
+        "とびら"
+      ],
+      "num_of_cards": 41
+    },
+    {
+      "item_id": 78,
+      "item_name": "語彙第5課",
+      "item_tags": [
+        "LAJ 5",
+        "とびら"
+      ],
+      "num_of_cards": 36
+    },
+    {
+      "item_id": 79,
+      "item_name": "Reading 2",
+      "item_tags": [
+        "探偵ガリレオ"
+      ],
+      "num_of_cards": 43
+    },
+    {
+      "item_id": 80,
+      "item_name": "第一課・紹介",
+      "item_tags": [
+        "Biz Jap 2"
+      ],
+      "num_of_cards": 30
+    },
+    {
+      "item_id": 81,
+      "item_name": "第二課・挨拶",
+      "item_tags": [
+        "Biz Jap 2"
+      ],
+      "num_of_cards": 43
+    },
+    {
+      "item_id": 82,
+      "item_name": "第三課・許可",
+      "item_tags": [
+        "Biz Jap 2"
+      ],
+      "num_of_cards": 27
+    },
+    {
+      "item_id": 83,
+      "item_name": "第四課・依頼",
+      "item_tags": [
+        "Biz Jap 2"
+      ],
+      "num_of_cards": 42
+    },
+    {
+      "item_id": 84,
+      "item_name": "第五課・誘い",
+      "item_tags": [
+        "Biz Jap 2"
+      ],
+      "num_of_cards": 38
+    },
+    {
+      "item_id": 85,
+      "item_name": "第六課・電話",
+      "item_tags": [
+        "Biz Jap 2"
+      ],
+      "num_of_cards": 25
+    },
+    {
+      "item_id": 86,
+      "item_name": "第七課・アポイント",
+      "item_tags": [
+        "Biz Jap 2"
+      ],
+      "num_of_cards": 24
     }
   ]
 }

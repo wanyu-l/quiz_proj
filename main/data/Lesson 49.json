@@ -1,0 +1,207 @@
+{
+  "id": 73,
+  "name": "Lesson 49",
+  "tags": [
+    "LAJ 5"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "use (keigo)",
+      "ans": "りようします",
+      "remarks": "利用＿＿"
+    },
+    {
+      "id": 1,
+      "word": "work (for a company)",
+      "ans": "つとめます",
+      "remarks": "（会社に）「勤＿＿」"
+    },
+    {
+      "id": 2,
+      "word": "sit on (a chair)",
+      "ans": "かけます",
+      "remarks": "（いすに）「掛＿＿」"
+    },
+    {
+      "id": 3,
+      "word": "spend (time), pass (time)",
+      "ans": "すごします",
+      "remarks": "過＿＿"
+    },
+    {
+      "id": 4,
+      "word": "be, go, come (respectful)",
+      "ans": "いらっしゃいます",
+      "remarks": ""
+    },
+    {
+      "id": 5,
+      "word": "eat, drink (respectful)",
+      "ans": "めしあがります",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "say, (one's name ) is~",
+      "ans": "おっしゃいます",
+      "remarks": "(respectful)"
+    },
+    {
+      "id": 7,
+      "word": "do (respectful)",
+      "ans": "なさいます",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "see, look at (respectful)",
+      "ans": "ごらんになります",
+      "remarks": "「＿覧＿＿」"
+    },
+    {
+      "id": 9,
+      "word": "know (respectful)",
+      "ans": "ごぞんじです",
+      "remarks": "「＿存知＿＿」"
+    },
+    {
+      "id": 10,
+      "word": "greeting, address",
+      "ans": "あいさつ",
+      "remarks": "挨拶"
+    },
+    {
+      "id": 11,
+      "word": "greet, give an address",
+      "ans": "あいさつをします",
+      "remarks": "「挨拶＿＿＿」"
+    },
+    {
+      "id": 12,
+      "word": "Japanese-style hotel or inn",
+      "ans": "りょかん",
+      "remarks": "旅館"
+    },
+    {
+      "id": 13,
+      "word": "bus stop",
+      "ans": "バスてい",
+      "remarks": "「＿＿停」"
+    },
+    {
+      "id": 14,
+      "word": "(someone else's) wife (respectful)",
+      "ans": "おくさま",
+      "remarks": "奥様"
+    },
+    {
+      "id": 15,
+      "word": "respectful equivalent of さん",
+      "ans": "さま",
+      "remarks": "様"
+    },
+    {
+      "id": 16,
+      "word": "once in a while",
+      "ans": "たまに",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "anybody (respectful)",
+      "ans": "どなたでも",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "(one's name) is ~",
+      "ans": "といいます",
+      "remarks": "~「＿＿」"
+    },
+    {
+      "id": 19,
+      "word": "class-of-th grade",
+      "ans": "＿ねん＿くみ",
+      "remarks": "use ＿「」＿「」 format"
+    },
+    {
+      "id": 20,
+      "word": "run (a fever)",
+      "ans": "だします",
+      "remarks": "（ねつを）「＿＿」"
+    },
+    {
+      "id": 21,
+      "word": "Give my best regards/ Please say hello",
+      "ans": "よろしくおつたえください",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "Good Bye (respectful)",
+      "ans": "しつれいいたします",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "background",
+      "ans": "けいれき",
+      "remarks": "経歴"
+    },
+    {
+      "id": 24,
+      "word": "the medical department",
+      "ans": "いがくぶ",
+      "remarks": "医学部"
+    },
+    {
+      "id": 25,
+      "word": "aim for",
+      "ans": "めざします",
+      "remarks": "（を）「目指＿＿」"
+    },
+    {
+      "id": 26,
+      "word": "go on (to graduate school)",
+      "ans": "すすみます",
+      "remarks": "（に）「進＿＿」"
+    },
+    {
+      "id": 27,
+      "word": "induced pluripotent stem cell",
+      "ans": "IPSさいぼう",
+      "remarks": "＿＿細胞"
+    },
+    {
+      "id": 28,
+      "word": "develop, create",
+      "ans": "かいはつします",
+      "remarks": "（を）「開発＿＿」"
+    },
+    {
+      "id": 29,
+      "word": "mouse",
+      "ans": "マウス",
+      "remarks": ""
+    },
+    {
+      "id": 30,
+      "word": "human",
+      "ans": "ヒト",
+      "remarks": ""
+    },
+    {
+      "id": 31,
+      "word": "be awarded a prize",
+      "ans": "じゅしょうします",
+      "remarks": "（を）「受賞＿＿」"
+    },
+    {
+      "id": 32,
+      "word": "lecture meeting",
+      "ans": "こうえんかい",
+      "remarks": "講演会"
+    }
+  ]
+}

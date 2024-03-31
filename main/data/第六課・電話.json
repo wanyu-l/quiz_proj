@@ -1,0 +1,159 @@
+{
+  "id": 85,
+  "name": "第六課・電話",
+  "tags": [
+    "Biz Jap 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "work for",
+      "ans": "つとめる",
+      "remarks": "勤＿＿"
+    },
+    {
+      "id": 1,
+      "word": "belong to",
+      "ans": "しょぞくする",
+      "remarks": "所属＿＿"
+    },
+    {
+      "id": 2,
+      "word": "world",
+      "ans": "せかい",
+      "remarks": "世界"
+    },
+    {
+      "id": 3,
+      "word": "except for ~",
+      "ans": "いがい",
+      "remarks": "～以外"
+    },
+    {
+      "id": 4,
+      "word": "(to) mean (verb)",
+      "ans": "いみする",
+      "remarks": "意味＿＿"
+    },
+    {
+      "id": 5,
+      "word": "distinctive/unique feature",
+      "ans": "とくしゅせい",
+      "remarks": "特殊性"
+    },
+    {
+      "id": 6,
+      "word": "sense of belonging",
+      "ans": "きぞくいしき",
+      "remarks": "帰属意識"
+    },
+    {
+      "id": 7,
+      "word": "indicate/express",
+      "ans": "あらわす",
+      "remarks": "表＿"
+    },
+    {
+      "id": 8,
+      "word": "life-time employment",
+      "ans": "しゅうしんこようせい",
+      "remarks": "終身雇用制"
+    },
+    {
+      "id": 9,
+      "word": "deeply",
+      "ans": "ふかく",
+      "remarks": "深＿"
+    },
+    {
+      "id": 10,
+      "word": "to be related to",
+      "ans": "かんけいする",
+      "remarks": "関係＿＿"
+    },
+    {
+      "id": 11,
+      "word": "traditional/conventional",
+      "ans": "じゅうらいの",
+      "remarks": "従来＿"
+    },
+    {
+      "id": 12,
+      "word": "reconsider",
+      "ans": "みなおす",
+      "remarks": "見直＿"
+    },
+    {
+      "id": 13,
+      "word": "to diversify",
+      "ans": "たようかする",
+      "remarks": "多様化＿＿"
+    },
+    {
+      "id": 14,
+      "word": "adhere, stick to",
+      "ans": "こだわる",
+      "remarks": "拘＿"
+    },
+    {
+      "id": 15,
+      "word": "answer the phone",
+      "ans": "でんわにでる",
+      "remarks": "電話＿出＿"
+    },
+    {
+      "id": 16,
+      "word": "proper use",
+      "ans": "つかいわけ",
+      "remarks": "使＿分＿"
+    },
+    {
+      "id": 17,
+      "word": "put through",
+      "ans": "とりつぐ",
+      "remarks": "取＿次＿"
+    },
+    {
+      "id": 18,
+      "word": "job post",
+      "ans": "ぶしょ",
+      "remarks": "部署"
+    },
+    {
+      "id": 19,
+      "word": "message",
+      "ans": "でんごん",
+      "remarks": "伝言"
+    },
+    {
+      "id": 20,
+      "word": "attending customer",
+      "ans": "らいきゃくちゅう",
+      "remarks": "来客中"
+    },
+    {
+      "id": 21,
+      "word": "to offer",
+      "ans": "もうしでる",
+      "remarks": "申＿出＿"
+    },
+    {
+      "id": 22,
+      "word": "a little while ago",
+      "ans": "さきほど",
+      "remarks": "先＿＿"
+    },
+    {
+      "id": 23,
+      "word": "written estimate",
+      "ans": "みつもりしょ",
+      "remarks": "見積書"
+    },
+    {
+      "id": 24,
+      "word": "not in; absent",
+      "ans": "ふざい",
+      "remarks": "不在"
+    }
+  ]
+}

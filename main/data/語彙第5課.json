@@ -1,0 +1,226 @@
+{
+  "id": 78,
+  "name": "語彙第5課",
+  "tags": [
+    "LAJ 5",
+    "とびら"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "invention",
+      "ans": "はつめい",
+      "remarks": "「発明」; （～を）発明する"
+    },
+    {
+      "id": 1,
+      "word": "tale; story",
+      "ans": "ものがたり",
+      "remarks": "物語"
+    },
+    {
+      "id": 2,
+      "word": "whole; entire; all; full",
+      "ans": "ぜん",
+      "remarks": "「全」－"
+    },
+    {
+      "id": 3,
+      "word": "consumption; spending",
+      "ans": "しょうひ",
+      "remarks": "「消費」; （～を）消費する"
+    },
+    {
+      "id": 4,
+      "word": "one hundred million",
+      "ans": "おく",
+      "remarks": "億"
+    },
+    {
+      "id": 5,
+      "word": "Vietnam",
+      "ans": "ベトナム",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "to continue; last ",
+      "ans": "つづく",
+      "remarks": "（～が）「続＿」"
+    },
+    {
+      "id": 7,
+      "word": "quantity; amount",
+      "ans": "りょう",
+      "remarks": "量"
+    },
+    {
+      "id": 8,
+      "word": "young people",
+      "ans": "わかもの",
+      "remarks": "若者"
+    },
+    {
+      "id": 9,
+      "word": "single life; living alone ",
+      "ans": "ひとりぐらし",
+      "remarks": "「一人暮＿＿」; ～をする to live alone"
+    },
+    {
+      "id": 10,
+      "word": "at present; now; the present time",
+      "ans": "げんざい",
+      "remarks": "現在; "
+    },
+    {
+      "id": 11,
+      "word": "Southeast Asia",
+      "ans": "とうなんアジア",
+      "remarks": "「東南＿＿」"
+    },
+    {
+      "id": 12,
+      "word": "South America",
+      "ans": "なんべい",
+      "remarks": "南米"
+    },
+    {
+      "id": 13,
+      "word": "【counter for countries】",
+      "ans": "かこく",
+      "remarks": ""
+    },
+    {
+      "id": 14,
+      "word": "postwar",
+      "ans": "せんご",
+      "remarks": "戦後"
+    },
+    {
+      "id": 15,
+      "word": "times; period",
+      "ans": "じだい",
+      "remarks": "時代"
+    },
+    {
+      "id": 16,
+      "word": "line (of people etc.); queue",
+      "ans": "れつ",
+      "remarks": "列"
+    },
+    {
+      "id": 17,
+      "word": "to repeat; do something over again",
+      "ans": "くりかえす",
+      "remarks": "（～を）「＿＿返＿」"
+    },
+    {
+      "id": 18,
+      "word": "product; merchandise",
+      "ans": "しょうひん",
+      "remarks": "商品"
+    },
+    {
+      "id": 19,
+      "word": "success;  to succeed ; be successful",
+      "ans": "せいこう",
+      "remarks": "成功; (～に)成功する"
+    },
+    {
+      "id": 20,
+      "word": "great hit (success)",
+      "ans": "だいヒット",
+      "remarks": "「大＿＿」 （～が）大＿＿する"
+    },
+    {
+      "id": 21,
+      "word": "number; (Suffix) the number of ",
+      "ans": "かず",
+      "remarks": "数；　数（すう）"
+    },
+    {
+      "id": 22,
+      "word": "to increase (in a number/amount)",
+      "ans": "ふえる",
+      "remarks": "(～が) 「増＿＿」"
+    },
+    {
+      "id": 23,
+      "word": "competition ",
+      "ans": "きょうそう",
+      "remarks": "競争; （～と）競争する"
+    },
+    {
+      "id": 24,
+      "word": "severe; intense",
+      "ans": "はげしい",
+      "remarks": "「激＿＿」"
+    },
+    {
+      "id": 25,
+      "word": "to turn (One's eyes. Etc.) to; look at",
+      "ans": "むける",
+      "remarks": "（～に～を）「向＿＿」"
+    },
+    {
+      "id": 26,
+      "word": "a nation's border",
+      "ans": "こっきょう",
+      "remarks": "国境"
+    },
+    {
+      "id": 27,
+      "word": "to believe; trust",
+      "ans": "しんじる",
+      "remarks": "（～を／と）「信＿＿」"
+    },
+    {
+      "id": 28,
+      "word": "International",
+      "ans": "こくさいてき",
+      "remarks": "国際的（な）"
+    },
+    {
+      "id": 29,
+      "word": "habit, custom ",
+      "ans": "しゅうかん",
+      "remarks": "習慣; 食習慣 (N) eating customs/habit"
+    },
+    {
+      "id": 30,
+      "word": "tradition",
+      "ans": "でんとう",
+      "remarks": "伝統"
+    },
+    {
+      "id": 31,
+      "word": "to cross; pass",
+      "ans": "こえる",
+      "remarks": "（～を）「越＿＿」"
+    },
+    {
+      "id": 32,
+      "word": "to spread; expand",
+      "ans": "ひろげる",
+      "remarks": "（～を）「広＿＿」"
+    },
+    {
+      "id": 33,
+      "word": "to find (out); discover",
+      "ans": "みつける",
+      "remarks": "（～を）「見＿＿＿」"
+    },
+    {
+      "id": 34,
+      "word": "to get; obtain; acquire",
+      "ans": "える",
+      "remarks": "（～を）「得＿」"
+    },
+    {
+      "id": 35,
+      "word": "(hours, days, years, etc.) later",
+      "ans": "ご",
+      "remarks": "－後"
+    }
+  ]
+}

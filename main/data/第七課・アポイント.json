@@ -1,0 +1,153 @@
+{
+  "id": 86,
+  "name": "第七課・アポイント",
+  "tags": [
+    "Biz Jap 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "I am terribly sorry",
+      "ans": "きょうしゅくですが",
+      "remarks": "恐縮＿＿＿"
+    },
+    {
+      "id": 1,
+      "word": "make appointment",
+      "ans": "アポイントをとる",
+      "remarks": "＿＿＿＿取＿"
+    },
+    {
+      "id": 2,
+      "word": "date and time",
+      "ans": "にちじ",
+      "remarks": "日時"
+    },
+    {
+      "id": 3,
+      "word": "on the/that day",
+      "ans": "とうじつ",
+      "remarks": "当日"
+    },
+    {
+      "id": 4,
+      "word": "making a proposal/offer",
+      "ans": "もうしいれ",
+      "remarks": "申＿入＿"
+    },
+    {
+      "id": 5,
+      "word": "next fiscal year",
+      "ans": "らいねんど",
+      "remarks": "来年度"
+    },
+    {
+      "id": 6,
+      "word": "employment",
+      "ans": "さいよう",
+      "remarks": "採用"
+    },
+    {
+      "id": 7,
+      "word": "setting up",
+      "ans": "せってい",
+      "remarks": "設定"
+    },
+    {
+      "id": 8,
+      "word": "around",
+      "ans": "あたり",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "please come to ~",
+      "ans": "おこしください",
+      "remarks": "＿越＿＿＿＿"
+    },
+    {
+      "id": 10,
+      "word": "construction section",
+      "ans": "けんせつか",
+      "remarks": "建設課"
+    },
+    {
+      "id": 11,
+      "word": "though",
+      "ans": "ながら",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "i am sorry to trouble you...",
+      "ans": "きょうしゅくなんですが",
+      "remarks": "恐縮＿＿＿＿"
+    },
+    {
+      "id": 13,
+      "word": "beforehand",
+      "ans": "じぜん",
+      "remarks": "事前"
+    },
+    {
+      "id": 14,
+      "word": "appointment",
+      "ans": "やくそく",
+      "remarks": "約束"
+    },
+    {
+      "id": 15,
+      "word": "be against",
+      "ans": "はんする",
+      "remarks": "反＿＿"
+    },
+    {
+      "id": 16,
+      "word": "margin/room to operate",
+      "ans": "よゆう",
+      "remarks": "余裕"
+    },
+    {
+      "id": 17,
+      "word": "calm/relaxed",
+      "ans": "おちついて",
+      "remarks": "落＿着＿＿"
+    },
+    {
+      "id": 18,
+      "word": "business client",
+      "ans": "とりひきさき",
+      "remarks": "取引先"
+    },
+    {
+      "id": 19,
+      "word": "person in charge",
+      "ans": "せきにんしゃ",
+      "remarks": "責任者"
+    },
+    {
+      "id": 20,
+      "word": "this side",
+      "ans": "こちらがわ",
+      "remarks": "＿＿＿側"
+    },
+    {
+      "id": 21,
+      "word": "accompany",
+      "ans": "どうこうする",
+      "remarks": "同行＿＿"
+    },
+    {
+      "id": 22,
+      "word": "level/floor/phase",
+      "ans": "だんかい",
+      "remarks": "段階"
+    },
+    {
+      "id": 23,
+      "word": "function",
+      "ans": "はたらき",
+      "remarks": "働＿"
+    }
+  ]
+}

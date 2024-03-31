@@ -1,0 +1,196 @@
+{
+  "id": 74,
+  "name": "Lesson 50",
+  "tags": [
+    "LAJ 5",
+    "尊敬語"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "go, come",
+      "ans": "まいります",
+      "remarks": "「参＿＿」、humble いきます・きます"
+    },
+    {
+      "id": 1,
+      "word": "be",
+      "ans": "おります",
+      "remarks": "humble equivalent of います"
+    },
+    {
+      "id": 2,
+      "word": "eat drink, receive",
+      "ans": "いただきます",
+      "remarks": "humble たべます・のみます・もらいます"
+    },
+    {
+      "id": 3,
+      "word": "say, ",
+      "ans": "もうします",
+      "remarks": "「申＿＿」 humble いいます"
+    },
+    {
+      "id": 4,
+      "word": "do",
+      "ans": "いたします",
+      "remarks": "humble equivalent of します"
+    },
+    {
+      "id": 5,
+      "word": "see",
+      "ans": "はいけんします",
+      "remarks": "「拝見＿＿」, humble みます"
+    },
+    {
+      "id": 6,
+      "word": "get to know",
+      "ans": "ぞんじます",
+      "remarks": "「存知＿＿」, humble しります"
+    },
+    {
+      "id": 7,
+      "word": "ask, hear, visit",
+      "ans": "うかがいます",
+      "remarks": "「伺＿＿」humble ききます・いきます"
+    },
+    {
+      "id": 8,
+      "word": "meet",
+      "ans": "おめにかかります",
+      "remarks": "humble あいます"
+    },
+    {
+      "id": 9,
+      "word": "make (coffee)",
+      "ans": "いれます",
+      "remarks": "（コーヒーを）「＿＿」"
+    },
+    {
+      "id": 10,
+      "word": "prepare",
+      "ans": "よういします",
+      "remarks": "「用意＿＿」"
+    },
+    {
+      "id": 11,
+      "word": "I (honorific)",
+      "ans": "わたくし",
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "word": "guide",
+      "ans": "ガイド",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "e-mail address",
+      "ans": "メールアドレス",
+      "remarks": ""
+    },
+    {
+      "id": 14,
+      "word": "schedule",
+      "ans": "スケジュール",
+      "remarks": ""
+    },
+    {
+      "id": 15,
+      "word": "the week after next",
+      "ans": "さらいしゅう",
+      "remarks": "「＿来週」"
+    },
+    {
+      "id": 16,
+      "word": "the month after next",
+      "ans": "さらいげつ",
+      "remarks": "「＿来月」"
+    },
+    {
+      "id": 17,
+      "word": "the year after next",
+      "ans": "さらいねん",
+      "remarks": "「＿来年」"
+    },
+    {
+      "id": 18,
+      "word": "first",
+      "ans": "はじめに",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "become tense, be strained, be nervous",
+      "ans": "きんちょうします",
+      "remarks": "「緊張＿＿」"
+    },
+    {
+      "id": 20,
+      "word": "prize money",
+      "ans": "しょうきん",
+      "remarks": "賞金"
+    },
+    {
+      "id": 21,
+      "word": "giraffe",
+      "ans": "きりん",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "times, days",
+      "ans": "ころ",
+      "remarks": ""
+    },
+    {
+      "id": 23,
+      "word": "(dream) be realized, come true",
+      "ans": "かないます",
+      "remarks": "（ゆめが）「＿＿＿」"
+    },
+    {
+      "id": 24,
+      "word": "support",
+      "ans": "おうえんします",
+      "remarks": "「応援＿＿」"
+    },
+    {
+      "id": 25,
+      "word": "from one's heart, sincerely",
+      "ans": "こころから",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "thank, be grateful",
+      "ans": "かんしゃします",
+      "remarks": "「感謝＿＿」"
+    },
+    {
+      "id": 27,
+      "word": "gratitude, thanks",
+      "ans": "おれい",
+      "remarks": ""
+    },
+    {
+      "id": 28,
+      "word": "How are you doing? (humble)",
+      "ans": "おげんきでいらっしゃいますか",
+      "remarks": "statement"
+    },
+    {
+      "id": 29,
+      "word": "cause trouble, annoyance, inconvenience",
+      "ans": "めいわくをかけます",
+      "remarks": "「迷惑＿＿」"
+    },
+    {
+      "id": 30,
+      "word": "make good use of~",
+      "ans": "いかします",
+      "remarks": ""
+    }
+  ]
+}

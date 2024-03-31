@@ -37,9 +37,87 @@
     },
     {
       "id": 5,
-      "word": "",
-      "ans": "",
-      "remarks": ""
+      "word": "garden",
+      "ans": "ていえん",
+      "remarks": "庭園"
+    },
+    {
+      "id": 6,
+      "word": "private (school)",
+      "ans": "しりつ",
+      "remarks": "私立"
+    },
+    {
+      "id": 7,
+      "word": "nearby; (just) before",
+      "ans": "てまえ",
+      "remarks": "手前"
+    },
+    {
+      "id": 8,
+      "word": "body",
+      "ans": "しんたい",
+      "remarks": "身体; 訓読み;"
+    },
+    {
+      "id": 9,
+      "word": "flutter (coat)",
+      "ans": "はためく",
+      "remarks": "when wind is strong"
+    },
+    {
+      "id": 10,
+      "word": "touch/contact; win/strike",
+      "ans": "あたる",
+      "remarks": "当＿＿"
+    },
+    {
+      "id": 11,
+      "word": "to nod (in assent)",
+      "ans": "うなずきます",
+      "remarks": "頷＿＿＿"
+    },
+    {
+      "id": 12,
+      "word": "breakfast ",
+      "ans": "ちょうしょく",
+      "remarks": "朝食"
+    },
+    {
+      "id": 13,
+      "word": "living alone",
+      "ans": "ひとりぐらし",
+      "remarks": "独り暮らし/一人暮らし"
+    },
+    {
+      "id": 14,
+      "word": "atmosphere; mood; ambience; ",
+      "ans": "ふんいき",
+      "remarks": "雰囲気"
+    },
+    {
+      "id": 15,
+      "word": "to drift; to float",
+      "ans": "ただよう",
+      "remarks": "漂う"
+    },
+    {
+      "id": 16,
+      "word": "large; large-sized; large-scale;",
+      "ans": "おおがた",
+      "remarks": "大型"
+    },
+    {
+      "id": 17,
+      "word": "Japanese sliding screen",
+      "ans": "ふすま",
+      "remarks": "襖"
+    },
+    {
+      "id": 18,
+      "word": "year before last",
+      "ans": "おととし",
+      "remarks": "一昨年"
     }
   ]
 }

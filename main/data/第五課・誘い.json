@@ -1,0 +1,237 @@
+{
+  "id": 84,
+  "name": "第五課・誘い",
+  "tags": [
+    "Biz Jap 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "chance",
+      "ans": "きかい",
+      "remarks": "機会"
+    },
+    {
+      "id": 1,
+      "word": "party",
+      "ans": "えんかい",
+      "remarks": "宴会"
+    },
+    {
+      "id": 2,
+      "word": "drinking party",
+      "ans": "のみかい",
+      "remarks": "飲＿会"
+    },
+    {
+      "id": 3,
+      "word": "typical",
+      "ans": "だいひょうてき",
+      "remarks": "代表的"
+    },
+    {
+      "id": 4,
+      "word": "Year end party",
+      "ans": "ぼうねんかい",
+      "remarks": "忘年会"
+    },
+    {
+      "id": 5,
+      "word": "New year party",
+      "ans": "しんねんかい",
+      "remarks": "新年会"
+    },
+    {
+      "id": 6,
+      "word": "special",
+      "ans": "とくべつな",
+      "remarks": "特別＿"
+    },
+    {
+      "id": 7,
+      "word": "recently",
+      "ans": "ちかごろ",
+      "remarks": "近頃"
+    },
+    {
+      "id": 8,
+      "word": "other than",
+      "ans": "いがいに",
+      "remarks": "～以外＿"
+    },
+    {
+      "id": 9,
+      "word": "each other ",
+      "ans": "たがい",
+      "remarks": "互＿"
+    },
+    {
+      "id": 10,
+      "word": "be created/formed",
+      "ans": "うまれる",
+      "remarks": "生＿＿＿"
+    },
+    {
+      "id": 11,
+      "word": "way of thinking ",
+      "ans": "かんがえかた",
+      "remarks": "考＿方"
+    },
+    {
+      "id": 12,
+      "word": "to invite",
+      "ans": "しょうたいする",
+      "remarks": "招待＿＿"
+    },
+    {
+      "id": 13,
+      "word": "associate",
+      "ans": "つきあいする",
+      "remarks": "付＿合＿＿＿"
+    },
+    {
+      "id": 14,
+      "word": "drinking party",
+      "ans": "のみかい",
+      "remarks": "飲＿会"
+    },
+    {
+      "id": 15,
+      "word": "previous appointment",
+      "ans": "せんやく",
+      "remarks": "先約"
+    },
+    {
+      "id": 16,
+      "word": "offer",
+      "ans": "すすめる",
+      "remarks": "勧＿＿"
+    },
+    {
+      "id": 17,
+      "word": "lecture",
+      "ans": "こうえんかい",
+      "remarks": "講演会"
+    },
+    {
+      "id": 18,
+      "word": "meeting",
+      "ans": "こんだんかい",
+      "remarks": "懇談会"
+    },
+    {
+      "id": 19,
+      "word": "observation",
+      "ans": "しさつ",
+      "remarks": "視察"
+    },
+    {
+      "id": 20,
+      "word": "snack",
+      "ans": "つまみ",
+      "remarks": ""
+    },
+    {
+      "id": 21,
+      "word": "polite decline",
+      "ans": "おかまいなく",
+      "remarks": "＿構＿＿＿"
+    },
+    {
+      "id": 22,
+      "word": "corporate member",
+      "ans": "ほうじんかいいん",
+      "remarks": "法人会員"
+    },
+    {
+      "id": 23,
+      "word": "hosting",
+      "ans": "しゅさい",
+      "remarks": "主催"
+    },
+    {
+      "id": 24,
+      "word": "on second thought",
+      "ans": "やっぱり",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "(tastes) bad; awkward;",
+      "ans": "まずい",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "transportation",
+      "ans": "ゆそう",
+      "remarks": "輸送"
+    },
+    {
+      "id": 27,
+      "word": "reduction",
+      "ans": "さくげん",
+      "remarks": "削減"
+    },
+    {
+      "id": 28,
+      "word": "distribution",
+      "ans": "りゅうつう",
+      "remarks": "流通"
+    },
+    {
+      "id": 29,
+      "word": "hesitate; reserved; overthink",
+      "ans": "えんりょする",
+      "remarks": "遠慮＿＿"
+    },
+    {
+      "id": 30,
+      "word": "elderly",
+      "ans": "こうれいしゃ",
+      "remarks": "高齢者"
+    },
+    {
+      "id": 31,
+      "word": "standard",
+      "ans": "きかく",
+      "remarks": "規格"
+    },
+    {
+      "id": 32,
+      "word": "to standardize",
+      "ans": "とういつする",
+      "remarks": "統一＿＿"
+    },
+    {
+      "id": 33,
+      "word": "production",
+      "ans": "せいさん",
+      "remarks": "生産"
+    },
+    {
+      "id": 34,
+      "word": "plan",
+      "ans": "しあん",
+      "remarks": "試案"
+    },
+    {
+      "id": 35,
+      "word": "features",
+      "ans": "とくちょう",
+      "remarks": "特徴"
+    },
+    {
+      "id": 36,
+      "word": "membership fee",
+      "ans": "かいひ",
+      "remarks": "会費"
+    },
+    {
+      "id": 37,
+      "word": "lecturer",
+      "ans": "こうし",
+      "remarks": "講師"
+    }
+  ]
+}

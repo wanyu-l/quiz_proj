@@ -1,5 +1,5 @@
 {
-  "id": 67,
+  "id": 69,
   "name": "Lesson 45",
   "tags": [
     "LAJ 5"
@@ -7,21 +7,171 @@
   "cards": [
     {
       "id": 0,
-      "word": "win; number one",
-      "ans": "ゆうしょう",
-      "remarks": "優勝; in contest"
+      "word": "believe, trust",
+      "ans": "しんじます",
+      "remarks": "を「信＿＿」"
     },
     {
       "id": 1,
-      "word": "wake up; intransitive",
-      "ans": "めがさめる",
-      "remarks": "目＿＿＿"
+      "word": "cancel",
+      "ans": "キャンセルします",
+      "remarks": "verb"
     },
     {
       "id": 2,
-      "word": "overslept; noun",
-      "ans": "あさねぼう",
-      "remarks": "朝寝坊"
+      "word": "inform",
+      "ans": "しらせます",
+      "remarks": ""
+    },
+    {
+      "id": 3,
+      "word": "guarantee",
+      "ans": "ほしょうしょ",
+      "remarks": "保証書"
+    },
+    {
+      "id": 4,
+      "word": "receipt",
+      "ans": "りょうしゅうしょ",
+      "remarks": "領収証"
+    },
+    {
+      "id": 5,
+      "word": "camp",
+      "ans": "キャンプ",
+      "remarks": ""
+    },
+    {
+      "id": 6,
+      "word": "calling off, cancelling, suspension",
+      "ans": "ちゅうし",
+      "remarks": "中止"
+    },
+    {
+      "id": 7,
+      "word": "point, score",
+      "ans": "てん",
+      "remarks": "点"
+    },
+    {
+      "id": 8,
+      "word": "plum (blossom)",
+      "ans": "うめ",
+      "remarks": "梅"
+    },
+    {
+      "id": 9,
+      "word": "police telephone number",
+      "ans": "110ばん",
+      "remarks": "＿＿番; normal number input"
+    },
+    {
+      "id": 10,
+      "word": "fire service number",
+      "ans": "119ばん",
+      "remarks": "＿＿番; normal number input"
+    },
+    {
+      "id": 11,
+      "word": "suddenly",
+      "ans": "きゅうに",
+      "remarks": "急＿"
+    },
+    {
+      "id": 12,
+      "word": "unreasonably",
+      "ans": "むりに",
+      "remarks": "無理＿"
+    },
+    {
+      "id": 13,
+      "word": "be looking forward to, expecting",
+      "ans": "たのしみにしています",
+      "remarks": "（を）「楽＿＿＿＿」"
+    },
+    {
+      "id": 14,
+      "word": "That's all",
+      "ans": "いじょうです",
+      "remarks": "以上＿"
+    },
+    {
+      "id": 15,
+      "word": "person in charge, organizer",
+      "ans": "かかりいん",
+      "remarks": "係員"
+    },
+    {
+      "id": 16,
+      "word": "course, route",
+      "ans": "コース",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "start",
+      "ans": "スタート",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "~th (ranking)",
+      "ans": "い",
+      "remarks": "～位"
+    },
+    {
+      "id": 19,
+      "word": "win the championship",
+      "ans": "ゆうしょうします",
+      "remarks": "（Eventで）「優勝＿＿」"
+    },
+    {
+      "id": 20,
+      "word": "trouble, worry",
+      "ans": "なやみ",
+      "remarks": "悩＿"
+    },
+    {
+      "id": 21,
+      "word": "alarm clock",
+      "ans": "めざまし",
+      "remarks": "～どけい"
+    },
+    {
+      "id": 22,
+      "word": "wake up; intransitive",
+      "ans": "めがさめます",
+      "remarks": "目＿覚＿＿"
+    },
+    {
+      "id": 23,
+      "word": "university student",
+      "ans": "だいがくせい",
+      "remarks": "大学生"
+    },
+    {
+      "id": 24,
+      "word": "answer, reply",
+      "ans": "かいとう",
+      "remarks": "回答"
+    },
+    {
+      "id": 25,
+      "word": "ring",
+      "ans": "なります",
+      "remarks": "（が）; 「鳴＿＿」"
+    },
+    {
+      "id": 26,
+      "word": "set",
+      "ans": "セットします",
+      "remarks": "（を）; verb"
+    },
+    {
+      "id": 27,
+      "word": "nevertheless, for all that",
+      "ans": "それでも",
+      "remarks": ""
     }
   ]
 }

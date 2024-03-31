@@ -1,0 +1,189 @@
+{
+  "id": 80,
+  "name": "第一課・紹介",
+  "tags": [
+    "Biz Jap 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "Business World",
+      "ans": "ビジネスしゃかい",
+      "remarks": "「＿＿＿社会」"
+    },
+    {
+      "id": 1,
+      "word": "give",
+      "ans": "あたえる",
+      "remarks": "与＿＿"
+    },
+    {
+      "id": 2,
+      "word": "handle",
+      "ans": "あつかう",
+      "remarks": "扱＿"
+    },
+    {
+      "id": 3,
+      "word": "receive",
+      "ans": "うけとる",
+      "remarks": "受＿取＿"
+    },
+    {
+      "id": 4,
+      "word": "edge",
+      "ans": "はし",
+      "remarks": "端"
+    },
+    {
+      "id": 5,
+      "word": "finger",
+      "ans": "ゆび",
+      "remarks": "指"
+    },
+    {
+      "id": 6,
+      "word": "make dirty",
+      "ans": "よごす",
+      "remarks": "汚＿"
+    },
+    {
+      "id": 7,
+      "word": "fold",
+      "ans": "おる",
+      "remarks": "折＿"
+    },
+    {
+      "id": 8,
+      "word": "to confirm",
+      "ans": "かくにんする",
+      "remarks": "確認＿＿"
+    },
+    {
+      "id": 9,
+      "word": "title (job)",
+      "ans": "かたがき",
+      "remarks": "肩書＿"
+    },
+    {
+      "id": 10,
+      "word": "smoothly",
+      "ans": "スムーズに",
+      "remarks": ""
+    },
+    {
+      "id": 11,
+      "word": "go on to ~ / connect to ~",
+      "ans": "につなげる",
+      "remarks": "～「＿＿」"
+    },
+    {
+      "id": 12,
+      "word": "be successful",
+      "ans": "せいこうする",
+      "remarks": "成功＿＿"
+    },
+    {
+      "id": 13,
+      "word": "receive training ",
+      "ans": "けんしゅうをうける",
+      "remarks": "研修＿受＿＿"
+    },
+    {
+      "id": 14,
+      "word": "sales department",
+      "ans": "えいぎょうぶ",
+      "remarks": "営業部"
+    },
+    {
+      "id": 15,
+      "word": "trainee",
+      "ans": "けんしゅうせい",
+      "remarks": "研修生"
+    },
+    {
+      "id": 16,
+      "word": "planning department",
+      "ans": "きかくぶ",
+      "remarks": "企画部"
+    },
+    {
+      "id": 17,
+      "word": "general affairs dept.",
+      "ans": "そうむぶ",
+      "remarks": "総務部"
+    },
+    {
+      "id": 18,
+      "word": "public relations",
+      "ans": "こうほう",
+      "remarks": "広報"
+    },
+    {
+      "id": 19,
+      "word": "section manager",
+      "ans": "かちょう",
+      "remarks": "課長"
+    },
+    {
+      "id": 20,
+      "word": "general manager",
+      "ans": "ぶちょう",
+      "remarks": "部長"
+    },
+    {
+      "id": 21,
+      "word": "chief",
+      "ans": "かかりちょう",
+      "remarks": "係長"
+    },
+    {
+      "id": 22,
+      "word": "trading company",
+      "ans": "ぼうえきがいしゃ",
+      "remarks": "貿易会社"
+    },
+    {
+      "id": 23,
+      "word": "securities company",
+      "ans": "しょうけんがいしゃ",
+      "remarks": "証券会社"
+    },
+    {
+      "id": 24,
+      "word": "visit",
+      "ans": "たずねる",
+      "remarks": "尋＿＿"
+    },
+    {
+      "id": 25,
+      "word": "i see ",
+      "ans": "さようでございますか",
+      "remarks": ""
+    },
+    {
+      "id": 26,
+      "word": "for a while",
+      "ans": "しばらくして",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "make a response",
+      "ans": "あいづちをうつ",
+      "remarks": "相＿＿＿打＿"
+    },
+    {
+      "id": 28,
+      "word": "place to visit",
+      "ans": "ほうもんさき",
+      "remarks": "訪問先"
+    },
+    {
+      "id": 29,
+      "word": "respond/help",
+      "ans": "おうたいする",
+      "remarks": "応対＿＿"
+    }
+  ]
+}

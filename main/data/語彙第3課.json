@@ -1,0 +1,226 @@
+{
+  "id": 76,
+  "name": "語彙第3課",
+  "tags": [
+    "LAJ 5",
+    "とびら"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "technology; skill; technique",
+      "ans": "ぎじゅつ",
+      "remarks": "技術"
+    },
+    {
+      "id": 1,
+      "word": "development; growth ",
+      "ans": "はったつ",
+      "remarks": "発達（～が発達する）"
+    },
+    {
+      "id": 2,
+      "word": "event site",
+      "ans": "かいじょう",
+      "remarks": "会場"
+    },
+    {
+      "id": 3,
+      "word": "to draw; paint",
+      "ans": "かく",
+      "remarks": "（絵を）「描＿」"
+    },
+    {
+      "id": 4,
+      "word": "surgery; to perform a surgical operation",
+      "ans": "しゅじゅつ",
+      "remarks": "手術;（～を）手術する"
+    },
+    {
+      "id": 5,
+      "word": "actually; really; practically (N)actuality; reality",
+      "ans": "じっさいに",
+      "remarks": "「実際＿」"
+    },
+    {
+      "id": 6,
+      "word": "society; world",
+      "ans": "しゃかい",
+      "remarks": "社会"
+    },
+    {
+      "id": 7,
+      "word": "being active; taking an active part ",
+      "ans": "かつやく",
+      "remarks": "活躍;活躍する"
+    },
+    {
+      "id": 8,
+      "word": "to house-sit (during a person's absence)",
+      "ans": "るすばんをする",
+      "remarks": "「留守番＿＿」"
+    },
+    {
+      "id": 9,
+      "word": "to carry ",
+      "ans": "はこぶ",
+      "remarks": "（～を）「運＿」"
+    },
+    {
+      "id": 10,
+      "word": "human",
+      "ans": "にんげん",
+      "remarks": "人間"
+    },
+    {
+      "id": 11,
+      "word": "to live (N)living",
+      "ans": "くらす",
+      "remarks": "「暮＿＿」"
+    },
+    {
+      "id": 12,
+      "word": "age; to grow old; age",
+      "ans": "とし",
+      "remarks": "年; 年をとる (phrase)"
+    },
+    {
+      "id": 13,
+      "word": "hair; fur",
+      "ans": "け",
+      "remarks": "毛"
+    },
+    {
+      "id": 14,
+      "word": "to touch; feel",
+      "ans": "さわる",
+      "remarks": "（～に）「触＿」"
+    },
+    {
+      "id": 15,
+      "word": "neck",
+      "ans": "くび",
+      "remarks": "首"
+    },
+    {
+      "id": 16,
+      "word": "to move",
+      "ans": "うごかす",
+      "remarks": "（～を）「動＿＿」"
+    },
+    {
+      "id": 17,
+      "word": "voice; to utter",
+      "ans": "こえ",
+      "remarks": "声; 声を出す (Phrase)"
+    },
+    {
+      "id": 18,
+      "word": "animal",
+      "ans": "どうぶつ",
+      "remarks": "動物"
+    },
+    {
+      "id": 19,
+      "word": "allergy",
+      "ans": "アレルギー",
+      "remarks": ""
+    },
+    {
+      "id": 20,
+      "word": "safe; all right",
+      "ans": "だいじょうぶ",
+      "remarks": "大丈夫（な）"
+    },
+    {
+      "id": 21,
+      "word": "important",
+      "ans": "だいじ",
+      "remarks": "大事（な）"
+    },
+    {
+      "id": 22,
+      "word": "effectiveness; important; to be effective",
+      "ans": "こうか",
+      "remarks": "効果; 効果がある (Phrase) "
+    },
+    {
+      "id": 23,
+      "word": "to appear (in a magazine, etc.)",
+      "ans": "のる",
+      "remarks": "（～に）「載＿」"
+    },
+    {
+      "id": 24,
+      "word": "for the first time",
+      "ans": "はじめて",
+      "remarks": "「初＿＿」"
+    },
+    {
+      "id": 25,
+      "word": "at first; the beginning ",
+      "ans": "さいしょ",
+      "remarks": "最初"
+    },
+    {
+      "id": 26,
+      "word": "to name",
+      "ans": "つける",
+      "remarks": "（なまえを）「＿＿」"
+    },
+    {
+      "id": 27,
+      "word": "understanding; comprehension",
+      "ans": "りかい",
+      "remarks": "理解; （～を）理解する"
+    },
+    {
+      "id": 28,
+      "word": "to move",
+      "ans": "うごく",
+      "remarks": "（～が）「動＿」"
+    },
+    {
+      "id": 29,
+      "word": "unfortunate; regrettable; disappointing",
+      "ans": "ざんねん",
+      "remarks": "残念（な）"
+    },
+    {
+      "id": 30,
+      "word": "musical performance; to play (a musical instrument)",
+      "ans": "えんそう",
+      "remarks": "演奏; （～を）演奏する"
+    },
+    {
+      "id": 31,
+      "word": "learning; study ",
+      "ans": "がくしゅう",
+      "remarks": "学習; （～を）学習する"
+    },
+    {
+      "id": 32,
+      "word": "the highest; maximum; best; greatest",
+      "ans": "さいこう",
+      "remarks": "最高（の）"
+    },
+    {
+      "id": 33,
+      "word": "injury to get hurt; be injured",
+      "ans": "けが",
+      "remarks": "怪我; 怪我をする(Phrase)"
+    },
+    {
+      "id": 34,
+      "word": "to protect (a person from danger); defend",
+      "ans": "まもる",
+      "remarks": "（～を）「守＿」"
+    },
+    {
+      "id": 35,
+      "word": "problem; question; issue",
+      "ans": "もんだい",
+      "remarks": "問題"
+    }
+  ]
+}

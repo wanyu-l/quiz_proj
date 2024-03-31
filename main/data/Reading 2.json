@@ -1,0 +1,267 @@
+{
+  "id": 79,
+  "name": "Reading 2",
+  "tags": [
+    "探偵ガリレオ"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "curious onlookers; rubbernecks",
+      "ans": "やじうま",
+      "remarks": "野次馬"
+    },
+    {
+      "id": 1,
+      "word": "apparent age (of someone); rough age",
+      "ans": "としかっこう",
+      "remarks": "年恰/格好"
+    },
+    {
+      "id": 2,
+      "word": "to trip (over); to stumble",
+      "ans": "つまづく",
+      "remarks": "躓＿"
+    },
+    {
+      "id": 3,
+      "word": "just (now, at the moment, etc.); just as;",
+      "ans": "とたん",
+      "remarks": "途端"
+    },
+    {
+      "id": 4,
+      "word": "scene of a fire",
+      "ans": "かじば",
+      "remarks": "火事場"
+    },
+    {
+      "id": 5,
+      "word": "to refrain; to abstain;",
+      "ans": "ひかえ",
+      "remarks": "控＿"
+    },
+    {
+      "id": 6,
+      "word": "dead of night; midnight",
+      "ans": "まよなか",
+      "remarks": "真夜中"
+    },
+    {
+      "id": 7,
+      "word": "road; highway",
+      "ans": "どうろ",
+      "remarks": "道路"
+    },
+    {
+      "id": 8,
+      "word": "centre; center; middle; heart",
+      "ans": "ちゅうおう",
+      "remarks": "中央"
+    },
+    {
+      "id": 9,
+      "word": "several people",
+      "ans": "すうめい",
+      "remarks": "数名"
+    },
+    {
+      "id": 10,
+      "word": "short and stout",
+      "ans": "ずんぐり",
+      "remarks": "small but wide around​"
+    },
+    {
+      "id": 11,
+      "word": "trot; half run; jog",
+      "ans": "こばしり",
+      "remarks": "小走＿"
+    },
+    {
+      "id": 12,
+      "word": "gentle; mild-mannered",
+      "ans": "おんこう",
+      "remarks": "温厚"
+    },
+    {
+      "id": 13,
+      "word": "sharp (knife, claws, etc.); pointed",
+      "ans": "するどい",
+      "remarks": "鋭＿"
+    },
+    {
+      "id": 14,
+      "word": "arson; setting fire",
+      "ans": "ほうか",
+      "remarks": "放火"
+    },
+    {
+      "id": 15,
+      "word": "twitching",
+      "ans": "ピクピク",
+      "remarks": ""
+    },
+    {
+      "id": 16,
+      "word": "plastic container",
+      "ans": "ポリタンク",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "kerosene; paraffin; lamp oil",
+      "ans": "とうゆ",
+      "remarks": "灯油"
+    },
+    {
+      "id": 18,
+      "word": "side; flank; profile; sidelight; lateral",
+      "ans": "そくめん",
+      "remarks": "側面"
+    },
+    {
+      "id": 19,
+      "word": "death by fire",
+      "ans": "しょうし",
+      "remarks": "焼死"
+    },
+    {
+      "id": 20,
+      "word": "to be affected; to be influenced",
+      "ans": "かかわる",
+      "remarks": "関＿＿"
+    },
+    {
+      "id": 21,
+      "word": "including ...; inclusive of ...",
+      "ans": "こみ",
+      "remarks": "込＿"
+    },
+    {
+      "id": 22,
+      "word": "East and West",
+      "ans": "とうざい",
+      "remarks": "東西"
+    },
+    {
+      "id": 23,
+      "word": "northeast",
+      "ans": "ほくとう",
+      "remarks": "北東"
+    },
+    {
+      "id": 24,
+      "word": "depression; melancholy",
+      "ans": "ゆううつ",
+      "remarks": "憂鬱"
+    },
+    {
+      "id": 25,
+      "word": "imprudent; indiscreet; immodest; indecent",
+      "ans": "ふきんしん",
+      "remarks": "不謹慎"
+    },
+    {
+      "id": 26,
+      "word": "mute; mute person",
+      "ans": "あしゃ",
+      "remarks": "唖者"
+    },
+    {
+      "id": 27,
+      "word": "spreading; laying out; covering",
+      "ans": "しき",
+      "remarks": "敷＿"
+    },
+    {
+      "id": 28,
+      "word": "palm of hand",
+      "ans": "てのひら",
+      "remarks": "掌"
+    },
+    {
+      "id": 29,
+      "word": "north to south",
+      "ans": "なんぼく",
+      "remarks": "南北"
+    },
+    {
+      "id": 30,
+      "word": "setback; failure",
+      "ans": "ざせつ",
+      "remarks": "挫折"
+    },
+    {
+      "id": 31,
+      "word": "withering; shrivelling; shrinking; atrophy",
+      "ans": "いしゅく",
+      "remarks": "萎縮"
+    },
+    {
+      "id": 32,
+      "word": "self; oneself",
+      "ans": "じこ",
+      "remarks": "自己"
+    },
+    {
+      "id": 33,
+      "word": "magnet",
+      "ans": "じしゃく",
+      "remarks": "磁石"
+    },
+    {
+      "id": 34,
+      "word": "appearance; emergence",
+      "ans": "しゅつげん",
+      "remarks": "出現"
+    },
+    {
+      "id": 35,
+      "word": "as soon as; immediately after; upon",
+      "ans": "しだい",
+      "remarks": "次第"
+    },
+    {
+      "id": 36,
+      "word": "white clothes; white robe",
+      "ans": "はくい",
+      "remarks": "白衣"
+    },
+    {
+      "id": 37,
+      "word": "figure; form; shape",
+      "ans": "すがた",
+      "remarks": "姿"
+    },
+    {
+      "id": 38,
+      "word": "black rim; black edge",
+      "ans": "くろぶち",
+      "remarks": "黒縁"
+    },
+    {
+      "id": 39,
+      "word": "fair-skinned; light-complexioned",
+      "ans": "いろじろ",
+      "remarks": "色白"
+    },
+    {
+      "id": 40,
+      "word": "bright person; talented student; prodigy",
+      "ans": "しゅうさい",
+      "remarks": "秀才"
+    },
+    {
+      "id": 41,
+      "word": "sleeve",
+      "ans": "そで",
+      "remarks": "袖"
+    },
+    {
+      "id": 42,
+      "word": "intention; wish; purpose; mind",
+      "ans": "いし",
+      "remarks": "意思"
+    }
+  ]
+}

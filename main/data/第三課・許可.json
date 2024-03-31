@@ -1,0 +1,171 @@
+{
+  "id": 82,
+  "name": "第三課・許可",
+  "tags": [
+    "Biz Jap 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "Enterprise",
+      "ans": "きぎょう",
+      "remarks": "企業"
+    },
+    {
+      "id": 1,
+      "word": "end of year and New Year",
+      "ans": "ねんまつねんし",
+      "remarks": "年末年始"
+    },
+    {
+      "id": 2,
+      "word": "paid leave",
+      "ans": "ゆうきゅうきゅうか",
+      "remarks": "有給休暇"
+    },
+    {
+      "id": 3,
+      "word": "acquaintance",
+      "ans": "ちじん",
+      "remarks": "知人"
+    },
+    {
+      "id": 4,
+      "word": "sick leave",
+      "ans": "びょうききゅうか",
+      "remarks": "病気休暇"
+    },
+    {
+      "id": 5,
+      "word": "number of days",
+      "ans": "にっすう",
+      "remarks": "日数"
+    },
+    {
+      "id": 6,
+      "word": "leave",
+      "ans": "のこす",
+      "remarks": "残＿"
+    },
+    {
+      "id": 7,
+      "word": "office unity/harmony",
+      "ans": "しょくばのわ",
+      "remarks": "職場＿和"
+    },
+    {
+      "id": 8,
+      "word": "be troublesome/annoyed",
+      "ans": "めいわくがかかる",
+      "remarks": "迷惑＿＿＿＿"
+    },
+    {
+      "id": 9,
+      "word": "lose something",
+      "ans": "うしなう",
+      "remarks": "失＿"
+    },
+    {
+      "id": 10,
+      "word": "convenience",
+      "ans": "いこう",
+      "remarks": "意向"
+    },
+    {
+      "id": 11,
+      "word": "pocket/desk calculator",
+      "ans": "でんたく",
+      "remarks": "電卓"
+    },
+    {
+      "id": 12,
+      "word": "be booked",
+      "ans": "よやくがはいる",
+      "remarks": "予約＿入＿"
+    },
+    {
+      "id": 13,
+      "word": "senior managing director",
+      "ans": "せんむ",
+      "remarks": "専務"
+    },
+    {
+      "id": 14,
+      "word": "go through",
+      "ans": "とおす",
+      "remarks": "通＿"
+    },
+    {
+      "id": 15,
+      "word": "meeting (less formal)",
+      "ans": "うちあわせ",
+      "remarks": "打＿合＿＿"
+    },
+    {
+      "id": 16,
+      "word": "asking permission",
+      "ans": "きょかねがい",
+      "remarks": "許可願＿"
+    },
+    {
+      "id": 17,
+      "word": "interpreter",
+      "ans": "つうやく",
+      "remarks": "通訳"
+    },
+    {
+      "id": 18,
+      "word": "suspend",
+      "ans": "ほりゅうする",
+      "remarks": "保留＿＿"
+    },
+    {
+      "id": 19,
+      "word": "business/issue/matter",
+      "ans": "ようけん",
+      "remarks": "用件"
+    },
+    {
+      "id": 20,
+      "word": "for a while",
+      "ans": "とうぶん",
+      "remarks": "当分"
+    },
+    {
+      "id": 21,
+      "word": "on the condition that~",
+      "ans": "じょうけんつき",
+      "remarks": "条件付＿"
+    },
+    {
+      "id": 22,
+      "word": "certainly (formal response)",
+      "ans": "しょうちいたしました",
+      "remarks": "承知致＿＿＿"
+    },
+    {
+      "id": 23,
+      "word": "reception room furniture set",
+      "ans": "おうせつセット",
+      "remarks": "応接＿＿＿"
+    },
+    {
+      "id": 24,
+      "word": "request",
+      "ans": "いらい",
+      "remarks": "依頼"
+    },
+    {
+      "id": 25,
+      "word": "our company ",
+      "ans": "じしゃ",
+      "remarks": "自社"
+    },
+    {
+      "id": 26,
+      "word": "decline",
+      "ans": "ことわる",
+      "remarks": "断＿"
+    }
+  ]
+}

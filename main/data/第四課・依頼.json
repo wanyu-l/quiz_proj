@@ -1,0 +1,261 @@
+{
+  "id": 83,
+  "name": "第四課・依頼",
+  "tags": [
+    "Biz Jap 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "client/customer",
+      "ans": "こきゃく",
+      "remarks": "顧客"
+    },
+    {
+      "id": 1,
+      "word": "get",
+      "ans": "える",
+      "remarks": "得＿"
+    },
+    {
+      "id": 2,
+      "word": "effective",
+      "ans": "ゆうこう",
+      "remarks": "有効"
+    },
+    {
+      "id": 3,
+      "word": "connection (noun)",
+      "ans": "つながり",
+      "remarks": "「繋＿＿」"
+    },
+    {
+      "id": 4,
+      "word": "SMEs",
+      "ans": "ちゅうしょうきぎょう",
+      "remarks": "中小企業"
+    },
+    {
+      "id": 5,
+      "word": "manager",
+      "ans": "けいえいしゃ",
+      "remarks": "経営者"
+    },
+    {
+      "id": 6,
+      "word": "management policy",
+      "ans": "けいえいほうしん",
+      "remarks": "経営方針"
+    },
+    {
+      "id": 7,
+      "word": "big enterprise",
+      "ans": "だいきぎょう",
+      "remarks": "大企業"
+    },
+    {
+      "id": 8,
+      "word": "policy",
+      "ans": "ほうしん",
+      "remarks": "方針"
+    },
+    {
+      "id": 9,
+      "word": "concern (ing) / related to",
+      "ans": "かかわる",
+      "remarks": "「関＿＿」"
+    },
+    {
+      "id": 10,
+      "word": "right to decide",
+      "ans": "けっていけん",
+      "remarks": "決定権"
+    },
+    {
+      "id": 11,
+      "word": "Business Agreement",
+      "ans": "しょうだんせいりつ",
+      "remarks": "商談成立"
+    },
+    {
+      "id": 12,
+      "word": "short cut",
+      "ans": "ちかみち",
+      "remarks": "近道"
+    },
+    {
+      "id": 13,
+      "word": "(in) stock",
+      "ans": "ざいこ",
+      "remarks": "在庫"
+    },
+    {
+      "id": 14,
+      "word": "prepare (gather)",
+      "ans": "そろえる",
+      "remarks": "揃＿＿"
+    },
+    {
+      "id": 15,
+      "word": "hands are full (expression)",
+      "ans": "てがはなせない",
+      "remarks": "手＿離＿＿＿"
+    },
+    {
+      "id": 16,
+      "word": "client",
+      "ans": "とりひきさき",
+      "remarks": "取引先"
+    },
+    {
+      "id": 17,
+      "word": "to purchase",
+      "ans": "こうにゅうする",
+      "remarks": "購入＿＿"
+    },
+    {
+      "id": 18,
+      "word": "examine/review",
+      "ans": "けんとうする",
+      "remarks": "検討＿＿"
+    },
+    {
+      "id": 19,
+      "word": "to undertake (responsibility)",
+      "ans": "ひきうける",
+      "remarks": "引＿受＿＿"
+    },
+    {
+      "id": 20,
+      "word": "managing director",
+      "ans": "じょうむ",
+      "remarks": "常務"
+    },
+    {
+      "id": 21,
+      "word": "price",
+      "ans": "かかく",
+      "remarks": "価格"
+    },
+    {
+      "id": 22,
+      "word": "supervisor",
+      "ans": "しゅにん",
+      "remarks": "主任"
+    },
+    {
+      "id": 23,
+      "word": "business; enterprise; venture;",
+      "ans": "じぎょう",
+      "remarks": "事業"
+    },
+    {
+      "id": 24,
+      "word": "scale",
+      "ans": "きぼ",
+      "remarks": "規模"
+    },
+    {
+      "id": 25,
+      "word": "decide (noun) ",
+      "ans": "けってい",
+      "remarks": "決定"
+    },
+    {
+      "id": 26,
+      "word": "groundwork",
+      "ans": "ねまわし",
+      "remarks": "根回＿"
+    },
+    {
+      "id": 27,
+      "word": "word processing",
+      "ans": "ワープロうち",
+      "remarks": "＿＿＿打＿"
+    },
+    {
+      "id": 28,
+      "word": "slip (to pass ard)",
+      "ans": "でんぴょう",
+      "remarks": "伝票"
+    },
+    {
+      "id": 29,
+      "word": "important customer",
+      "ans": "とくいさき",
+      "remarks": "得意先"
+    },
+    {
+      "id": 30,
+      "word": "trade fair",
+      "ans": "みほんいち",
+      "remarks": "見本市"
+    },
+    {
+      "id": 31,
+      "word": "exhibit",
+      "ans": "しゅっぴん",
+      "remarks": "出品"
+    },
+    {
+      "id": 32,
+      "word": "our company",
+      "ans": "とうしゃ",
+      "remarks": "当社"
+    },
+    {
+      "id": 33,
+      "word": "expansion",
+      "ans": "かくだい",
+      "remarks": "拡大"
+    },
+    {
+      "id": 34,
+      "word": "moderately",
+      "ans": "ひかえめに",
+      "remarks": "控＿目＿"
+    },
+    {
+      "id": 35,
+      "word": "put on sale",
+      "ans": "うりだす",
+      "remarks": "売＿出＿"
+    },
+    {
+      "id": 36,
+      "word": "close; familiar ",
+      "ans": "したしい",
+      "remarks": "親＿＿"
+    },
+    {
+      "id": 37,
+      "word": "transactions; dealings",
+      "ans": "とりひき",
+      "remarks": "取引"
+    },
+    {
+      "id": 38,
+      "word": "postpone",
+      "ans": "えんき",
+      "remarks": "延期"
+    },
+    {
+      "id": 39,
+      "word": "discount",
+      "ans": "ねびき",
+      "remarks": "値引＿"
+    },
+    {
+      "id": 40,
+      "word": "lease",
+      "ans": "リースする",
+      "remarks": ""
+    },
+    {
+      "id": 41,
+      "word": "discount rate",
+      "ans": "ねびきりつ",
+      "remarks": "値引率"
+    }
+  ]
+}

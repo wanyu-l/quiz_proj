@@ -1,0 +1,195 @@
+{
+  "id": 70,
+  "name": "Lesson 46",
+  "tags": [
+    "LAJ 5"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "hand over",
+      "ans": "わたします",
+      "remarks": "personにthingを「渡＿＿」"
+    },
+    {
+      "id": 1,
+      "word": "come back",
+      "ans": "かえってきます",
+      "remarks": "帰＿来＿＿"
+    },
+    {
+      "id": 2,
+      "word": "(a bus) leave, depart",
+      "ans": "でます",
+      "remarks": "出＿＿"
+    },
+    {
+      "id": 3,
+      "word": "(parcels) delivered",
+      "ans": "とどきます",
+      "remarks": "（が）「届＿＿」"
+    },
+    {
+      "id": 4,
+      "word": "enter (a university)",
+      "ans": "にゅうがくします",
+      "remarks": "（に）「入学＿＿」"
+    },
+    {
+      "id": 5,
+      "word": "graduate (from a university)",
+      "ans": "そつぎょうします",
+      "remarks": "（を）「卒業＿＿」"
+    },
+    {
+      "id": 6,
+      "word": "bake, grill, roast",
+      "ans": "やきます",
+      "remarks": "（を）「焼＿＿」"
+    },
+    {
+      "id": 7,
+      "word": "be baked/roasted; intransitive",
+      "ans": "やけます",
+      "remarks": "（が）「焼＿＿」"
+    },
+    {
+      "id": 8,
+      "word": "absence",
+      "ans": "るす",
+      "remarks": ""
+    },
+    {
+      "id": 9,
+      "word": "home delivery service",
+      "ans": "たくはいびん",
+      "remarks": "宅配便"
+    },
+    {
+      "id": 10,
+      "word": "cause",
+      "ans": "げんいん",
+      "remarks": "原因"
+    },
+    {
+      "id": 11,
+      "word": "my side",
+      "ans": "こちら",
+      "remarks": "polite"
+    },
+    {
+      "id": 12,
+      "word": "where~is/are, by the~",
+      "ans": "のところ",
+      "remarks": "＿所"
+    },
+    {
+      "id": 13,
+      "word": "half a year",
+      "ans": "はんとし",
+      "remarks": "半年"
+    },
+    {
+      "id": 14,
+      "word": "just, exactly",
+      "ans": "たったいま",
+      "remarks": "＿＿今"
+    },
+    {
+      "id": 15,
+      "word": "Have you got a moment?",
+      "ans": "いまいいですか",
+      "remarks": "今＿＿"
+    },
+    {
+      "id": 16,
+      "word": "gas service centre",
+      "ans": "ガスサービスセンター",
+      "remarks": ""
+    },
+    {
+      "id": 17,
+      "word": "gas range, gas cooker",
+      "ans": "ガスレンジ",
+      "remarks": ""
+    },
+    {
+      "id": 18,
+      "word": "condition",
+      "ans": "ぐあい",
+      "remarks": "具合"
+    },
+    {
+      "id": 19,
+      "word": "I'm sorry",
+      "ans": "もうしわけありません",
+      "remarks": "formal; 申＿訳＿＿＿＿"
+    },
+    {
+      "id": 20,
+      "word": "Who is this, please?",
+      "ans": "どちらさまでしょうか",
+      "remarks": "formal"
+    },
+    {
+      "id": 21,
+      "word": "sorry to gave kept you waiting",
+      "ans": "おまたせしました",
+      "remarks": ""
+    },
+    {
+      "id": 22,
+      "word": "head for",
+      "ans": "むかいます",
+      "remarks": "向＿＿＿"
+    },
+    {
+      "id": 23,
+      "word": "be luck",
+      "ans": "ついています",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "floor",
+      "ans": "ゆか",
+      "remarks": ""
+    },
+    {
+      "id": 25,
+      "word": "fall down, fall over",
+      "ans": "ころびます",
+      "remarks": "（placeで）「転＿＿」"
+    },
+    {
+      "id": 26,
+      "word": "bell",
+      "ans": "ベル",
+      "remarks": ""
+    },
+    {
+      "id": 27,
+      "word": "ring",
+      "ans": "なります",
+      "remarks": "（が）「鳴＿＿」"
+    },
+    {
+      "id": 28,
+      "word": "on a hurry",
+      "ans": "あわてて",
+      "remarks": ""
+    },
+    {
+      "id": 29,
+      "word": "in order",
+      "ans": "じゅんばんに",
+      "remarks": "順番＿"
+    },
+    {
+      "id": 30,
+      "word": "incident",
+      "ans": "できごと",
+      "remarks": "出来事"
+    }
+  ]
+}

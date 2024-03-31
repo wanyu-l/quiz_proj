@@ -1,0 +1,267 @@
+{
+  "id": 81,
+  "name": "第二課・挨拶",
+  "tags": [
+    "Biz Jap 2"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "person in charge",
+      "ans": "たんとうしゃ",
+      "remarks": "担当者"
+    },
+    {
+      "id": 1,
+      "word": "first meet",
+      "ans": "しょたいめん",
+      "remarks": "初対面"
+    },
+    {
+      "id": 2,
+      "word": "Business",
+      "ans": "ようけん",
+      "remarks": "要件"
+    },
+    {
+      "id": 3,
+      "word": "business-like",
+      "ans": "じむてき",
+      "remarks": "事務的"
+    },
+    {
+      "id": 4,
+      "word": "impression",
+      "ans": "いんしょう",
+      "remarks": "印象"
+    },
+    {
+      "id": 5,
+      "word": "season",
+      "ans": "きせつ",
+      "remarks": "季節"
+    },
+    {
+      "id": 6,
+      "word": "depending on ~",
+      "ans": "によって",
+      "remarks": "～「＿＿」"
+    },
+    {
+      "id": 7,
+      "word": "completely",
+      "ans": "すっかり",
+      "remarks": ""
+    },
+    {
+      "id": 8,
+      "word": "main",
+      "ans": "おもな",
+      "remarks": "主＿"
+    },
+    {
+      "id": 9,
+      "word": "that situation",
+      "ans": "そのば",
+      "remarks": "＿＿場"
+    },
+    {
+      "id": 10,
+      "word": "suit / fit",
+      "ans": "あう",
+      "remarks": "合＿"
+    },
+    {
+      "id": 11,
+      "word": "friendly",
+      "ans": "なごやかな",
+      "remarks": "「和＿＿」"
+    },
+    {
+      "id": 12,
+      "word": "atmosphere / \"vibes\"",
+      "ans": "ふんいき",
+      "remarks": "雰囲気"
+    },
+    {
+      "id": 13,
+      "word": "go on",
+      "ans": "すすめる",
+      "remarks": "「進＿＿」"
+    },
+    {
+      "id": 14,
+      "word": "arrive at work",
+      "ans": "しゅっしゃする",
+      "remarks": "出社＿＿"
+    },
+    {
+      "id": 15,
+      "word": "be helpful/saved",
+      "ans": "たすかる",
+      "remarks": "助＿＿"
+    },
+    {
+      "id": 16,
+      "word": "leave work",
+      "ans": "たいしゃする",
+      "remarks": "退社＿＿"
+    },
+    {
+      "id": 17,
+      "word": "somehow or other",
+      "ans": "なんとか",
+      "remarks": "何＿＿"
+    },
+    {
+      "id": 18,
+      "word": "document",
+      "ans": "しょるい",
+      "remarks": "書類"
+    },
+    {
+      "id": 19,
+      "word": "make; draw up",
+      "ans": "さくせい",
+      "remarks": "作成"
+    },
+    {
+      "id": 20,
+      "word": "meet again",
+      "ans": "さいかいする",
+      "remarks": "再会＿＿"
+    },
+    {
+      "id": 21,
+      "word": "finish",
+      "ans": "きりあげる",
+      "remarks": "切＿上＿＿"
+    },
+    {
+      "id": 22,
+      "word": "long time no see",
+      "ans": "ごぶさたしております",
+      "remarks": "keigou of お久しぶり"
+    },
+    {
+      "id": 23,
+      "word": "how are things",
+      "ans": "おかわりありませんか",
+      "remarks": ""
+    },
+    {
+      "id": 24,
+      "word": "thanks to you",
+      "ans": "おかげさまで",
+      "remarks": "托你的福"
+    },
+    {
+      "id": 25,
+      "word": "at that time",
+      "ans": "そのせつ",
+      "remarks": "＿＿節"
+    },
+    {
+      "id": 26,
+      "word": "absent from work",
+      "ans": "けっきんする",
+      "remarks": "欠勤＿＿"
+    },
+    {
+      "id": 27,
+      "word": "next day",
+      "ans": "よくじつ",
+      "remarks": "翌日"
+    },
+    {
+      "id": 28,
+      "word": "man to man",
+      "ans": "おとこどうし",
+      "remarks": "男同士"
+    },
+    {
+      "id": 29,
+      "word": "within today",
+      "ans": "きょうじゅうに",
+      "remarks": "今日中＿"
+    },
+    {
+      "id": 30,
+      "word": "between (same) ~",
+      "ans": "どうし",
+      "remarks": "～同士"
+    },
+    {
+      "id": 31,
+      "word": "encourage",
+      "ans": "はげます",
+      "remarks": "励＿＿"
+    },
+    {
+      "id": 32,
+      "word": "visitor",
+      "ans": "ほうもんきゃく",
+      "remarks": "訪問客"
+    },
+    {
+      "id": 33,
+      "word": "this area",
+      "ans": "このへん",
+      "remarks": "＿＿辺"
+    },
+    {
+      "id": 34,
+      "word": "begin to ~",
+      "ans": "きりだす",
+      "remarks": "切＿出＿"
+    },
+    {
+      "id": 35,
+      "word": "~ that",
+      "ans": "れいの",
+      "remarks": "例＿"
+    },
+    {
+      "id": 36,
+      "word": "(subject) matter",
+      "ans": "けん",
+      "remarks": "件"
+    },
+    {
+      "id": 37,
+      "word": "to schedule (verb)",
+      "ans": "スケジュールをたてる",
+      "remarks": "＿＿＿＿立＿＿"
+    },
+    {
+      "id": 38,
+      "word": "reception room",
+      "ans": "おうせつしつ",
+      "remarks": "応接室"
+    },
+    {
+      "id": 39,
+      "word": "work on an estimate",
+      "ans": "みつもりをだす",
+      "remarks": "見積＿＿＿出＿"
+    },
+    {
+      "id": 40,
+      "word": "happen to see",
+      "ans": "みかける",
+      "remarks": "見＿＿＿"
+    },
+    {
+      "id": 41,
+      "word": "joint meeting",
+      "ans": "ごうどうかいぎ",
+      "remarks": "合同会議"
+    },
+    {
+      "id": 42,
+      "word": "important",
+      "ans": "じゅうような",
+      "remarks": "重要＿"
+    }
+  ]
+}

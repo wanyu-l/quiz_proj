@@ -1,0 +1,249 @@
+{
+  "id": 71,
+  "name": "Lesson 47",
+  "tags": [
+    "LAJ 5"
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "word": "(wind) blow",
+      "ans": "ふきます",
+      "remarks": "（が）「吹＿＿」"
+    },
+    {
+      "id": 1,
+      "word": "(rubbish) burn",
+      "ans": "もえます",
+      "remarks": ""
+    },
+    {
+      "id": 2,
+      "word": "pass away",
+      "ans": "なくなります",
+      "remarks": ""
+    },
+    {
+      "id": 3,
+      "word": "(people) gather",
+      "ans": "あつまります",
+      "remarks": "（が）「集＿＿」"
+    },
+    {
+      "id": 4,
+      "word": "(people) part, separate",
+      "ans": "わかれます",
+      "remarks": "（が）「別＿＿」"
+    },
+    {
+      "id": 5,
+      "word": "(sound/voice) be heard",
+      "ans": "します",
+      "remarks": "（音・声が）「＿＿」"
+    },
+    {
+      "id": 6,
+      "word": "taste",
+      "ans": "あじがします",
+      "remarks": "味＿＿"
+    },
+    {
+      "id": 7,
+      "word": "smell",
+      "ans": "においがします",
+      "remarks": "匂＿＿"
+    },
+    {
+      "id": 8,
+      "word": "strict, hard",
+      "ans": "きびしい",
+      "remarks": "厳＿"
+    },
+    {
+      "id": 9,
+      "word": "terrible, severe",
+      "ans": "ひどい",
+      "remarks": ""
+    },
+    {
+      "id": 10,
+      "word": "frightening, horrible",
+      "ans": "こわい",
+      "remarks": "怖＿"
+    },
+    {
+      "id": 11,
+      "word": "experiment",
+      "ans": "じっけん",
+      "remarks": "実験"
+    },
+    {
+      "id": 12,
+      "word": "data",
+      "ans": "データ",
+      "remarks": ""
+    },
+    {
+      "id": 13,
+      "word": "population",
+      "ans": "じんこう",
+      "remarks": "人口"
+    },
+    {
+      "id": 14,
+      "word": "smell",
+      "ans": "におい",
+      "remarks": "Noun"
+    },
+    {
+      "id": 15,
+      "word": "science",
+      "ans": "かがく",
+      "remarks": "科学"
+    },
+    {
+      "id": 16,
+      "word": "medicine, medical science",
+      "ans": "いがく",
+      "remarks": "医学"
+    },
+    {
+      "id": 17,
+      "word": "literature",
+      "ans": "ぶんがく",
+      "remarks": "文学"
+    },
+    {
+      "id": 18,
+      "word": "police car",
+      "ans": "パトカー",
+      "remarks": ""
+    },
+    {
+      "id": 19,
+      "word": "ambulance",
+      "ans": "きゅうきゅうしゃ",
+      "remarks": "救急車"
+    },
+    {
+      "id": 20,
+      "word": "approval, agreement",
+      "ans": "さんせい",
+      "remarks": "賛成"
+    },
+    {
+      "id": 21,
+      "word": "agree",
+      "ans": "さんせいします",
+      "remarks": "(に）「＿＿＿」"
+    },
+    {
+      "id": 22,
+      "word": "objection, opposition",
+      "ans": "はんたい",
+      "remarks": "反対"
+    },
+    {
+      "id": 23,
+      "word": "object, disagree; verb",
+      "ans": "はんたいします",
+      "remarks": "(に）「＿＿＿」"
+    },
+    {
+      "id": 24,
+      "word": "president",
+      "ans": "だいとうりょう",
+      "remarks": "大統領"
+    },
+    {
+      "id": 25,
+      "word": "according to~ ",
+      "ans": "によると",
+      "remarks": "～「＿＿」"
+    },
+    {
+      "id": 26,
+      "word": "get engaged",
+      "ans": "こんやくします",
+      "remarks": "婚約＿＿"
+    },
+    {
+      "id": 27,
+      "word": "it seems that",
+      "ans": "どうも",
+      "remarks": "making a tentative judgement"
+    },
+    {
+      "id": 28,
+      "word": "sweetheart, boyfriend, girlfriend",
+      "ans": "こいびと",
+      "remarks": "恋人"
+    },
+    {
+      "id": 29,
+      "word": "the other person",
+      "ans": "あいて",
+      "remarks": "相手"
+    },
+    {
+      "id": 30,
+      "word": "get acquainted",
+      "ans": "しりあいます",
+      "remarks": "知＿合＿＿"
+    },
+    {
+      "id": 31,
+      "word": "makeup",
+      "ans": "けしょう",
+      "remarks": "（お）「化粧」"
+    },
+    {
+      "id": 32,
+      "word": "put on makeup",
+      "ans": "けしょうをします",
+      "remarks": "（お）「化粧＿＿」"
+    },
+    {
+      "id": 33,
+      "word": "take care of",
+      "ans": "せわをします",
+      "remarks": "世話＿＿"
+    },
+    {
+      "id": 34,
+      "word": "female, woman",
+      "ans": "じょせい",
+      "remarks": "女性"
+    },
+    {
+      "id": 35,
+      "word": "male, man",
+      "ans": "だんせい",
+      "remarks": "男性"
+    },
+    {
+      "id": 36,
+      "word": "long life",
+      "ans": "ながいき",
+      "remarks": "長生＿"
+    },
+    {
+      "id": 37,
+      "word": "live long; verb",
+      "ans": "ながいきします",
+      "remarks": "長生＿＿"
+    },
+    {
+      "id": 38,
+      "word": "reason",
+      "ans": "りゆう",
+      "remarks": "理由"
+    },
+    {
+      "id": 39,
+      "word": "relationship",
+      "ans": "かんけい",
+      "remarks": "関係"
+    }
+  ]
+}
